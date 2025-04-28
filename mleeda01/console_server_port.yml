@@ -1,0 +1,64 @@
+---
+netbox_console_server_ports:
+  - name: hdmi01
+    device: mleeda01
+    type: other
+  - name: usb01
+    device: mleeda01
+    type: usb-a
+  - name: hdmi02
+    device: mleeda01
+    type: other
+  - name: usb02
+    device: mleeda01
+    type: usb-a
+  - name: hdmi03
+    device: mleeda01
+    type: other
+  - name: usb03
+    device: mleeda01
+    type: usb-a
+  - name: hdmi04
+    device: mleeda01
+    type: other
+  - name: usb04
+    device: mleeda01
+    type: usb-a
+  - name: hdmi05
+    device: mleeda01
+    type: other
+  - name: usb05
+    device: mleeda01
+    type: usb-a
+  - name: hdmi06
+    device: mleeda01
+    type: other
+  - name: usb06
+    device: mleeda01
+    type: usb-a
+  - name: hdmi07
+    device: mleeda01
+    type: other
+  - name: usb07
+    device: mleeda01
+    type: usb-a
+  - name: hdmi08
+    device: mleeda01
+    type: other
+  - name: usb08
+    device: mleeda01
+    type: usb-a
+  - name: hdmi09
+    device: mleeda01
+    type: other
+  - name: usb09
+    device: mleeda01
+    type: usb-a
+  - name: hdmi10
+    device: mleeda01
+    type: other
+  - name: usb10
+    device: mleeda01
+    type: usb-a
+
+

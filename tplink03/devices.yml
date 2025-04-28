@@ -1,0 +1,14 @@
+---
+netbox_devices_tplink03:
+  - name: "tplink03"
+    device_type: "tlsg1024de"
+    device_role: "Switch"
+    platform: "tpos"
+    site: "BER1"
+    location: "Rack"
+    custom_fields:
+      webmanagement: http://tplink03/
+      SupplierWebpage: "{{ tplink03_SupplierWebpage }}" 
+      SupplierOrder: "{{ tplink03_SupplierOrder }}"
+    primary_ip4: "172.25.1.20"
+

@@ -1,0 +1,7 @@
+---
+netbox_cluster_types:
+ - name: "kvm"
+   description: "Kernel Virtual Machine"
+
+ - name: "k8s"
+   description: "Kubernetes"

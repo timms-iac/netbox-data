@@ -1,0 +1,40 @@
+---
+netbox_vlans_infra:
+  - name: "mgmt"
+    vid: 1
+    site: "BER1"
+    description: "Network Management"
+    vlan_group: "infra"
+  - name: "dmz"
+    vid: 2
+    site: "BER1"
+    description: "Fritz!Box DMZ"
+    vlan_group: "infra"
+  - name: "guest"
+    vid: 3
+    site: "BER1"
+    description: "Fritz!Box Guest Network"
+    vlan_group: "infra"
+  - name: "provision"
+    vid: 4
+    site: "BER1"
+    description: "PXE Boot Provisioning Network"
+    vlan_group: "infra"
+  - name: "hypervisor"
+    vid: 5
+    site: "BER1"
+    description: "Hypervisor Network"
+    vlan_group: "infra"
+  - name: "firewall"
+    vid: 6
+    site: "BER1"
+    description: "Firewall Network"
+    vlan_group: "infra"
+
+
+  - name: "iot"
+    vid: 1900
+    site: "BER1"
+    description: "IOT Devices"
+    vlan_group: "infra"
+

@@ -1,0 +1,4 @@
+---
+netbox_power_ports_openwrtgf03:
+  - name: "dc0"
+    device: "openwrtgf03"

@@ -1,0 +1,57 @@
+---
+netbox_cables_sodola02:
+- termination_a_type: dcim.interface
+  termination_a:
+    device: mnbox01
+    name: TE1
+  termination_b_type: dcim.interface
+  termination_b:
+    device: sodola02
+    name: TE1
+  type: dac-active
+  status: connected
+  color: "000000"
+  length: 1
+  length_unit: m
+
+- termination_a_type: dcim.interface
+  termination_a:
+    device: mnbox01
+    name: TE2
+  termination_b_type: dcim.interface
+  termination_b:
+    device: sodola02
+    name: TE2
+  type:  dac-active
+  status: connected
+  color: "000000"
+  length: 1
+  length_unit: m
+
+- termination_a_type: dcim.interface
+  termination_a:
+    device: mnbox02
+    name: TE1
+  termination_b_type: dcim.interface
+  termination_b:
+    device: sodola02
+    name: TE3
+  type: dac-active
+  status: connected
+  color: "000000"
+  length: 1
+  length_unit: m
+
+- termination_a_type: dcim.interface
+  termination_a:
+    device: mnbox02
+    name: TE2
+  termination_b_type: dcim.interface
+  termination_b:
+    device: sodola02
+    name: TE4
+  type:  dac-active
+  status: connected
+  color: "000000"
+  length: 1
+  length_unit: m

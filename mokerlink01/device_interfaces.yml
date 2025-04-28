@@ -1,0 +1,11 @@
+---
+netbox_device_interfaces_mokerlink01:
+
+
+  - name: "vlan1"
+    device: "mokerlink01"
+    description: "Switch Managemt Interface to assign MAC/IP"
+    type: "Virtual"
+    duplex: "auto"
+    primary_mac_address: "{{ mac_mokerlink01_vlan1 }}"
+    mtu: 1500

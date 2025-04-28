@@ -1,0 +1,7 @@
+---
+netbox_mac_addresses_sodola01:
+  - assigned_object:
+      name: "vlan1"
+      device: "sodola01"
+    mac_address: "{{ mac_sodola01_vlan1 }}"
+

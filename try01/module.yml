@@ -1,0 +1,32 @@
+---
+netbox_modules_try01:
+  - device: "try01"
+    module_bay:
+      name: "ram0"
+      device: "try01"
+    module_type: "ddr4-32"
+
+  - device: "try01"
+    module_bay:
+      name: "ram1"
+      device: "try01"
+    module_type: "ddr4-32"
+
+  - device: "try01"
+    module_bay:
+      name: "nvme0"
+      device: "try01"
+    module_type: "nvme-1000"
+
+  - device: "try01"
+    module_bay:
+      name: "usb0"
+      device: "try01"
+    module_type: "usb-lan-25"
+
+  - device: "try01"
+    module_bay:
+      name: "usb1"
+      device: "try01"
+    module_type: "fit-plus-256"
+

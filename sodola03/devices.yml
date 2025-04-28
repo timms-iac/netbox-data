@@ -1,0 +1,17 @@
+---
+netbox_devices_sodola03:
+  - name: "sodola03"
+    device_type: "swtgw2216as"
+    device_role: "Switch"
+    platform: "soos"
+    site: "BER1"
+    location: "Desk"
+    custom_fields:
+      webmanagement: http://sodola03/
+      SupplierWebpage: "{{ sodola03_SupplierWebpage }}" 
+      SupplierOrder: "{{ sodola03_SupplierOrder }}"
+      Firmware: "{{ sodola03_Firmware }}"
+    primary_ip4: "172.25.1.27"
+    serial: "{{ sodola03_serial }}"
+    description: "16x2.5 GbE + 2x10GbE Switch"
+    airflow: "passive"

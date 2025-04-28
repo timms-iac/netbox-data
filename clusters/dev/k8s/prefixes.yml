@@ -1,0 +1,17 @@
+---
+netbox_prefixes_dev_k8s:
+  - prefix: "172.20.20.0/24"
+    description: "Development k8s Network"
+    vlan:
+      name: "devk8smgmt"
+    vrf: "devk8smgmt"
+  - prefix: "172.20.21.0/24"
+    description: "Development k8s Service Network"
+    vlan:
+      name: "devk8ssvc"
+    vrf: "devk8ssvc"
+  - prefix: "172.20.28.0/24"
+    description: "Development k8s Ceph Network"
+    vlan:
+      name: "devk8sceph"
+

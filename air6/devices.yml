@@ -1,0 +1,11 @@
+---
+netbox_devices_air6:
+- name: "air6"
+    device_type: "matebook15"
+    device_role: "Laptop"
+    platform: "Ubuntu"
+    site: "BER1"
+    location: "Desk"
+    custom_fields:
+      SupplierWebpage: "{{ air6_SupplierWebpage }}" 
+      SupplierOrder: "{{ air6_SupplierOrder }}"

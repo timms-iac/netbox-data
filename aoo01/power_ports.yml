@@ -1,0 +1,5 @@
+---
+netbox_power_ports_aoo01:
+  - name: "dc0"
+    device: "aoo01"
+

@@ -1,0 +1,32 @@
+---
+netbox_vlan_groups_prod:
+  - name: "prodk8s"
+    scope: "BER1"
+    scope_type: "dcim.site"
+    description: "Production k8s Networks"
+    vid_ranges: [
+      [2520,2527]
+    ]
+  - name: "prodos"
+    scope: "BER1"
+    scope_type: "dcim.site"
+    description: "Production Openstack Networks"
+    vid_ranges: [
+      [2530,2537]
+    ]
+  - name: "proddmz"
+    scope: "BER1"
+    scope_type: "dcim.site"
+    description: "Production DMZ Networks"
+    vid_ranges: [
+      [2540,2547]
+    ]
+  - name: "prodceph"
+    scope: "BER1"
+    scope_type: "dcim.site"
+    description: "Production Ceph Networks"
+    vid_ranges: [
+      [2528,2529],
+      [2538,2539],
+      [2548,2549]
+    ]

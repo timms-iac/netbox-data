@@ -1,0 +1,263 @@
+---
+netbox_cables_mleeda01:
+- termination_a_type: dcim.consoleport
+  termination_a:
+    device: try01
+    name: hdmi0
+  termination_b_type: dcim.consoleserverport
+  termination_b:
+    device: mleeda01
+    name: hdmi01
+  status: connected
+  color: "000000"
+  length: 1
+  length_unit: m
+
+- termination_a_type: dcim.consoleport
+  termination_a:
+    device: try01
+    name: usb3
+  termination_b_type: dcim.consoleserverport
+  termination_b:
+    device: mleeda01
+    name: usb01
+  status: connected
+  color: "000000"
+  length: 1
+  length_unit: m
+
+- termination_a_type: dcim.consoleport
+  termination_a:
+    device: try02
+    name: hdmi0
+  termination_b_type: dcim.consoleserverport
+  termination_b:
+    device: mleeda01
+    name: hdmi02
+  status: connected
+  color: "000000"
+  length: 1
+  length_unit: m
+
+- termination_a_type: dcim.consoleport
+  termination_a:
+    device: try02
+    name: usb3
+  termination_b_type: dcim.consoleserverport
+  termination_b:
+    device: mleeda01
+    name: usb02
+  status: connected
+  color: "000000"
+  length: 1
+  length_unit: m
+
+- termination_a_type: dcim.consoleport
+  termination_a:
+    device: try03
+    name: hdmi0
+  termination_b_type: dcim.consoleserverport
+  termination_b:
+    device: mleeda01
+    name: hdmi03
+  status: connected
+  color: "000000"
+  length: 1
+  length_unit: m
+
+- termination_a_type: dcim.consoleport
+  termination_a:
+    device: try03
+    name: usb3
+  termination_b_type: dcim.consoleserverport
+  termination_b:
+    device: mleeda01
+    name: usb03
+  status: connected
+  color: "000000"
+  length: 1
+  length_unit: m
+
+- termination_a_type: dcim.consoleport
+  termination_a:
+    device: aoo01
+    name: hdmi0
+  termination_b_type: dcim.consoleserverport
+  termination_b:
+    device: mleeda01
+    name: hdmi04
+  status: connected
+  color: "000000"
+  length: 1
+  length_unit: m
+
+- termination_a_type: dcim.consoleport
+  termination_a:
+    device: aoo01
+    name: usb5
+  termination_b_type: dcim.consoleserverport
+  termination_b:
+    device: mleeda01
+    name: usb04
+  status: connected
+  color: "000000"
+  length: 1
+  length_unit: m
+
+- termination_a_type: dcim.consoleport
+  termination_a:
+    device: aoo02
+    name: hdmi0
+  termination_b_type: dcim.consoleserverport
+  termination_b:
+    device: mleeda01
+    name: hdmi05
+  status: connected
+  color: "000000"
+  length: 1
+  length_unit: m
+
+- termination_a_type: dcim.consoleport
+  termination_a:
+    device: aoo02
+    name: usb5
+  termination_b_type: dcim.consoleserverport
+  termination_b:
+    device: mleeda01
+    name: usb05
+  status: connected
+  color: "000000"
+  length: 1
+  length_unit: m
+
+- termination_a_type: dcim.consoleport
+  termination_a:
+    device: mnbox01
+    name: hdmi0
+  termination_b_type: dcim.consoleserverport
+  termination_b:
+    device: mleeda01
+    name: hdmi06
+  status: connected
+  color: "000000"
+  length: 1
+  length_unit: m
+
+- termination_a_type: dcim.consoleport
+  termination_a:
+    device: mnbox01
+    name: usb4
+  termination_b_type: dcim.consoleserverport
+  termination_b:
+    device: mleeda01
+    name: usb06
+  status: connected
+  color: "000000"
+  length: 1
+  length_unit: m
+
+- termination_a_type: dcim.consoleport
+  termination_a:
+    device: mnbox02
+    name: hdmi0
+  termination_b_type: dcim.consoleserverport
+  termination_b:
+    device: mleeda01
+    name: hdmi07
+  status: connected
+  color: "000000"
+  length: 1
+  length_unit: m
+
+- termination_a_type: dcim.consoleport
+  termination_a:
+    device: mnbox02
+    name: usb4
+  termination_b_type: dcim.consoleserverport
+  termination_b:
+    device: mleeda01
+    name: usb07
+  status: connected
+  color: "000000"
+  length: 1
+  length_unit: m
+
+- termination_a_type: dcim.consoleport
+  termination_a:
+    device: ciab
+    name: hdmi0
+  termination_b_type: dcim.consoleserverport
+  termination_b:
+    device: mleeda01
+    name: hdmi08
+  status: connected
+  color: "000000"
+  length: 2
+  length_unit: m
+
+- termination_a_type: dcim.consoleport
+  termination_a:
+    device: ciab
+    name: usb3
+  termination_b_type: dcim.consoleserverport
+  termination_b:
+    device: mleeda01
+    name: usb08
+  status: connected
+  color: "000000"
+  length: 2
+  length_unit: m
+
+- termination_a_type: dcim.consoleport
+  termination_a:
+    device: rpi4k8s1
+    name: hdmi0
+  termination_b_type: dcim.consoleserverport
+  termination_b:
+    device: mleeda01
+    name: hdmi09
+  status: connected
+  color: "000000"
+  length: 2
+  length_unit: m
+
+- termination_a_type: dcim.consoleport
+  termination_a:
+    device: rpi4k8s1
+    name: usb3
+  termination_b_type: dcim.consoleserverport
+  termination_b:
+    device: mleeda01
+    name: usb09
+  status: connected
+  color: "000000"
+  length: 2
+  length_unit: m
+
+
+- termination_a_type: dcim.consoleport
+  termination_a:
+    device: rpi5bak
+    name: hdmi0
+  termination_b_type: dcim.consoleserverport
+  termination_b:
+    device: mleeda01
+    name: hdmi10
+  status: connected
+  color: "000000"
+  length: 2
+  length_unit: m
+
+- termination_a_type: dcim.consoleport
+  termination_a:
+    device: rpi5bak
+    name: usb3
+  termination_b_type: dcim.consoleserverport
+  termination_b:
+    device: mleeda01
+    name: usb10
+  status: connected
+  color: "000000"
+  length: 2
+  length_unit: m
+

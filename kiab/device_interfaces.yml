@@ -1,0 +1,186 @@
+---
+netbox_device_interfaces_kiab:
+  - name: "deploy"
+    device: "kiab"
+    type: "Bridge"
+    mode: "Tagged"
+    tagged_vlans:
+      - name: "mgmt"
+        site: "BER1"
+      - name: "firewall"
+        site: "BER1"
+      - name: "provision"
+        site: "BER1"
+      - name: "hypervisor"
+        site: "BER1"
+      - name: "devk8smgmt"
+        site: "BER1"
+      - name: "devosmgmt"
+        site: "BER1"
+      - name: "devdmzmgmt"
+        site: "BER1"
+      - name: "prodk8smgmt"
+        site: "BER1"
+      - name: "prodosmgmt"
+        site: "BER1"
+      - name: "proddmzmgmt"
+        site: "BER1"
+          #    parent_interface: 
+          #      name: "eth1"
+          #      device: "kiab"
+
+
+  - name: "legacy"
+    device: "kiab"
+    type: "Bridge"
+    mode: "Access"
+    untagged_vlan: 
+      name: "Work"
+      site: "BER1"
+    vrf: "Work"
+      #    parent_interface: 
+      #      name: "eth0"
+      #      device: "kiab"
+
+  - name: "hypervisor0"
+    device: "kiab"
+    type: "Virtual"
+    bridge:
+      name: "deploy"
+      device: "kiab"
+    duplex: "auto"
+    mtu: 1500
+    mode: "Access"
+    untagged_vlan: "hypervisor"
+    vrf: "hypervisor"
+
+  - name: "switch0"
+    device: "kiab"
+    type: "Virtual"
+    bridge:
+      name: "deploy"
+      device: "kiab"
+    duplex: "auto"
+    mtu: 1500
+    mode: "Access"
+    untagged_vlan: 
+      name: "mgmt"
+      site: "BER1"
+    vrf: "mgmt"
+
+  - name: "provision0"
+    device: "kiab"
+    type: "Virtual"
+    bridge:
+      name: "deploy"
+      device: "kiab"
+    duplex: "auto"
+    mtu: 1500
+    mode: "Access"
+    untagged_vlan: "provision"
+    vrf: "provision"
+
+  - name: "firewall0"
+    device: "kiab"
+    type: "Virtual"
+    bridge:
+      name: "deploy"
+      device: "kiab"
+    duplex: "auto"
+    mtu: 1500
+    mode: "Access"
+    untagged_vlan: "firewall"
+    vrf: "firewall"
+
+  - name: "devk8smgmt0"
+    device: "kiab"
+    type: "Virtual"
+    bridge:
+      name: "deploy"
+      device: "kiab"
+    duplex: "auto"
+    mtu: 1500
+    mode: "Access"
+    untagged_vlan: "devk8smgmt"
+    vrf: "devk8smgmt"
+
+  - name: "devosmgmt0"
+    device: "kiab"
+    type: "Virtual"
+    bridge:
+      name: "deploy"
+      device: "kiab"
+    duplex: "auto"
+    mtu: 1500
+    mode: "Access"
+    untagged_vlan: "devosmgmt"
+    vrf: "devosmgmt"
+
+  - name: "devdmzmgmt0"
+    device: "kiab"
+    type: "Virtual"
+    bridge:
+      name: "deploy"
+      device: "kiab"
+    duplex: "auto"
+    mtu: 1500
+    mode: "Access"
+    untagged_vlan: "devdmzmgmt"
+    vrf: "devdmzmgmt"
+
+  - name: "prodk8smgmt0"
+    device: "kiab"
+    type: "Virtual"
+    bridge:
+      name: "deploy"
+      device: "kiab"
+    duplex: "auto"
+    mtu: 1500
+    mode: "Access"
+    untagged_vlan: "prodk8smgmt"
+    vrf: "prodk8smgmt"
+
+  - name: "prodosmgmt0"
+    device: "kiab"
+    type: "Virtual"
+    bridge:
+      name: "deploy"
+      device: "kiab"
+    duplex: "auto"
+    mtu: 1500
+    mode: "Access"
+    untagged_vlan: "prodosmgmt"
+    vrf: "prodosmgmt"
+
+  - name: "proddmzmgmt0"
+    device: "kiab"
+    type: "Virtual"
+    bridge:
+      name: "deploy"
+      device: "kiab"
+    duplex: "auto"
+    mtu: 1500
+    mode: "Access"
+    untagged_vlan: "proddmzmgmt"
+    vrf: "proddmzmgmt"
+
+  - name: "eth0"
+    device: "kiab"
+    type: "1000Base-T (1GE)"
+    bridge: 
+      name: "legacy"
+      device: "kiab"
+    duplex: "auto"
+    primary_mac_address: "{{ mac_kiab_eth0 }}"
+    mtu: 1500
+
+  - name: "eth1"
+    device: "kiab"
+    type: "2.5GBase-T (2.5GE)"
+    bridge: 
+      name: "deploy"
+      device: "kiab"
+    duplex: "auto"
+    primary_mac_address: "{{ mac_kiab_eth1 }}"
+    mtu: 1500
+

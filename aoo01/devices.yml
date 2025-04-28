@@ -1,0 +1,17 @@
+---
+netbox_devices_aoo01:
+  - name: "aoo01"
+    device_type: "aoog5"
+    device_role: "Server"
+    platform: "ubuntu2404"
+    site: "BER1"
+    location: "Rack"
+    cluster: "hypervisor"
+    custom_fields:
+      SupplierWebpage: "{{ aoo01_SupplierWebpage }}"
+      SupplierOrder: "{{ aoo01_SupplierOrder }}"
+      OpenVSwitchProtocols:
+        - OpenFlow13
+        - OpenFlow14
+        - OpenFlow15
+

@@ -1,0 +1,10 @@
+---
+netbox_mac_addresses_kiab:
+  - mac_address: "{{ mac_kiab_eth0 }}"
+    assigned_object:
+      device: kiab
+      name: eth0
+  - mac_address: "{{ mac_kiab_eth1 }}"
+    assigned_object:
+      device: kiab
+      name: eth1

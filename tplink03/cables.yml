@@ -1,0 +1,202 @@
+---
+netbox_cables_tplink03:
+- termination_a_type: dcim.interface
+  termination_a:
+    device: tplink03
+    name: "Port 1"
+  termination_b_type: dcim.interface
+  termination_b:
+    device: try01
+    name: mgmt0
+  type: cat7
+  status: connected
+  color: "FFFFFF"
+  length: 1
+  length_unit: m
+
+- termination_a_type: dcim.interface
+  termination_a:
+    device: tplink03
+    name: "Port 2"
+  termination_b_type: dcim.interface
+  termination_b:
+    device: try02
+    name: mgmt0
+  type: cat7
+  status: connected
+  color: "FFFFFF"
+  length: 1
+  length_unit: m
+
+- termination_a_type: dcim.interface
+  termination_a:
+    device: tplink03
+    name: "Port 3"
+  termination_b_type: dcim.interface
+  termination_b:
+    device: try03
+    name: mgmt0
+  type: cat7
+  status: connected
+  color: "FFFFFF"
+  length: 1
+  length_unit: m
+
+- termination_a_type: dcim.interface
+  termination_a:
+    device: tplink03
+    name: "Port 4"
+  termination_b_type: dcim.interface
+  termination_b:
+    device: aoo01
+    name: mgmt0
+  type: cat7
+  status: connected
+  color: "000000"
+  length: 50
+  length_unit: cm
+
+- termination_a_type: dcim.interface
+  termination_a:
+    device: tplink03
+    name: "Port 5"
+  termination_b_type: dcim.interface
+  termination_b:
+    device: aoo02
+    name: mgmt0
+  type: cat7
+  status: connected
+  color: "000000"
+  length: 50
+  length_unit: cm
+
+######################################
+
+- termination_a_type: dcim.interface
+  termination_a:
+    device: tplink03
+    name: "Port 9"
+  termination_b_type: dcim.interface
+  termination_b:
+    device: rpi4k8s1
+    name: eth0
+  type: cat7
+  status: connected
+  color: "000000"
+  length: 2
+  length_unit: m
+
+- termination_a_type: dcim.interface
+  termination_a:
+    device: tplink03
+    name: "Port 10"
+  termination_b_type: dcim.interface
+  termination_b:
+    device: rpi4k8s2
+    name: eth0
+  type: cat7
+  status: connected
+  color: "000000"
+  length: 2
+  length_unit: m
+
+- termination_a_type: dcim.interface
+  termination_a:
+    device: tplink03
+    name: "Port 11"
+  termination_b_type: dcim.interface
+  termination_b:
+    device: rpi4k8s3
+    name: eth0
+  type: cat7
+  status: connected
+  color: "000000"
+  length: 2
+  length_unit: m
+
+- termination_a_type: dcim.interface
+  termination_a:
+    device: tplink03
+    name: "Port 12"
+  termination_b_type: dcim.interface
+  termination_b:
+    device: rpi4k8s4
+    name: eth0
+  type: cat7
+  status: connected
+  color: "000000"
+  length: 2
+  length_unit: m
+
+- termination_a_type: dcim.interface
+  termination_a:
+    device: tplink03
+    name: "Port 13"
+  termination_b_type: dcim.interface
+  termination_b:
+    device: rpi5bak
+    name: eth0
+  type: cat7
+  status: connected
+  color: "000000"
+  length: 2
+  length_unit: m
+
+- termination_a_type: dcim.interface
+  termination_a:
+    device: tplink03
+    name: "Port 14"
+  termination_b_type: dcim.interface
+  termination_b:
+    device: rpi4sec1
+    name: eth0
+  type: cat7
+  status: connected
+  color: "000000"
+  length: 2
+  length_unit: m
+
+- termination_a_type: dcim.interface
+  termination_a:
+    device: tplink03
+    name: "Port 15"
+  termination_b_type: dcim.interface
+  termination_b:
+    device: ciab
+    name: eth0
+  type: cat7
+  status: connected
+  color: "000000"
+  length: 2
+  length_unit: m
+
+- termination_a_type: dcim.interface
+  termination_a:
+    device: tplink03
+    name: "Port 16"
+  termination_b_type: dcim.interface
+  termination_b:
+    device: ciab
+    name: eth1
+  type: cat7
+  status: connected
+  color: "000000"
+  length: 2
+  length_unit: m
+
+- termination_a_type: dcim.interface
+  termination_a:
+    device: tplink03
+    name: "Port 24"
+  termination_b_type: dcim.interface
+  termination_b:
+    device: sodola03
+    name: MGI8
+  type: cat7
+  status: connected
+    # gray
+    #  color: "000000"
+  length: 10
+  length_unit: m
+
+

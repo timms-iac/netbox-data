@@ -1,0 +1,29 @@
+---
+netbox_device_types_computer:
+
+  - model: "MateBook D 15 2021"
+    manufacturer: "Huawei"
+    slug: "matebook15"
+    part_number: "ASIN: B0B1QQHXLZ"
+    full_depth: False
+  - model: "Mini PC Core i5-8279U"
+    manufacturer: "Minis Forum"
+    slug: "mini8279u"
+    part_number: "ASIN: B0919ZGR1R"
+    full_depth: False
+  - model: "WO4 Mini-PC"
+    manufacturer: "Trycoo"
+    slug: "trywo4"
+    part_number: "ASIN: B0CYZB5PRH"
+    full_depth: False
+  - model: "FBA G5 Ryzen 7 5825U 32+1T"
+    manufacturer: "Aoostar"
+    slug: "aoog5"
+    part_number: "ASIN: B0DSHMMZL7"
+    full_depth: false  
+  - model: "Mini PC N305 Firewall"
+    manufacturer: "Mnboxconet"
+    slug: "n305fw"
+    part_number: "ASIN: B0DFYDB3LM"
+    full_depth: false
+

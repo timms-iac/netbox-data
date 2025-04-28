@@ -1,0 +1,17 @@
+---
+netbox_prefixes_prod_k8s:
+  - prefix: "172.25.20.0/24"
+    description: "Production k8s Network"
+    vlan:
+      name: "prodk8smgmt"
+    vrf: "prodk8smgmt"
+  - prefix: "172.25.21.0/24"
+    description: "Production k8s Service Network"
+    vlan:
+      name: "prodk8ssvc"
+    vrf: "prodk8ssvc"
+  - prefix: "172.25.28.0/24"
+    description: "Production k8s Ceph Network"
+    vlan:
+      name: "prodk8sceph"
+

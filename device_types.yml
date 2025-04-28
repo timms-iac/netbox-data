@@ -1,0 +1,3 @@
+---
+netbox_device_types: "{{ netbox_device_types_computer + netbox_device_types_shelly + netbox_device_types_switche + netbox_device_types_router + netbox_device_types_rpi }}"
+

@@ -1,0 +1,24 @@
+---
+netbox_device_interfaces_air6:
+  - name: "wlan0"
+    device: "air6"
+    type: "IEEE 802.11ac"
+    duplex: "auto"
+    mode: "Access"
+    untagged_vlan:
+      name: "Work"
+      site: "BER1"
+    primary_mac_address: "{{ mac_air6_wlan0 }}"
+    mtu: 1500
+    vrf: "Work"
+  - name: "eth0"
+    device: "air6"
+    type: "2.5GBase-T (2.5GE)"
+    duplex: "auto"
+    mode: "Access"
+    untagged_vlan:
+      name: "Work"
+      site: "BER1"
+    primary_mac_address: "{{ mac_air6_eth0 }}"
+    mtu: 1500
+    vrf: "Work"

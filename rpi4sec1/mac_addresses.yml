@@ -1,0 +1,7 @@
+---
+netbox_mac_addresses_rpi4sec1:
+  - assigned_object:
+      name: "eth0"
+      device: "rpi4sec1"
+    mac_address: "{{ mac_rpi4sec1_eth0 }}"
+

@@ -1,0 +1,30 @@
+---
+netbox_clusters:
+
+  - name: "hypervisor"
+    cluster_type: "kvm"
+    description: "Virtualization Cluster on Hypervisor Nodes"
+
+  - name: "devk8s"
+    cluster_type: "k8s"
+    description: "Development Kubernetes Cluster"
+
+  - name: "devos"
+    cluster_type: "k8s"
+    description: "Development OpenStack Cluster"
+
+  - name: "devdmz"
+    cluster_type: "k8s"
+    description: "Development DMZ Cluster"
+
+  - name: "prodk8s"
+    cluster_type: "k8s"
+    description: "Production Kubernetes Cluster"
+
+  - name: "prodos"
+    cluster_type: "k8s"
+    description: "Production OpenStack Cluster"
+
+  - name: "proddmz"
+    cluster_type: "k8s"
+    description: "Production DMZ Cluster"

@@ -1,0 +1,227 @@
+---
+netbox_cables_sodola01:
+- termination_a_type: dcim.interface
+  termination_a:
+    device: sodola01
+    name: MGI1
+  termination_b_type: dcim.interface
+  termination_b:
+    device: try01
+    name: kube0
+  type: cat7
+  status: connected
+  color: "000000"
+  length: 50
+  length_unit: cm
+
+- termination_a_type: dcim.interface
+  termination_a:
+    device: sodola01
+    name: MGI2
+  termination_b_type: dcim.interface
+  termination_b:
+    device: try01
+    name: ceph0
+  type: cat7
+  status: connected
+  color: "000000"
+  length: 50
+  length_unit: cm
+
+- termination_a_type: dcim.interface
+  termination_a:
+    device: sodola01
+    name: MGI3
+  termination_b_type: dcim.interface
+  termination_b:
+    device: try02
+    name: kube0
+  type: cat7
+  status: connected
+  color: "000000"
+  length: 50
+  length_unit: cm
+
+- termination_a_type: dcim.interface
+  termination_a:
+    device: sodola01
+    name: MGI4
+  termination_b_type: dcim.interface
+  termination_b:
+    device: try02
+    name: ceph0
+  type: cat7
+  status: connected
+  color: "000000"
+  length: 50
+  length_unit: cm
+
+- termination_a_type: dcim.interface
+  termination_a:
+    device: sodola01
+    name: MGI5
+  termination_b_type: dcim.interface
+  termination_b:
+    device: try03
+    name: kube0
+  type: cat7
+  status: connected
+  color: "000000"
+  length: 50
+  length_unit: cm
+
+- termination_a_type: dcim.interface
+  termination_a:
+    device: sodola01
+    name: MGI6
+  termination_b_type: dcim.interface
+  termination_b:
+    device: try03
+    name: ceph0
+  type: cat7
+  status: connected
+  color: "000000"
+  length: 50
+  length_unit: cm
+
+- termination_a_type: dcim.interface
+  termination_a:
+    device: sodola01
+    name: MGI7
+  termination_b_type: dcim.interface
+  termination_b:
+    device: aoo01
+    name: kube0
+  type: cat7
+  status: connected
+  color: "000000"
+  length: 50
+  length_unit: cm
+
+- termination_a_type: dcim.interface
+  termination_a:
+    device: sodola01
+    name: MGI8
+  termination_b_type: dcim.interface
+  termination_b:
+    device: aoo01
+    name: ceph0
+  type: cat7
+  status: connected
+  color: "000000"
+  length: 50
+  length_unit: cm
+
+- termination_a_type: dcim.interface
+  termination_a:
+    device: sodola01
+    name: MGI9
+  termination_b_type: dcim.interface
+  termination_b:
+    device: aoo02
+    name: kube0
+  type: cat7
+  status: connected
+  color: "000000"
+  length: 50
+  length_unit: cm
+
+- termination_a_type: dcim.interface
+  termination_a:
+    device: sodola01
+    name: MGI10
+  termination_b_type: dcim.interface
+  termination_b:
+    device: aoo02
+    name: ceph0
+  type: cat7
+  status: connected
+  color: "000000"
+  length: 50
+  length_unit: cm
+
+- termination_a_type: dcim.interface
+  termination_a:
+    device: sodola01
+    name: MGI11
+  termination_b_type: dcim.interface
+  termination_b:
+    device: mnbox01
+    name: kube0
+  type: cat7
+  status: connected
+  color: "000000"
+  length: 50
+  length_unit: cm
+
+- termination_a_type: dcim.interface
+  termination_a:
+    device: sodola01
+    name: MGI12
+  termination_b_type: dcim.interface
+  termination_b:
+    device: mnbox01
+    name: ceph0
+  type: cat7
+  status: connected
+  color: "000000"
+  length: 50
+  length_unit: cm
+
+- termination_a_type: dcim.interface
+  termination_a:
+    device: sodola01
+    name: MGI13
+  termination_b_type: dcim.interface
+  termination_b:
+    device: mnbox02
+    name: kube0
+  type: cat7
+  status: connected
+  color: "000000"
+  length: 50
+  length_unit: cm
+
+- termination_a_type: dcim.interface
+  termination_a:
+    device: sodola01
+    name: MGI14
+  termination_b_type: dcim.interface
+  termination_b:
+    device: mnbox02
+    name: ceph0
+  type: cat7
+  status: connected
+  color: "000000"
+  length: 50
+  length_unit: cm
+
+- termination_a_type: dcim.interface
+  termination_a:
+    device: sodola01
+    name: TE1
+  termination_b_type: dcim.interface
+  termination_b:
+    device: sodola02
+    name: TE5
+  type: dac-active
+  status: connected
+  color: "000000"
+  length: 1
+  length_unit: m
+
+- termination_a_type: dcim.interface
+  termination_a:
+    device: sodola01
+    name: TE2
+  termination_b_type: dcim.interface
+  termination_b:
+    device: sodola02
+    name: TE6
+  type:  dac-active
+  status: connected
+  color: "000000"
+  length: 1
+  length_unit: m
+
+

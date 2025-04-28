@@ -1,0 +1,57 @@
+---
+netbox_device_interfaces_mnbox01:
+
+  - name: "kube"
+    device: "mnbox01"
+    type: "Bridge"
+
+  - name: "ceph"
+    device: "mnbox01"
+    type: "Bridge"
+
+  - name: "mgmt0"
+    device: "mnbox01"
+    type: "Virtual"
+    bridge:
+      name: "kube"
+      device: "mnbox01"
+    duplex: "auto"
+    mtu: 1500
+    mode: "Access"
+    untagged_vlan: "hypervisor"
+
+  - name: "kube0"
+    device: "mnbox01"
+    type: "2.5GBase-T (2.5GE)"
+    bridge:
+      name: "kube"
+      device: "mnbox01"
+    duplex: "auto"
+    primary_mac_address: "{{ mac_mnbox01_kube0 }}"
+    mtu: 1500
+
+  - name: "ceph0"
+    device: "mnbox01"
+    type: "2.5GBase-T (2.5GE)"
+    bridge:
+      name: "ceph"
+      device: "mnbox01"
+    duplex: "auto"
+    primary_mac_address: "{{ mac_mnbox01_ceph0 }}"
+    mtu: 1500
+
+  - name: "te1"
+    device: "mnbox01"
+    type: "SFP+ (10GE)"
+    duplex: "auto"
+      #    mac_address: "{{ mac_mnbox01_te1 }}"
+    mtu: 1500
+
+  - name: "te2"
+    device: "mnbox01"
+    type: "SFP+ (10GE)"
+    duplex: "auto"
+      #    mac_address: "{{ mac_mnbox01_te2 }}"
+    mtu: 1500
+
+

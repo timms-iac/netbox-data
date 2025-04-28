@@ -1,0 +1,14 @@
+---
+netbox_devices_mleeda01:
+  - name: "mleeda01"
+    device_type: "mlkvm10"
+    device_role: "kvmswitch"
+    platform: "mleos"
+    site: "BER1"
+    location: "Rack"
+    custom_fields:
+      SupplierWebpage: "{{ mleeda01_SupplierWebpage }}" 
+      SupplierOrder: "{{ mleeda01_SupplierOrder }}"
+    description: "10 Port KVM Switch"
+    airflow: "passive"
+

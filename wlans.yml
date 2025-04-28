@@ -1,0 +1,47 @@
+---
+netbox_wireless_lans:
+  - ssid: "{{ ssid_android }}"
+    auth_psk: "{{ psk_android }}"
+    auth_cipher: aes
+    auth_type: wpa-personal
+    vlan:
+      name: "Android"
+      site: "BER1"
+  - ssid: "{{ ssid_iot }}"
+    auth_psk: "{{ psk_iot }}"
+    auth_cipher: aes
+    auth_type: wpa-personal
+    vlan:
+      name: "iot"
+      site: "BER1"
+  - ssid: "{{ ssid_shelly }}"
+    auth_psk: "{{ psk_shelly }}"
+    auth_cipher: aes
+    auth_type: wpa-personal
+    vlan:
+      name: "Shelly"
+      site: "BER1"
+  - ssid: "{{ ssid_work }}"
+    auth_psk: "{{ psk_work }}"
+    auth_cipher: aes
+    auth_type: wpa-personal
+    vlan:
+      name: "Work"
+      site: "BER1"
+  - ssid: "{{ ssid_dmz }}"
+    auth_psk: "{{ psk_dmz }}"
+    auth_cipher: aes
+    auth_type: wpa-personal
+    vlan:
+      name: "dmz"
+      site: "BER1"
+  - ssid: "{{ ssid_guest }}"
+    auth_psk: "{{ psk_guest }}"
+    auth_cipher: aes
+    auth_type: wpa-personal
+    vlan:
+      name: "guest"
+      site: "BER1"
+
+
+

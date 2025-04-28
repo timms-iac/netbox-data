@@ -1,0 +1,38 @@
+---
+netbox_device_types_router:
+  - model: "Archer C7 v5"
+    manufacturer: "TP-Link"
+    slug: "tlarcherc7"
+    part_number: "ASIN: B00BUSDVBQ"
+    full_depth: False
+  - model: "Archer C6 v2 (EU/RU/JP)"
+    manufacturer: "TP-Link"
+    slug: "tlarcherc6"
+    part_number: "ASIN: B07GVR9TG7"
+    full_depth: False
+  - model: "Fritz!Box 7690"
+    manufacturer: "AVM"
+    slug: "avm7690"
+    part_number: "ASIN: B0D63DSFJ6"
+    full_depth: False
+  - model: "Fritz!Box 7490"
+    manufacturer: "AVM"
+    slug: "avm7490"
+    part_number: "ASIN: B01LXPJCQN"
+    full_depth: False
+  - model: "Fritz!Powerline 1220"
+    manufacturer: "AVM"
+    slug: "avm1220"
+    part_number: "ASIN: B0752V1XFG"
+    full_depth: False
+  - model: "Fritz!Powerline 1260"
+    manufacturer: "AVM"
+    slug: "avm1260"
+    part_number: "ASIN: B0752V1XFG"
+    full_depth: False
+  - model: "Fritz!Repeater 1750E"
+    manufacturer: "AVM"
+    slug: "avm1750e"
+    part_number: "ASIN: B00N80IK88"
+    full_depth: False
+

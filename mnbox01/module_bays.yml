@@ -1,0 +1,51 @@
+---
+netbox_module_bays_mnbox01:
+  - name: "ram0"
+    description: "DDR5 SODIMM Slot0"
+    device: "mnbox01"
+
+  - name: "nvme0"
+    description: "M2 NVMe Slot0"
+    device: "mnbox01"
+
+  - name: "nvme1"
+    description: "M2 NVMe Slot1"
+    device: "mnbox01"
+
+  - name: "usb0"
+    description: "USB C"
+    device: "mnbox01"
+
+  - name: "usb1"
+    description: "USB 3.2 Gen2"
+    device: "mnbox01"
+
+  - name: "usb2"
+    description: "USB 2.0"
+    device: "mnbox01"
+
+  - name: "usb3"
+    description: "USB 2.0"
+    device: "mnbox01"
+
+  - name: "tf0"
+    description: "TF Card Slot"
+    device: "mnbox01"
+
+  - name: "sfp0"
+    description: "SFP+ 10GbE Intel 82599ES"
+    device: "mnbox01"
+
+  - name: "sfp1"
+    description: "SFP+ 10GbE Intel 82599ES"
+    device: "mnbox01"
+
+  - name: "eth0"
+    description: "2.5GbE LAN Intel i226V"
+    device: "mnbox01"
+
+  - name: "eth1"
+    description: "2.5GbE LAN Intel i226V"
+    device: "mnbox01"
+
+

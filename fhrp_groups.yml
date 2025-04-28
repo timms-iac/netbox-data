@@ -1,0 +1,114 @@
+---
+netbox_fhrp_groups:
+  - protocol: "vrrp2"
+    group_id: 1
+    description: "mgmt1"
+      #    custom_fields:
+      #      name: "mgmt1"
+      #      comment: "state BACKUP"
+  - protocol: "vrrp2"
+    group_id: 2
+    description: "dmz1"
+  - protocol: "vrrp2"
+    group_id: 50
+    description: "android1"
+  - protocol: "vrrp2"
+    group_id: 100
+    description: "work1"
+  - protocol: "vrrp2"
+    group_id: 150
+    description: "server1"
+  - protocol: "vrrp2"
+    group_id: 200
+    description: "test1"
+  - protocol: "vrrp2"
+    group_id: 170
+    description: "shelly1"
+  - protocol: "vrrp2"
+    group_id: 49
+    description: "mgmt2"
+      #    custom_fields:
+      #      name: "mgmt1"
+      #      comment: "state BACKUP"
+  - protocol: "vrrp2"
+    group_id: 48
+    description: "dmz2"
+  - protocol: "vrrp2"
+    group_id: 99
+    description: "android2"
+  - protocol: "vrrp2"
+    group_id: 149
+    description: "work2"
+  - protocol: "vrrp2"
+    group_id: 199
+    description: "server2"
+  - protocol: "vrrp2"
+    group_id: 249
+    description: "test2"
+  - protocol: "vrrp2"
+    group_id: 179
+    description: "shelly2"
+
+  - protocol: "vrrp2"
+    group_id: 2002
+    description: "dmz for dev-fw"
+  - protocol: "vrrp2"
+    group_id: 2502
+    description: "dmz for prod-fw"
+  - protocol: "vrrp2"
+    group_id: 2005
+    description: "hypervisor for dev-fw"
+  - protocol: "vrrp2"
+    group_id: 2505
+    description: "hypervisor for prod-fw"
+  - protocol: "vrrp2"
+    group_id: 2006
+    description: "firewall for dev-fw"
+  - protocol: "vrrp2"
+    group_id: 2506
+    description: "firewall for prod-fw"
+  - protocol: "vrrp2"
+    group_id: 2040
+    description: "devdmzmgmt for dev-fw"
+  - protocol: "vrrp2"
+    group_id: 2540
+    description: "proddmzmgmt for prod-fw"
+  - protocol: "vrrp2"
+    group_id: 2041
+    description: "devdmzsvc for dev-fw"
+  - protocol: "vrrp2"
+    group_id: 2541
+    description: "proddmzsvc for prod-fw"
+  - protocol: "vrrp2"
+    group_id: 2020
+    description: "devk8smgmt for dev-fw"
+  - protocol: "vrrp2"
+    group_id: 2520
+    description: "prodk8smgmt for prod-fw"
+  - protocol: "vrrp2"
+    group_id: 2021
+    description: "devk8ssvc for dev-fw"
+  - protocol: "vrrp2"
+    group_id: 2521
+    description: "prodk8ssvc for prod-fw"
+  - protocol: "vrrp2"
+    group_id: 2030
+    description: "devosmgmt for dev-fw"
+  - protocol: "vrrp2"
+    group_id: 2530
+    description: "prodosmgmt for prod-fw"
+  - protocol: "vrrp2"
+    group_id: 2031
+    description: "devossvc for dev-fw"
+  - protocol: "vrrp2"
+    group_id: 2531
+    description: "prodossvc for prod-fw"
+  - protocol: "vrrp2"
+    group_id: 2032
+    description: "devosprov for dev-fw"
+  - protocol: "vrrp2"
+    group_id: 2532
+    description: "prodosprov for prod-fw"
+
+
+

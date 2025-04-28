@@ -1,0 +1,22 @@
+---
+netbox_prefixes_prod_os:
+  - prefix: "172.25.30.0/24"
+    description: "Production OpenStack Network"
+    vlan:
+      name: "prodosmgmt"
+    vrf: "prodosmgmt"
+  - prefix: "172.25.31.0/24"
+    description: "Production OpenStack Service Network"
+    vlan:
+      name: "prodossvc"
+    vrf: "prodossvc"
+  - prefix: "172.25.32.0/24"
+    description: "Production OpenStack Provider Network"
+    vlan:
+      name: "prodosprov"
+    vrf: "prodosprov"
+  - prefix: "172.25.38.0/24"
+    description: "Production OpenStack Ceph Network"
+    vlan:
+      name: "prodosceph"
+

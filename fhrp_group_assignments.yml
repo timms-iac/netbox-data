@@ -1,0 +1,412 @@
+---
+netbox_fhrp_group_assignments:
+  - fhrp_group: '{{ query("netbox.netbox.nb_lookup", "fhrp-groups",
+        api_filter="group_id=2002",
+        api_endpoint="http://" + netbox_loadbalancer_ip,
+        token=netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    interface_type: "virtualization.vminterface"
+    interface_id: '{{ query("netbox.netbox.nb_lookup", "virtualization-interfaces",
+        api_filter="name=dmz virtual_machine=dev-fw01",
+        api_endpoint="http://" + netbox_loadbalancer_ip,
+        token= netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    priority: 15
+  - fhrp_group: '{{ query("netbox.netbox.nb_lookup", "fhrp-groups",
+        api_filter="group_id=2002",
+        api_endpoint="http://" + netbox_loadbalancer_ip,
+        token=netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    interface_type: "virtualization.vminterface"
+    interface_id: '{{ query("netbox.netbox.nb_lookup", "virtualization-interfaces",
+        api_filter="name=dmz virtual_machine=dev-fw02",
+        api_endpoint="http://" + netbox_loadbalancer_ip,
+        token= netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    priority: 17
+  - fhrp_group: '{{ query("netbox.netbox.nb_lookup", "fhrp-groups",
+        api_filter="group_id=2502",
+        api_endpoint="http://" + netbox_loadbalancer_ip,
+        token=netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    interface_type: "virtualization.vminterface"
+    interface_id: '{{ query("netbox.netbox.nb_lookup", "virtualization-interfaces",
+        api_filter="name=dmz virtual_machine=prod-fw01",
+        api_endpoint="http://" + netbox_loadbalancer_ip,
+        token= netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    priority: 17
+  - fhrp_group: '{{ query("netbox.netbox.nb_lookup", "fhrp-groups",
+        api_filter="group_id=2502",
+        api_endpoint="http://" + netbox_loadbalancer_ip,
+        token=netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    interface_type: "virtualization.vminterface"
+    interface_id: '{{ query("netbox.netbox.nb_lookup", "virtualization-interfaces",
+        api_filter="name=dmz virtual_machine=prod-fw02",
+        api_endpoint="http://" + netbox_loadbalancer_ip,
+        token= netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    priority: 15
+
+  - fhrp_group: '{{ query("netbox.netbox.nb_lookup", "fhrp-groups",
+        api_filter="group_id=2005",
+        api_endpoint="http://" + netbox_loadbalancer_ip,
+        token=netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    interface_type: "virtualization.vminterface"
+    interface_id: '{{ query("netbox.netbox.nb_lookup", "virtualization-interfaces",
+        api_filter="name=hypervisor virtual_machine=dev-fw01",
+        api_endpoint="http://" + netbox_loadbalancer_ip,
+        token= netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    priority: 15
+  - fhrp_group: '{{ query("netbox.netbox.nb_lookup", "fhrp-groups",
+        api_filter="group_id=2005",
+        api_endpoint="http://" + netbox_loadbalancer_ip,
+        token=netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    interface_type: "virtualization.vminterface"
+    interface_id: '{{ query("netbox.netbox.nb_lookup", "virtualization-interfaces",
+        api_filter="name=hypervisor virtual_machine=dev-fw02",
+        api_endpoint="http://" + netbox_loadbalancer_ip,
+        token= netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    priority: 17
+  - fhrp_group: '{{ query("netbox.netbox.nb_lookup", "fhrp-groups",
+        api_filter="group_id=2505",
+        api_endpoint="http://" + netbox_loadbalancer_ip,
+        token=netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    interface_type: "virtualization.vminterface"
+    interface_id: '{{ query("netbox.netbox.nb_lookup", "virtualization-interfaces",
+        api_filter="name=hypervisor virtual_machine=prod-fw01",
+        api_endpoint="http://" + netbox_loadbalancer_ip,
+        token= netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    priority: 17
+  - fhrp_group: '{{ query("netbox.netbox.nb_lookup", "fhrp-groups",
+        api_filter="group_id=2505",
+        api_endpoint="http://" + netbox_loadbalancer_ip,
+        token=netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    interface_type: "virtualization.vminterface"
+    interface_id: '{{ query("netbox.netbox.nb_lookup", "virtualization-interfaces",
+        api_filter="name=hypervisor virtual_machine=prod-fw02",
+        api_endpoint="http://" + netbox_loadbalancer_ip,
+        token= netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    priority: 15
+
+  - fhrp_group: '{{ query("netbox.netbox.nb_lookup", "fhrp-groups",
+        api_filter="group_id=2006",
+        api_endpoint="http://" + netbox_loadbalancer_ip,
+        token=netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    interface_type: "virtualization.vminterface"
+    interface_id: '{{ query("netbox.netbox.nb_lookup", "virtualization-interfaces",
+        api_filter="name=firewall virtual_machine=dev-fw01",
+        api_endpoint="http://" + netbox_loadbalancer_ip,
+        token= netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    priority: 15
+  - fhrp_group: '{{ query("netbox.netbox.nb_lookup", "fhrp-groups",
+        api_filter="group_id=2006",
+        api_endpoint="http://" + netbox_loadbalancer_ip,
+        token=netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    interface_type: "virtualization.vminterface"
+    interface_id: '{{ query("netbox.netbox.nb_lookup", "virtualization-interfaces",
+        api_filter="name=firewall virtual_machine=dev-fw02",
+        api_endpoint="http://" + netbox_loadbalancer_ip,
+        token= netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    priority: 17
+  - fhrp_group: '{{ query("netbox.netbox.nb_lookup", "fhrp-groups",
+        api_filter="group_id=2506",
+        api_endpoint="http://" + netbox_loadbalancer_ip,
+        token=netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    interface_type: "virtualization.vminterface"
+    interface_id: '{{ query("netbox.netbox.nb_lookup", "virtualization-interfaces",
+        api_filter="name=firewall virtual_machine=prod-fw01",
+        api_endpoint="http://" + netbox_loadbalancer_ip,
+        token= netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    priority: 17
+  - fhrp_group: '{{ query("netbox.netbox.nb_lookup", "fhrp-groups",
+        api_filter="group_id=2506",
+        api_endpoint="http://" + netbox_loadbalancer_ip,
+        token=netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    interface_type: "virtualization.vminterface"
+    interface_id: '{{ query("netbox.netbox.nb_lookup", "virtualization-interfaces",
+        api_filter="name=firewall virtual_machine=prod-fw02",
+        api_endpoint="http://" + netbox_loadbalancer_ip,
+        token= netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    priority: 15
+
+  - fhrp_group: '{{ query("netbox.netbox.nb_lookup", "fhrp-groups",
+        api_filter="group_id=2040",
+        api_endpoint="http://" + netbox_loadbalancer_ip,
+        token=netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    interface_type: "virtualization.vminterface"
+    interface_id: '{{ query("netbox.netbox.nb_lookup", "virtualization-interfaces",
+        api_filter="name=devdmzmgmt virtual_machine=dev-fw01",
+        api_endpoint="http://" + netbox_loadbalancer_ip,
+        token= netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    priority: 15
+  - fhrp_group: '{{ query("netbox.netbox.nb_lookup", "fhrp-groups",
+        api_filter="group_id=2040",
+        api_endpoint="http://" + netbox_loadbalancer_ip,
+        token=netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    interface_type: "virtualization.vminterface"
+    interface_id: '{{ query("netbox.netbox.nb_lookup", "virtualization-interfaces",
+        api_filter="name=devdmzmgmt virtual_machine=dev-fw02",
+        api_endpoint="http://" + netbox_loadbalancer_ip,
+        token= netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    priority: 17
+  - fhrp_group: '{{ query("netbox.netbox.nb_lookup", "fhrp-groups",
+        api_filter="group_id=2540",
+        api_endpoint="http://" + netbox_loadbalancer_ip,
+        token=netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    interface_type: "virtualization.vminterface"
+    interface_id: '{{ query("netbox.netbox.nb_lookup", "virtualization-interfaces",
+        api_filter="name=proddmzmgmt virtual_machine=prod-fw01",
+        api_endpoint="http://" + netbox_loadbalancer_ip,
+        token= netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    priority: 17
+  - fhrp_group: '{{ query("netbox.netbox.nb_lookup", "fhrp-groups",
+        api_filter="group_id=2540",
+        api_endpoint="http://" + netbox_loadbalancer_ip,
+        token=netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    interface_type: "virtualization.vminterface"
+    interface_id: '{{ query("netbox.netbox.nb_lookup", "virtualization-interfaces",
+        api_filter="name=proddmzmgmt virtual_machine=prod-fw02",
+        api_endpoint="http://" + netbox_loadbalancer_ip,
+        token= netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    priority: 15
+
+  - fhrp_group: '{{ query("netbox.netbox.nb_lookup", "fhrp-groups",
+        api_filter="group_id=2041",
+        api_endpoint="http://" + netbox_loadbalancer_ip,
+        token=netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    interface_type: "virtualization.vminterface"
+    interface_id: '{{ query("netbox.netbox.nb_lookup", "virtualization-interfaces",
+        api_filter="name=devdmzsvc virtual_machine=dev-fw01",
+        api_endpoint="http://" + netbox_loadbalancer_ip,
+        token= netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    priority: 15
+  - fhrp_group: '{{ query("netbox.netbox.nb_lookup", "fhrp-groups",
+        api_filter="group_id=2041",
+        api_endpoint="http://" + netbox_loadbalancer_ip,
+        token=netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    interface_type: "virtualization.vminterface"
+    interface_id: '{{ query("netbox.netbox.nb_lookup", "virtualization-interfaces",
+        api_filter="name=devdmzsvc virtual_machine=dev-fw02",
+        api_endpoint="http://" + netbox_loadbalancer_ip,
+        token= netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    priority: 17
+  - fhrp_group: '{{ query("netbox.netbox.nb_lookup", "fhrp-groups",
+        api_filter="group_id=2541",
+        api_endpoint="http://" + netbox_loadbalancer_ip,
+        token=netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    interface_type: "virtualization.vminterface"
+    interface_id: '{{ query("netbox.netbox.nb_lookup", "virtualization-interfaces",
+        api_filter="name=proddmzsvc virtual_machine=prod-fw01",
+        api_endpoint="http://" + netbox_loadbalancer_ip,
+        token= netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    priority: 17
+  - fhrp_group: '{{ query("netbox.netbox.nb_lookup", "fhrp-groups",
+        api_filter="group_id=2541",
+        api_endpoint="http://" + netbox_loadbalancer_ip,
+        token=netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    interface_type: "virtualization.vminterface"
+    interface_id: '{{ query("netbox.netbox.nb_lookup", "virtualization-interfaces",
+        api_filter="name=proddmzsvc virtual_machine=prod-fw02",
+        api_endpoint="http://" + netbox_loadbalancer_ip,
+        token= netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    priority: 15
+
+  - fhrp_group: '{{ query("netbox.netbox.nb_lookup", "fhrp-groups",
+        api_filter="group_id=2020",
+        api_endpoint="http://" + netbox_loadbalancer_ip,
+        token=netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    interface_type: "virtualization.vminterface"
+    interface_id: '{{ query("netbox.netbox.nb_lookup", "virtualization-interfaces",
+        api_filter="name=devk8smgmt virtual_machine=dev-fw01",
+        api_endpoint="http://" + netbox_loadbalancer_ip,
+        token= netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    priority: 15
+  - fhrp_group: '{{ query("netbox.netbox.nb_lookup", "fhrp-groups",
+        api_filter="group_id=2020",
+        api_endpoint="http://" + netbox_loadbalancer_ip,
+        token=netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    interface_type: "virtualization.vminterface"
+    interface_id: '{{ query("netbox.netbox.nb_lookup", "virtualization-interfaces",
+        api_filter="name=devk8smgmt virtual_machine=dev-fw02",
+        api_endpoint="http://" + netbox_loadbalancer_ip,
+        token= netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    priority: 17
+  - fhrp_group: '{{ query("netbox.netbox.nb_lookup", "fhrp-groups",
+        api_filter="group_id=2520",
+        api_endpoint="http://" + netbox_loadbalancer_ip,
+        token=netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    interface_type: "virtualization.vminterface"
+    interface_id: '{{ query("netbox.netbox.nb_lookup", "virtualization-interfaces",
+        api_filter="name=prodk8smgmt virtual_machine=prod-fw01",
+        api_endpoint="http://" + netbox_loadbalancer_ip,
+        token= netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    priority: 17
+  - fhrp_group: '{{ query("netbox.netbox.nb_lookup", "fhrp-groups",
+        api_filter="group_id=2520",
+        api_endpoint="http://" + netbox_loadbalancer_ip,
+        token=netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    interface_type: "virtualization.vminterface"
+    interface_id: '{{ query("netbox.netbox.nb_lookup", "virtualization-interfaces",
+        api_filter="name=prodk8smgmt virtual_machine=prod-fw02",
+        api_endpoint="http://" + netbox_loadbalancer_ip,
+        token= netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    priority: 15
+
+  - fhrp_group: '{{ query("netbox.netbox.nb_lookup", "fhrp-groups",
+        api_filter="group_id=2021",
+        api_endpoint="http://" + netbox_loadbalancer_ip,
+        token=netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    interface_type: "virtualization.vminterface"
+    interface_id: '{{ query("netbox.netbox.nb_lookup", "virtualization-interfaces",
+        api_filter="name=devk8ssvc virtual_machine=dev-fw01",
+        api_endpoint="http://" + netbox_loadbalancer_ip,
+        token= netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    priority: 15
+  - fhrp_group: '{{ query("netbox.netbox.nb_lookup", "fhrp-groups",
+        api_filter="group_id=2021",
+        api_endpoint="http://" + netbox_loadbalancer_ip,
+        token=netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    interface_type: "virtualization.vminterface"
+    interface_id: '{{ query("netbox.netbox.nb_lookup", "virtualization-interfaces",
+        api_filter="name=devk8ssvc virtual_machine=dev-fw02",
+        api_endpoint="http://" + netbox_loadbalancer_ip,
+        token= netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    priority: 17
+  - fhrp_group: '{{ query("netbox.netbox.nb_lookup", "fhrp-groups",
+        api_filter="group_id=2521",
+        api_endpoint="http://" + netbox_loadbalancer_ip,
+        token=netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    interface_type: "virtualization.vminterface"
+    interface_id: '{{ query("netbox.netbox.nb_lookup", "virtualization-interfaces",
+        api_filter="name=prodk8ssvc virtual_machine=prod-fw01",
+        api_endpoint="http://" + netbox_loadbalancer_ip,
+        token= netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    priority: 17
+  - fhrp_group: '{{ query("netbox.netbox.nb_lookup", "fhrp-groups",
+        api_filter="group_id=2521",
+        api_endpoint="http://" + netbox_loadbalancer_ip,
+        token=netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    interface_type: "virtualization.vminterface"
+    interface_id: '{{ query("netbox.netbox.nb_lookup", "virtualization-interfaces",
+        api_filter="name=prodk8ssvc virtual_machine=prod-fw02",
+        api_endpoint="http://" + netbox_loadbalancer_ip, 
+        token= netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    priority: 15
+
+  - fhrp_group: '{{ query("netbox.netbox.nb_lookup", "fhrp-groups",
+        api_filter="group_id=2030",
+        api_endpoint="http://" + netbox_loadbalancer_ip,
+        token=netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    interface_type: "virtualization.vminterface"
+    interface_id: '{{ query("netbox.netbox.nb_lookup", "virtualization-interfaces",
+        api_filter="name=devosmgmt virtual_machine=dev-fw01",
+        api_endpoint="http://" + netbox_loadbalancer_ip,
+        token= netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    priority: 15
+  - fhrp_group: '{{ query("netbox.netbox.nb_lookup", "fhrp-groups",
+        api_filter="group_id=2030",
+        api_endpoint="http://" + netbox_loadbalancer_ip,
+        token=netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    interface_type: "virtualization.vminterface"
+    interface_id: '{{ query("netbox.netbox.nb_lookup", "virtualization-interfaces",
+        api_filter="name=devosmgmt virtual_machine=dev-fw02",
+        api_endpoint="http://" + netbox_loadbalancer_ip,
+        token= netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    priority: 17
+  - fhrp_group: '{{ query("netbox.netbox.nb_lookup", "fhrp-groups",
+        api_filter="group_id=2530",
+        api_endpoint="http://" + netbox_loadbalancer_ip,
+        token=netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    interface_type: "virtualization.vminterface"
+    interface_id: '{{ query("netbox.netbox.nb_lookup", "virtualization-interfaces",
+        api_filter="name=prodosmgmt virtual_machine=prod-fw01",
+        api_endpoint="http://" + netbox_loadbalancer_ip,
+        token= netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    priority: 17
+  - fhrp_group: '{{ query("netbox.netbox.nb_lookup", "fhrp-groups",
+        api_filter="group_id=2530",
+        api_endpoint="http://" + netbox_loadbalancer_ip,
+        token=netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    interface_type: "virtualization.vminterface"
+    interface_id: '{{ query("netbox.netbox.nb_lookup", "virtualization-interfaces",
+        api_filter="name=prodosmgmt virtual_machine=prod-fw02",
+        api_endpoint="http://" + netbox_loadbalancer_ip, 
+        token= netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    priority: 15
+
+  - fhrp_group: '{{ query("netbox.netbox.nb_lookup", "fhrp-groups",
+        api_filter="group_id=2031",
+        api_endpoint="http://" + netbox_loadbalancer_ip,
+        token=netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    interface_type: "virtualization.vminterface"
+    interface_id: '{{ query("netbox.netbox.nb_lookup", "virtualization-interfaces",
+        api_filter="name=devossvc virtual_machine=dev-fw01",
+        api_endpoint="http://" + netbox_loadbalancer_ip,
+        token= netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    priority: 15
+  - fhrp_group: '{{ query("netbox.netbox.nb_lookup", "fhrp-groups",
+        api_filter="group_id=2031",
+        api_endpoint="http://" + netbox_loadbalancer_ip,
+        token=netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    interface_type: "virtualization.vminterface"
+    interface_id: '{{ query("netbox.netbox.nb_lookup", "virtualization-interfaces",
+        api_filter="name=devossvc virtual_machine=dev-fw02",
+        api_endpoint="http://" + netbox_loadbalancer_ip,      
+        token= netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    priority: 17
+  - fhrp_group: '{{ query("netbox.netbox.nb_lookup", "fhrp-groups",
+        api_filter="group_id=2531",
+        api_endpoint="http://" + netbox_loadbalancer_ip,    
+        token=netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    interface_type: "virtualization.vminterface"
+    interface_id: '{{ query("netbox.netbox.nb_lookup", "virtualization-interfaces",
+        api_filter="name=prodossvc virtual_machine=prod-fw01",
+        api_endpoint="http://" + netbox_loadbalancer_ip,
+        token= netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    priority: 17
+  - fhrp_group: '{{ query("netbox.netbox.nb_lookup", "fhrp-groups",
+        api_filter="group_id=2531",
+        api_endpoint="http://" + netbox_loadbalancer_ip,
+        token=netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    interface_type: "virtualization.vminterface"
+    interface_id: '{{ query("netbox.netbox.nb_lookup", "virtualization-interfaces",
+        api_filter="name=prodossvc virtual_machine=prod-fw02",
+        api_endpoint="http://" + netbox_loadbalancer_ip, 
+        token= netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    priority: 15
+
+  - fhrp_group: '{{ query("netbox.netbox.nb_lookup", "fhrp-groups",
+        api_filter="group_id=2032",
+        api_endpoint="http://" + netbox_loadbalancer_ip,
+        token=netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    interface_type: "virtualization.vminterface"
+    interface_id: '{{ query("netbox.netbox.nb_lookup", "virtualization-interfaces",
+        api_filter="name=devosprov virtual_machine=dev-fw01",
+        api_endpoint="http://" + netbox_loadbalancer_ip,
+        token= netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    priority: 15
+  - fhrp_group: '{{ query("netbox.netbox.nb_lookup", "fhrp-groups",
+        api_filter="group_id=2032",
+        api_endpoint="http://" + netbox_loadbalancer_ip,
+        token=netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    interface_type: "virtualization.vminterface"
+    interface_id: '{{ query("netbox.netbox.nb_lookup", "virtualization-interfaces",
+        api_filter="name=devosprov virtual_machine=dev-fw02",
+        api_endpoint="http://" + netbox_loadbalancer_ip,      
+        token= netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    priority: 17
+  - fhrp_group: '{{ query("netbox.netbox.nb_lookup", "fhrp-groups",
+        api_filter="group_id=2532",
+        api_endpoint="http://" + netbox_loadbalancer_ip,    
+        token=netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    interface_type: "virtualization.vminterface"
+    interface_id: '{{ query("netbox.netbox.nb_lookup", "virtualization-interfaces",
+        api_filter="name=prodosprov virtual_machine=prod-fw01",
+        api_endpoint="http://" + netbox_loadbalancer_ip,
+        token= netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    priority: 17
+  - fhrp_group: '{{ query("netbox.netbox.nb_lookup", "fhrp-groups",
+        api_filter="group_id=2532",
+        api_endpoint="http://" + netbox_loadbalancer_ip,
+        token=netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    interface_type: "virtualization.vminterface"
+    interface_id: '{{ query("netbox.netbox.nb_lookup", "virtualization-interfaces",
+        api_filter="name=prodosprov virtual_machine=prod-fw02",
+        api_endpoint="http://" + netbox_loadbalancer_ip, 
+        token= netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    priority: 15
+

@@ -1,0 +1,14 @@
+---
+netbox_devices_tplink02:
+  - name: "tplink02"
+    device_type: "tlsg108e"
+    device_role: "Switch"
+    platform: "tpos"
+    site: "BER1"
+    location: "Rack"
+    custom_fields:
+      webmanagement: http://tplink02/
+      SupplierWebpage: "{{ tplink02_SupplierWebpage }}" 
+      SupplierOrder: "{{ tplink02_SupplierOrder }}"
+    primary_ip4: "172.25.1.22"
+

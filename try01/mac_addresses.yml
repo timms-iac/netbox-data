@@ -1,0 +1,15 @@
+---
+netbox_mac_addresses_try01:
+  - assigned_object:
+      name: "mgmt0"
+      device: "try01"
+    mac_address: "{{ mac_try01_mgmt0 }}"
+  - assigned_object:
+      name: "kube0"
+      device: "try01"
+    mac_address: "{{ mac_try01_kube0 }}"
+  - assigned_object:
+      name: "ceph0"
+      device: "try01"
+    mac_address: "{{ mac_try01_ceph0 }}"
+

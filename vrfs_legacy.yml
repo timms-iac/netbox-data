@@ -1,0 +1,9 @@
+---
+netbox_vrfs_legacy:
+  - name: "Mgmt"
+  - name: "Android"
+  - name: "Work"
+  - name: "Server"
+  - name: "Test"
+  - name: "Guest"
+  - name: "Shelly"

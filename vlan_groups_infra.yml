@@ -1,0 +1,11 @@
+---
+netbox_vlan_groups_infra:
+  - name: "infra"
+    scope: "BER1"
+    scope_type: "dcim.site"
+    description: "Infrastructure Networks"
+    vid_ranges: [
+      [1,49],
+      [1900,1999]
+    ]
+

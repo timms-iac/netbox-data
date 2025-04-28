@@ -1,0 +1,11 @@
+---
+netbox_mac_addresses_mnbox02:
+  - assigned_object:
+      name: "kube0"
+      device: "mnbox02"
+    mac_address: "{{ mac_mnbox02_kube0 }}"
+  - assigned_object:
+      name: "ceph0"
+      device: "mnbox02"
+    mac_address: "{{ mac_mnbox02_ceph0 }}"
+

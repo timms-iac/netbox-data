@@ -1,0 +1,38 @@
+---
+netbox_device_roles:
+  - name: "Desktop"
+    slug: "desktop"
+    vm_role: false
+  - name: "Laptop"
+    slug: "laptop"
+    vm_role: false
+  - name: "Server"
+    slug: "server"
+    vm_role: true
+  - name: "Switch"
+    slug: "switch"
+    vm_role: false
+  - name: "Router"
+    slug: "router"
+    vm_role: false
+  - name: "Kubernetes Controlplane"
+    slug: "controlplane"
+    vm_role: true
+  - name: "Kubernetes Worker"
+    slug: "worker"
+    vm_role: true
+  - name: "Firewall"
+    slug: "firewall"
+    vm_role: true
+  - name: "Repeater"
+    slug: "repeater"
+    vm_role: false
+  - name: "KVM Switch"
+    slug: "kvmswitch"
+    vm_role: false
+  - name: "IOT Device"
+    slug: "iotdevice"
+    vm_role: false
+
+
+

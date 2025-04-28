@@ -1,0 +1,43 @@
+---
+netbox_modules_aoo01:
+  - device: "aoo01"
+    module_bay:
+      name: "ram0"
+      device: "aoo01"
+    module_type: "ddr4-16"
+
+  - device: "aoo01"
+    module_bay:
+      name: "ram1"
+      device: "aoo01"
+    module_type: "ddr4-16"
+
+  - device: "aoo01"
+    module_bay:
+      name: "nvme0"
+      device: "aoo01"
+    module_type: "nvme-1000"
+
+  - device: "aoo01"
+    module_bay:
+      name: "nvme1"
+      device: "aoo01"
+    module_type: "nvme-500"
+
+  - device: "aoo01"
+    module_bay:
+      name: "usb0"
+      device: "aoo01"
+    module_type: "usb-lan-25"
+
+  - device: "aoo01"
+    module_bay:
+      name: "usb1"
+      device: "aoo01"
+    module_type: "ultra-fit-256"
+
+  - device: "aoo01"
+    module_bay:
+      name: "usb3"
+      device: "aoo01"
+    module_type: "usb-lan-1"

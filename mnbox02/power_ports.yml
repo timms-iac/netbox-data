@@ -1,0 +1,4 @@
+---
+netbox_power_ports_mnbox02:
+  - name: "dc0"
+    device: "mnbox02"

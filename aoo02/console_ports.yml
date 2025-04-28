@@ -1,0 +1,21 @@
+---
+netbox_console_ports_aoo02:
+  - name: "usb5"
+    device: "aoo02"
+    type: "usb-a"
+    description: "USB 3.2 Gen2"
+
+  - name: "usb6"
+    device: "aoo02"
+    type: "usb-a"
+    description: "USB 3.2 Gen2"
+
+  - name: "hdmi0"
+    device: "aoo02"
+    type: "other"
+    description: "HDMI Monitor Port"
+
+  - name: "dp0"
+    device: "aoo02"
+    type: "other"
+

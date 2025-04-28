@@ -1,0 +1,17 @@
+---
+netbox_devices_try02:
+  - name: "try02"
+    device_type: "trywo4"
+    device_role: "Server"
+    platform: "ubuntu2404"
+    site: "BER1"
+    location: "Rack"
+    cluster: "hypervisor"
+    custom_fields:
+      SupplierWebpage: "{{ try02_SupplierWebpage }}"
+      SupplierOrder: "{{ try02_SupplierOrder }}"
+      OpenVSwitchProtocols:
+        - OpenFlow13
+        - OpenFlow14
+        - OpenFlow15
+

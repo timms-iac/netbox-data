@@ -1,0 +1,4 @@
+---
+netbox_contacts:
+  - name: "{{ default_user_comment }}"
+    email: "{{ default_user_email }}"

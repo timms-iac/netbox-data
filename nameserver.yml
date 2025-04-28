@@ -1,0 +1,10 @@
+---
+netbox_nameservers:
+  - name: 172.25.6.1
+    description: prod-fw1
+  - name: 172.25.6.2
+    description: prod-fw2
+  - name: 172.25.6.3
+    description: dev-fw1
+  - name: 172.25.6.4
+    description: dev-fw2

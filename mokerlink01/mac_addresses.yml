@@ -1,0 +1,7 @@
+---
+netbox_mac_addresses_mokerlink01:
+  - assigned_object:
+      name: "vlan1"
+      device: "mokerlink01"
+    mac_address: "{{ mac_mokerlink01_vlan1 }}"
+

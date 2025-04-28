@@ -1,0 +1,16 @@
+---
+netbox_devices_kiab:
+  - name: "kiab"
+    device_type: "mini8279u"
+    device_role: "Desktop"
+    platform: "Ubuntu"
+    site: "BER1"
+    location: "Desk"
+    custom_fields:
+      SupplierWebpage: "{{ kiab_SupplierWebpage }}" 
+      SupplierOrder: "{{ kiab_SupplierOrder }}"
+      OpenVSwitchProtocols:
+        - OpenFlow13
+        - OpenFlow14
+        - OpenFlow15
+    primary_ip4: "172.16.100.3"

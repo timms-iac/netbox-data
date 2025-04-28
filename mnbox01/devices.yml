@@ -1,0 +1,17 @@
+---
+netbox_devices_mnbox01:
+  - name: "mnbox01"
+    device_type: "n305fw"
+    device_role: "Server"
+    platform: "ubuntu2404"
+    site: "BER1"
+    location: "Rack"
+    cluster: "hypervisor"
+    custom_fields:
+      SupplierWebpage: "{{ mnbox01_SupplierWebpage }}"
+      SupplierOrder: "{{ mnbox01_SupplierOrder }}"
+      OpenVSwitchProtocols:
+        - OpenFlow13
+        - OpenFlow14
+        - OpenFlow15
+

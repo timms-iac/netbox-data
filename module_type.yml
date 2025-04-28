@@ -1,0 +1,52 @@
+---
+netbox_module_types:
+  - model: "ddr4-32"
+    manufacturer: "Crucial"
+    part_number: "CT2K32G4SFD832A"
+    comments: "Crucial RAM CT2K32G4SFD832A 64GB (2x32GB) DDR4 3200MHz CL22 (2933MHz oder 2666MHz) Laptop Arbeitsspeicher Kit"
+
+  - model: "ddr5-32"
+    manufacturer: "Crucial"
+    part_number: "CT32G48C40S5"
+    comments: "Crucial RAM 32GB DDR5 4800MHz CL40 Laptop-Speicher CT32G48C40S5"
+
+  - model: "nvme-1000"
+    manufacturer: "Kingston"
+    part_number: "M.2 2280-SNV3S/1000G"
+    comments: "Kingston NV3 NVMe PCIe 4.0 Interne SSD 1TB M.2 2280-SNV3S/1000G"
+   
+  - model: "nvme-500"
+    manufacturer: "Peladn"
+
+  - model: "ddr4-16"
+    manufacturer: "Aoostar"
+
+  - model: "fit-plus-256"
+    manufacturer: "Samsung"
+    part_number: "MUF-256AB/APC"
+    comments: "Samsung FIT Plus 256GB Typ-A 400 MB/s USB 3.1 Flash Drive (MUF-256AB/APC)"
+
+  - model: "ultra-fit-256"
+    manufacturer: "Sandisk"
+    comments: "SanDisk Ultra Fit USB 3.2 Flash-Laufwerk 256 GB, 400 MB/s Lesen"
+
+  - model: "ultra-fit-128"
+    manufacturer: "Sandisk"
+    comments: "SanDisk Ultra Fit USB 3.2 Flash-Laufwerk 128 GB, 400 MB/s Lesen"
+
+  - model: "extreme-go-256"
+    manufacturer: "Sandisk"
+    comments: "SanDisk 256GB Extreme Go micro SDXC UHS-I-Kaart 256 GB, 200 MB/s"
+
+  - model: "usb-lan-25"
+    manufacturer: "Oliveria"
+    comments: "Oliveria 2.5G USB LAN Adapter, 2-IN-1 USB-C Ethernet Verkabelter Netzwerkadapter 100/1000/2500Mbps LAN Adapter"
+  - model: "usb-lan-1"
+    manufacturer: "TP-Link"
+    comments: "TP-Link UE300 USB auf Ethernet Adapter, USB 3.0 zu RJ45 1000Mbps Ethernet LAN Netzwerkadapter"
+
+  - model: "usb-lan-2"
+    manufacturer: "CableCreation"
+    comments: "CableCreation USB C Ethernet Adapter, USB-C auf RJ45 Netzwerkadapter, Typ-C Gigabit Ethernet Adapter"
+
+

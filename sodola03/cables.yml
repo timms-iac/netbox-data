@@ -1,0 +1,200 @@
+---
+netbox_cables_sodola03:
+  #- termination_a_type: dcim.interface
+  #  termination_a:
+  #    device: sodola03
+  #    name: MGI1
+  #  termination_b_type: dcim.interface
+  #  termination_b:
+  #    device: try01
+  #    name: kube0
+  #  type: cat7
+  #  status: connected
+  #  color: "000000"
+  #  length: 50
+  #  length_unit: cm
+
+- termination_a_type: dcim.interface
+  termination_a:
+    device: sodola03
+    name: MGI2
+  termination_b_type: dcim.interface
+  termination_b:
+    device: fritz7690
+    name: lan1
+  type: cat7
+  status: connected
+  color: "000000"
+  length: 3
+  length_unit: m
+
+- termination_a_type: dcim.interface
+  termination_a:
+    device: sodola03
+    name: MGI3
+  termination_b_type: dcim.interface
+  termination_b:
+    device: fritz7690
+    name: lan3
+  type: cat7
+  status: connected
+  color: "000000"
+  length: 3
+  length_unit: m
+
+- termination_a_type: dcim.interface
+  termination_a:
+    device: sodola03
+    name: MGI4
+  termination_b_type: dcim.interface
+  termination_b:
+    device: kiab
+    name: eth0
+  type: cat7
+  status: connected
+  color: "000000"
+  length: 3
+  length_unit: m
+
+- termination_a_type: dcim.interface
+  termination_a:
+    device: sodola03
+    name: MGI5
+  termination_b_type: dcim.interface
+  termination_b:
+    device: kiab
+    name: eth1
+  type: cat7
+  status: connected
+  color: "000000"
+  length: 3
+  length_unit: m
+
+- termination_a_type: dcim.interface
+  termination_a:
+    device: sodola03
+    name: MGI6
+  termination_b_type: dcim.interface
+  termination_b:
+    device: air6
+    name: enx00e04c680036
+  type: cat7
+  status: connected
+  color: "000000"
+  length: 3
+  length_unit: m
+
+- termination_a_type: dcim.interface
+  termination_a:
+    device: sodola03
+    name: MGI9
+  termination_b_type: dcim.interface
+  termination_b:
+    device: openwrteg1
+    name: wan
+  type: cat7
+  status: connected
+  color: "000000"
+  length: 10
+  length_unit: m
+
+- termination_a_type: dcim.interface
+  termination_a:
+    device: sodola03
+    name: MGI10
+  termination_b_type: dcim.interface
+  termination_b:
+    device: openwrteg2
+    name: wan
+  type: cat7
+  status: connected
+  color: "000000"
+  length: 10
+  length_unit: m
+
+- termination_a_type: dcim.interface
+  termination_a:
+    device: sodola03
+    name: MGI11
+  termination_b_type: dcim.interface
+  termination_b:
+    device: openwrteg3
+    name: wan
+  type: cat7
+  status: connected
+  color: "000000"
+  length: 10
+  length_unit: m
+
+- termination_a_type: dcim.interface
+  termination_a:
+    device: sodola03
+    name: MGI12
+  termination_b_type: dcim.interface
+  termination_b:
+    device: openwrtdg1
+    name: wan
+  type: cat7
+  status: connected
+  color: "000000"
+  length: 10
+  length_unit: m
+
+- termination_a_type: dcim.interface
+  termination_a:
+    device: sodola03
+    name: MGI13
+  termination_b_type: dcim.interface
+  termination_b:
+    device: openwrtkg1
+    name: wan
+  type: cat7
+  status: connected
+  color: "000000"
+  length: 10
+  length_unit: m
+
+- termination_a_type: dcim.interface
+  termination_a:
+    device: sodola03
+    name: MGI14
+  termination_b_type: dcim.interface
+  termination_b:
+    device: openwrtkg2
+    name: wan
+  type: cat7
+  status: connected
+  color: "000000"
+  length: 10
+  length_unit: m
+
+    
+- termination_a_type: dcim.interface
+  termination_a:
+    device: sodola03
+    name: TE1
+  termination_b_type: dcim.interface
+  termination_b:
+    device: sodola02
+    name: TE7
+  type: aoc
+  status: connected
+  color: "0000ff"
+  length: 10
+  length_unit: m
+
+- termination_a_type: dcim.interface
+  termination_a:
+    device: sodola03
+    name: TE2
+  termination_b_type: dcim.interface
+  termination_b:
+    device: sodola02
+    name: TE8
+  type: aoc
+  status: connected
+  color: "0000ff"
+  length: 10
+  length_unit: m
+
+

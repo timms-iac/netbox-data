@@ -1,0 +1,34 @@
+---
+netbox_module_bays_try02:
+  - name: "ram0"
+    description: "DDR4 SODIMM Slot0"
+    device: "try02"
+
+  - name: "ram1"
+    description: "DDR4 SODIMM Slot1"
+    device: "try02"
+
+  - name: "nvme0"
+    description: "M2 NVMe Slot0"
+    device: "try02"
+
+  - name: "usb0"
+    description: "USB 3.2 Gen2"
+    device: "try02"
+
+  - name: "usb1"
+    description: "USB 3.2 Gen2"
+    device: "try02"
+
+  - name: "usb2"
+    description: "USB C"
+    device: "try02"
+
+  - name: "eth0"
+    description: "2.5GbE LAN"
+    device: "try02"
+
+  - name: "eth1"
+    description: "1GbE LAN"
+    device: "try02"
+

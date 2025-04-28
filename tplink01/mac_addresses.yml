@@ -1,0 +1,7 @@
+---
+netbox_mac_addresses_tplink01:
+  - assigned_object:
+      name: "vlan1"
+      device: "tplink01"
+    mac_address: "{{ mac_tplink01_vlan1 }}"
+

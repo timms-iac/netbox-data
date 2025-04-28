@@ -1,0 +1,27 @@
+---
+netbox_vrfs_prod:
+# k8s
+#   k8s cluster
+  - name: "prodk8smgmt"
+    description: "Production k8s Cluster"
+#   service
+  - name: "prodk8ssvc"
+    description: "Production k8s Services"
+# Openstack
+#   k8s cluster
+  - name: "prodosmgmt"
+    description: "Production Openstack k8s Cluster"
+#   service
+  - name: "prodossvc"
+    description: "Production Openstack k8s Services"
+#   provider
+  - name: "prodosprov"
+    description: "Production Openstack Provider Network"
+# dmz
+#   k8s cluster
+  - name: "proddmzmgmt"
+    description: "Production DMZ k8s Cluster"
+#   service
+  - name: "proddmzsvc"
+    description: "Production DMZ k8s Services"
+

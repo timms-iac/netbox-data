@@ -1,0 +1,11 @@
+---
+netbox_mac_addresses_air6:
+  - assigned_object:
+      name: "wlan0"
+      device: "air6"
+    mac_address: "{{ mac_air6_wlan0 }}"
+  - assigned_object:
+      name: "eth0"
+      device: "air6"
+    mac_address: "{{ mac_air6_eth0 }}"
+

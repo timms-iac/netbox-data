@@ -1,0 +1,2 @@
+---
+netbox_vlans: "{{ netbox_vlans_legacy + netbox_vlans_infra + netbox_vlans_dev_k8s + netbox_vlans_dev_os + netbox_vlans_dev_dmz + netbox_vlans_prod_k8s + netbox_vlans_prod_os + netbox_vlans_prod_dmz }}"

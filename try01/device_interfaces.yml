@@ -1,0 +1,39 @@
+---
+netbox_device_interfaces_try01:
+
+  - name: "kube"
+    device: "try01"
+    type: "Bridge"
+
+  - name: "ceph"
+    device: "try01"
+    type: "Bridge"
+
+  - name: "mgmt0"
+    device: "try01"
+    type: "1000Base-T (1GE)"
+    duplex: "auto"
+    primary_mac_address: "{{ mac_try01_mgmt0 }}"
+    mtu: 1500
+
+  - name: "kube0"
+    device: "try01"
+    type: "2.5GBase-T (2.5GE)"
+    bridge: 
+      name: "kube"
+      device: "try01"
+    duplex: "auto"
+    primary_mac_address: "{{ mac_try01_kube0 }}"
+    mtu: 1500
+
+  - name: "ceph0"
+    device: "try01"
+    type: "2.5GBase-T (2.5GE)"
+    bridge: 
+      name: "ceph"
+      device: "try01"
+    duplex: "auto"
+    primary_mac_address: "{{ mac_try01_ceph0 }}"
+    mtu: 1500
+
+

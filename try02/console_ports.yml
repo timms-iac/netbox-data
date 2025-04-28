@@ -1,0 +1,21 @@
+---
+netbox_console_ports_try02:
+  - name: "usb3"
+    device: "try02"
+    type: "usb-a"
+    description: "USB 2.0"
+
+  - name: "usb4"
+    device: "try02"
+    type: "usb-a"
+    description: "USB 2.0"
+
+  - name: "hdmi0"
+    device: "try02"
+    type: "other"
+    description: "HDMI Monitor Port"
+
+  - name: "dp0"
+    device: "try02"
+    type: "other"
+

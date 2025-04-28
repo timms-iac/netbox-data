@@ -1,0 +1,22 @@
+---
+netbox_console_ports_mnbox01:
+  - name: "usb4"
+    device: "mnbox01"
+    type: "usb-a"
+    description: "USB 2.0"
+
+  - name: "usb5"
+    device: "mnbox01"
+    type: "usb-a"
+    description: "USB 2.0"
+
+  - name: "hdmi0"
+    device: "mnbox01"
+    type: "other"
+    description: "HDMI 2.0 Monitor Port"
+
+  - name: "hdmi1"
+    device: "mnbox01"
+    type: "other"
+    description: "HDMI 2.0 Monitor Port"
+

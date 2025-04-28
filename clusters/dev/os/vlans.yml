@@ -1,0 +1,26 @@
+---
+netbox_vlans_dev_os:
+#   k8s cluster
+  - name: "devosmgmt"
+    vid: 2030
+    site: "BER1"
+    description: "Development Openstack k8s Cluster"
+    vlan_group: "devos"
+#   service
+  - name: "devossvc"
+    vid: 2031
+    site: "BER1"
+    description: "Development Openstack k8s Services"
+    vlan_group: "devos"
+#   provider
+  - name: "devosprov"
+    vid: 2032
+    site: "BER1"
+    description: "Development Openstack Provider Network"
+    vlan_group: "devos"
+#   ceph
+  - name: "devosceph"
+    vid: 2038
+    site: "BER1"
+    description: "Ceph Cluster for Development Openstack k8s Cluster"
+    vlan_group: "devceph"

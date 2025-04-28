@@ -1,0 +1,3 @@
+---
+netbox_contact_roles:
+  - name: "Administrator"

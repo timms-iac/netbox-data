@@ -1,0 +1,2 @@
+---
+netbox_vrfs: "{{ netbox_vrfs_legacy + netbox_vrfs_infra + netbox_vrfs_dev + netbox_vrfs_prod }}"

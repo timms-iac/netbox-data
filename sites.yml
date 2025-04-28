@@ -1,0 +1,6 @@
+---
+netbox_sites:
+  - name: "BER1"
+    time_zone: Europe/Berlin
+    status: Active
+

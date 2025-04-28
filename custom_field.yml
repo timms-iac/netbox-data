@@ -1,0 +1,59 @@
+---
+netbox_custom_fields:
+  - name: "EEE"
+    object_types:
+      - dcim.interface
+    default: false
+    type: "boolean"
+      #    ui_visibility: read-write
+    description: "Enable Energy Efficient Ethernet (EEE) on switch interfaces"
+
+  - name: "LLDP"
+    object_types:
+      - dcim.interface
+    default: false
+    type: "boolean"
+      #    ui_visibility: read-write
+    description: "Enable Link Layer Discovery Protocol (LLDP) on switch interfaces"
+
+  - name: "webmanagement"
+    object_types:
+      - dcim.device
+    type: "url"
+    description: "Open Web Management"
+
+  - name: "SupplierWebpage"
+    object_types:
+      - dcim.device
+    type: "url"
+    description: "Device Description by Supplier"
+
+  - name: "SupplierOrder"
+    object_types:
+      - dcim.device
+    type: "url"
+    description: "Order Webpage by Supplier"
+
+  - name: "Firmware"
+    object_types:
+      - dcim.device
+    type: "url"
+    description: "Firmware Download Page"
+
+  - name: "NetworkVersion"
+    object_types:
+      - dcim.device
+      - virtualization.virtualmachine
+    type: "integer"
+    default: 2
+    description: "Netplan Network Version"
+
+  - name: "OpenVSwitchProtocols"
+    object_types:
+      - dcim.device
+      - virtualization.virtualmachine
+    type: "multiselect"
+    default: [none]
+    choice_set: openflow
+    description: "Protocols to use for OpenVSwitch / OpenFlow"
+

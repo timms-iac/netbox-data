@@ -1,0 +1,26 @@
+---
+netbox_modules_mnbox02:
+  - device: "mnbox02"
+    module_bay:
+      name: "ram0"
+      device: "mnbox02"
+    module_type: "ddr5-32"
+
+  - device: "mnbox02"
+    module_bay:
+      name: "nvme0"
+      device: "mnbox02"
+    module_type: "nvme-1000"
+
+  - device: "mnbox02"
+    module_bay:
+      name: "nvme1"
+      device: "mnbox02"
+    module_type: "nvme-1000"
+
+  - device: "mnbox02"
+    module_bay:
+      name: "tf0"
+      device: "mnbox02"
+    module_type: "extreme-go-256"
+

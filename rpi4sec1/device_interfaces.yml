@@ -1,0 +1,68 @@
+---
+netbox_device_interfaces_rpi4sec1:
+  - name: "eth0"
+    device: "rpi4sec1"
+    type: "1000Base-T (1GE)"
+    duplex: "auto"
+    primary_mac_address: "{{ mac_rpi4sec1_eth0 }}"
+    mtu: 1500
+    mode: "Tagged"
+    tagged_vlans:
+      - name: "Android"
+      - name: "dmz"
+      - name: "mgmt"
+      - name: "Server"
+      - name: "iot"
+      - name: "Test"
+      - name: "Work"
+  - name: "android"
+    device: "rpi4sec1"
+    mode: "Tagged"
+    parent_interface: "eth0"
+    type: "Virtual"
+    tagged_vlans:
+      - name: "Android"
+  - name: "dmz"
+    device: "rpi4sec1"
+    mode: "Tagged"
+    parent_interface: "eth0"
+    type: "Virtual"
+    tagged_vlans:
+      - name: "dmz"
+  - name: "mgmt"
+    device: "rpi4sec1"
+    mode: "Tagged"
+    parent_interface: "eth0"
+    type: "Virtual"
+    tagged_vlans:
+      - name: "mgmt"
+  - name: "work"
+    device: "rpi4sec1"
+    mode: "Tagged"
+    parent_interface: "eth0"
+    type: "Virtual"
+    tagged_vlans:
+      - name: "Work"
+  - name: "server"
+    device: "rpi4sec1"
+    mode: "Tagged"
+    parent_interface: "eth0"
+    type: "Virtual"
+    tagged_vlans:
+      - name: "Server"
+  - name: "test"
+    device: "rpi4sec1"
+    mode: "Tagged"
+    parent_interface: "eth0"
+    type: "Virtual"
+    tagged_vlans:
+      - name: "Test"
+  - name: "iot"
+    device: "rpi4sec1"
+    mode: "Tagged"
+    parent_interface: "eth0"
+    type: "Virtual"
+    tagged_vlans:
+      - name: "iot"
+
+

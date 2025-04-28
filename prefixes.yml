@@ -1,0 +1,2 @@
+---
+netbox_prefixes: "{{ netbox_prefixes_legacy + netbox_prefixes_infra + netbox_prefixes_dev_k8s + netbox_prefixes_dev_os + netbox_prefixes_dev_dmz + netbox_prefixes_prod_k8s + netbox_prefixes_prod_os + netbox_prefixes_prod_dmz }}"

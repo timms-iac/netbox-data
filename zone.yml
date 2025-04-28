@@ -1,0 +1,183 @@
+---
+netbox_dns_zones:
+
+  - name: "home.{{ domain_name }}"
+    view: 
+      name: _default_
+    nameservers:
+      - name: 172.25.6.1
+      - name: 172.25.6.2
+    soa_ttl: 86499
+    soa_refesh: 43200
+    soa_retry: 7200
+    soa_expire: 2419200
+    soa_minimum_ttl: 3600
+    soa_mname:
+      name: 172.25.6.1
+    soa_rname: "admin.{{ domain_name }}"
+
+  - name: 25.172.in-addr.arpa.
+    view:
+      name: _default_
+    nameservers:
+      - name: 172.25.6.1
+      - name: 172.25.6.2
+    soa_ttl: 86499
+    soa_refesh: 43200
+    soa_retry: 7200
+    soa_expire: 2419200
+    soa_minimum_ttl: 3600
+    soa_mname:
+      name: 172.25.6.1
+    soa_rname: "admin.{{ domain_name }}"
+
+  - name: "dev.{{ domain_name }}"
+    view: 
+      name: _default_
+    nameservers:
+      - name: 172.25.6.3
+      - name: 172.25.6.4
+    soa_ttl: 86499
+    soa_refesh: 43200
+    soa_retry: 7200
+    soa_expire: 2419200
+    soa_minimum_ttl: 3600
+    soa_mname:
+      name: 172.25.6.3
+    soa_rname: "admin.{{ domain_name }}"
+
+  - name: 20.172.in-addr.arpa.
+    view:
+      name: _default_
+    nameservers:
+      - name: 172.25.6.3
+      - name: 172.25.6.4
+    soa_ttl: 86499
+    soa_refesh: 43200
+    soa_retry: 7200
+    soa_expire: 2419200
+    soa_minimum_ttl: 3600
+    soa_mname:
+      name: 172.25.6.3
+    soa_rname: "admin.{{ domain_name }}"
+
+  - name: "infra.{{ domain_name }}"
+    view:
+      name: _default_
+    nameservers:
+      - name: 172.25.6.1
+      - name: 172.25.6.2
+    soa_ttl: 86499
+    soa_refesh: 43200
+    soa_retry: 7200
+    soa_expire: 2419200
+    soa_minimum_ttl: 3600
+    soa_mname:
+      name: 172.25.6.1
+    soa_rname: "admin.{{ domain_name }}"
+
+  - name: 1.25.172.in-addr.arpa.
+    view:
+      name: _default_
+    nameservers:
+      - name: 172.25.6.1
+      - name: 172.25.6.2
+    soa_ttl: 86499
+    soa_refesh: 43200
+    soa_retry: 7200
+    soa_expire: 2419200
+    soa_minimum_ttl: 3600
+    soa_mname:
+      name: 172.25.6.1
+    soa_rname: "admin.{{ domain_name }}"
+
+  - name: "shelly.{{ domain_name }}"
+    view:
+      name: _default_
+    nameservers:
+      - name: 172.16.1.253
+      - name: 172.16.1.254
+    soa_ttl: 86499
+    soa_refesh: 43200
+    soa_retry: 7200
+    soa_expire: 2419200
+    soa_minimum_ttl: 3600
+    soa_mname:
+      name: 172.16.1.251
+    soa_rname: "admin.{{ domain_name }}"
+
+  - name: 17.172.in-addr.arpa.
+    view:
+      name: _default_
+    nameservers:
+      - name: 172.16.1.253
+      - name: 172.16.1.254
+    soa_ttl: 86499
+    soa_refesh: 43200
+    soa_retry: 7200
+    soa_expire: 2419200
+    soa_minimum_ttl: 3600
+    soa_mname:
+      name: 172.16.1.251
+    soa_rname: "admin.{{ domain_name }}"
+
+  - name: "iot.{{ domain_name }}"
+    view:
+      name: _default_
+    nameservers:
+      - name: 172.25.6.1
+      - name: 172.25.6.2
+    soa_ttl: 86499
+    soa_refesh: 43200
+    soa_retry: 7200
+    soa_expire: 2419200
+    soa_minimum_ttl: 3600
+    soa_mname:
+      name: 172.25.6.1
+    soa_rname: "admin.{{ domain_name }}"
+
+  - name: 19.172.in-addr.arpa.
+    view:
+      name: _default_
+    nameservers:
+      - name: 172.25.6.1
+      - name: 172.25.6.2
+    soa_ttl: 86499
+    soa_refesh: 43200
+    soa_retry: 7200
+    soa_expire: 2419200
+    soa_minimum_ttl: 3600
+    soa_mname:
+      name: 172.25.6.1
+    soa_rname: "admin.{{ domain_name }}"
+
+  - name: "legacy.{{ domain_name }}"
+    view:
+      name: _default_
+    nameservers:
+      - name: 172.16.1.253
+      - name: 172.16.1.254
+    soa_ttl: 86499
+    soa_refesh: 43200
+    soa_retry: 7200
+    soa_expire: 2419200
+    soa_minimum_ttl: 3600
+    soa_mname:
+      name: 172.16.1.251
+    soa_rname: "admin.{{ domain_name }}"
+
+  - name: 16.172.in-addr.arpa.
+    view:
+      name: _default_
+    nameservers:
+      - name: 172.16.1.253
+      - name: 172.16.1.254
+    soa_ttl: 86499
+    soa_refesh: 43200
+    soa_retry: 7200
+    soa_expire: 2419200
+    soa_minimum_ttl: 3600
+    soa_mname:
+      name: 172.16.1.251
+    soa_rname: "admin.{{ domain_name }}"
+
