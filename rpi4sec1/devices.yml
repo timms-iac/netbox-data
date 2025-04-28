@@ -1,0 +1,12 @@
+---
+netbox_devices_rpi4sec1:
+  - name: "rpi4sec1"
+    device_type: "rpi44"
+    device_role: "Server"
+    platform: "Ubuntu"
+    site: "BER1"
+    location: "Rack"
+    custom_fields:
+      SupplierWebpage: "{{ rpi4sec1_SupplierWebpage }}"
+      SupplierOrder: "{{ rpi4sec1_SupplierOrder }}"
+    primary_ip4: "192.168.178.251"

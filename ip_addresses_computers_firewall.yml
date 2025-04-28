@@ -1,0 +1,44 @@
+---
+netbox_ip_addresses_computers_firewall:
+
+  - address: "172.25.6.1/32"
+    assigned_object:
+      virtual_machine: "prod-fw01"
+      name: "firewall"
+    vrf: "firewall"
+    dns_name: "prod-fw01.home.{{ domain_name }}"
+  - address: "172.25.6.2/32"
+    assigned_object:
+      virtual_machine: "prod-fw02"
+      name: "firewall"
+    vrf: "firewall"
+    dns_name: "prod-fw02.home.{{ domain_name }}"
+  - address: "172.25.6.3/32"
+    assigned_object:
+      virtual_machine: "dev-fw01"
+      name: "firewall"
+    vrf: "firewall"
+    dns_name: "dev-fw01.dev.{{ domain_name }}"
+  - address: "172.25.6.4/32"
+    assigned_object:
+      virtual_machine: "dev-fw02"
+      name: "firewall"
+    vrf: "firewall"
+    dns_name: "dev-fw02.dev.{{ domain_name }}"
+
+
+  - address: "172.25.6.250/32"
+    assigned_object:
+      device: "kiab"
+      name: "firewall0"
+    vrf: "firewall"
+
+  - address: "172.25.6.253/32"
+    role: "VRRP"
+    vrf: "firewall"
+    assigned_object_id: '{{ query("netbox.netbox.nb_lookup", "fhrp-groups",
+        api_filter="group_id=2506",
+        api_endpoint="http://" + netbox_loadbalancer_ip,
+        token=netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    assigned_object_type: "ipam.fhrpgroup"
+

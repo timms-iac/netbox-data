@@ -1,0 +1,102 @@
+---
+netbox_ip_addresses_rpi:
+  - address: "172.17.1.2/32"
+    assigned_object:
+      device: "rpi4iot"
+      name: "eth0"
+
+  - address: "172.16.150.141/32"
+    assigned_object:
+      device: "rpi5bak"
+      name: "eth0"
+
+  - address: "172.16.50.251/32"
+    assigned_object:
+      device: "rpi4sec1"
+      name: "android"
+  - address: "192.168.178.251/32"
+    assigned_object:
+      device: "rpi4sec1"
+      name: "dmz"
+  - address: "172.16.1.251/32"
+    assigned_object:
+      device: "rpi4sec1"
+      name: "mgmt"
+  - address: "172.16.150.251/32"
+    assigned_object:
+      device: "rpi4sec1"
+      name: "server"
+  - address: "172.16.200.251/32"
+    assigned_object:
+      device: "rpi4sec1"
+      name: "test"
+  - address: "172.16.100.251/32"
+    assigned_object:
+      device: "rpi4sec1"
+      name: "work"
+  - address: "172.17.1.251/32"
+    assigned_object:
+      device: "rpi4sec1"
+      name: "iot"
+
+  - address: "172.16.50.252/32"
+    assigned_object:
+      device: "rpi4sec2"
+      name: "android"
+  - address: "192.168.178.252/32"
+    assigned_object:
+      device: "rpi4sec2"
+      name: "dmz"
+  - address: "172.16.1.252/32"
+    assigned_object:
+      device: "rpi4sec2"
+      name: "mgmt"
+  - address: "172.16.150.252/32"
+    assigned_object:
+      device: "rpi4sec2"
+      name: "server"
+  - address: "172.16.200.252/32"
+    assigned_object:
+      device: "rpi4sec2"
+      name: "test"
+  - address: "172.16.100.252/32"
+    assigned_object:
+      device: "rpi4sec2"
+      name: "work"
+  - address: "172.17.1.252/32"
+    assigned_object:
+      device: "rpi4sec2"
+      name: "iot"
+
+  - address: "192.168.178.253/32"
+    role: "VRRP"
+  - address: "172.16.50.253/32"
+    role: "VRRP"
+  - address: "172.16.100.253/32"
+    role: "VRRP"
+  - address: "172.16.150.253/32"
+    role: "VRRP"
+  - address: "172.16.200.253/32"
+    role: "VRRP"
+  - address: "172.17.1.253/32"
+    role: "VRRP"
+  - address: "172.16.1.254/32"
+    role: "VRRP"
+      #    status: "BACKUP"
+      #    interface: "VRRPv2:1"
+    #    assigned_object:
+    #      device: "VRRPv2:1"
+    #      name: "mgmt1"
+  - address: "192.168.178.254/32"
+    role: "VRRP"
+  - address: "172.16.50.254/32"
+    role: "VRRP"
+  - address: "172.16.100.254/32"
+    role: "VRRP"
+  - address: "172.16.150.254/32"
+    role: "VRRP"
+  - address: "172.16.200.254/32"
+    role: "VRRP"
+  - address: "172.17.1.254/32"
+    role: "VRRP"
+

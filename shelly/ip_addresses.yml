@@ -1,0 +1,482 @@
+---
+netbox_ip_addresses_shelly:
+- address: 172.17.20.4
+  assigned_object:
+    device: iot-light-gf0-4
+    name: wlan0
+  dns_name: "iot-light-gf0-4.iot.{{ domain_name }}"
+  vrf: iot
+- address: 172.17.27.4
+  assigned_object:
+    device: iot-light-gf7-4
+    name: wlan0
+  dns_name: "iot-light-gf7-4.iot.{{ domain_name }}"
+  vrf: iot
+- address: 172.17.27.2
+  assigned_object:
+    device: iot-light-gf7-2
+    name: wlan0
+  dns_name: "iot-light-gf7-2.iot.{{ domain_name }}"
+  vrf: iot
+- address: 172.17.20.5
+  assigned_object:
+    device: iot-light-gf0-5
+    name: wlan0
+  dns_name: "iot-light-gf0-5.iot.{{ domain_name }}"
+  vrf: iot
+- address: 172.17.20.6
+  assigned_object:
+    device: iot-light-gf0-6
+    name: wlan0
+  dns_name: "iot-light-gf0-6.iot.{{ domain_name }}"
+  vrf: iot
+- address: 172.17.27.1
+  assigned_object:
+    device: iot-light-gf7-1
+    name: wlan0
+  dns_name: "iot-light-gf7-1.iot.{{ domain_name }}"
+  vrf: iot
+- address: 172.17.22.1
+  assigned_object:
+    device: iot-light-gf2-1
+    name: wlan0
+  dns_name: "iot-light-gf2-1.iot.{{ domain_name }}"
+  vrf: iot
+- address: 172.17.20.2
+  assigned_object:
+    device: iot-light-gf0-2
+    name: wlan0
+  dns_name: "iot-light-gf0-2.iot.{{ domain_name }}"
+  vrf: iot
+- address: 172.17.27.5
+  assigned_object:
+    device: iot-light-gf7-5
+    name: wlan0
+  dns_name: "iot-light-gf7-5.iot.{{ domain_name }}"
+  vrf: iot
+- address: 172.17.20.3
+  assigned_object:
+    device: iot-light-gf0-3
+    name: wlan0
+  dns_name: "iot-light-gf0-3.iot.{{ domain_name }}"
+  vrf: iot
+- address: 172.17.22.3
+  assigned_object:
+    device: iot-light-gf2-3
+    name: wlan0
+  dns_name: "iot-light-gf2-3.iot.{{ domain_name }}"
+  vrf: iot
+- address: 172.17.27.3
+  assigned_object:
+    device: iot-light-gf7-3
+    name: wlan0
+  dns_name: "iot-light-gf7-3.iot.{{ domain_name }}"
+  vrf: iot
+- address: 172.17.23.1
+  assigned_object:
+    device: iot-light-gf3-1
+    name: wlan0
+  dns_name: "iot-light-gf3-1.iot.{{ domain_name }}"
+  vrf: iot
+- address: 172.17.22.2
+  assigned_object:
+    device: iot-light-gf2-2
+    name: wlan0
+  dns_name: "iot-light-gf2-2.iot.{{ domain_name }}"
+  vrf: iot
+- address: 172.17.20.1
+  assigned_object:
+    device: iot-light-gf0-1
+    name: wlan0
+  dns_name: "iot-light-gf0-1.iot.{{ domain_name }}"
+  vrf: iot
+- address: 172.17.27.6
+  assigned_object:
+    device: iot-light-gf7-6
+    name: wlan0
+  dns_name: "iot-light-gf7-6.iot.{{ domain_name }}"
+  vrf: iot
+- address: 172.17.100.9
+  assigned_object:
+    device: iot-button-1
+    name: wlan0
+  dns_name: "iot-button-1.iot.{{ domain_name }}"
+  vrf: iot
+- address: 172.17.26.2
+  assigned_object:
+    device: iot-light-gf6-2
+    name: wlan0
+  dns_name: "iot-light-gf6-2.iot.{{ domain_name }}"
+  vrf: iot
+- address: 172.17.28.1
+  assigned_object:
+    device: iot-light-gf8-1
+    name: wlan0
+  dns_name: "iot-light-gf8-1.iot.{{ domain_name }}"
+  vrf: iot
+- address: 172.17.21.1
+  assigned_object:
+    device: iot-light-gf1-1
+    name: wlan0
+  dns_name: "iot-light-gf1-1.iot.{{ domain_name }}"
+  vrf: iot
+- address: 172.17.25.1
+  assigned_object:
+    device: iot-light-gf5-1
+    name: wlan0
+  dns_name: "iot-light-gf5-1.iot.{{ domain_name }}"
+  vrf: iot
+- address: 172.17.130.201
+  assigned_object:
+    device: iot-switch-3
+    name: wlan0
+  dns_name: "iot-switch-3.iot.{{ domain_name }}"
+  vrf: iot
+- address: 172.17.154.134
+  assigned_object:
+    device: iot-switch-2
+    name: wlan0
+  dns_name: "iot-switch-2.iot.{{ domain_name }}"
+  vrf: iot
+- address: 172.17.21.101
+  assigned_object:
+    device: iot-plug-gf1-1
+    name: wlan0
+  dns_name: "iot-plug-gf1-1.iot.{{ domain_name }}"
+  vrf: iot
+- address: 172.17.28.101
+  assigned_object:
+    device: iot-plug-gf8-1
+    name: wlan0
+  dns_name: "iot-plug-gf8-1.iot.{{ domain_name }}"
+  vrf: iot
+- address: 172.17.24.104
+  assigned_object:
+    device: iot-plug-gf4-4
+    name: wlan0
+  dns_name: "iot-plug-gf4-4.iot.{{ domain_name }}"
+  vrf: iot
+- address: 172.17.21.102
+  assigned_object:
+    device: iot-plug-gf1-2
+    name: wlan0
+  dns_name: "iot-plug-gf1-2.iot.{{ domain_name }}"
+  vrf: iot
+- address: 172.17.22.101
+  assigned_object:
+    device: iot-plug-gf2-1
+    name: wlan0
+  dns_name: "iot-plug-gf2-1.iot.{{ domain_name }}"
+  vrf: iot
+- address: 172.17.28.105
+  assigned_object:
+    device: iot-plug-gf8-5
+    name: wlan0
+  dns_name: "iot-plug-gf8-5.iot.{{ domain_name }}"
+  vrf: iot
+- address: 172.17.24.103
+  assigned_object:
+    device: iot-plug-gf4-3
+    name: wlan0
+  dns_name: "iot-plug-gf4-3.iot.{{ domain_name }}"
+  vrf: iot
+- address: 172.17.24.101
+  assigned_object:
+    device: iot-plug-gf4-1
+    name: wlan0
+  dns_name: "iot-plug-gf4-1.iot.{{ domain_name }}"
+  vrf: iot
+- address: 172.17.24.102
+  assigned_object:
+    device: iot-plug-gf4-2
+    name: wlan0
+  dns_name: "iot-plug-gf4-2.iot.{{ domain_name }}"
+  vrf: iot
+- address: 172.17.28.104
+  assigned_object:
+    device: iot-plug-gf8-4
+    name: wlan0
+  dns_name: "iot-plug-gf8-4.iot.{{ domain_name }}"
+  vrf: iot
+- address: 172.17.55.3
+  assigned_object:
+    device: iot-light-ga-b15-3
+    name: wlan0
+  dns_name: "iot-light-ga-b15-3.iot.{{ domain_name }}"
+  vrf: iot
+- address: 172.17.24.2
+  assigned_object:
+    device: iot-light-gf4-2
+    name: wlan0
+  dns_name: "iot-light-gf4-2.iot.{{ domain_name }}"
+  vrf: iot
+- address: 172.17.58.1
+  assigned_object:
+    device: iot-light-ga-b18-1
+    name: wlan0
+  dns_name: "iot-light-ga-b18-1.iot.{{ domain_name }}"
+  vrf: iot
+- address: 172.17.10.1
+  assigned_object:
+    device: iot-light-b10-1
+    name: wlan0
+  dns_name: "iot-light-b10-1.iot.{{ domain_name }}"
+  vrf: iot
+- address: 172.17.24.1
+  assigned_object:
+    device: iot-light-gf4-1
+    name: wlan0
+  dns_name: "iot-light-gf4-1.iot.{{ domain_name }}"
+  vrf: iot
+- address: 172.17.19.1
+  assigned_object:
+    device: iot-light-b19-1
+    name: wlan0
+  dns_name: "iot-light-b19-1.iot.{{ domain_name }}"
+  vrf: iot
+- address: 172.17.26.1
+  assigned_object:
+    device: iot-light-gf6-1
+    name: wlan0
+  dns_name: "iot-light-gf6-1.iot.{{ domain_name }}"
+  vrf: iot
+- address: 172.17.26.242
+  assigned_object:
+    device: iot-roller-gf6-2
+    name: wlan0
+  dns_name: "iot-roller-gf6-2.iot.{{ domain_name }}"
+  vrf: iot
+- address: 172.17.25.241
+  assigned_object:
+    device: iot-roller-gf5-1
+    name: wlan0
+  dns_name: "iot-roller-gf5-1.iot.{{ domain_name }}"
+  vrf: iot
+- address: 172.17.23.241
+  assigned_object:
+    device: iot-roller-gf3-1
+    name: wlan0
+  dns_name: "iot-roller-gf3-1.iot.{{ domain_name }}"
+  vrf: iot
+- address: 172.17.22.241
+  assigned_object:
+    device: iot-roller-gf2-1
+    name: wlan0
+  dns_name: "iot-roller-gf2-1.iot.{{ domain_name }}"
+  vrf: iot
+- address: 172.17.28.103
+  assigned_object:
+    device: iot-plug-gf8-3
+    name: wlan0
+  dns_name: "iot-plug-gf8-3.iot.{{ domain_name }}"
+  vrf: iot
+- address: 172.17.25.242
+  assigned_object:
+    device: iot-roller-gf5-2
+    name: wlan0
+  dns_name: "iot-roller-gf5-2.iot.{{ domain_name }}"
+  vrf: iot
+- address: 172.17.26.241
+  assigned_object:
+    device: iot-roller-gf6-1
+    name: wlan0
+  dns_name: "iot-roller-gf6-1.iot.{{ domain_name }}"
+  vrf: iot
+- address: 172.17.54.1
+  assigned_object:
+    device: iot-light-ga-b14-1
+    name: wlan0
+  dns_name: "iot-light-ga-b14-1.iot.{{ domain_name }}"
+  vrf: iot
+- address: 172.17.55.2
+  assigned_object:
+    device: iot-light-ga-b15-2
+    name: wlan0
+  dns_name: "iot-light-ga-b15-2.iot.{{ domain_name }}"
+  vrf: iot
+- address: 172.17.27.241
+  assigned_object:
+    device: iot-roller-gf7-1
+    name: wlan0
+  dns_name: "iot-roller-gf7-1.iot.{{ domain_name }}"
+  vrf: iot
+- address: 172.17.55.1
+  assigned_object:
+    device: iot-light-ga-b15-1
+    name: wlan0
+  dns_name: "iot-light-ga-b15-1.iot.{{ domain_name }}"
+  vrf: iot
+- address: 172.17.22.10
+  assigned_object:
+    device: iot-light-gf2-10
+    name: wlan0
+  dns_name: "iot-light-gf2-10.iot.{{ domain_name }}"
+  vrf: iot
+- address: 172.17.28.241
+  assigned_object:
+    device: iot-roller-gf8-1
+    name: wlan0
+  dns_name: "iot-roller-gf8-1.iot.{{ domain_name }}"
+  vrf: iot
+- address: 172.17.24.241
+  assigned_object:
+    device: iot-roller-gf4-1
+    name: wlan0
+  dns_name: "iot-roller-gf4-1.iot.{{ domain_name }}"
+  vrf: iot
+- address: 172.17.58.2
+  assigned_object:
+    device: iot-light-ga-b18-2
+    name: wlan0
+  dns_name: "iot-light-ga-b18-2.iot.{{ domain_name }}"
+  vrf: iot
+- address: 172.17.21.241
+  assigned_object:
+    device: iot-roller-gf1-1
+    name: wlan0
+  dns_name: "iot-roller-gf1-1.iot.{{ domain_name }}"
+  vrf: iot
+- address: 172.17.28.102
+  assigned_object:
+    device: iot-plug-gf8-2
+    name: wlan0
+  dns_name: "iot-plug-gf8-2.iot.{{ domain_name }}"
+  vrf: iot
+- address: 172.17.27.101
+  assigned_object:
+    device: iot-plug-gf7-1
+    name: wlan0
+  dns_name: "iot-plug-gf7-1.iot.{{ domain_name }}"
+  vrf: iot
+- address: 172.17.21.2
+  assigned_object:
+    device: iot-light-gf1-2
+    name: wlan0
+  dns_name: "iot-light-gf1-2.iot.{{ domain_name }}"
+  vrf: iot
+- address: 172.17.64.1
+  assigned_object:
+    device: iot-light-gf-b14-1
+    name: wlan0
+  dns_name: "iot-light-gf-b14-1.iot.{{ domain_name }}"
+  vrf: iot
+- address: 172.17.26.242
+  assigned_object:
+    device: iot-roller-gf6-2
+    name: wlan0
+  dns_name: "iot-roller-gf6-2.iot.{{ domain_name }}"
+  vrf: iot
+- address: 172.17.55.101
+  assigned_object:
+    device: iot-plug-ga-b15-1
+    name: wlan0
+  dns_name: "iot-plug-ga-b15-1.iot.{{ domain_name }}"
+  vrf: iot
+- address: 172.17.64.104
+  assigned_object:
+    device: iot-plug-gf-b14-4
+    name: wlan0
+  dns_name: "iot-plug-gf-b14-4.iot.{{ domain_name }}"
+  vrf: iot
+- address: 172.17.55.103
+  assigned_object:
+    device: iot-plug-ga-b15-3
+    name: wlan0
+  dns_name: "iot-plug-ga-b15-3.iot.{{ domain_name }}"
+  vrf: iot
+- address: 172.17.58.101
+  assigned_object:
+    device: iot-plug-ga-b18-1
+    name: wlan0
+  dns_name: "iot-plug-ga-b18-1.iot.{{ domain_name }}"
+  vrf: iot
+- address: 172.17.64.102
+  assigned_object:
+    device: iot-plug-gf-b14-2
+    name: wlan0
+  dns_name: "iot-plug-gf-b14-2.iot.{{ domain_name }}"
+  vrf: iot
+- address: 172.17.59.101
+  assigned_object:
+    device: iot-plug-ga-b19-1
+    name: wlan0
+  dns_name: "iot-plug-ga-b19-1.iot.{{ domain_name }}"
+  vrf: iot
+- address: 172.17.54.101
+  assigned_object:
+    device: iot-plug-ga-b14-1
+    name: wlan0
+  dns_name: "iot-plug-ga-b14-1.iot.{{ domain_name }}"
+  vrf: iot
+- address: 172.17.61.102
+  assigned_object:
+    device: iot-plug-gf-b11-2
+    name: wlan0
+  dns_name: "iot-plug-gf-b11-2.iot.{{ domain_name }}"
+  vrf: iot
+- address: 172.17.64.103
+  assigned_object:
+    device: iot-plug-gf-b14-3
+    name: wlan0
+  dns_name: "iot-plug-gf-b14-3.iot.{{ domain_name }}"
+  vrf: iot
+- address: 172.17.61.101
+  assigned_object:
+    device: iot-plug-gf-b11-1
+    name: wlan0
+  dns_name: "iot-plug-gf-b11-1.iot.{{ domain_name }}"
+  vrf: iot
+- address: 172.17.55.102
+  assigned_object:
+    device: iot-plug-ga-b15-2
+    name: wlan0
+  dns_name: "iot-plug-ga-b15-2.iot.{{ domain_name }}"
+  vrf: iot
+- address: 172.17.64.101
+  assigned_object:
+    device: iot-plug-gf-b14-1
+    name: wlan0
+  dns_name: "iot-plug-gf-b14-1.iot.{{ domain_name }}"
+  vrf: iot
+- address: 172.17.25.241
+  assigned_object:
+    device: iot-roller-gf5-1
+    name: wlan0
+  dns_name: "iot-roller-gf5-1.iot.{{ domain_name }}"
+  vrf: iot
+- address: 172.17.22.241
+  assigned_object:
+    device: iot-roller-gf2-1
+    name: wlan0
+  dns_name: "iot-roller-gf2-1.iot.{{ domain_name }}"
+  vrf: iot
+- address: 172.17.146.193
+  assigned_object:
+    device: iot-plug-gf7-1
+    name: wlan0
+  dns_name: "iot-plug-gf7-1.iot.{{ domain_name }}"
+  vrf: iot
+- address: 172.17.28.241
+  assigned_object:
+    device: iot-roller-gf8-1
+    name: wlan0
+  dns_name: "iot-roller-gf8-1.iot.{{ domain_name }}"
+  vrf: iot
+- address: 172.17.25.242
+  assigned_object:
+    device: iot-roller-gf5-2
+    name: wlan0
+  dns_name: "iot-roller-gf5-2.iot.{{ domain_name }}"
+  vrf: iot
+- address: 172.17.24.241
+  assigned_object:
+    device: iot-roller-gf4-1
+    name: wlan0
+  dns_name: "iot-roller-gf4-1.iot.{{ domain_name }}"
+  vrf: iot
+- address: 172.17.100.10
+  assigned_object:
+    device: iot-button-2
+    name: wlan0
+  dns_name: "iot-button-2.iot.{{ domain_name }}"
+  vrf: iot

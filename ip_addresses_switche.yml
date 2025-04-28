@@ -1,0 +1,58 @@
+---
+netbox_ip_addresses_switche:
+  - address: "172.25.1.20/32"
+    assigned_object:
+      device: "tplink03"
+      name: "vlan1"
+    vrf: "mgmt"
+    dns_name: "tplink03.infra.{{ domain_name }}"
+  - address: "172.25.1.21/32"
+    assigned_object:
+      device: "tplink01"
+      name: "vlan1"
+    vrf: "mgmt"
+    dns_name: "tplink01.infra.{{ domain_name }}"
+  - address: "172.25.1.22/32"
+    assigned_object:
+      device: "tplink02"
+      name: "vlan1"
+    vrf: "mgmt"
+    dns_name: "tplink02.infra.{{ domain_name }}"
+  - address: "172.25.1.24/32"
+    assigned_object:
+      device: "mokerlink01"
+      name: "vlan1"
+    vrf: "mgmt"
+    dns_name: "mokerlink01.infra.{{ domain_name }}"
+
+  - address: "172.25.1.25/32"
+    assigned_object:
+      device: "sodola01"
+      name: "vlan1"
+    vrf: "mgmt"
+    dns_name: "sodola01.infra.{{ domain_name }}"
+  - address: "172.25.1.26/32"
+    assigned_object:
+      device: "sodola02"
+      name: "vlan1"
+    vrf: "mgmt"
+    dns_name: "sodola02.infra.{{ domain_name }}"
+  - address: "172.25.1.27/32"
+    assigned_object:
+      device: "sodola03"
+      name: "vlan1"
+    vrf: "mgmt"
+    dns_name: "sodola03.infra.{{ domain_name }}"
+
+  - address: "172.25.1.250/32"
+    assigned_object:
+      device: "kiab"
+      name: "switch0"
+    vrf: "mgmt"
+
+  - address: "172.16.1.250/32"
+    assigned_object:
+      device: "kiab"
+      name: "switch0"
+    vrf: "Mgmt"
+

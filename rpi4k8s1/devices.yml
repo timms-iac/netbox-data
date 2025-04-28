@@ -1,0 +1,12 @@
+---
+netbox_devices_rpi4k8s1:
+  - name: "rpi4k8s1"
+    device_type: "rpi48"
+    device_role: "Server"
+    platform: "Ubuntu"
+    site: "BER1"
+    location: "Rack"
+    custom_fields:
+      SupplierWebpage: "{{ rpi4k8s1_SupplierWebpage }}"
+      SupplierOrder: "{{ rpi4k8s1_SupplierOrder }}"
+

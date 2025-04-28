@@ -1,0 +1,12 @@
+---
+netbox_devices_rpi5bak:
+  - name: "rpi5bak"
+    device_type: "rpi58"
+    device_role: "Server"
+    platform: "Ubuntu"
+    site: "BER1"
+    location: "Rack"
+    custom_fields:
+      SupplierWebpage: "{{ rpi5bak_SupplierWebpage }}"
+    primary_ip4: "172.16.150.141"
+ 

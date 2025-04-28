@@ -1,0 +1,75 @@
+---
+netbox_ip_addresses_router:
+  - address: "192.168.178.1/32"
+    assigned_object:
+      device: "fritz7690"
+      name: "lan1"
+  - address: "10.234.179.1/32"
+    assigned_object:
+      device: "fritz7690"
+      name: "lan3"
+
+  - address: "192.168.0.9/32"
+    assigned_object:
+      device: "fritz7490"
+      name: "lan1"
+
+  - address: "192.168.0.4/32"
+    assigned_object:
+      device: "fritz1220"
+      name: "lan"
+
+  - address: "192.168.0.3/32"
+    assigned_object:
+      device: "fritz1260"
+      name: "lan"
+
+  - address: "192.168.178.3/32"
+    assigned_object:
+      device: "fritz1750e-01"
+      name: "lan"
+
+  - address: "172.25.1.121/32"
+    dns_name: "openwrtgf1.infra.{{ domain_name }}"
+    assigned_object:
+      device: "openwrtgf1"
+      name: "eth0"
+    vrf: mgmt
+
+  - address: "172.25.1.122/32"
+    dns_name: "openwrtgf2.infra.{{ domain_name }}"
+    assigned_object:
+      device: "openwrtgf2"
+      name: "eth0"
+    vrf: mgmt
+
+  - address: "172.25.1.123/32"
+    dns_name: "openwrtgf3.infra.{{ domain_name }}"
+    assigned_object:
+      device: "openwrtgf3"
+      name: "eth0"
+    vrf: mgmt
+
+  - address: "172.25.1.111/32"
+    dns_name: "openwrtb11.infra.{{ domain_name }}"
+    assigned_object:
+      device: "openwrtb11"
+      name: "eth0"
+    vrf: mgmt
+
+  - address: "172.25.1.112/32"
+    dns_name: "openwrtb12.infra.{{ domain_name }}"
+    assigned_object:
+      device: "openwrtb12"
+      name: "eth0"
+    vrf: mgmt
+
+  - address: "172.25.1.141/32"
+    dns_name: "openwrtrf1.infra.{{ domain_name }}"
+    assigned_object:
+      device: "openwrtrf1"
+      name: "eth0"
+    vrf: mgmt
+
+
+

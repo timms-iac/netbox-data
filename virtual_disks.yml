@@ -1,0 +1,47 @@
+---
+netbox_virtual_disks:
+  - name: "vda"
+    virtual_machine: "prodk8s-cp01"
+    size: 10000
+    description: "System Disk"
+
+  - name: "vda"
+    virtual_machine: "prodk8s-cp02"
+    size: 10000
+    description: "System Disk"
+
+  - name: "vda"
+    virtual_machine: "prodk8s-cp03"
+    size: 10000
+    description: "System Disk"
+
+  - name: "vda"
+    virtual_machine: "prodk8s-try01"
+    size: 10000
+    description: "System Disk"
+
+  - name: "vda"
+    virtual_machine: "prodk8s-try02"
+    size: 10000
+    description: "System Disk"
+
+  - name: "vda"
+    virtual_machine: "prodk8s-try03"
+    size: 10000
+    description: "System Disk"
+
+  - name: "vdb"
+    virtual_machine: "prodk8s-try01"
+    size: 300000
+    description: "Ceph0 Disk"
+
+  - name: "vdb"
+    virtual_machine: "prodk8s-try02"
+    size: 300000
+    description: "Ceph0 Disk"
+
+  - name: "vdb"
+    virtual_machine: "prodk8s-try03"
+    size: 300000
+    description: "Ceph0 Disk"
+

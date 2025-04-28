@@ -1,0 +1,12 @@
+---
+netbox_ip_addresses_computers_devosprov:
+
+  - address: "172.20.32.253/32"
+    role: "VRRP"
+    vrf: "devosprov"
+    assigned_object_id: '{{ query("netbox.netbox.nb_lookup", "fhrp-groups",
+        api_filter="group_id=2032",
+        api_endpoint="http://" + netbox_loadbalancer_ip,
+        token=netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    assigned_object_type: "ipam.fhrpgroup"
+
