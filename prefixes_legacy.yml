@@ -28,6 +28,6 @@ netbox_prefixes_legacy:
   - prefix: "172.17.0.0/16"
     description: "Shelly"
     vlan:
-      name: "shelly"
-    vrf: "shelly"
+      name: "Shelly"
+    vrf: "Shelly"
 

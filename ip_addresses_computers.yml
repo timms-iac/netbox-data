@@ -5,6 +5,7 @@ netbox_ip_addresses_computers:
       device: "kiab"
       name: "legacy"
     vrf: "Work"
+    dns_name: kiab.home.essigke.net
         
   - address: "172.25.4.250/32"
     assigned_object:

@@ -1,3 +1,3 @@
 ---
-netbox_mac_addresses: "{{ netbox_mac_addresses_kiab + netbox_mac_addresses_air6 + netbox_mac_addresses_try01 + netbox_mac_addresses_try02 + netbox_mac_addresses_try03 + netbox_mac_addresses_aoo01 + netbox_mac_addresses_aoo02 + netbox_mac_addresses_mnbox01 + netbox_mac_addresses_mnbox02 + netbox_mac_addresses_mokerlink01 + netbox_mac_addresses_sodola01 + netbox_mac_addresses_sodola02 + netbox_mac_addresses_sodola03 + netbox_mac_addresses_tplink01 + netbox_mac_addresses_tplink03 + netbox_mac_addresses_rpi4sec1 + netbox_mac_addresses_rpi4sec2 + netbox_mac_addresses_rpi5bak }}"
+netbox_mac_addresses: "{{ netbox_mac_addresses_kiab + netbox_mac_addresses_air6 + netbox_mac_addresses_try01 + netbox_mac_addresses_try02 + netbox_mac_addresses_try03 + netbox_mac_addresses_aoo01 + netbox_mac_addresses_aoo02 + netbox_mac_addresses_mnbox01 + netbox_mac_addresses_mnbox02 }}"
 

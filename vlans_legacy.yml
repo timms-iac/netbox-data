@@ -21,7 +21,7 @@ netbox_vlans_legacy:
     site: "BER1"
     vlan_group: "legacy"
 
-  - name: "shelly"
+  - name: "Shelly"
     vid: 1700
     site: "BER1"
     description: "Shellys"

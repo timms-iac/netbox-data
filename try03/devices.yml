@@ -3,7 +3,7 @@ netbox_devices_try03:
   - name: "try03"
     device_type: "trywo4"
     device_role: "Server"
-    platform: "ubuntu2404"
+    platform: "Ubuntu 24.04"
     site: "BER1"
     location: "Rack"
     cluster: "hypervisor"

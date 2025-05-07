@@ -3,7 +3,7 @@ netbox_device_interfaces_kiab:
   - name: "deploy"
     device: "kiab"
     type: "Bridge"
-    mode: "Tagged"
+    mode: "tagged"
     tagged_vlans:
       - name: "mgmt"
         site: "BER1"
@@ -33,7 +33,7 @@ netbox_device_interfaces_kiab:
   - name: "legacy"
     device: "kiab"
     type: "Bridge"
-    mode: "Access"
+    mode: "access"
     untagged_vlan: 
       name: "Work"
       site: "BER1"
@@ -50,7 +50,7 @@ netbox_device_interfaces_kiab:
       device: "kiab"
     duplex: "auto"
     mtu: 1500
-    mode: "Access"
+    mode: "access"
     untagged_vlan: "hypervisor"
     vrf: "hypervisor"
 
@@ -62,7 +62,7 @@ netbox_device_interfaces_kiab:
       device: "kiab"
     duplex: "auto"
     mtu: 1500
-    mode: "Access"
+    mode: "access"
     untagged_vlan: 
       name: "mgmt"
       site: "BER1"
@@ -76,7 +76,7 @@ netbox_device_interfaces_kiab:
       device: "kiab"
     duplex: "auto"
     mtu: 1500
-    mode: "Access"
+    mode: "access"
     untagged_vlan: "provision"
     vrf: "provision"
 
@@ -88,7 +88,7 @@ netbox_device_interfaces_kiab:
       device: "kiab"
     duplex: "auto"
     mtu: 1500
-    mode: "Access"
+    mode: "access"
     untagged_vlan: "firewall"
     vrf: "firewall"
 
@@ -100,7 +100,7 @@ netbox_device_interfaces_kiab:
       device: "kiab"
     duplex: "auto"
     mtu: 1500
-    mode: "Access"
+    mode: "access"
     untagged_vlan: "devk8smgmt"
     vrf: "devk8smgmt"
 
@@ -112,7 +112,7 @@ netbox_device_interfaces_kiab:
       device: "kiab"
     duplex: "auto"
     mtu: 1500
-    mode: "Access"
+    mode: "access"
     untagged_vlan: "devosmgmt"
     vrf: "devosmgmt"
 
@@ -124,7 +124,7 @@ netbox_device_interfaces_kiab:
       device: "kiab"
     duplex: "auto"
     mtu: 1500
-    mode: "Access"
+    mode: "access"
     untagged_vlan: "devdmzmgmt"
     vrf: "devdmzmgmt"
 
@@ -136,7 +136,7 @@ netbox_device_interfaces_kiab:
       device: "kiab"
     duplex: "auto"
     mtu: 1500
-    mode: "Access"
+    mode: "access"
     untagged_vlan: "prodk8smgmt"
     vrf: "prodk8smgmt"
 
@@ -148,7 +148,7 @@ netbox_device_interfaces_kiab:
       device: "kiab"
     duplex: "auto"
     mtu: 1500
-    mode: "Access"
+    mode: "access"
     untagged_vlan: "prodosmgmt"
     vrf: "prodosmgmt"
 
@@ -160,13 +160,13 @@ netbox_device_interfaces_kiab:
       device: "kiab"
     duplex: "auto"
     mtu: 1500
-    mode: "Access"
+    mode: "access"
     untagged_vlan: "proddmzmgmt"
     vrf: "proddmzmgmt"
 
   - name: "eth0"
     device: "kiab"
-    type: "1000Base-T (1GE)"
+    type: "1000BASE-T (1GE)"
     bridge: 
       name: "legacy"
       device: "kiab"
@@ -176,7 +176,7 @@ netbox_device_interfaces_kiab:
 
   - name: "eth1"
     device: "kiab"
-    type: "2.5GBase-T (2.5GE)"
+    type: "2.5GBASE-T (2.5GE)"
     bridge: 
       name: "deploy"
       device: "kiab"

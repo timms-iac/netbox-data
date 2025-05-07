@@ -3,7 +3,7 @@ netbox_devices_mnbox01:
   - name: "mnbox01"
     device_type: "n305fw"
     device_role: "Server"
-    platform: "ubuntu2404"
+    platform: "Ubuntu 24.04"
     site: "BER1"
     location: "Rack"
     cluster: "hypervisor"

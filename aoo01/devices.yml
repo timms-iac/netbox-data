@@ -1,9 +1,9 @@
 ---
-netbox_devices_aoo01:
+netbox_devices:
   - name: "aoo01"
     device_type: "aoog5"
     device_role: "Server"
-    platform: "ubuntu2404"
+    platform: "Ubuntu 24.04"
     site: "BER1"
     location: "Rack"
     cluster: "hypervisor"

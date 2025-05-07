@@ -2,7 +2,7 @@
 netbox_device_interfaces_rpi5bak:
   - name: "eth0"
     device: "rpi5bak"
-    type: "1000Base-T (1GE)"
+    type: "1000BASE-T (1GE)"
     duplex: "auto"
     primary_mac_address: "{{ mac_rpi5bak_eth0 }}"
     mtu: 1500

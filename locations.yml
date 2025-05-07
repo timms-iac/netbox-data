@@ -1,5 +1,5 @@
 ---
-netbox_location_list:
+netbox_locations:
   - name: "GF"
     site: "BER1"
     slug: "gf"
@@ -73,5 +73,8 @@ netbox_location_list:
     site: "BER1"
     slug: "laundryroom"
     parent_location: "b1"
-
+  - name: "WineCellar"
+    site: "BER1"
+    slug: "winecellar"
+    parent_location: "b1"
 

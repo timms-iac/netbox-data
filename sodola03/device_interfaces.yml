@@ -9,7 +9,7 @@ netbox_device_interfaces_sodola03:
     custom_fields:
       EEE: false
       LLDP: true
-    mode: "Tagged"
+    mode: "tagged"
     untagged_vlan:
       name: "mgmt"
       site: "BER1"
@@ -68,61 +68,61 @@ netbox_device_interfaces_sodola03:
 
   - name: "MGI1"
     device: "sodola03"
-    type: "2.5GBase-T (2.5GE)"
+    type: "2.5GBASE-T (2.5GE)"
     duplex: "auto"
     description: "Network Management"
     custom_fields:
       EEE: true
       LLDP: true
-    mode: "Access"
+    mode: "access"
     untagged_vlan:
       name: "mgmt"
       site: "BER1"
   - name: "MGI2"
     device: "sodola03"
-    type: "2.5GBase-T (2.5GE)"
+    type: "2.5GBASE-T (2.5GE)"
     duplex: "auto"
     description: "Fritz!Box DMZ"
     custom_fields:
       EEE: true
       LLDP: true
-    mode: "Access"
+    mode: "access"
     untagged_vlan:
       name: "dmz"
       site: "BER1"
   - name: "MGI3"
     device: "sodola03"
-    type: "2.5GBase-T (2.5GE)"
+    type: "2.5GBASE-T (2.5GE)"
     duplex: "auto"
     description: "Fritz!Box Guest Network"
     custom_fields:
       EEE: true
       LLDP: true
-    mode: "Access"
+    mode: "access"
     untagged_vlan:
       name: "guest"
       site: "BER1"
   - name: "MGI4"
     device: "sodola03"
-    type: "2.5GBase-T (2.5GE)"
+    type: "2.5GBASE-T (2.5GE)"
     duplex: "auto"
     description: "Kiab Legacy Network"
     custom_fields:
       EEE: true
       LLDP: true
-    mode: "Access"
+    mode: "access"
     untagged_vlan:
       name: "Work"
       site: "BER1"
   - name: "MGI5"
     device: "sodola03"
-    type: "2.5GBase-T (2.5GE)"
+    type: "2.5GBASE-T (2.5GE)"
     duplex: "auto"
     description: "Kiab Deployment Networks"
     custom_fields:
       EEE: true
       LLDP: true
-    mode: "Tagged"
+    mode: "tagged"
     tagged_vlans:
       - name: "mgmt"
         site: "BER1"
@@ -144,37 +144,37 @@ netbox_device_interfaces_sodola03:
         site: "BER1"
   - name: "MGI6"
     device: "sodola03"
-    type: "2.5GBase-T (2.5GE)"
+    type: "2.5GBASE-T (2.5GE)"
     duplex: "auto"
     description: "air6"
     custom_fields:
       EEE: true
       LLDP: true
-    mode: "Access"
+    mode: "access"
     untagged_vlan:
       name: "Work"
       site: "BER1"
   - name: "MGI7"
     device: "sodola03"
-    type: "2.5GBase-T (2.5GE)"
+    type: "2.5GBASE-T (2.5GE)"
     duplex: "auto"
     description: "Samsumg Printer"
     custom_fields:
       EEE: true
       LLDP: true
-    mode: "Access"
+    mode: "access"
     untagged_vlan:
       name: "Server"
       site: "BER1"
   - name: "MGI8"
     device: "sodola03"
-    type: "2.5GBase-T (2.5GE)"
+    type: "2.5GBASE-T (2.5GE)"
     duplex: "auto"
     description: "Uplink tplink03"
     custom_fields:
       EEE: true
       LLDP: true
-    mode: "Tagged"
+    mode: "tagged"
     untagged_vlan:
       name: "mgmt"
       site: "BER1"
@@ -202,13 +202,13 @@ netbox_device_interfaces_sodola03:
 
   - name: "MGI9"
     device: "sodola03"
-    type: "2.5GBase-T (2.5GE)"
+    type: "2.5GBASE-T (2.5GE)"
     duplex: "auto"
     description: "Legacy Networks Trunk OpenwrtEG1"
     custom_fields:
       EEE: true
       LLDP: true
-    mode: "Tagged"
+    mode: "tagged"
     tagged_vlans:
       - name: "mgmt"
         site: "BER1"
@@ -230,13 +230,13 @@ netbox_device_interfaces_sodola03:
         site: "BER1"
   - name: "MGI10"
     device: "sodola03"
-    type: "2.5GBase-T (2.5GE)"
+    type: "2.5GBASE-T (2.5GE)"
     duplex: "auto"
     description: "Legacy Networks Trunk OpenwrtEG2"
     custom_fields:
       EEE: true
       LLDP: true
-    mode: "Tagged"
+    mode: "tagged"
     tagged_vlans:
       - name: "mgmt"
         site: "BER1"
@@ -258,13 +258,13 @@ netbox_device_interfaces_sodola03:
         site: "BER1"
   - name: "MGI11"
     device: "sodola03"
-    type: "2.5GBase-T (2.5GE)"
+    type: "2.5GBASE-T (2.5GE)"
     duplex: "auto"
     description: "Legacy Networks Trunk OpenwrtEG3"
     custom_fields:
       EEE: true
       LLDP: true
-    mode: "Tagged"
+    mode: "tagged"
     tagged_vlans:
       - name: "mgmt"
         site: "BER1"
@@ -286,13 +286,13 @@ netbox_device_interfaces_sodola03:
         site: "BER1"
   - name: "MGI12"
     device: "sodola03"
-    type: "2.5GBase-T (2.5GE)"
+    type: "2.5GBASE-T (2.5GE)"
     duplex: "auto"
     description: "Legacy Networks Trunk OpenwrtDG1"
     custom_fields:
       EEE: true
       LLDP: true
-    mode: "Tagged"
+    mode: "tagged"
     tagged_vlans:
       - name: "mgmt"
         site: "BER1"
@@ -314,13 +314,13 @@ netbox_device_interfaces_sodola03:
         site: "BER1"
   - name: "MGI13"
     device: "sodola03"
-    type: "2.5GBase-T (2.5GE)"
+    type: "2.5GBASE-T (2.5GE)"
     duplex: "auto"
     description: "Legacy Networks Trunk OpenwrtKG1"
     custom_fields:
       EEE: true
       LLDP: true
-    mode: "Tagged"
+    mode: "tagged"
     tagged_vlans:
       - name: "mgmt"
         site: "BER1"
@@ -342,13 +342,13 @@ netbox_device_interfaces_sodola03:
         site: "BER1"
   - name: "MGI14"
     device: "sodola03"
-    type: "2.5GBase-T (2.5GE)"
+    type: "2.5GBASE-T (2.5GE)"
     duplex: "auto"
     description: "Legacy Networks Trunk OpenwrtKG2"
     custom_fields:
       EEE: true
       LLDP: true
-    mode: "Tagged"
+    mode: "tagged"
     tagged_vlans:
       - name: "mgmt"
         site: "BER1"
@@ -370,25 +370,25 @@ netbox_device_interfaces_sodola03:
         site: "BER1"
   - name: "MGI15"
     device: "sodola03"
-    type: "2.5GBase-T (2.5GE)"
+    type: "2.5GBASE-T (2.5GE)"
     duplex: "auto"
     description: "rpisamsung"
     custom_fields:
       EEE: true
       LLDP: true
-    mode: "Tagged"
+    mode: "tagged"
     untagged_vlan:
       name: "dmz"
       site: "BER1"
   - name: "MGI16"
     device: "sodola03"
-    type: "2.5GBase-T (2.5GE)"
+    type: "2.5GBASE-T (2.5GE)"
     duplex: "auto"
     description: "TBA"
     custom_fields:
       EEE: true
       LLDP: true
-    mode: "Tagged"
+    mode: "tagged"
     untagged_vlan:
       name: "dmz"
       site: "BER1"
@@ -403,7 +403,7 @@ netbox_device_interfaces_sodola03:
     custom_fields:
       EEE: false
       LLDP: true
-    mode: "Tagged"
+    mode: "tagged"
     untagged_vlan:
       name: "mgmt"
       site: "BER1"
@@ -466,7 +466,7 @@ netbox_device_interfaces_sodola03:
     description: "Uplink sodola02"
     lag:
       name: "LAG1"
-    mode: "Tagged"
+    mode: "tagged"
     custom_fields:
       EEE: false
       LLDP: true

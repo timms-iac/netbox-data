@@ -11,14 +11,14 @@ netbox_device_interfaces_try02:
 
   - name: "mgmt0"
     device: "try02"
-    type: "1000Base-T (1GE)"
+    type: "1000BASE-T (1GE)"
     duplex: "auto"
     primary_mac_address: "{{ mac_try02_mgmt0 }}"
     mtu: 1500
 
   - name: "kube0"
     device: "try02"
-    type: "2.5GBase-T (2.5GE)"
+    type: "2.5GBASE-T (2.5GE)"
     bridge: 
       name: "kube"
       device: "try02"
@@ -28,7 +28,7 @@ netbox_device_interfaces_try02:
 
   - name: "ceph0"
     device: "try02"
-    type: "2.5GBase-T (2.5GE)"
+    type: "2.5GBASE-T (2.5GE)"
     bridge: 
       name: "ceph"
       device: "try02"

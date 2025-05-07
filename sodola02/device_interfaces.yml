@@ -5,7 +5,7 @@ netbox_device_interfaces_sodola02:
     description: "Uplink sodola03"
     type: "Link Aggregation Group (LAG)"
     duplex: "auto"
-    mode: "Tagged"
+    mode: "tagged"
     untagged_vlan:
       name: "mgmt"
       site: "BER1"
@@ -66,7 +66,7 @@ netbox_device_interfaces_sodola02:
     description: "Uplink sodola01"
     type: "Link Aggregation Group (LAG)"
     duplex: "auto"
-    mode: "Tagged"
+    mode: "tagged"
     untagged_vlan:
       name: "mgmt"
       site: "BER1"
@@ -127,7 +127,7 @@ netbox_device_interfaces_sodola02:
     description: "mnbox01 prod FW / dev Ceph"
     type: "SFP+ (10GE)"
     duplex: "auto"
-    mode: "Tagged"
+    mode: "tagged"
     untagged_vlan:
       name: "mgmt"
       site: "BER1"
@@ -158,7 +158,7 @@ netbox_device_interfaces_sodola02:
     description: "mnbox01 dev FW / prod Ceph"
     type: "SFP+ (10GE)"
     duplex: "auto"
-    mode: "Tagged"
+    mode: "tagged"
     untagged_vlan:
       name: "mgmt"
       site: "BER1"
@@ -189,7 +189,7 @@ netbox_device_interfaces_sodola02:
     description: "mnbox02 prod FW / dev Ceph"
     type: "SFP+ (10GE)"
     duplex: "auto"
-    mode: "Tagged"
+    mode: "tagged"
     untagged_vlan:
       name: "mgmt"
       site: "BER1"
@@ -220,7 +220,7 @@ netbox_device_interfaces_sodola02:
     description: "mnbox02 dev FW / prod Ceph"
     type: "SFP+ (10GE)"
     duplex: "auto"
-    mode: "Tagged"
+    mode: "tagged"
     untagged_vlan:
       name: "mgmt"
       site: "BER1"
@@ -280,6 +280,6 @@ netbox_device_interfaces_sodola02:
     description: "Switch Managemt Interface to assign MAC/IP"
     type: "Virtual"
     duplex: "auto"
-    mac_address: "{{ mac_sodola02_vlan1 }}"
+    primary_mac_address: "{{ mac_sodola02_vlan1 }}"
     mtu: 1500
 

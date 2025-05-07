@@ -1,6 +1,6 @@
 ---
 netbox_devices_air6:
-- name: "air6"
+  - name: "air6"
     device_type: "matebook15"
     device_role: "Laptop"
     platform: "Ubuntu"

@@ -1,0 +1,39 @@
+---
+netbox_ip_addresses_computers_dmz:
+
+  - address: "192.168.20.251/32"
+    assigned_object:
+      virtual_machine: "dev-fw01"
+      name: "dmz"
+  - address: "192.168.20.252/32"
+    assigned_object:
+      virtual_machine: "dev-fw02"
+      name: "dmz"
+  - address: "192.168.25.251/32"
+    assigned_object:
+      virtual_machine: "prod-fw01"
+      name: "dmz"
+  - address: "192.168.25.252/32"
+    assigned_object:
+      virtual_machine: "prod-fw02"
+      name: "dmz"
+
+  - address: "192.168.20.253/32"
+    role: "VRRP"
+    vrf: "dmz"
+    assigned_object_id: '{{ query("netbox.netbox.nb_lookup", "fhrp-groups",
+        api_filter="group_id=2002",
+        api_endpoint="http://" + netbox_loadbalancer_ip,
+        token=netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    assigned_object_type: "ipam.fhrpgroup"
+
+  - address: "192.168.25.253/32"
+    role: "VRRP"
+    vrf: "dmz"
+    assigned_object_id: '{{ query("netbox.netbox.nb_lookup", "fhrp-groups",
+        api_filter="group_id=2502",
+        api_endpoint="http://" + netbox_loadbalancer_ip,
+        token=netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    assigned_object_type: "ipam.fhrpgroup"
+
+

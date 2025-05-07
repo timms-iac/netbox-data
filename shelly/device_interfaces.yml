@@ -2,7 +2,7 @@
 netbox_device_interfaces_shelly:
 - device: iot-light-gf0-4
   duplex: auto
-  mode: Access
+  mode: access
   mtu: 1500
   name: wlan0
   type: IEEE 802.11b/g
@@ -12,7 +12,7 @@ netbox_device_interfaces_shelly:
   vrf: iot
 - device: iot-light-gf7-4
   duplex: auto
-  mode: Access
+  mode: access
   mtu: 1500
   name: wlan0
   type: IEEE 802.11b/g
@@ -22,7 +22,7 @@ netbox_device_interfaces_shelly:
   vrf: iot
 - device: iot-light-gf7-2
   duplex: auto
-  mode: Access
+  mode: access
   mtu: 1500
   name: wlan0
   type: IEEE 802.11b/g
@@ -32,7 +32,7 @@ netbox_device_interfaces_shelly:
   vrf: iot
 - device: iot-light-gf0-5
   duplex: auto
-  mode: Access
+  mode: access
   mtu: 1500
   name: wlan0
   type: IEEE 802.11b/g
@@ -42,7 +42,7 @@ netbox_device_interfaces_shelly:
   vrf: iot
 - device: iot-light-gf0-6
   duplex: auto
-  mode: Access
+  mode: access
   mtu: 1500
   name: wlan0
   type: IEEE 802.11b/g
@@ -52,7 +52,7 @@ netbox_device_interfaces_shelly:
   vrf: iot
 - device: iot-light-gf7-1
   duplex: auto
-  mode: Access
+  mode: access
   mtu: 1500
   name: wlan0
   type: IEEE 802.11b/g
@@ -62,7 +62,7 @@ netbox_device_interfaces_shelly:
   vrf: iot
 - device: iot-light-gf2-1
   duplex: auto
-  mode: Access
+  mode: access
   mtu: 1500
   name: wlan0
   type: IEEE 802.11b/g
@@ -72,7 +72,7 @@ netbox_device_interfaces_shelly:
   vrf: iot
 - device: iot-light-gf0-2
   duplex: auto
-  mode: Access
+  mode: access
   mtu: 1500
   name: wlan0
   type: IEEE 802.11b/g
@@ -82,7 +82,7 @@ netbox_device_interfaces_shelly:
   vrf: iot
 - device: iot-light-gf7-5
   duplex: auto
-  mode: Access
+  mode: access
   mtu: 1500
   name: wlan0
   type: IEEE 802.11b/g
@@ -92,7 +92,7 @@ netbox_device_interfaces_shelly:
   vrf: iot
 - device: iot-light-gf0-3
   duplex: auto
-  mode: Access
+  mode: access
   mtu: 1500
   name: wlan0
   type: IEEE 802.11b/g
@@ -102,7 +102,7 @@ netbox_device_interfaces_shelly:
   vrf: iot
 - device: iot-light-gf2-3
   duplex: auto
-  mode: Access
+  mode: access
   mtu: 1500
   name: wlan0
   type: IEEE 802.11b/g
@@ -112,7 +112,7 @@ netbox_device_interfaces_shelly:
   vrf: iot
 - device: iot-light-gf7-3
   duplex: auto
-  mode: Access
+  mode: access
   mtu: 1500
   name: wlan0
   type: IEEE 802.11b/g
@@ -122,7 +122,7 @@ netbox_device_interfaces_shelly:
   vrf: iot
 - device: iot-light-gf3-1
   duplex: auto
-  mode: Access
+  mode: access
   mtu: 1500
   name: wlan0
   type: IEEE 802.11b/g
@@ -132,7 +132,7 @@ netbox_device_interfaces_shelly:
   vrf: iot
 - device: iot-light-gf2-2
   duplex: auto
-  mode: Access
+  mode: access
   mtu: 1500
   name: wlan0
   type: IEEE 802.11b/g
@@ -142,7 +142,7 @@ netbox_device_interfaces_shelly:
   vrf: iot
 - device: iot-light-gf0-1
   duplex: auto
-  mode: Access
+  mode: access
   mtu: 1500
   name: wlan0
   type: IEEE 802.11b/g
@@ -152,7 +152,7 @@ netbox_device_interfaces_shelly:
   vrf: iot
 - device: iot-light-gf7-6
   duplex: auto
-  mode: Access
+  mode: access
   mtu: 1500
   name: wlan0
   type: IEEE 802.11b/g
@@ -162,7 +162,7 @@ netbox_device_interfaces_shelly:
   vrf: iot
 - device: iot-button-1
   duplex: auto
-  mode: Access
+  mode: access
   mtu: 1500
   name: wlan0
   type: IEEE 802.11b/g
@@ -172,7 +172,7 @@ netbox_device_interfaces_shelly:
   vrf: iot
 - device: iot-light-gf6-2
   duplex: auto
-  mode: Access
+  mode: access
   mtu: 1500
   name: wlan0
   type: IEEE 802.11b/g
@@ -182,7 +182,7 @@ netbox_device_interfaces_shelly:
   vrf: iot
 - device: iot-light-gf8-1
   duplex: auto
-  mode: Access
+  mode: access
   mtu: 1500
   name: wlan0
   type: IEEE 802.11b/g
@@ -192,7 +192,7 @@ netbox_device_interfaces_shelly:
   vrf: iot
 - device: iot-light-gf1-1
   duplex: auto
-  mode: Access
+  mode: access
   mtu: 1500
   name: wlan0
   type: IEEE 802.11b/g
@@ -202,7 +202,7 @@ netbox_device_interfaces_shelly:
   vrf: iot
 - device: iot-light-gf5-1
   duplex: auto
-  mode: Access
+  mode: access
   mtu: 1500
   name: wlan0
   type: IEEE 802.11b/g
@@ -212,7 +212,7 @@ netbox_device_interfaces_shelly:
   vrf: iot
 - device: iot-switch-3
   duplex: auto
-  mode: Access
+  mode: access
   mtu: 1500
   name: wlan0
   type: IEEE 802.11b/g
@@ -222,7 +222,7 @@ netbox_device_interfaces_shelly:
   vrf: iot
 - device: iot-switch-2
   duplex: auto
-  mode: Access
+  mode: access
   mtu: 1500
   name: wlan0
   type: IEEE 802.11b/g
@@ -232,7 +232,7 @@ netbox_device_interfaces_shelly:
   vrf: iot
 - device: iot-plug-gf1-1
   duplex: auto
-  mode: Access
+  mode: access
   mtu: 1500
   name: wlan0
   type: IEEE 802.11b/g
@@ -242,7 +242,7 @@ netbox_device_interfaces_shelly:
   vrf: iot
 - device: iot-plug-gf8-1
   duplex: auto
-  mode: Access
+  mode: access
   mtu: 1500
   name: wlan0
   type: IEEE 802.11b/g
@@ -252,7 +252,7 @@ netbox_device_interfaces_shelly:
   vrf: iot
 - device: iot-plug-gf1-2
   duplex: auto
-  mode: Access
+  mode: access
   mtu: 1500
   name: wlan0
   type: IEEE 802.11b/g
@@ -262,7 +262,7 @@ netbox_device_interfaces_shelly:
   vrf: iot
 - device: iot-plug-gf8-5
   duplex: auto
-  mode: Access
+  mode: access
   mtu: 1500
   name: wlan0
   type: IEEE 802.11b/g
@@ -272,7 +272,7 @@ netbox_device_interfaces_shelly:
   vrf: iot
 - device: iot-plug-gf4-3
   duplex: auto
-  mode: Access
+  mode: access
   mtu: 1500
   name: wlan0
   type: IEEE 802.11b/g
@@ -282,7 +282,7 @@ netbox_device_interfaces_shelly:
   vrf: iot
 - device: iot-plug-gf4-1
   duplex: auto
-  mode: Access
+  mode: access
   mtu: 1500
   name: wlan0
   type: IEEE 802.11b/g
@@ -292,7 +292,7 @@ netbox_device_interfaces_shelly:
   vrf: iot
 - device: iot-plug-gf4-2
   duplex: auto
-  mode: Access
+  mode: access
   mtu: 1500
   name: wlan0
   type: IEEE 802.11b/g
@@ -302,7 +302,7 @@ netbox_device_interfaces_shelly:
   vrf: iot
 - device: iot-plug-gf8-4
   duplex: auto
-  mode: Access
+  mode: access
   mtu: 1500
   name: wlan0
   type: IEEE 802.11b/g
@@ -312,7 +312,7 @@ netbox_device_interfaces_shelly:
   vrf: iot
 - device: iot-light-ga-b15-3
   duplex: auto
-  mode: Access
+  mode: access
   mtu: 1500
   name: wlan0
   type: IEEE 802.11b/g
@@ -322,7 +322,7 @@ netbox_device_interfaces_shelly:
   vrf: iot
 - device: iot-light-gf4-2
   duplex: auto
-  mode: Access
+  mode: access
   mtu: 1500
   name: wlan0
   type: IEEE 802.11b/g
@@ -332,7 +332,7 @@ netbox_device_interfaces_shelly:
   vrf: iot
 - device: iot-light-ga-b18-1
   duplex: auto
-  mode: Access
+  mode: access
   mtu: 1500
   name: wlan0
   type: IEEE 802.11b/g
@@ -342,7 +342,7 @@ netbox_device_interfaces_shelly:
   vrf: iot
 - device: iot-light-b10-1
   duplex: auto
-  mode: Access
+  mode: access
   mtu: 1500
   name: wlan0
   type: IEEE 802.11b/g
@@ -352,7 +352,7 @@ netbox_device_interfaces_shelly:
   vrf: iot
 - device: iot-light-gf4-1
   duplex: auto
-  mode: Access
+  mode: access
   mtu: 1500
   name: wlan0
   type: IEEE 802.11b/g
@@ -362,7 +362,7 @@ netbox_device_interfaces_shelly:
   vrf: iot
 - device: iot-light-b19-1
   duplex: auto
-  mode: Access
+  mode: access
   mtu: 1500
   name: wlan0
   type: IEEE 802.11b/g
@@ -372,7 +372,7 @@ netbox_device_interfaces_shelly:
   vrf: iot
 - device: iot-light-gf6-1
   duplex: auto
-  mode: Access
+  mode: access
   mtu: 1500
   name: wlan0
   type: IEEE 802.11b/g
@@ -382,7 +382,7 @@ netbox_device_interfaces_shelly:
   vrf: iot
 - device: iot-roller-gf6-2
   duplex: auto
-  mode: Access
+  mode: access
   mtu: 1500
   name: wlan0
   type: IEEE 802.11b/g
@@ -392,7 +392,7 @@ netbox_device_interfaces_shelly:
   vrf: iot
 - device: iot-roller-gf5-1
   duplex: auto
-  mode: Access
+  mode: access
   mtu: 1500
   name: wlan0
   type: IEEE 802.11b/g
@@ -402,7 +402,7 @@ netbox_device_interfaces_shelly:
   vrf: iot
 - device: iot-roller-gf3-1
   duplex: auto
-  mode: Access
+  mode: access
   mtu: 1500
   name: wlan0
   type: IEEE 802.11b/g
@@ -412,7 +412,7 @@ netbox_device_interfaces_shelly:
   vrf: iot
 - device: iot-roller-gf2-1
   duplex: auto
-  mode: Access
+  mode: access
   mtu: 1500
   name: wlan0
   type: IEEE 802.11b/g
@@ -422,7 +422,7 @@ netbox_device_interfaces_shelly:
   vrf: iot
 - device: iot-plug-gf8-3
   duplex: auto
-  mode: Access
+  mode: access
   mtu: 1500
   name: wlan0
   type: IEEE 802.11b/g
@@ -432,7 +432,7 @@ netbox_device_interfaces_shelly:
   vrf: iot
 - device: iot-roller-gf5-2
   duplex: auto
-  mode: Access
+  mode: access
   mtu: 1500
   name: wlan0
   type: IEEE 802.11b/g
@@ -442,7 +442,7 @@ netbox_device_interfaces_shelly:
   vrf: iot
 - device: iot-roller-gf6-1
   duplex: auto
-  mode: Access
+  mode: access
   mtu: 1500
   name: wlan0
   type: IEEE 802.11b/g
@@ -452,7 +452,7 @@ netbox_device_interfaces_shelly:
   vrf: iot
 - device: iot-light-ga-b14-1
   duplex: auto
-  mode: Access
+  mode: access
   mtu: 1500
   name: wlan0
   type: IEEE 802.11b/g
@@ -462,7 +462,7 @@ netbox_device_interfaces_shelly:
   vrf: iot
 - device: iot-light-ga-b15-2
   duplex: auto
-  mode: Access
+  mode: access
   mtu: 1500
   name: wlan0
   type: IEEE 802.11b/g
@@ -472,7 +472,7 @@ netbox_device_interfaces_shelly:
   vrf: iot
 - device: iot-roller-gf7-1
   duplex: auto
-  mode: Access
+  mode: access
   mtu: 1500
   name: wlan0
   type: IEEE 802.11b/g
@@ -482,7 +482,7 @@ netbox_device_interfaces_shelly:
   vrf: iot
 - device: iot-light-ga-b15-1
   duplex: auto
-  mode: Access
+  mode: access
   mtu: 1500
   name: wlan0
   type: IEEE 802.11b/g
@@ -492,7 +492,7 @@ netbox_device_interfaces_shelly:
   vrf: iot
 - device: iot-light-gf2-10
   duplex: auto
-  mode: Access
+  mode: access
   mtu: 1500
   name: wlan0
   type: IEEE 802.11b/g
@@ -502,7 +502,7 @@ netbox_device_interfaces_shelly:
   vrf: iot
 - device: iot-roller-gf8-1
   duplex: auto
-  mode: Access
+  mode: access
   mtu: 1500
   name: wlan0
   type: IEEE 802.11b/g
@@ -512,7 +512,7 @@ netbox_device_interfaces_shelly:
   vrf: iot
 - device: iot-roller-gf4-1
   duplex: auto
-  mode: Access
+  mode: access
   mtu: 1500
   name: wlan0
   type: IEEE 802.11b/g
@@ -522,7 +522,7 @@ netbox_device_interfaces_shelly:
   vrf: iot
 - device: iot-light-ga-b18-2
   duplex: auto
-  mode: Access
+  mode: access
   mtu: 1500
   name: wlan0
   type: IEEE 802.11b/g
@@ -532,7 +532,7 @@ netbox_device_interfaces_shelly:
   vrf: iot
 - device: iot-roller-gf1-1
   duplex: auto
-  mode: Access
+  mode: access
   mtu: 1500
   name: wlan0
   type: IEEE 802.11b/g
@@ -542,7 +542,7 @@ netbox_device_interfaces_shelly:
   vrf: iot
 - device: iot-plug-gf8-2
   duplex: auto
-  mode: Access
+  mode: access
   mtu: 1500
   name: wlan0
   type: IEEE 802.11b/g
@@ -552,7 +552,7 @@ netbox_device_interfaces_shelly:
   vrf: iot
 - device: iot-plug-gf7-1
   duplex: auto
-  mode: Access
+  mode: access
   mtu: 1500
   name: wlan0
   type: IEEE 802.11b/g
@@ -562,7 +562,7 @@ netbox_device_interfaces_shelly:
   vrf: iot
 - device: iot-light-gf1-2
   duplex: auto
-  mode: Access
+  mode: access
   mtu: 1500
   name: wlan0
   type: IEEE 802.11b/g
@@ -572,7 +572,7 @@ netbox_device_interfaces_shelly:
   vrf: iot
 - device: iot-light-gf-b14-1
   duplex: auto
-  mode: Access
+  mode: access
   mtu: 1500
   name: wlan0
   type: IEEE 802.11b/g
@@ -582,7 +582,7 @@ netbox_device_interfaces_shelly:
   vrf: iot
 - device: iot-plug-ga-b15-1
   duplex: auto
-  mode: Access
+  mode: access
   mtu: 1500
   name: wlan0
   type: IEEE 802.11b/g
@@ -592,7 +592,7 @@ netbox_device_interfaces_shelly:
   vrf: iot
 - device: iot-plug-gf-b14-4
   duplex: auto
-  mode: Access
+  mode: access
   mtu: 1500
   name: wlan0
   type: IEEE 802.11b/g
@@ -602,7 +602,7 @@ netbox_device_interfaces_shelly:
   vrf: iot
 - device: iot-plug-ga-b15-3
   duplex: auto
-  mode: Access
+  mode: access
   mtu: 1500
   name: wlan0
   type: IEEE 802.11b/g
@@ -612,7 +612,7 @@ netbox_device_interfaces_shelly:
   vrf: iot
 - device: iot-plug-ga-b18-1
   duplex: auto
-  mode: Access
+  mode: access
   mtu: 1500
   name: wlan0
   type: IEEE 802.11b/g
@@ -622,7 +622,7 @@ netbox_device_interfaces_shelly:
   vrf: iot
 - device: iot-plug-gf-b14-2
   duplex: auto
-  mode: Access
+  mode: access
   mtu: 1500
   name: wlan0
   type: IEEE 802.11b/g
@@ -632,7 +632,7 @@ netbox_device_interfaces_shelly:
   vrf: iot
 - device: iot-plug-ga-b19-1
   duplex: auto
-  mode: Access
+  mode: access
   mtu: 1500
   name: wlan0
   type: IEEE 802.11b/g
@@ -642,7 +642,7 @@ netbox_device_interfaces_shelly:
   vrf: iot
 - device: iot-plug-ga-b14-1
   duplex: auto
-  mode: Access
+  mode: access
   mtu: 1500
   name: wlan0
   type: IEEE 802.11b/g
@@ -652,7 +652,7 @@ netbox_device_interfaces_shelly:
   vrf: iot
 - device: iot-plug-gf-b11-2
   duplex: auto
-  mode: Access
+  mode: access
   mtu: 1500
   name: wlan0
   type: IEEE 802.11b/g
@@ -662,7 +662,7 @@ netbox_device_interfaces_shelly:
   vrf: iot
 - device: iot-plug-gf-b14-3
   duplex: auto
-  mode: Access
+  mode: access
   mtu: 1500
   name: wlan0
   type: IEEE 802.11b/g
@@ -672,7 +672,7 @@ netbox_device_interfaces_shelly:
   vrf: iot
 - device: iot-plug-gf-b11-1
   duplex: auto
-  mode: Access
+  mode: access
   mtu: 1500
   name: wlan0
   type: IEEE 802.11b/g
@@ -682,7 +682,7 @@ netbox_device_interfaces_shelly:
   vrf: iot
 - device: iot-plug-ga-b15-2
   duplex: auto
-  mode: Access
+  mode: access
   mtu: 1500
   name: wlan0
   type: IEEE 802.11b/g
@@ -692,7 +692,7 @@ netbox_device_interfaces_shelly:
   vrf: iot
 - device: iot-plug-gf-b14-1
   duplex: auto
-  mode: Access
+  mode: access
   mtu: 1500
   name: wlan0
   type: IEEE 802.11b/g
@@ -702,7 +702,7 @@ netbox_device_interfaces_shelly:
   vrf: iot
 - device: iot-roller-gf2-1
   duplex: auto
-  mode: Access
+  mode: access
   mtu: 1500
   name: wlan0
   type: IEEE 802.11b/g
@@ -712,7 +712,7 @@ netbox_device_interfaces_shelly:
   vrf: iot
 - device: iot-plug-gf7-1
   duplex: auto
-  mode: Access
+  mode: access
   mtu: 1500
   name: wlan0
   type: IEEE 802.11b/g
@@ -722,7 +722,7 @@ netbox_device_interfaces_shelly:
   vrf: iot
 - device: iot-light-ga-b19-1
   duplex: auto
-  mode: Access
+  mode: access
   mtu: 1500
   name: wlan0
   type: IEEE 802.11b/g
@@ -732,7 +732,7 @@ netbox_device_interfaces_shelly:
   vrf: iot
 - device: iot-roller-gf4-1
   duplex: auto
-  mode: Access
+  mode: access
   mtu: 1500
   name: wlan0
   type: IEEE 802.11b/g
@@ -742,7 +742,7 @@ netbox_device_interfaces_shelly:
   vrf: iot
 - device: iot-button-2
   duplex: auto
-  mode: Access
+  mode: access
   mtu: 1500
   name: wlan0
   type: IEEE 802.11b/g
