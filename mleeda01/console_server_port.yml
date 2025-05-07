@@ -1,5 +1,5 @@
 ---
-netbox_console_server_ports:
+netbox_console_server_ports_mleeda01:
   - name: hdmi01
     device: mleeda01
     type: other

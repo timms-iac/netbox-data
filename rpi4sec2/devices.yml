@@ -3,10 +3,10 @@ netbox_devices_rpi4sec2:
   - name: "rpi4sec2"
     device_type: "rpi44"
     device_role: "Server"
-    platform: "Ubuntu"
+    platform: "ubuntu"
     site: "BER1"
     location: "LivingRoom"
     custom_fields:
       SupplierWebpage: "{{ rpi4sec2_SupplierWebpage }}"
       SupplierOrder: "{{ rpi4sec2_SupplierOrder }}"
-    primary_ip4: "192.168.178.252"
+        #    primary_ip4: "192.168.178.252"

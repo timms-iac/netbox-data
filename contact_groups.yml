@@ -1,0 +1,3 @@
+---
+netbox_contact_groups_BER1:
+  - name: "Administrators CG"

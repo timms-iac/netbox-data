@@ -3,10 +3,10 @@ netbox_devices_rpi5bak:
   - name: "rpi5bak"
     device_type: "rpi58"
     device_role: "Server"
-    platform: "Ubuntu"
+    platform: "ubuntu"
     site: "BER1"
     location: "Rack"
     custom_fields:
       SupplierWebpage: "{{ rpi5bak_SupplierWebpage }}"
-    primary_ip4: "172.16.150.141"
+        #    primary_ip4: "172.16.150.141"
  

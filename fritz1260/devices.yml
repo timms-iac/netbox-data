@@ -1,0 +1,14 @@
+---
+netbox_devices_fritz1260:
+  - name: "fritz1260"
+    device_type: "avm1260"
+    device_role: "Router"
+    platform: "fritzos"
+    site: "BER1"
+    location: "RF"
+    custom_fields:
+      webmanagement: https://192.168.0.3/
+      SupplierWebpage: "{{ fritz1260_SupplierWebpage }}" 
+        #      SupplierOrder:
+        #    primary_ip4: "192.168.0.3/32"
+

@@ -3,5 +3,5 @@ netbox_mac_addresses_rpi4sec2:
   - assigned_object:
       name: "eth0"
       device: "rpi4sec2"
-    mac_address: "{{ mac_rpi4sec2_eth0 }}"
+    mac_address: "{{ mac_rpi4sec2_eth0 | upper }}"
 

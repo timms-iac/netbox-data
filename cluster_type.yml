@@ -1,5 +1,5 @@
 ---
-netbox_cluster_types:
+netbox_cluster_types_BER1:
  - name: "kvm"
    description: "Kernel Virtual Machine"
 

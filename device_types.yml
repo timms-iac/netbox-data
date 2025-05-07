@@ -1,3 +1,175 @@
 ---
-netbox_device_types: "{{ netbox_device_types_computer + netbox_device_types_shelly + netbox_device_types_switche + netbox_device_types_router + netbox_device_types_rpi }}"
+netbox_device_types_BER1:
+
+  - model: "MateBook D 15 2021"
+    manufacturer: "Huawei"
+    slug: "matebook15"
+    part_number: "ASIN: B0B1QQHXLZ"
+  - model: "Mini PC Core i5-8279U"
+    manufacturer: "Minis Forum"
+    slug: "mini8279u"
+    part_number: "ASIN: B0919ZGR1R"
+  - model: "WO4 Mini-PC"
+    manufacturer: "Trycoo"
+    slug: "trywo4"
+    part_number: "ASIN: B0CYZB5PRH"
+  - model: "FBA G5 Ryzen 7 5825U 32+1T"
+    manufacturer: "Aoostar"
+    slug: "aoog5"
+    part_number: "ASIN: B0DSHMMZL7"
+  - model: "Mini PC N305 Firewall"
+    manufacturer: "Mnboxconet"
+    slug: "n305fw"
+    part_number: "ASIN: B0DFYDB3LM"
+
+  - model: "Archer C7 v5"
+    manufacturer: "TP-Link"
+    slug: "tlarcherc7"
+    part_number: "ASIN: B00BUSDVBQ"
+    is_full_depth: False
+  - model: "Archer C6 v2 (EU/RU/JP)"
+    manufacturer: "TP-Link"
+    slug: "tlarcherc6"
+    part_number: "ASIN: B07GVR9TG7"
+    is_full_depth: False
+  - model: "Fritz!Box 7690"
+    manufacturer: "AVM"
+    slug: "avm7690"
+    part_number: "ASIN: B0D63DSFJ6"
+    is_full_depth: False
+  - model: "Fritz!Box 7490"
+    manufacturer: "AVM"
+    slug: "avm7490"
+    part_number: "ASIN: B01LXPJCQN"
+    is_full_depth: False
+  - model: "Fritz!Powerline 1220"
+    manufacturer: "AVM"
+    slug: "avm1220"
+    part_number: "ASIN: B0752V1XFG"
+    is_full_depth: False
+  - model: "Fritz!Powerline 1260"
+    manufacturer: "AVM"
+    slug: "avm1260"
+    part_number: "ASIN: B0752V1XFG"
+    is_full_depth: False
+  - model: "Fritz!Repeater 1750E"
+    manufacturer: "AVM"
+    slug: "avm1750e"
+    part_number: "ASIN: B00N80IK88"
+    is_full_depth: False
+
+  - model: "Raspberry Pi 4 Model B, 4GB"
+    manufacturer: "Raspberry Pi Foundation"
+    slug: "rpi44"
+    part_number: "ASIN: B09TTNF8BT"
+    is_full_depth: False
+  - model: "Raspberry Pi 4 Model B, 8GB"
+    manufacturer: "Raspberry Pi Foundation"
+    slug: "rpi48"
+    part_number: "ASIN: B09TTKT94J"
+    is_full_depth: False
+  - model: "Raspberry Pi 5, 8GB"
+    manufacturer: "Raspberry Pi Foundation"
+    slug: "rpi58"
+    part_number: "ASIN: B0CK2FCG1K"
+    is_full_depth: False
+
+  - description: ShellyBulbDuo
+    is_full_depth: false
+    manufacturer: Shelly
+    model: SHBDUO-1
+    part_number: "1234"
+    slug: shbduo-1
+  - description: shellybutton1
+    is_full_depth: false
+    manufacturer: Shelly
+    model: SHBTN-1
+    part_number: "1234"
+    slug: shbtn-1
+  - description: shellydimmer
+    is_full_depth: false
+    manufacturer: Shelly
+    model: SHDM-1
+    part_number: "1234"
+    slug: shdm-1
+  - description: shellydimmer2
+    is_full_depth: false
+    manufacturer: Shelly
+    model: SHDM-2
+    part_number: "1234"
+    slug: shdm-2
+  - description: shellyix3
+    is_full_depth: false
+    manufacturer: Shelly
+    model: SHIX3-1
+    part_number: "1234"
+    slug: shix3-1
+  - description: shellyplug-s
+    is_full_depth: false
+    manufacturer: Shelly
+    model: SHPLG-S
+    part_number: "1234"
+    slug: shplg-s
+  - description: shelly1
+    is_full_depth: false
+    manufacturer: Shelly
+    model: SHSW-1
+    part_number: "1234"
+    slug: shsw-1
+  - description: shelly2.5
+    is_full_depth: false
+    manufacturer: Shelly
+    model: SHSW-25
+    part_number: "1234"
+    slug: shsw-25
+  - description: shelly1pm
+    is_full_depth: false
+    manufacturer: Shelly
+    model: SHSW-PM
+    part_number: "1234"
+    slug: shsw-pm
+  - description: shellyplus2pm
+    is_full_depth: false
+    manufacturer: Shelly
+    model: shellyplus2pm
+    part_number: "1234"
+    slug: shellyplus2pm
+  - description: shellybutton2
+    is_full_depth: false
+    manufacturer: Shelly
+    model: SHBTN-2
+    part_number: "1234"
+    slug: shbtn-2
+  
+  - model: "TL-SG1024DE"
+    manufacturer: "TP-Link"
+    slug: "tlsg1024de"
+    part_number: "ASIN: B00CUG8ESM"
+  - model: "TL-SG116E"
+    manufacturer: "TP-Link"
+    slug: "tlsg116e"
+    part_number: "ASIN: B07FXXCWQ6"
+  - model: "TL-SG108E"
+    manufacturer: "TP-Link"
+    slug: "tlsg108e"
+    part_number: "ASIN: B00JKB63D8"
+  - model: "2G08110GSM"
+    manufacturer: "MokerLink"
+    part_number: "ASIN: B0CCD7P283"
+  - model: "SL-SWTGW2224AS"
+    manufacturer: "Sodola"
+    slug: "swtgw2224as"
+    part_number: "ASIN: B0CQR3MXGT"
+  - model: "SL-SWTGW2C8F"
+    manufacturer: "Sodola"
+    slug: "swtgw2c8f"
+    part_number: "ASIN: B0CQJFJSFH"
+  - model: "SL-SWTGW2216AS"
+    manufacturer: "Sodola"
+    slug: "swtgw2216as"
+    part_number: "ASIN: B0CQR3MXGT"
+  - model: "MLEEDA-KVM-10"
+    manufacturer: "MLEEDA"
+    slug: "mlkvm10"
+    part_number: "ASIN: B0DL2DB1XJ"
 

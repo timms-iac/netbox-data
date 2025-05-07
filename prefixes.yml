@@ -72,3 +72,103 @@ netbox_prefixes_BER1:
       name: "iot"
     vrf: "iot"
 
+  - prefix: "172.20.20.0/24"
+    description: "Development k8s Network"
+    vlan:
+      name: "devk8smgmt"
+    vrf: "devk8smgmt"
+  - prefix: "172.20.21.0/24"
+    description: "Development k8s Service Network"
+    vlan:
+      name: "devk8ssvc"
+    vrf: "devk8ssvc"
+  - prefix: "172.20.28.0/24"
+    description: "Development k8s Ceph Network"
+    vlan:
+      name: "devk8sceph"
+
+  - prefix: "172.20.30.0/24"
+    description: "Development OpenStack Network"
+    vlan:
+      name: "devosmgmt"
+    vrf: "devosmgmt"
+  - prefix: "172.20.31.0/24"
+    description: "Development OpenStack Service Network"
+    vlan:
+      name: "devossvc"
+    vrf: "devossvc"
+  - prefix: "172.20.32.0/24"
+    description: "Development OpenStack Provider Network"
+    vlan:
+      name: "devosprov"
+    vrf: "devosprov"
+  - prefix: "172.20.38.0/24"
+    description: "Development OpenStack Ceph Network"
+    vlan:
+      name: "devosceph"
+
+  - prefix: "172.20.40.0/24"
+    description: "Development DMZ Network"
+    vlan:
+      name: "devdmzmgmt"
+    vrf: "devdmzmgmt"
+  - prefix: "172.20.41.0/24"
+    description: "Development DMZ Service Network"
+    vlan:
+      name: "devdmzsvc"
+    vrf: "devdmzsvc"
+  - prefix: "172.20.48.0/24"
+    description: "Development DMZ Ceph Network"
+    vlan:
+      name: "devdmzceph"
+
+  - prefix: "172.25.20.0/24"
+    description: "Production k8s Network"
+    vlan:
+      name: "prodk8smgmt"
+    vrf: "prodk8smgmt"
+  - prefix: "172.25.21.0/24"
+    description: "Production k8s Service Network"
+    vlan:
+      name: "prodk8ssvc"
+    vrf: "prodk8ssvc"
+  - prefix: "172.25.28.0/24"
+    description: "Production k8s Ceph Network"
+    vlan:
+      name: "prodk8sceph"
+
+  - prefix: "172.25.30.0/24"
+    description: "Production OpenStack Network"
+    vlan:
+      name: "prodosmgmt"
+    vrf: "prodosmgmt"
+  - prefix: "172.25.31.0/24"
+    description: "Production OpenStack Service Network"
+    vlan:
+      name: "prodossvc"
+    vrf: "prodossvc"
+  - prefix: "172.25.32.0/24"
+    description: "Production OpenStack Provider Network"
+    vlan:
+      name: "prodosprov"
+    vrf: "prodosprov"
+  - prefix: "172.25.38.0/24"
+    description: "Production OpenStack Ceph Network"
+    vlan:
+      name: "prodosceph"
+
+  - prefix: "172.25.40.0/24"
+    description: "Production DMZ Network"
+    vlan:
+      name: "proddmzmgmt"
+    vrf: "proddmzmgmt"
+  - prefix: "172.25.41.0/24"
+    description: "Production DMZ Service Network"
+    vlan:
+      name: "proddmzsvc"
+    vrf: "proddmzsvc"
+  - prefix: "172.25.48.0/24"
+    description: "Production DMZ Ceph Network"
+    vlan:
+      name: "proddmzceph"
+

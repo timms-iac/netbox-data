@@ -2,7 +2,7 @@
 netbox_devices_mleeda01:
   - name: "mleeda01"
     device_type: "mlkvm10"
-    device_role: "kvmswitch"
+    device_role: "KVM Switch"
     platform: "mleos"
     site: "BER1"
     location: "Rack"

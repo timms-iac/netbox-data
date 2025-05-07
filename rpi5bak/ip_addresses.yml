@@ -1,0 +1,6 @@
+---
+netbox_ip_addresses_rpi5bak:
+  - address: "172.16.150.141/32"
+    assigned_object:
+      device: "rpi5bak"
+      name: "eth0"

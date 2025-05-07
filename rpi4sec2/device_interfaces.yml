@@ -4,7 +4,7 @@ netbox_device_interfaces_rpi4sec2:
     device: "rpi4sec2"
     type: "1000BASE-T (1GE)"
     duplex: "auto"
-    primary_mac_address: "{{ mac_rpi4sec2_eth0 }}"
+    primary_mac_address: "{{ mac_rpi4sec2_eth0 | upper }}"
     mtu: 1500
     mode: "tagged"
     tagged_vlans:

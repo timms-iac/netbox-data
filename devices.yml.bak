@@ -1,2 +1,0 @@
----
-netbox_devices: "{{ netbox_devices_kiab + netbox_devices_air6 + netbox_devices_try01 + netbox_devices_try02 + netbox_devices_try03 + netbox_devices_aoo01 + netbox_devices_aoo02 + netbox_devices_mnbox01 + netbox_devices_mnbox02 + netbox_devices_tplink01 + netbox_devices_tplink02 + netbox_devices_tplink03  + netbox_devices_mokerlink01 + netbox_devices_sodola01 + netbox_devices_sodola02 + netbox_devices_sodola03 + netbox_devices_rpi5bak  + netbox_devices_rpi4sec1 + netbox_devices_rpi4sec2}}"

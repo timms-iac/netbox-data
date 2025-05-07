@@ -1,0 +1,7 @@
+---
+netbox_ip_addresses_rpi4iot:
+  - address: "172.17.1.2/32"
+    assigned_object:
+      device: "rpi4iot"
+      name: "eth0"
+

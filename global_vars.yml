@@ -1,26 +1,44 @@
 ---
 netbox_devices:
+  - air6
   - aoo01
   - aoo02
+  - fritz1220
+  - fritz1260
+    #  - fritz1750e-01
+    #  - fritz1750e-02
+    #  - fritz7490
+    #  - fritz7690
   - kiab
+  - mleeda01
   - mnbox01
   - mnbox02
-  - air6
-  - try01
-  - try02
-  - try03
+  - mokerlink01
+    #  - openwrtb101
+    #  - openwrtb102
+    #  - openwrtgf01
+    #  - openwrtgf02
+    #  - openwrtgf03
+    #  - openwrtrf01
+    #  - rpi4iot
+  - rpi4k8s1
+  - rpi4k8s2
+  - rpi4k8s3
+  - rpi4k8s4
+  - rpi4sec1
+  - rpi4sec2
+  - rpi5bak
+    #  - shelly
   - sodola01
   - sodola02
   - sodola03
   - tplink01
     #  - tplink02
   - tplink03
+  - try01
+  - try02
+  - try03
+# - vrrp
 netbox_sites:
   - BER1
 netbox_default_site: "BER1"
-netbox_device_types:
-  - computer
-  - switche
-    #  - router
-    #  - rpi
-

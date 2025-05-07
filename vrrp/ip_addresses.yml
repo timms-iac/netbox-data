@@ -1,0 +1,64 @@
+---
+netbox_ip_addresses_vrrp:
+  - address: "192.168.178.253/32"
+    role: "VRRP"
+  - address: "172.16.50.253/32"
+    role: "VRRP"
+  - address: "172.16.100.253/32"
+    role: "VRRP"
+  - address: "172.16.150.253/32"
+    role: "VRRP"
+  - address: "172.16.200.253/32"
+    role: "VRRP"
+  - address: "172.17.1.253/32"
+    role: "VRRP"
+  - address: "172.16.1.254/32"
+    role: "VRRP"
+      #    status: "BACKUP"
+      #    interface: "VRRPv2:1"
+    #    assigned_object:
+    #      device: "VRRPv2:1"
+    #      name: "mgmt1"
+  - address: "192.168.178.254/32"
+    role: "VRRP"
+  - address: "172.16.50.254/32"
+    role: "VRRP"
+  - address: "172.16.100.254/32"
+    role: "VRRP"
+  - address: "172.16.150.254/32"
+    role: "VRRP"
+  - address: "172.16.200.254/32"
+    role: "VRRP"
+  - address: "172.17.1.254/32"
+    role: "VRRP"
+
+  - address: "172.25.5.253/32"
+    role: "VRRP"
+    vrf: "hypervisor"
+    assigned_object_id: '{{ query("netbox.netbox.nb_lookup", "fhrp-groups",
+        api_filter="group_id=2505",
+        api_endpoint="http://" + netbox_loadbalancer_ip,
+        token=netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    assigned_object_type: "ipam.fhrpgroup"
+
+
+
+  - address: "192.168.20.253/32"
+    role: "VRRP"
+    vrf: "dmz"
+    assigned_object_id: '{{ query("netbox.netbox.nb_lookup", "fhrp-groups",
+        api_filter="group_id=2002",
+        api_endpoint="http://" + netbox_loadbalancer_ip,
+        token=netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    assigned_object_type: "ipam.fhrpgroup"
+
+  - address: "192.168.25.253/32"
+    role: "VRRP"
+    vrf: "dmz"
+    assigned_object_id: '{{ query("netbox.netbox.nb_lookup", "fhrp-groups",
+        api_filter="group_id=2502",
+        api_endpoint="http://" + netbox_loadbalancer_ip,
+        token=netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    assigned_object_type: "ipam.fhrpgroup"
+
+

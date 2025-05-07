@@ -1,0 +1,3 @@
+---
+netbox_tenants_BER1:
+  - name: "{{ default_user_comment }}"

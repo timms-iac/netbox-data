@@ -67,3 +67,129 @@ netbox_vlans_BER1:
     description: "IOT Devices"
     vlan_group: "infra"
 
+#   k8s cluster
+  - name: "devk8smgmt"
+    vid: 2020
+    site: "BER1"
+    description: "Development k8s Cluster"
+    vlan_group: "devk8s"
+#   service
+  - name: "devk8ssvc"
+    vid: 2021
+    site: "BER1"
+    description: "Development k8s Services"
+    vlan_group: "devk8s"
+#   k8s ceph
+  - name: "devk8sceph"
+    vid: 2028
+    site: "BER1"
+    description: "Ceph Cluster for Development k8s Cluster"
+    vlan_group: "devceph"
+
+#   k8s cluster
+  - name: "devosmgmt"
+    vid: 2030
+    site: "BER1"
+    description: "Development Openstack k8s Cluster"
+    vlan_group: "devos"
+#   service
+  - name: "devossvc"
+    vid: 2031
+    site: "BER1"
+    description: "Development Openstack k8s Services"
+    vlan_group: "devos"
+#   provider
+  - name: "devosprov"
+    vid: 2032
+    site: "BER1"
+    description: "Development Openstack Provider Network"
+    vlan_group: "devos"
+#   ceph
+  - name: "devosceph"
+    vid: 2038
+    site: "BER1"
+    description: "Ceph Cluster for Development Openstack k8s Cluster"
+    vlan_group: "devceph"
+
+#   k8s cluster
+  - name: "devdmzmgmt"
+    vid: 2040
+    site: "BER1"
+    description: "Development DMZ k8s Cluster"
+    vlan_group: "devdmz"
+#   service
+  - name: "devdmzsvc"
+    vid: 2041
+    site: "BER1"
+    description: "Development DMZ k8s Services"
+    vlan_group: "devdmz"
+#   ceph
+  - name: "devdmzceph"
+    vid: 2048
+    site: "BER1"
+    description: "Ceph Cluster for Development DMZ k8s Cluster"
+    vlan_group: "devceph"
+
+#   k8s cluster
+  - name: "prodk8smgmt"
+    vid: 2520
+    site: "BER1"
+    description: "Production k8s Cluster"
+    vlan_group: "prodk8s"
+#   service
+  - name: "prodk8ssvc"
+    vid: 2521
+    site: "BER1"
+    description: "Production k8s Services"
+    vlan_group: "prodk8s"
+#   k8s ceph
+  - name: "prodk8sceph"
+    vid: 2528
+    site: "BER1"
+    description: "Ceph Cluster for Production k8s Cluster"
+    vlan_group: "prodceph"
+
+#   k8s cluster
+  - name: "prodosmgmt"
+    vid: 2530
+    site: "BER1"
+    description: "Production Openstack k8s Cluster"
+    vlan_group: "prodos"
+#   service
+  - name: "prodossvc"
+    vid: 2531
+    site: "BER1"
+    description: "Production Openstack k8s Services"
+    vlan_group: "prodos"
+#   provider
+  - name: "prodosprov"
+    vid: 2532
+    site: "BER1"
+    description: "Production Openstack Provider Network"
+    vlan_group: "prodos"
+#   openstack ceph
+  - name: "prodosceph"
+    vid: 2538
+    site: "BER1"
+    description: "Ceph Cluster for Production Openstack k8s Cluster"
+    vlan_group: "prodceph"
+
+#   k8s cluster
+  - name: "proddmzmgmt"
+    vid: 2540
+    site: "BER1"
+    description: "Production DMZ k8s Cluster"
+    vlan_group: "proddmz"
+#   service
+  - name: "proddmzsvc"
+    vid: 2541
+    site: "BER1"
+    description: "Production DMZ k8s Services"
+    vlan_group: "proddmz"
+#   DMZ ceph
+  - name: "proddmzceph"
+    vid: 2548
+    site: "BER1"
+    description: "Ceph Cluster for Production DMZ k8s Cluster"
+    vlan_group: "prodceph"
+

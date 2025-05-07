@@ -1,5 +1,5 @@
 ---
-netbox_custom_field_choice_sets:
+netbox_custom_field_choice_sets_BER1:
   - name: openflow
     description: "OpenFlow protocols to use with OpenVSwitch"
     extra_choices:

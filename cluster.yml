@@ -1,5 +1,5 @@
 ---
-netbox_clusters:
+netbox_clusters_BER1:
 
   - name: "hypervisor"
     cluster_type: "kvm"

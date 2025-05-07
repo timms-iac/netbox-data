@@ -1,5 +1,5 @@
 ---
-netbox_fhrp_groups:
+netbox_fhrp_groups_BER1:
   - protocol: "vrrp2"
     group_id: 1
     description: "mgmt1"

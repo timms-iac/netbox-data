@@ -1,5 +1,5 @@
 ---
-netbox_device_interfaces_shelly:
+netbox_device_interfaces_shellyX:
 - device: iot-light-gf0-4
   duplex: auto
   mode: access

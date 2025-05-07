@@ -1,4 +1,5 @@
 ---
-netbox_contacts:
+netbox_contacts_BER1:
   - name: "{{ default_user_comment }}"
     email: "{{ default_user_email }}"
+      #    contact_group: "Administrators CG"

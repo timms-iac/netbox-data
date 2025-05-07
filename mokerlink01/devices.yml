@@ -1,7 +1,7 @@
 ---
 netbox_devices_mokerlink01:
   - name: "mokerlink01"
-    device_type: "2G08110GSM"
+    device_type: "2g08110gsm"
     device_role: "Switch"
     platform: "mlos"
     site: "BER1"
@@ -10,5 +10,5 @@ netbox_devices_mokerlink01:
       webmanagement: http://mokerlink01/
       SupplierWebpage: "{{ mokerlink01_SupplierWebpage }}" 
       SupplierOrder: "{{ mokerlink01_SupplierOrder }}"
-    primary_ip4: "172.25.1.24"
+    primary_ip4: "172.25.1.24/32"
 

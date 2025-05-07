@@ -1,0 +1,3 @@
+---
+netbox_tenant_groups_BER1:
+  - name: "AdministratorT"

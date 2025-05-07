@@ -1,5 +1,5 @@
 ---
-netbox_custom_fields:
+netbox_custom_fields_BER1:
   - name: "EEE"
     object_types:
       - dcim.interface
@@ -42,16 +42,16 @@ netbox_custom_fields:
 
   - name: "NetworkVersion"
     object_types:
-      - dcim.device
       - virtualization.virtualmachine
+      - dcim.device
     type: "integer"
     default: 2
     description: "Netplan Network Version"
 
   - name: "OpenVSwitchProtocols"
     object_types:
-      - dcim.device
       - virtualization.virtualmachine
+      - dcim.device
     type: "multiselect"
     default: [none]
     choice_set: openflow

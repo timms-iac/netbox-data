@@ -1,0 +1,82 @@
+---
+netbox_vlan_groups_BER1:
+  - name: "legacy"
+    scope: "BER1"
+    scope_type: "dcim.site"
+    description: "Legacy Networks"
+    vid_ranges: [
+      [50,299],
+      [1700,1799]
+    ]
+
+  - name: "infra"
+    scope: "BER1"
+    scope_type: "dcim.site"
+    description: "Infrastructure Networks"
+    vid_ranges: [
+      [1,49],
+      [1900,1999]
+    ]
+
+  - name: "devk8s"
+    scope: "BER1"
+    scope_type: "dcim.site"
+    description: "Development k8s Networks"
+    vid_ranges: [
+      [2020,2027]
+    ]
+  - name: "devos"
+    scope: "BER1"
+    scope_type: "dcim.site"
+    description: "Development Openstack Networks"
+    vid_ranges: [
+      [2030,2037]
+    ]
+  - name: "devdmz"
+    scope: "BER1"
+    scope_type: "dcim.site"
+    description: "Development DMZ Networks"
+    vid_ranges: [
+      [2040,2047]
+    ]
+  - name: "devceph"
+    scope: "BER1"
+    scope_type: "dcim.site"
+    description: "Development Ceph Networks"
+    vid_ranges: [
+      [2028,2029],
+      [2038,2039],
+      [2048,2049]
+    ]
+
+
+  - name: "prodk8s"
+    scope: "BER1"
+    scope_type: "dcim.site"
+    description: "Production k8s Networks"
+    vid_ranges: [
+      [2520,2527]
+    ]
+  - name: "prodos"
+    scope: "BER1"
+    scope_type: "dcim.site"
+    description: "Production Openstack Networks"
+    vid_ranges: [
+      [2530,2537]
+    ]
+  - name: "proddmz"
+    scope: "BER1"
+    scope_type: "dcim.site"
+    description: "Production DMZ Networks"
+    vid_ranges: [
+      [2540,2547]
+    ]
+  - name: "prodceph"
+    scope: "BER1"
+    scope_type: "dcim.site"
+    description: "Production Ceph Networks"
+    vid_ranges: [
+      [2528,2529],
+      [2538,2539],
+      [2548,2549]
+    ]
