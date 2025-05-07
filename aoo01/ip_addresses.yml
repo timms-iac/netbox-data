@@ -1,0 +1,9 @@
+---
+netbox_ip_addresses_aoo01:
+  - address: "172.25.5.4/32"
+    assigned_object:
+      device: "aoo01"
+      name: "mgmt0"
+    dns_name: "aoo01.home.{{ domain_name }}"
+    vrf: "hypervisor"
+

@@ -4,7 +4,7 @@ netbox_device_interfaces_air6:
     device: "air6"
     type: "IEEE 802.11ac"
     duplex: "auto"
-    mode: "access"
+    mode: "Access"
     untagged_vlan:
       name: "Work"
       site: "BER1"
@@ -15,7 +15,7 @@ netbox_device_interfaces_air6:
     device: "air6"
     type: "2.5GBASE-T (2.5GE)"
     duplex: "auto"
-    mode: "access"
+    mode: "Access"
     untagged_vlan:
       name: "Work"
       site: "BER1"

@@ -1,9 +1,7 @@
 ---
-netbox_platforms:
+netbox_platforms_BER1:
   - name: "OpenWRT"
-    slug: "openwrt"
   - name: "Ubuntu"
-    slug: "ubuntu"
   - name: "Ubuntu 24.04"
     slug: "ubuntu2404"
   - name: "Talos Linux v1.9"
@@ -15,7 +13,6 @@ netbox_platforms:
   - name: "Sodola OS"
     slug: "soos"
   - name: "OPNsense"
-    slug: "opnsense"
   - name: "Fritz!OS"
     slug: "fritzos"
   - name: "MLEEDA OS"

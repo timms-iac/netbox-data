@@ -27,7 +27,7 @@ netbox_device_interfaces_mnbox02:
       name: "kube"
       device: "mnbox02"
     duplex: "auto"
-    primary_mac_address: "{{ mac_mnbox02_kube0 }}"
+    primary_mac_address: "{{ mac_mnbox02_kube0 | upper }}"
     mtu: 1500
 
   - name: "ceph0"
@@ -37,21 +37,21 @@ netbox_device_interfaces_mnbox02:
       name: "ceph"
       device: "mnbox02"
     duplex: "auto"
-    primary_mac_address: "{{ mac_mnbox02_ceph0 }}"
+    primary_mac_address: "{{ mac_mnbox02_ceph0 | upper }}"
     mtu: 1500
 
   - name: "te1"
     device: "mnbox02"
     type: "SFP+ (10GE)"
     duplex: "auto"
-      #    mac_address: "{{ mac_mnbox02_te1 }}"
+      #    mac_address: "{{ mac_mnbox02_te1 | upper }}"
     mtu: 1500
 
   - name: "te2"
     device: "mnbox02"
     type: "SFP+ (10GE)"
     duplex: "auto"
-      #    mac_address: "{{ mac_mnbox02_te2 }}"
+      #    mac_address: "{{ mac_mnbox02_te2 | upper }}"
     mtu: 1500
 
 

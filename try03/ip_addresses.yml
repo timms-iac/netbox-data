@@ -1,0 +1,9 @@
+---
+netbox_ip_addresses_try03:
+  - address: "172.25.5.3/32"
+    assigned_object:
+      device: "try03"
+      name: "mgmt0"
+    dns_name: "try03.home.{{ domain_name }}"
+    vrf: "hypervisor"
+

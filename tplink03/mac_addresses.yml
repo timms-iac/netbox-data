@@ -1,7 +1,7 @@
 ---
-netbox_mac_addresses_tplink02:
+netbox_mac_addresses_tplink03:
   - assigned_object:
       name: "vlan1"
-      device: "tplink02"
-    mac_address: "{{ mac_tplink02_vlan1 }}"
+      device: "tplink03"
+    mac_address: "{{ mac_tplink03_vlan1 | upper }}"
 

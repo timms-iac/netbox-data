@@ -1,0 +1,39 @@
+---
+netbox_ip_addresses_kiab:
+  - address: "172.16.1.250/32"
+    assigned_object:
+      device: "kiab"
+      name: "switch0"
+    vrf: "Mgmt"
+
+  - address: "172.16.100.3/32"
+    assigned_object:
+      device: "kiab"
+      name: "legacy"
+    vrf: "Work"
+    dns_name: kiab.home.essigke.net
+
+  - address: "172.25.1.250/32"
+    assigned_object:
+      device: "kiab"
+      name: "switch0"
+    vrf: "mgmt"
+
+  - address: "172.25.4.250/32"
+    assigned_object:
+      device: "kiab"
+      name: "provision0"
+    vrf: "provision"
+
+  - address: "172.25.5.250/32"
+    assigned_object:
+      device: "kiab"
+      name: "hypervisor0"
+    vrf: "hypervisor"
+
+  - address: "172.25.6.250/32"
+    assigned_object:
+      device: "kiab"
+      name: "firewall0"
+    vrf: "firewall"
+

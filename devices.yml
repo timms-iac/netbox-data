@@ -1,0 +1,13 @@
+---
+nb_hosts:
+  - aoo01
+  - aoo02
+netbox_devices: |
+  {% set output = [] %}
+  {% for host in nb_hosts %}
+  {% set _ = output.append(lookup('vars', "netbox_devices_" + host)) %}
+  {% endfor %}
+  {{ output | flatten}}
+  
+  
+#"{{ netbox_devices_aoo01 + netbox_devices_aoo02 }}"

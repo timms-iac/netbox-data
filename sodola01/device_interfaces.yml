@@ -536,6 +536,6 @@ netbox_device_interfaces_sodola01:
     description: "Switch Managemt Interface to assign MAC/IP"
     type: "Virtual"
     duplex: "auto"
-    primary_mac_address: "{{ mac_sodola01_vlan1 }}"
+    primary_mac_address: "{{ mac_sodola01_vlan1 | upper }}"
     mtu: 1500
 

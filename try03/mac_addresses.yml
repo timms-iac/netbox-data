@@ -3,13 +3,13 @@ netbox_mac_addresses_try03:
   - assigned_object:
       name: "mgmt0"
       device: "try03"
-    mac_address: "{{ mac_try03_mgmt0 }}"
+    mac_address: "{{ mac_try03_mgmt0 | upper }}"
   - assigned_object:
       name: "kube0"
       device: "try03"
-    mac_address: "{{ mac_try03_kube0 }}"
+    mac_address: "{{ mac_try03_kube0 | upper }}"
   - assigned_object:
       name: "ceph0"
       device: "try03"
-    mac_address: "{{ mac_try03_ceph0 }}"
+    mac_address: "{{ mac_try03_ceph0 | upper }}"
 

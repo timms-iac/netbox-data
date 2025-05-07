@@ -1,24 +1,26 @@
 ---
-netbox_manufacturers:
-  - Huawei
-  - Minis Forum
-  - Trycoo
-  - Aoostar
-  - Mnboxconet
-  - DLink
-  - TP-Link
-  - Sodola
-  - Canonical
-  - openwrt.org
-  - Raspberry Pi Foundation
-  - MokerLink
-  - Crucial
-  - Kingston
-  - Peladn
-  - Samsung
-  - Sandisk
-  - Oliveria
-  - CableCreation
-  - AVM
-  - MLEEDA
-  - Shelly
+netbox_manufacturers_BER1:
+  - name: Huawei
+  - name: Minis Forum
+    slug: minis-forum
+  - name: Trycoo
+  - name: Aoostar
+  - name: Mnboxconet
+  - name: DLink
+  - name: TP-Link
+  - name: Sodola
+  - name: Canonical
+  - name: openwrt.org
+  - name: Raspberry Pi Foundation
+    slug: raspberry-pi-foundation
+  - name: MokerLink
+  - name: Crucial
+  - name: Kingston
+  - name: Peladn
+  - name: Samsung
+  - name: Sandisk
+  - name: Oliveria
+  - name: CableCreation
+  - name: AVM
+  - name: MLEEDA
+  - name: Shelly

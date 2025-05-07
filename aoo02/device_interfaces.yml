@@ -13,7 +13,7 @@ netbox_device_interfaces_aoo02:
     device: "aoo02"
     type: "1000BASE-T (1GE)"
     duplex: "auto"
-    primary_mac_address: "{{ mac_aoo02_mgmt0 }}"
+    primary_mac_address: "{{ mac_aoo02_mgmt0 |upper}}"
     mtu: 1500
 
   - name: "kube0"
@@ -23,7 +23,7 @@ netbox_device_interfaces_aoo02:
       name: "kube"
       device: "aoo02"
     duplex: "auto"
-    primary_mac_address: "{{ mac_aoo02_kube0 }}"
+    primary_mac_address: "{{ mac_aoo02_kube0 |upper}}"
     mtu: 1500
 
   - name: "ceph0"
@@ -33,7 +33,7 @@ netbox_device_interfaces_aoo02:
       name: "ceph"
       device: "aoo02"
     duplex: "auto"
-    primary_mac_address: "{{ mac_aoo02_ceph0 }}"
+    primary_mac_address: "{{ mac_aoo02_ceph0 | upper}}"
     mtu: 1500
 
 

@@ -531,6 +531,6 @@ netbox_device_interfaces_sodola03:
     type: "Virtual"
     mgmt_only: true
     duplex: "auto"
-    primary_mac_address: "{{ mac_sodola03_vlan1 }}"
+    primary_mac_address: "{{ mac_sodola03_vlan1 | upper }}"
     mtu: 1500
 

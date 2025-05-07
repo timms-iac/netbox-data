@@ -1,0 +1,9 @@
+---
+netbox_ip_addresses_sodola01:
+  - address: "172.25.1.25/32"
+    assigned_object:
+      device: "sodola01"
+      name: "vlan1"
+    dns_name: "sodola01.infra.{{ domain_name }}"
+    vrf: "mgmt"
+

@@ -3,13 +3,13 @@ netbox_mac_addresses_aoo01:
   - assigned_object:
       name: "mgmt0"
       device: "aoo01"
-    mac_address: "{{ mac_aoo01_mgmt0 }}"
+    mac_address: "{{ mac_aoo01_mgmt0 | upper }}"
   - assigned_object:
       name: "kube0"
       device: "aoo01"
-    mac_address: "{{ mac_aoo01_kube0 }}"
+    mac_address: "{{ mac_aoo01_kube0 | upper }}"
   - assigned_object:
       name: "ceph0"
       device: "aoo01"
-    mac_address: "{{ mac_aoo01_ceph0 }}"
+    mac_address: "{{ mac_aoo01_ceph0 | upper }}"
 

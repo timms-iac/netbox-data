@@ -1,6 +1,6 @@
 ---
-netbox_sites:
+netbox_sites_BER1:
   - name: "BER1"
     time_zone: Europe/Berlin
-    status: Active
+    status: active
 

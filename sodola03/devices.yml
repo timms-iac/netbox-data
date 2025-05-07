@@ -11,7 +11,7 @@ netbox_devices_sodola03:
       SupplierWebpage: "{{ sodola03_SupplierWebpage }}" 
       SupplierOrder: "{{ sodola03_SupplierOrder }}"
       Firmware: "{{ sodola03_Firmware }}"
-    primary_ip4: "172.25.1.27"
+    primary_ip4: "172.25.1.27/32"
     serial: "{{ sodola03_serial }}"
     description: "16x2.5 GbE + 2x10GbE Switch"
     airflow: "passive"

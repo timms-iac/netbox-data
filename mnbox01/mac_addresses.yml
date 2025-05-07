@@ -3,9 +3,9 @@ netbox_mac_addresses_mnbox01:
   - assigned_object:
       name: "kube0"
       device: "mnbox01"
-    mac_address: "{{ mac_mnbox01_kube0 }}"
+    mac_address: "{{ mac_mnbox01_kube0 | upper }}"
   - assigned_object:
       name: "ceph0"
       device: "mnbox01"
-    mac_address: "{{ mac_mnbox01_ceph0 }}"
+    mac_address: "{{ mac_mnbox01_ceph0 | upper }}"
 

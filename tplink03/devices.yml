@@ -10,5 +10,5 @@ netbox_devices_tplink03:
       webmanagement: http://tplink03/
       SupplierWebpage: "{{ tplink03_SupplierWebpage }}" 
       SupplierOrder: "{{ tplink03_SupplierOrder }}"
-    primary_ip4: "172.25.1.20"
+    primary_ip4: "172.25.1.20/32"
 

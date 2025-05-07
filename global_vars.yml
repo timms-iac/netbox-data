@@ -1,0 +1,26 @@
+---
+netbox_devices:
+  - aoo01
+  - aoo02
+  - kiab
+  - mnbox01
+  - mnbox02
+  - air6
+  - try01
+  - try02
+  - try03
+  - sodola01
+  - sodola02
+  - sodola03
+  - tplink01
+    #  - tplink02
+  - tplink03
+netbox_sites:
+  - BER1
+netbox_default_site: "BER1"
+netbox_device_types:
+  - computer
+  - switche
+    #  - router
+    #  - rpi
+

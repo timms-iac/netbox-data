@@ -1,2 +1,27 @@
 ---
-netbox_vrfs: "{{ netbox_vrfs_legacy + netbox_vrfs_infra + netbox_vrfs_dev + netbox_vrfs_prod }}"
+netbox_vrfs_BER1:
+  - name: "Mgmt"
+  - name: "Android"
+  - name: "Work"
+  - name: "Server"
+  - name: "Test"
+  - name: "Guest"
+  - name: "Shelly"
+# infrastructure
+  - name: "mgmt"
+    description: "Network Management"
+  - name: "dmz"
+    description: "Fritz!Box DMZ"
+  - name: "guest"
+    description: "Fritz!Box Guest Network"
+  - name: "provision"
+    description: "PXE Boot Provisioning Network"
+  - name: "hypervisor"
+    description: "Hypervisor Network"
+  - name: "firewall"
+    description: "Firewall Network"
+
+
+  - name: "iot"
+    description: "IOT Devices"
+

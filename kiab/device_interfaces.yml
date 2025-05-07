@@ -171,7 +171,7 @@ netbox_device_interfaces_kiab:
       name: "legacy"
       device: "kiab"
     duplex: "auto"
-    primary_mac_address: "{{ mac_kiab_eth0 }}"
+    primary_mac_address: "{{ mac_kiab_eth0 | upper }}"
     mtu: 1500
 
   - name: "eth1"
@@ -181,6 +181,6 @@ netbox_device_interfaces_kiab:
       name: "deploy"
       device: "kiab"
     duplex: "auto"
-    primary_mac_address: "{{ mac_kiab_eth1 }}"
+    primary_mac_address: "{{ mac_kiab_eth1 | upper }}"
     mtu: 1500
 
