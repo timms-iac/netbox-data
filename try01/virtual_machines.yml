@@ -4,7 +4,8 @@ netbox_virtual_machines_try01:
     device: "try01"
     cluster: "hypervisor"
     memory: 4000
-    vcpus: 4
+    vcpus: 4.0
+    disk: 10000
     platform: "talos19"
     virtual_machine_role: "controlplane"
     site: "BER1"
@@ -13,7 +14,8 @@ netbox_virtual_machines_try01:
     device: "try01"
     cluster: "hypervisor"
     memory: 4000
-    vcpus: 4
+    vcpus: 4.0
+    disk: 310000
     platform: "talos19"
     virtual_machine_role: "worker"
     site: "BER1"

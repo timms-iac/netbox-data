@@ -4,7 +4,7 @@ netbox_virtual_machines_mnbox01:
     device: "mnbox01"
     cluster: "hypervisor"
     memory: 4000
-    vcpus: 4
+    vcpus: 4.0
     platform: "opnsense"
     virtual_machine_role: "firewall"
     site: "BER1"
@@ -13,7 +13,7 @@ netbox_virtual_machines_mnbox01:
     device: "mnbox01"
     cluster: "hypervisor"
     memory: 4000
-    vcpus: 4
+    vcpus: 4.0
     platform: "opnsense"
     virtual_machine_role: "firewall"
     site: "BER1"
@@ -22,7 +22,7 @@ netbox_virtual_machines_mnbox01:
     device: "mnbox01"
     cluster: "hypervisor"
     memory: 4000
-    vcpus: 4
+    vcpus: 4.0
     platform: "talos19"
     virtual_machine_role: "worker"
     site: "BER1"

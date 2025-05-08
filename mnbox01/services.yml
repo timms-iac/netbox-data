@@ -1,0 +1,21 @@
+---
+netbox_services_mnbox01X:
+
+  - name: mnbox01-NTP
+    device: "mnbox01"
+    protocol: UDP
+    ports:
+      - 123
+
+  - name: prod-fw01-NTP
+    protocol: UDP
+    ports: 
+      - 123
+    virtual_machine: prod-fw01
+
+  - name: prod-fw01-NTPt
+    protocol: TCP
+    ports: 
+      - 123
+    virtual_machine:  prod-fw01
+

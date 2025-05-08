@@ -1,0 +1,17 @@
+---
+netbox_virtual_disks_try02:
+  - name: "vda-prodk8s-cp02"
+    virtual_machine: "prodk8s-cp02"
+    size: 10000
+    description: "System Disk"
+
+  - name: "vda-prodk8s-try02"
+    virtual_machine: "prodk8s-try02"
+    size: 10000
+    description: "System Disk"
+
+  - name: "vdb-prodk8s-try02"
+    virtual_machine: "prodk8s-try02"
+    size: 300000
+    description: "Ceph0 Disk"
+
