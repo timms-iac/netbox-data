@@ -1,5 +1,5 @@
 ---
-netbox_nameservers:
+netbox_dns_nameservers_BER1:
   - name: 172.25.6.1
     description: prod-fw1
   - name: 172.25.6.2
@@ -8,3 +8,8 @@ netbox_nameservers:
     description: dev-fw1
   - name: 172.25.6.4
     description: dev-fw2
+  - name: 172.16.1.253
+    description: legacy
+  - name: 172.16.1.254
+    description: legacy
+
