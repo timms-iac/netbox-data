@@ -7,19 +7,19 @@ netbox_devices:
   - fritz1260
     #  - fritz1750e-01
     #  - fritz1750e-02
-    #  - fritz7490
-    #  - fritz7690
+  - fritz7490
+  - fritz7690
   - kiab
   - mleeda01
   - mnbox01
   - mnbox02
   - mokerlink01
-    #  - openwrtb101
-    #  - openwrtb102
-    #  - openwrtgf01
-    #  - openwrtgf02
-    #  - openwrtgf03
-    #  - openwrtrf01
+  - openwrtb101
+  - openwrtb102
+  - openwrtgf01
+  - openwrtgf02
+  - openwrtgf03
+  - openwrtrf01
     #  - rpi4iot
   - rpi4k8s1
   - rpi4k8s2

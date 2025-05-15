@@ -1,0 +1,14 @@
+---
+netbox_devices_fritz7490:
+  - name: "fritz7490"
+    device_type: "avm7490"
+    device_role: "Router"
+    platform: "fritzos"
+    site: "BER1"
+    location: "RF"
+    custom_fields:
+      webmanagement: https://192.168.0.9/
+      SupplierWebpage: "{{ fritz7490_SupplierWebpage }}"
+        #      SupplierOrder: 
+        #    primary_ip4: "192.168.178.1"
+

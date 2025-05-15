@@ -1,0 +1,15 @@
+---
+netbox_vm_services_mnbox01:
+  - name: NTP
+    protocol: udp
+    ports: 
+      - 123
+    virtual_machine: 
+      name: prod-fw01
+
+  - name: NTP
+    protocol: tcp
+    ports: 
+      - 123
+    virtual_machine:
+      name: prod-fw01

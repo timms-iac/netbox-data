@@ -1,0 +1,236 @@
+---
+netbox_static_routes_BER1:
+      - name: Mgmt
+        devices:
+          - name: openwrtb101
+          - name: openwrtb102
+          - name: openwrtgf01
+          - name: openwrtgf02
+          - name: openwrtgf03
+          - name: openwrtrf01
+        prefix: "172.16.1.0/24"
+        next_hop: "172.16.1.253"
+        vrf:
+          name: Mgmt
+
+      - name: Android
+        devices:
+          - name: mnbox01
+        prefix: "172.16.50.0/24"
+        next_hop: "172.16.50.253"
+        vrf:
+          name: Android
+
+      - name: Work
+        devices:
+          - name: kiab
+        prefix: "172.16.100.0/24"
+        next_hop: "172.16.100.253"
+        vrf:
+          name: Work
+
+      - name: Server
+        devices:
+          - name: mnbox01
+        prefix: "172.16.150.0/24"
+        next_hop: "172.16.150.253"
+        vrf:
+          name: Server
+
+      - name: Test
+        devices:
+          - name: mnbox01
+        prefix: "172.16.200.0/24"
+        next_hop: "172.16.200.253"
+        vrf:
+          name: Test
+
+      - name: Guest
+        devices:
+          - name: mnbox01
+        prefix: "172.16.250.0/24"
+        next_hop: "172.16.250.253"
+        vrf:
+          name: Guest
+
+      - name: mgmt
+        devices:
+          - name: mokerlink01
+          - name: openwrtb101
+          - name: openwrtb102
+          - name: openwrtgf01
+          - name: openwrtgf02
+          - name: openwrtgf03
+          - name: openwrtrf01
+          - name: sodola01
+          - name: sodola02
+          - name: sodola03
+          - name: tplink01
+          - name: tplink02
+          - name: tplink03
+        prefix: "172.25.1.0/24"
+        next_hop: "172.25.1.253"
+        vrf:
+          name: mgmt
+
+      - name: dmz
+        devices:
+          - name: fritz7690
+        prefix: "192.168.0.0/16"
+        next_hop: "192.168.178.1"
+        vrf:
+          name: dmz
+
+      - name: provision
+        devices:
+          - name: mnbox01
+          - name: mnbox02
+        prefix: "172.25.4.0/24"
+        next_hop: "172.25.4.253"
+        vrf:
+          name: provision
+
+      - name: hypervisor
+        devices:
+          - name: mnbox01
+          - name: mnbox02
+        prefix: "172.25.5.0/24"
+        next_hop: "172.25.5.253"
+        vrf:
+          name: hypervisor
+
+      - name: firewall
+        devices:
+          - name: mnbox01
+          - name: mnbox02
+        prefix: "172.25.6.0/24"
+        next_hop: "172.25.6.253"
+        vrf:
+          name: firewall
+
+      - name: proddmzsvc
+        devices:
+          - name: mnbox01
+          - name: mnbox02
+        prefix: "172.25.41.0/24"
+        next_hop: "172.25.41.253"
+        vrf:
+          name: proddmzsvc
+
+      - name: proddmzmgmt
+        devices:
+          - name: mnbox01
+          - name: mnbox02
+        prefix: "172.25.40.0/24"
+        next_hop: "172.25.40.253"
+        vrf:
+          name: proddmzmgmt
+
+      - name: devdmzsvc
+        devices:
+          - name: mnbox01
+          - name: mnbox02
+        prefix: "172.20.41.0/24"
+        next_hop: "172.20.41.253"
+        vrf:
+          name: devdmzsvc
+
+      - name: devdmzmgmt
+        devices:
+          - name: mnbox01
+          - name: mnbox02
+        prefix: "172.20.40.0/24"
+        next_hop: "172.20.40.253"
+        vrf:
+          name: devdmzmgmt
+
+      - name: prodk8ssvc
+        devices:
+          - name: mnbox01
+          - name: mnbox02
+        prefix: "172.25.21.0/24"
+        next_hop: "172.25.21.253"
+        vrf:
+          name: prodk8ssvc
+
+      - name: prodk8smgmt
+        devices:
+          - name: mnbox01
+          - name: mnbox02
+        prefix: "172.25.20.0/24"
+        next_hop: "172.25.20.253"
+        vrf:
+          name: prodk8smgmt
+
+      - name: devk8ssvc
+        devices:
+          - name: mnbox01
+          - name: mnbox02
+        prefix: "172.20.21.0/24"
+        next_hop: "172.20.21.253"
+        vrf:
+          name: devk8ssvc
+
+      - name: devk8smgmt
+        devices:
+          - name: mnbox01
+          - name: mnbox02
+        prefix: "172.20.20.0/24"
+        next_hop: "172.20.20.253"
+        vrf:
+          name: devk8smgmt
+
+      - name: prodossvc
+        devices:
+          - name: mnbox01
+          - name: mnbox02
+        prefix: "172.25.31.0/24"
+        next_hop: "172.25.31.253"
+        vrf:
+          name: prodossvc
+
+      - name: prodosmgmt
+        devices:
+          - name: mnbox01
+          - name: mnbox02
+        prefix: "172.25.30.0/24"
+        next_hop: "172.25.30.253"
+        vrf:
+          name: prodosmgmt
+
+      - name: devossvc
+        devices:
+          - name: mnbox01
+          - name: mnbox02
+        prefix: "172.20.31.0/24"
+        next_hop: "172.20.31.253"
+        vrf:
+          name: devossvc
+
+      - name: devosmgmt
+        devices:
+          - name: mnbox01
+          - name: mnbox02
+        prefix: "172.20.30.0/24"
+        next_hop: "172.20.30.253"
+        vrf:
+          name: devosmgmt
+
+      - name: prodosprov
+        devices:
+          - name: mnbox01
+          - name: mnbox02
+        prefix: "172.25.32.0/24"
+        next_hop: "172.25.32.253"
+        vrf:
+          name: prodosprov
+
+      - name: devosprov
+        devices:
+          - name: mnbox01
+          - name: mnbox02
+        prefix: "172.20.32.0/24"
+        next_hop: "172.20.32.253"
+        vrf:
+          name: devosprov
+

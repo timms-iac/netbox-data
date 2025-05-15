@@ -11,7 +11,7 @@ netbox_ip_addresses_kiab:
       device: "kiab"
       name: "legacy"
     vrf: "Work"
-    dns_name: kiab.home.essigke.net
+    dns_name: "kiab.home.{{ domain_name }}"
 
   - address: "172.25.1.250/32"
     assigned_object:

@@ -1,0 +1,11 @@
+---
+netbox_ip_addresses_fritz7690:
+  - address: "192.168.178.1/32"
+    assigned_object:
+      device: "fritz7690"
+      name: "lan1"
+  - address: "10.234.179.1/32"
+    assigned_object:
+      device: "fritz7690"
+      name: "lan3"
+

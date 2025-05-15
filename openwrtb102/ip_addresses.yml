@@ -1,0 +1,8 @@
+---
+netbox_ip_addresses_openwrtb102:
+  - address: "172.25.1.112/32"
+    dns_name: "openwrtb102.infra.{{ domain_name }}"
+    assigned_object:
+      device: "openwrtb102"
+      name: "eth0"
+    vrf: mgmt

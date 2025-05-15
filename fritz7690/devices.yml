@@ -1,0 +1,14 @@
+---
+netbox_devices_fritz7690:
+  - name: "fritz7690"
+    device_type: "avm7690"
+    device_role: "Router"
+    platform: "fritzos"
+    site: "BER1"
+    location: "Desk"
+    custom_fields:
+      webmanagement: https://fritz.box/
+      SupplierWebpage: "{{ fritz7690_SupplierWebpage }}"
+        #      SupplierOrder: 
+        #    primary_ip4: "192.168.178.1"
+

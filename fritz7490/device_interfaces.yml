@@ -1,0 +1,33 @@
+---
+netbox_device_interfaces_fritz7490:
+  - name: "lan1"
+    device: "fritz7490"
+    type: "1000BASE-T (1GE)"
+    duplex: "auto"
+#    mac_address: "d8:3a:dd:d2:ef:64"
+    mtu: 1500
+  - name: "lan2"
+    device: "fritz7490"
+    type: "1000BASE-T (1GE)"
+    duplex: "auto"
+      #    mac_address: "d8:3a:dd:d2:ef:64"
+    mtu: 1500
+  - name: "lan3"
+    device: "fritz7490"
+    type: "1000BASE-T (1GE)"
+    duplex: "auto"
+      #    mac_address: "d8:3a:dd:d2:ef:64"
+    mtu: 1500
+  - name: "lan4"
+    device: "fritz7490"
+    type: "1000BASE-T (1GE)"
+    duplex: "auto"
+      #    mac_address: "d8:3a:dd:d2:ef:64"
+    mtu: 1500
+  - name: "wan"
+    device: "fritz7490"
+    type: "1000BASE-T (1GE)"
+    duplex: "auto"
+      #    mac_address: "d8:3a:dd:d2:ef:64"
+    mtu: 1500
+

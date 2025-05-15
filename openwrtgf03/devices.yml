@@ -1,0 +1,13 @@
+---
+netbox_devices_openwrtgf03:
+  - name: "openwrtgf03"
+    device_type: "tlarcherc7"
+    device_role: "Router"
+    platform: "openwrt"
+    site: "BER1"
+    location: "LivingRoom"
+    custom_fields:
+      webmanagement: https://172.25.1.123/
+      SupplierWebpage: "{{ openwrtgf03_SupplierWebpage }}"
+      SupplierOrder: "{{ openwrtgf03_SupplierOrder }}"
+    primary_ip4: "172.25.1.123/32"

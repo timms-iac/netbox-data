@@ -1,11 +1,12 @@
 ---
 netbox_services_kiab:
 
-  - device: kiab
-    virtual_machine: null
+  - device: 
+      name: kiab
     name: node-exporter
-    port: 9100
-    protocol: TCP
-    ipaddresses:
-      - address: 172.16.100.3/32
+    ports: 
+      - 9100
+    protocol: tcp
+    ipaddresses: 
+      - 229
 

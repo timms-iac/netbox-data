@@ -1,0 +1,15 @@
+---
+netbox_devices_openwrtb101:
+  - name: "openwrtb101"
+    device_type: "tlarcherc6"
+    device_role: "Router"
+    platform: "openwrt"
+    site: "BER1"
+    location: "B1"
+    custom_fields:
+      webmanagement: https://172.25.1.111/
+      SupplierWebpage: "{{ openwrtb101_SupplierWebpage }}"
+      SupplierOrder: "{{ openwrtb101_SupplierOrder }}"
+    primary_ip4: "172.25.1.111/32"
+
+

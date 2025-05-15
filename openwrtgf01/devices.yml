@@ -1,0 +1,14 @@
+---
+netbox_devices_openwrtgf01:
+  - name: "openwrtgf01"
+    device_type: "tlarcherc6"
+    device_role: "Router"
+    platform: "openwrt"
+    site: "BER1"
+    location: "Desk"
+    custom_fields:
+      webmanagement: https://172.25.1.121/
+      SupplierWebpage: "{{ openwrtgf01_SupplierWebpage }}"
+      SupplierOrder: "{{ openwrtgf01_SupplierOrder }}"
+    primary_ip4: "172.25.1.121/32"
+

@@ -1,0 +1,8 @@
+---
+netbox_ip_addresses_openwrtgf02:
+  - address: "172.25.1.122/32"
+    dns_name: "openwrtgf02.infra.{{ domain_name }}"
+    assigned_object:
+      device: "openwrtgf02"
+      name: "eth0"
+    vrf: mgmt
