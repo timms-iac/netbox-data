@@ -4,28 +4,35 @@ netbox_ip_addresses_rpi4sec2:
     assigned_object:
       device: "rpi4sec2"
       name: "android"
+    vrf: Android
   - address: "192.168.178.252/32"
     assigned_object:
       device: "rpi4sec2"
       name: "dmz"
+    vrf: dmz
   - address: "172.16.1.252/32"
     assigned_object:
       device: "rpi4sec2"
       name: "mgmt"
+    vrf: Mgmt
   - address: "172.16.150.252/32"
     assigned_object:
       device: "rpi4sec2"
       name: "server"
+    vrf: Server
   - address: "172.16.200.252/32"
     assigned_object:
       device: "rpi4sec2"
       name: "test"
+    vrf: Test
   - address: "172.16.100.252/32"
     assigned_object:
       device: "rpi4sec2"
       name: "work"
+    vrf: Work
   - address: "172.17.1.252/32"
     assigned_object:
       device: "rpi4sec2"
       name: "iot"
+    vrf: Shelly
 

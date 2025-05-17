@@ -1,64 +1,252 @@
 ---
 netbox_ip_addresses_vrrp:
+  - address: "172.16.1.253/32"
+    role: "VRRP"
+    vrf: "Mgmt"
+    assigned_object:
+      group_id: 1
+    assigned_object_type: "ipam.fhrpgroup"
+
   - address: "192.168.178.253/32"
     role: "VRRP"
+    vrf: "dmz"
+    assigned_object:
+      group_id: 2
+    assigned_object_type: "ipam.fhrpgroup"
+
   - address: "172.16.50.253/32"
     role: "VRRP"
+    vrf: "Android"
+    assigned_object:
+      group_id: 50
+    assigned_object_type: "ipam.fhrpgroup"
+
   - address: "172.16.100.253/32"
     role: "VRRP"
+    vrf: "Work"
+    assigned_object:
+      group_id: 100
+    assigned_object_type: "ipam.fhrpgroup"
+
   - address: "172.16.150.253/32"
     role: "VRRP"
+    vrf: "Server"
+    assigned_object:
+      group_id: 150
+    assigned_object_type: "ipam.fhrpgroup"
+
   - address: "172.16.200.253/32"
     role: "VRRP"
+    vrf: "Test"
+    assigned_object:
+      group_id: 200
+    assigned_object_type: "ipam.fhrpgroup"
+
   - address: "172.17.1.253/32"
     role: "VRRP"
+    vrf: "Shelly"
+    assigned_object:
+      group_id: 170
+    assigned_object_type: "ipam.fhrpgroup"
+
   - address: "172.16.1.254/32"
     role: "VRRP"
+    vrf: "Mgmt"
+    assigned_object:
+      group_id: 49
+    assigned_object_type: "ipam.fhrpgroup"
       #    status: "BACKUP"
       #    interface: "VRRPv2:1"
     #    assigned_object:
     #      device: "VRRPv2:1"
     #      name: "mgmt1"
+
   - address: "192.168.178.254/32"
     role: "VRRP"
+    vrf: "dmz"
+    assigned_object:
+      group_id: 48
+    assigned_object_type: "ipam.fhrpgroup"
+
   - address: "172.16.50.254/32"
     role: "VRRP"
+    vrf: "Android"
+    assigned_object:
+      group_id: 99
+    assigned_object_type: "ipam.fhrpgroup"
+
   - address: "172.16.100.254/32"
     role: "VRRP"
+    vrf: "Work"
+    assigned_object:
+      group_id: 149
+    assigned_object_type: "ipam.fhrpgroup"
+
   - address: "172.16.150.254/32"
     role: "VRRP"
+    vrf: "Server"
+    assigned_object:
+      group_id: 199
+    assigned_object_type: "ipam.fhrpgroup"
+
   - address: "172.16.200.254/32"
     role: "VRRP"
+    vrf: "Test"
+    assigned_object:
+      group_id: 249
+    assigned_object_type: "ipam.fhrpgroup"
+
   - address: "172.17.1.254/32"
     role: "VRRP"
-
-  - address: "172.25.5.253/32"
-    role: "VRRP"
-    vrf: "hypervisor"
-    assigned_object_id: '{{ query("netbox.netbox.nb_lookup", "fhrp-groups",
-        api_filter="group_id=2505",
-        api_endpoint="http://" + netbox_loadbalancer_ip,
-        token=netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    vrf: "Shelly"
+    assigned_object:
+      group_id: 179
     assigned_object_type: "ipam.fhrpgroup"
 
 
+############### INFRA ##################
+  - address: "172.20.5.253/32"
+    role: "VRRP"
+    vrf: "hypervisor"
+    assigned_object:
+      group_id: 2005
+    assigned_object_type: "ipam.fhrpgroup"
+
+  - address: "172.20.6.253/32"
+    role: "VRRP"
+    vrf: "firewall"
+    assigned_object:
+      group_id: 2006
+    assigned_object_type: "ipam.fhrpgroup"
+
+############### DEV ####################
+  - address: "172.20.20.253/32"
+    role: "VRRP"
+    vrf: "devk8smgmt"
+    assigned_object: 
+      group_id: 2020
+    assigned_object_type: "ipam.fhrpgroup"
+
+  - address: "172.20.21.253/32"
+    role: "VRRP"
+    vrf: "devk8ssvc"
+    assigned_object: 
+      group_id: 2021
+    assigned_object_type: "ipam.fhrpgroup"
+
+  - address: "172.20.30.253/32"
+    role: "VRRP"
+    vrf: "devosmgmt"
+    assigned_object: 
+      group_id: 2030
+    assigned_object_type: "ipam.fhrpgroup"
+
+  - address: "172.20.31.253/32"
+    role: "VRRP"
+    vrf: "devossvc"
+    assigned_object:
+      group_id: 2031
+    assigned_object_type: "ipam.fhrpgroup"
+
+  - address: "172.20.32.253/32"
+    role: "VRRP"
+    vrf: "devosprov"
+    assigned_object: 
+      group_id: 2032
+    assigned_object_type: "ipam.fhrpgroup"
+
+  - address: "172.20.40.253/32"
+    role: "VRRP"
+    vrf: "devdmzmgmt"
+    assigned_object: 
+      group_id: 2040
+    assigned_object_type: "ipam.fhrpgroup"
+
+  - address: "172.20.41.253/32"
+    role: "VRRP"
+    vrf: "devdmzsvc"
+    assigned_object: 
+      group_id: 2041
+    assigned_object_type: "ipam.fhrpgroup"
+
+############### INFRA ##################
+  - address: "172.25.5.253/32"
+    role: "VRRP"
+    vrf: "hypervisor"
+    assigned_object:
+      group_id: 2505
+    assigned_object_type: "ipam.fhrpgroup"
+
+  - address: "172.25.6.253/32"
+    role: "VRRP"
+    vrf: "firewall"
+    assigned_object:
+      group_id: 2506
+    assigned_object_type: "ipam.fhrpgroup"
+
+############### PROD ###################
+
+  - address: "172.25.20.253/32"
+    role: "VRRP"
+    vrf: "prodk8smgmt"
+    assigned_object:
+      group_id: 2520
+    assigned_object_type: "ipam.fhrpgroup"
+
+  - address: "172.25.21.253/32"
+    role: "VRRP"
+    vrf: "prodk8ssvc"
+    assigned_object:
+      group_id: 2521
+    assigned_object_type: "ipam.fhrpgroup"
+
+  - address: "172.25.30.253/32"
+    role: "VRRP"
+    vrf: "prodosmgmt"
+    assigned_object:
+      group_id: 2530
+    assigned_object_type: "ipam.fhrpgroup"
+
+  - address: "172.25.31.253/32"
+    role: "VRRP"
+    vrf: "prodossvc"
+    assigned_object:
+      group_id: 2531
+    assigned_object_type: "ipam.fhrpgroup"
+
+  - address: "172.25.32.253/32"
+    role: "VRRP"
+    vrf: "prodosprov"
+    assigned_object:
+      group_id: 2532
+    assigned_object_type: "ipam.fhrpgroup"
+
+  - address: "172.25.40.253/32"
+    role: "VRRP"
+    vrf: "proddmzmgmt"
+    assigned_object:
+      group_id: 2540
+    assigned_object_type: "ipam.fhrpgroup"
+
+  - address: "172.25.41.253/32"
+    role: "VRRP"
+    vrf: "proddmzsvc"
+    assigned_object:
+      group_id: 2541
+    assigned_object_type: "ipam.fhrpgroup"
+
+################ LEGACY ################
 
   - address: "192.168.20.253/32"
     role: "VRRP"
     vrf: "dmz"
-    assigned_object_id: '{{ query("netbox.netbox.nb_lookup", "fhrp-groups",
-        api_filter="group_id=2002",
-        api_endpoint="http://" + netbox_loadbalancer_ip,
-        token=netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    assigned_object:
+      group_id: 2002
     assigned_object_type: "ipam.fhrpgroup"
 
   - address: "192.168.25.253/32"
     role: "VRRP"
     vrf: "dmz"
-    assigned_object_id: '{{ query("netbox.netbox.nb_lookup", "fhrp-groups",
-        api_filter="group_id=2502",
-        api_endpoint="http://" + netbox_loadbalancer_ip,
-        token=netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    assigned_object:
+      group_id: 2502
     assigned_object_type: "ipam.fhrpgroup"
-
-

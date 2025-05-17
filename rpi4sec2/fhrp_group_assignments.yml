@@ -1,0 +1,93 @@
+---
+netbox_fhrp_group_assignments_rpi4sec2:
+  - fhrp_group: 2
+    interface_type: "dcim.interface"
+    interface: 
+      name: dmz
+      device: rpi4sec2
+    priority: 17
+  - fhrp_group: 48
+    interface_type: "dcim.interface"
+    interface: 
+      name: dmz
+      device: rpi4sec2
+    priority: 15
+
+  - fhrp_group: 50
+    interface_type: "dcim.interface"
+    interface: 
+      name: android
+      device: rpi4sec2
+    priority: 17
+  - fhrp_group: 99
+    interface_type: "dcim.interface"
+    interface:
+      name: android
+      device: rpi4sec2
+    priority: 15
+
+  - fhrp_group: 1
+    interface_type: "dcim.interface"
+    interface: 
+      name: mgmt
+      device: rpi4sec2
+    priority: 17
+  - fhrp_group: 49
+    interface_type: "dcim.interface"
+    interface:
+      name: mgmt
+      device: rpi4sec2
+    priority: 15
+
+  - fhrp_group: 150
+    interface_type: "dcim.interface"
+    interface:
+      name: server
+      device: rpi4sec2
+    priority: 17
+  - fhrp_group: 199
+    interface_type: "dcim.interface"
+    interface:
+      name: server
+      device: rpi4sec2
+    priority: 15
+
+  - fhrp_group: 200
+    interface_type: "dcim.interface"
+    interface:
+      name: test
+      device: rpi4sec2
+    priority: 17
+  - fhrp_group: 249
+    interface_type: "dcim.interface"
+    interface:
+      name: test
+      device: rpi4sec2
+    priority: 15
+
+  - fhrp_group: 100
+    interface_type: "dcim.interface"
+    interface:
+      name: work
+      device: rpi4sec2
+    priority: 17
+  - fhrp_group: 149
+    interface_type: "dcim.interface"
+    interface:
+      name: work
+      device: rpi4sec2
+    priority: 15
+
+  - fhrp_group: 170
+    interface_type: "dcim.interface"
+    interface:
+      name: iot
+      device: rpi4sec2
+    priority: 17
+  - fhrp_group: 179
+    interface_type: "dcim.interface"
+    interface:
+      name: iot
+      device: rpi4sec2
+    priority: 15
+

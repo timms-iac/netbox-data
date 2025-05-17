@@ -13,6 +13,26 @@ netbox_ip_addresses_kiab:
     vrf: "Work"
     dns_name: "kiab.home.{{ domain_name }}"
 
+############ DEV #####################
+  - address: "172.20.20.250/32"
+    assigned_object:
+      device: "kiab"
+      name: "devk8smgmt0"
+    vrf: "devk8smgmt"
+
+  - address: "172.20.30.250/32"
+    assigned_object:
+      device: "kiab"
+      name: "devosmgmt0"
+    vrf: "devosmgmt"
+
+  - address: "172.20.40.250/32"
+    assigned_object:
+      device: "kiab"
+      name: "devdmzmgmt0"
+    vrf: "devdmzmgmt"
+
+############ INFRA ###################
   - address: "172.25.1.250/32"
     assigned_object:
       device: "kiab"
@@ -36,4 +56,24 @@ netbox_ip_addresses_kiab:
       device: "kiab"
       name: "firewall0"
     vrf: "firewall"
+
+########### PROD ################
+
+  - address: "172.25.20.250/32"
+    assigned_object:
+      device: "kiab"
+      name: "prodk8smgmt0"
+    vrf: "prodk8smgmt"
+
+  - address: "172.25.30.250/32"
+    assigned_object:
+      device: "kiab"
+      name: "prodosmgmt0"
+    vrf: "prodosmgmt"
+
+  - address: "172.25.40.250/32"
+    assigned_object:
+      device: "kiab"
+      name: "proddmzmgmt0"
+    vrf: "proddmzmgmt"
 

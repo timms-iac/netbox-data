@@ -38,7 +38,7 @@ netbox_devices:
   - try01
   - try02
   - try03
-# - vrrp
+  - vrrp
 netbox_sites:
   - BER1
 netbox_default_site: "BER1"
