@@ -1,0 +1,9 @@
+---
+netbox_device_interfaces_rpi4k8s4:
+  - name: "eth0"
+    device: "rpi4k8s4"
+    type: "1000BASE-T (1GE)"
+    duplex: "auto"
+      #    primary_mac_address: "{{ mac_rpi4k8s4_eth0 | upper }}"
+    mtu: 1500
+

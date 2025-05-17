@@ -182,32 +182,32 @@ netbox_cables_mleeda01:
   length: 1
   length_unit: m
 
-- termination_a_type: dcim.consoleport
-  termination_a:
-    device: ciab
-    name: hdmi0
-  termination_b_type: dcim.consoleserverport
-  termination_b:
-    device: mleeda01
-    name: hdmi08
-  status: connected
-  color: "000000"
-  length: 2
-  length_unit: m
-
-- termination_a_type: dcim.consoleport
-  termination_a:
-    device: ciab
-    name: usb3
-  termination_b_type: dcim.consoleserverport
-  termination_b:
-    device: mleeda01
-    name: usb08
-  status: connected
-  color: "000000"
-  length: 2
-  length_unit: m
-
+    #- termination_a_type: dcim.consoleport
+    #  termination_a:
+    #    device: ciab
+    #    name: hdmi0
+    #  termination_b_type: dcim.consoleserverport
+    #  termination_b:
+    #    device: mleeda01
+    #    name: hdmi08
+    #  status: connected
+    #  color: "000000"
+    #  length: 2
+    #  length_unit: m
+    #
+    #- termination_a_type: dcim.consoleport
+    #  termination_a:
+    #    device: ciab
+    #    name: usb3
+    #  termination_b_type: dcim.consoleserverport
+    #  termination_b:
+    #    device: mleeda01
+    #    name: usb08
+    #  status: connected
+    #  color: "000000"
+    #  length: 2
+    #  length_unit: m
+    #
 - termination_a_type: dcim.consoleport
   termination_a:
     device: rpi4k8s1

@@ -13,4 +13,5 @@ netbox_devices_aoo02:
         - OpenFlow13
         - OpenFlow14
         - OpenFlow15
+    primary_ip4: "172.25.5.5/32"
 

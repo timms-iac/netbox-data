@@ -1,2 +1,0 @@
----
-netbox_cables: "{{ netbox_cables_sodola01 + netbox_cables_sodola02 + netbox_cables_sodola03 + netbox_cables_tplink03  + netbox_cables_mleeda01 }}"

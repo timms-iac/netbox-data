@@ -10,7 +10,7 @@ netbox_cables_tplink03:
     name: mgmt0
   type: cat7
   status: connected
-  color: "FFFFFF"
+  color: "ffffff"
   length: 1
   length_unit: m
 
@@ -156,34 +156,34 @@ netbox_cables_tplink03:
   length: 2
   length_unit: m
 
-- termination_a_type: dcim.interface
-  termination_a:
-    device: tplink03
-    name: "Port 15"
-  termination_b_type: dcim.interface
-  termination_b:
-    device: ciab
-    name: eth0
-  type: cat7
-  status: connected
-  color: "000000"
-  length: 2
-  length_unit: m
-
-- termination_a_type: dcim.interface
-  termination_a:
-    device: tplink03
-    name: "Port 16"
-  termination_b_type: dcim.interface
-  termination_b:
-    device: ciab
-    name: eth1
-  type: cat7
-  status: connected
-  color: "000000"
-  length: 2
-  length_unit: m
-
+    #- termination_a_type: dcim.interface
+    #  termination_a:
+    #    device: tplink03
+    #    name: "Port 15"
+    #  termination_b_type: dcim.interface
+    #  termination_b:
+    #    device: ciab
+    #    name: eth0
+    #  type: cat7
+    #  status: connected
+    #  color: "000000"
+    #  length: 2
+    #  length_unit: m
+    #
+    #- termination_a_type: dcim.interface
+    #  termination_a:
+    #    device: tplink03
+    #    name: "Port 16"
+    #  termination_b_type: dcim.interface
+    #  termination_b:
+    #    device: ciab
+    #    name: eth1
+    #  type: cat7
+    #  status: connected
+    #  color: "000000"
+    #  length: 2
+    #  length_unit: m
+    #
 - termination_a_type: dcim.interface
   termination_a:
     device: tplink03
@@ -194,8 +194,7 @@ netbox_cables_tplink03:
     name: MGI8
   type: cat7
   status: connected
-    # gray
-    #  color: "000000"
+  color: "808080"
   length: 10
   length_unit: m
 

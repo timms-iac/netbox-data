@@ -19,6 +19,7 @@ netbox_device_interfaces_mnbox02:
     mtu: 1500
     mode: "access"
     untagged_vlan: "hypervisor"
+    vrf: hypervisor
 
   - name: "kube0"
     device: "mnbox02"

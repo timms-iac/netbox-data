@@ -92,8 +92,13 @@ netbox_static_routes_BER1:
 
       - name: hypervisor
         devices:
+          - name: aoo01
+          - name: aoo02
           - name: mnbox01
           - name: mnbox02
+          - name: try01
+          - name: try02
+          - name: try03
         prefix: "172.25.5.0/24"
         next_hop: "172.25.5.253"
         vrf:

@@ -15,6 +15,7 @@ netbox_device_interfaces_try02:
     duplex: "auto"
     primary_mac_address: "{{ mac_try02_mgmt0 }}"
     mtu: 1500
+    vrf: hypervisor
 
   - name: "kube0"
     device: "try02"

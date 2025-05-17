@@ -1,0 +1,131 @@
+---
+netbox_fhrp_group_assignments_mnbox01:
+  - fhrp_group: 2002
+    interface_type: "virtualization.vminterface"
+    interface: 
+      name: dmz
+      virtual_machine: dev-fw01
+    priority: 15
+  - fhrp_group: 2502
+    interface_type: "virtualization.vminterface"
+    interface: 
+      name: dmz
+      virtual_machine: prod-fw01
+    priority: 17
+
+  - fhrp_group: 2005
+    interface_type: "virtualization.vminterface"
+    interface: 
+      name: hypervisor
+      virtual_machine: dev-fw01
+    priority: 15
+  - fhrp_group: 2505
+    interface_type: "virtualization.vminterface"
+    interface:
+      name: hypervisor
+      virtual_machine: prod-fw01
+    priority: 17
+
+  - fhrp_group: 2006
+    interface_type: "virtualization.vminterface"
+    interface: 
+      name: firewall
+      virtual_machine: dev-fw01
+    priority: 15
+  - fhrp_group: 2506
+    interface_type: "virtualization.vminterface"
+    interface:
+      name: firewall
+      virtual_machine: prod-fw01
+    priority: 17
+
+  - fhrp_group: 2040
+    interface_type: "virtualization.vminterface"
+    interface:
+      name: devdmzmgmt
+      virtual_machine: dev-fw01
+    priority: 15
+  - fhrp_group: 2540
+    interface_type: "virtualization.vminterface"
+    interface:
+      name: proddmzmgmt
+      virtual_machine: prod-fw01
+    priority: 17
+
+  - fhrp_group: 2041
+    interface_type: "virtualization.vminterface"
+    interface:
+      name: devdmzsvc
+      virtual_machine: dev-fw01
+    priority: 15
+  - fhrp_group: 2541
+    interface_type: "virtualization.vminterface"
+    interface:
+      name: proddmzsvc
+      virtual_machine: prod-fw01
+    priority: 17
+
+  - fhrp_group: 2020
+    interface_type: "virtualization.vminterface"
+    interface:
+      name: devk8smgmt
+      virtual_machine: dev-fw01
+    priority: 15
+  - fhrp_group: 2520
+    interface_type: "virtualization.vminterface"
+    interface:
+      name: prodk8smgmt
+      virtual_machine: prod-fw01
+    priority: 17
+
+  - fhrp_group: 2021
+    interface_type: "virtualization.vminterface"
+    interface:
+      name: devk8ssvc
+      virtual_machine: dev-fw01
+    priority: 15
+  - fhrp_group: 2521
+    interface_type: "virtualization.vminterface"
+    interface:
+      name: prodk8ssvc
+      virtual_machine: prod-fw01
+    priority: 17
+
+  - fhrp_group: 2030
+    interface_type: "virtualization.vminterface"
+    interface:
+      name: devosmgmt
+      virtual_machine: dev-fw01
+    priority: 15
+  - fhrp_group: 2530
+    interface_type: "virtualization.vminterface"
+    interface:
+      name: prodk8smgmt
+      virtual_machine: prod-fw01
+    priority: 17
+
+  - fhrp_group: 2031
+    interface_type: "virtualization.vminterface"
+    interface:
+      name: devossvc
+      virtual_machine: dev-fw01
+    priority: 15
+  - fhrp_group: 2531
+    interface_type: "virtualization.vminterface"
+    interface:
+      name: prodossvc
+      virtual_machine: prod-fw01
+    priority: 17
+
+  - fhrp_group: 2032
+    interface_type: "virtualization.vminterface"
+    interface:
+      name: devosprov
+      virtual_machine: dev-fw01
+    priority: 15
+  - fhrp_group: 2532
+    interface_type: "virtualization.vminterface"
+    interface:
+      name: prodosprov
+      virtual_machine: prod-fw01
+    priority: 17

@@ -1,0 +1,14 @@
+---
+netbox_module_bays_rpi4k8s3:
+  - name: "usb0"
+    description: "USB 3.0"
+    device: "rpi4k8s3"
+
+  - name: "usb1"
+    description: "USB 3.0"
+    device: "rpi4k8s3"
+
+  - name: "eth0"
+    description: "1GbE LAN"
+    device: "rpi4k8s3"
+

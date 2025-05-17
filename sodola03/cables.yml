@@ -77,7 +77,7 @@ netbox_cables_sodola03:
   termination_b_type: dcim.interface
   termination_b:
     device: air6
-    name: enx00e04c680036
+    name: eth0
   type: cat7
   status: connected
   color: "000000"
@@ -90,7 +90,7 @@ netbox_cables_sodola03:
     name: MGI9
   termination_b_type: dcim.interface
   termination_b:
-    device: openwrteg1
+    device: openwrtgf01
     name: wan
   type: cat7
   status: connected
@@ -104,7 +104,7 @@ netbox_cables_sodola03:
     name: MGI10
   termination_b_type: dcim.interface
   termination_b:
-    device: openwrteg2
+    device: openwrtgf02
     name: wan
   type: cat7
   status: connected
@@ -118,7 +118,7 @@ netbox_cables_sodola03:
     name: MGI11
   termination_b_type: dcim.interface
   termination_b:
-    device: openwrteg3
+    device: openwrtgf03
     name: wan
   type: cat7
   status: connected
@@ -132,7 +132,7 @@ netbox_cables_sodola03:
     name: MGI12
   termination_b_type: dcim.interface
   termination_b:
-    device: openwrtdg1
+    device: openwrtrf01
     name: wan
   type: cat7
   status: connected
@@ -146,7 +146,7 @@ netbox_cables_sodola03:
     name: MGI13
   termination_b_type: dcim.interface
   termination_b:
-    device: openwrtkg1
+    device: openwrtb101
     name: wan
   type: cat7
   status: connected
@@ -160,7 +160,7 @@ netbox_cables_sodola03:
     name: MGI14
   termination_b_type: dcim.interface
   termination_b:
-    device: openwrtkg2
+    device: openwrtb102
     name: wan
   type: cat7
   status: connected
@@ -179,7 +179,7 @@ netbox_cables_sodola03:
     name: TE7
   type: aoc
   status: connected
-  color: "0000ff"
+  color: "00ffff"
   length: 10
   length_unit: m
 
@@ -193,7 +193,7 @@ netbox_cables_sodola03:
     name: TE8
   type: aoc
   status: connected
-  color: "0000ff"
+  color: "00ffff"
   length: 10
   length_unit: m
 

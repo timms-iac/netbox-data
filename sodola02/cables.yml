@@ -3,7 +3,7 @@ netbox_cables_sodola02:
 - termination_a_type: dcim.interface
   termination_a:
     device: mnbox01
-    name: TE1
+    name: te1
   termination_b_type: dcim.interface
   termination_b:
     device: sodola02
@@ -17,7 +17,7 @@ netbox_cables_sodola02:
 - termination_a_type: dcim.interface
   termination_a:
     device: mnbox01
-    name: TE2
+    name: te2
   termination_b_type: dcim.interface
   termination_b:
     device: sodola02
@@ -31,7 +31,7 @@ netbox_cables_sodola02:
 - termination_a_type: dcim.interface
   termination_a:
     device: mnbox02
-    name: TE1
+    name: te1
   termination_b_type: dcim.interface
   termination_b:
     device: sodola02
@@ -45,7 +45,7 @@ netbox_cables_sodola02:
 - termination_a_type: dcim.interface
   termination_a:
     device: mnbox02
-    name: TE2
+    name: te2
   termination_b_type: dcim.interface
   termination_b:
     device: sodola02

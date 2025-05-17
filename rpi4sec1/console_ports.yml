@@ -1,0 +1,22 @@
+---
+netbox_console_ports_rpi4sec1:
+  - name: "usb2"
+    device: "rpi4sec1"
+    type: "usb-a"
+    description: "USB 2.0"
+
+  - name: "usb3"
+    device: "rpi4sec1"
+    type: "usb-a"
+    description: "USB 2.0"
+
+  - name: "hdmi0"
+    device: "rpi4sec1"
+    type: "other"
+    description: "HDMI Monitor Port"
+
+  - name: "hdmi1"
+    device: "rpi4sec1"
+    type: "other"
+    description: "HDMI Monitor Port"
+

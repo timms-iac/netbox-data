@@ -1,0 +1,30 @@
+---
+netbox_cables_sodola01:
+- label: "sodola01/MGI2 - try01/ceph0"
+  a_terminations:
+    - object_id: '{{ query("netbox.netbox.nb_lookup", "interfaces",
+          api_filter="name=MGI2 device=sodola01",
+          api_endpoint=ansible_nb_url,
+          token=netbox_ansible_token) | map(attribute="key") | join(",") }}'
+    # object_id: 102
+      object_type: dcim.interface
+    #      object:
+    #        device:
+    #          name: sodola01
+    #        name: MGI2
+  b_terminations:
+    - object_id: '{{ query("netbox.netbox.nb_lookup", "interfaces",
+          api_filter="name=ceph0 device=try01",
+          api_endpoint=ansible_nb_url,
+          token= netbox_ansible_token) | map(attribute="key") | join(",") | int }}'
+    # object_id: 27
+      object_type: dcim.interface
+    #      object:
+    #        device: 
+    #          name: try01
+    #        name: ceph0
+  type: cat7
+  status: connected
+  color: "000000"
+  length: 50
+  length_unit: cm

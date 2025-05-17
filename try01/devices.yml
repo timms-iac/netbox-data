@@ -14,4 +14,4 @@ netbox_devices_try01:
         - OpenFlow13
         - OpenFlow14
         - OpenFlow15
-
+    primary_ip4: "172.25.5.1/32"

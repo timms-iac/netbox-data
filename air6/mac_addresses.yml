@@ -4,6 +4,7 @@ netbox_mac_addresses_air6:
       name: "wlan0"
       device: "air6"
     mac_address: "{{ mac_air6_wlan0 | upper }}"
+
   - assigned_object:
       name: "eth0"
       device: "air6"
