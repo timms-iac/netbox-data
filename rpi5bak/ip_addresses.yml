@@ -4,3 +4,4 @@ netbox_ip_addresses_rpi5bak:
     assigned_object:
       device: "rpi5bak"
       name: "eth0"
+    vrf: Server

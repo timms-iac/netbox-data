@@ -4,4 +4,5 @@ netbox_ip_addresses_fritz7490:
     assigned_object:
       device: "fritz7490"
       name: "lan1"
+    vrf: dmz
 

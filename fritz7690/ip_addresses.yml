@@ -4,8 +4,10 @@ netbox_ip_addresses_fritz7690:
     assigned_object:
       device: "fritz7690"
       name: "lan1"
+    vrf: dmz
   - address: "10.234.179.1/32"
     assigned_object:
       device: "fritz7690"
       name: "lan3"
+    vrf: guest
 
