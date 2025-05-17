@@ -1,2 +1,0 @@
----
-netbox_vlan_groups: "{{ netbox_vlan_groups_legacy + netbox_vlan_groups_infra + netbox_vlan_groups_dev + netbox_vlan_groups_prod }}"

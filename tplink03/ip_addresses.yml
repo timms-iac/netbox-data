@@ -1,0 +1,9 @@
+---
+netbox_ip_addresses_tplink03:
+  - address: "172.25.1.20/32"
+    assigned_object:
+      device: "tplink03"
+      name: "vlan1"
+    vrf: "mgmt"
+    dns_name: "tplink03.infra.{{ domain_name }}"
+

@@ -1,3 +1,0 @@
----
-netbox_mac_addresses: "{{ netbox_mac_addresses_kiab + netbox_mac_addresses_air6 + netbox_mac_addresses_try01 + netbox_mac_addresses_try02 + netbox_mac_addresses_try03 + netbox_mac_addresses_aoo01 + netbox_mac_addresses_aoo02 + netbox_mac_addresses_mnbox01 + netbox_mac_addresses_mnbox02 }}"
-

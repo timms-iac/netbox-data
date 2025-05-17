@@ -6,4 +6,18 @@ netbox_ip_addresses_mnbox02:
       name: "mgmt0"
     dns_name: "mnbox02.home.{{ domain_name }}"
     vrf: "hypervisor"
+  
+  - address: "172.25.6.2/32"
+    assigned_object:
+      virtual_machine: "prod-fw02"
+      name: "firewall"
+    vrf: "firewall"
+    dns_name: "prod-fw02.home.{{ domain_name }}"
+  - address: "172.25.6.4/32"
+    assigned_object:
+      virtual_machine: "dev-fw02"
+      name: "firewall"
+    vrf: "firewall"
+    dns_name: "dev-fw02.dev.{{ domain_name }}"
+
 

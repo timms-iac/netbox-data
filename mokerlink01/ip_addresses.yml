@@ -1,0 +1,8 @@
+---
+netbox_ip_addresses_mokerlink01:
+  - address: "172.25.1.24/32"
+    assigned_object:
+      device: "mokerlink01"
+      name: "vlan1"
+    vrf: "mgmt"
+    dns_name: "mokerlink01.infra.{{ domain_name }}"

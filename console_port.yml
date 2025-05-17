@@ -1,2 +1,0 @@
----
-netbox_console_ports: "{{ netbox_console_ports_try01 +  netbox_console_ports_try02 + netbox_console_ports_try03 + netbox_console_ports_aoo01 + netbox_console_ports_aoo02 + netbox_console_ports_mnbox01 + netbox_console_ports_mnbox02 }}"

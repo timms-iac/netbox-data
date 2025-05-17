@@ -1,2 +1,0 @@
----
-netbox_module_bays: "{{ netbox_module_bays_try01 +  netbox_module_bays_try02 + netbox_module_bays_try03 + netbox_module_bays_aoo01 + netbox_module_bays_aoo02 + netbox_module_bays_mnbox01 + netbox_module_bays_mnbox02 }}"
