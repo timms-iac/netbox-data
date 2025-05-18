@@ -8,5 +8,6 @@ netbox_services_kiab:
       - 9100
     protocol: tcp
     ipaddresses: 
+      - 172.25.5.250/32
       - 229
-
+      - 172.25.6.250/32
