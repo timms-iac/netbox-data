@@ -1,0 +1,153 @@
+---
+#
+# This is a concept not directly in NetBox
+# A VLAN set is a list of VLANs assigned to a device_interface tagged_vlans attribute.
+# The idea is that a new VLAN has only to be added to the appropriate VLAN set and all
+# other VLAN sets which build on it include it automatically. Device_interfaces can get
+# a VLAN set associated and VLAN changes usually do not require changes to many
+# device_interfaces.
+#
+# VLAN Groups are not useful for my purpose since a VLAN can only be member of one VLAN Group
+#
+netbox_vlan_set_mgmt_BER1:
+      - name: "mgmt"
+        site: "BER1"
+
+netbox_vlan_set_dmz_BER1:
+      - name: "dmz"
+        site: "BER1"
+
+netbox_vlan_set_guest_BER1:
+      - name: "guest"
+        site: "BER1"
+
+netbox_vlan_set_provision_BER1:
+      - name: "provision"
+        site: "BER1"
+
+netbox_vlan_set_hypervisor_BER1:
+      - name: "hypervisor"
+        site: "BER1"
+
+netbox_vlan_set_firewall_BER1:
+      - name: "firewall"
+        site: "BER1"
+
+netbox_vlan_set_iot_BER1:
+      - name: "iot"
+        site: "BER1"
+
+netbox_vlan_set_devceph_BER1:
+      - name: "devk8sceph"
+        site: "BER1"
+      - name: "devosceph"
+        site: "BER1"
+      - name: "devdmzceph"
+        site: "BER1"
+
+netbox_vlan_set_prodceph_BER1:
+      - name: "prodk8sceph"
+        site: "BER1"
+      - name: "prodosceph"
+        site: "BER1"
+      - name: "proddmzceph"
+        site: "BER1"
+
+netbox_vlan_set_ceph_BER1: "{{ netbox_vlan_set_devceph_BER1 + netbox_vlan_set_prodceph_BER1 }}"
+
+netbox_vlan_set_devvmmgmt_BER1:
+      - name: "devk8smgmt"
+        site: "BER1"
+      - name: "devosmgmt"
+        site: "BER1"
+      - name: "devdmzmgmt"
+        site: "BER1"
+
+netbox_vlan_set_devvmsvc_BER1:
+      - name: "devk8ssvc"
+        site: "BER1"
+      - name: "devossvc"
+        site: "BER1"
+      - name: "devdmzsvc"
+        site: "BER1"
+
+netbox_vlan_set_devvmprov_BER1:
+      - name: "devosprov"
+        site: "BER1"
+
+netbox_vlan_set_devvm_BER1: "{{ netbox_vlan_set_devvmmgmt_BER1 + netbox_vlan_set_devvmsvc_BER1  + netbox_vlan_set_devvmprov_BER1 }}"
+
+netbox_vlan_set_prodvmmgmt_BER1:
+      - name: "prodk8smgmt"
+        site: "BER1"
+      - name: "prodosmgmt"
+        site: "BER1"
+      - name: "proddmzmgmt"
+        site: "BER1"
+
+netbox_vlan_set_prodvmsvc_BER1:
+      - name: "prodk8ssvc"
+        site: "BER1"
+      - name: "prodossvc"
+        site: "BER1"
+      - name: "proddmzsvc"
+        site: "BER1"
+
+netbox_vlan_set_prodvmprov_BER1:
+      - name: "prodosprov"
+        site: "BER1"
+
+netbox_vlan_set_prodvm_BER1: "{{ netbox_vlan_set_prodvmmgmt_BER1 + netbox_vlan_set_prodvmsvc_BER1  + netbox_vlan_set_prodvmprov_BER1 }}"
+
+netbox_vlan_set_vm_BER1: "{{ netbox_vlan_set_devvm_BER1 + netbox_vlan_set_prodvm_BER1 }}"
+# netbox_vlan_set_vmmgmt_BER1: "{{ netbox_vlan_set_devvmmgmt_BER1 + netbox_vlan_set_prodvmmgmt_BER1 }}"
+# netbox_vlan_set_vmsvc_BER1: "{{ netbox_vlan_set_devvmsvc_BER1 + netbox_vlan_set_prodvmsvc_BER1 }}"
+# netbox_vlan_set_vmprov_BER1: "{{ netbox_vlan_set_devvmprov_BER1 + netbox_vlan_set_prodvmprov_BER1 }}"
+
+netbox_vlan_set_hypervisor_vm_BER1: "{{ netbox_vlan_set_hypervisor_BER1 + netbox_vlan_set_vm_BER1 }}"
+
+netbox_vlan_set_uplink_sodola_BER1: "{{ netbox_vlan_set_mgmt_BER1 + netbox_vlan_set_dmz_BER1 + netbox_vlan_set_provision_BER1 +  netbox_vlan_set_hypervisor_BER1 + netbox_vlan_set_firewall_BER1 + netbox_vlan_set_vm_BER1 + netbox_vlan_set_ceph_BER1 }}"
+
+netbox_vlan_set_prodvm_devceph_BER1: "{{ netbox_vlan_set_prodvm_BER1 + netbox_vlan_set_devceph_BER1 }}"
+netbox_vlan_set_devvm_prodceph_BER1: "{{ netbox_vlan_set_devvm_BER1 + netbox_vlan_set_prodceph_BER1 }}"
+
+netbox_vlan_set_uplink_edge_BER1:
+      - name: "mgmt"
+        site: "BER1"
+      - name: "dmz"
+        site: "BER1"
+      - name: "guest"
+        site: "BER1"
+      - name: "Android"
+        site: "BER1"
+      - name: "Work"
+        site: "BER1"
+      - name: "Server"
+        site: "BER1"
+      - name: "Test"
+        site: "BER1"
+      - name: "Guest"
+        site: "BER1"
+      - name: "Shelly"
+        site: "BER1"
+      - name: "iot"
+        site: "BER1"
+
+netbox_vlan_set_wlan_BER1:
+      - name: "dmz"
+        site: "BER1"
+      - name: "guest"
+        site: "BER1"
+      - name: "Android"
+        site: "BER1"
+      - name: "Work"
+        site: "BER1"
+      - name: "Shelly"
+        site: "BER1"
+      - name: "iot"
+        site: "BER1"
+
+netbox_vlan_set_uplink_tplink03_BER1: "{{ netbox_vlan_set_uplink_edge_BER1 + netbox_vlan_set_hypervisor_BER1  + netbox_vlan_set_provision_BER1 }}"
+
+netbox_vlan_set_uplink_kiab_BER1: "{{ netbox_vlan_set_mgmt_BER1 + netbox_vlan_set_hypervisor_BER1 + netbox_vlan_set_provision_BER1 + netbox_vlan_set_firewall_BER1 + netbox_vlan_set_prodvmmgmt_BER1 + netbox_vlan_set_devvmmgmt_BER1 }}"
+

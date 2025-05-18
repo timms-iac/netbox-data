@@ -1,0 +1,11 @@
+---
+netbox_aggregates_BER1:
+  - prefix: 10.0.0.0/8
+    rir: rfc1918
+
+  - prefix: 172.16.0.0/12
+    rir: rfc1918
+
+  - prefix: 192.168.0.0/16
+    rir: rfc1918
+

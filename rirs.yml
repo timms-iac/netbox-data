@@ -1,0 +1,4 @@
+---
+netbox_rirs_BER1:
+  - name: "RFC 1918"
+    is_private: true

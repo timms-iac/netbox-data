@@ -7,14 +7,7 @@ netbox_device_interfaces_rpi4sec2:
     primary_mac_address: "{{ mac_rpi4sec2_eth0 | upper }}"
     mtu: 1500
     mode: "tagged"
-    tagged_vlans:
-      - name: "Android"
-      - name: "dmz"
-      - name: "mgmt"
-      - name: "Server"
-      - name: "iot"
-      - name: "Test"
-      - name: "Work"
+    tagged_vlans: "{{ netbox_vlan_set_uplink_edge_BER1 }}"
   - name: "android"
     device: "rpi4sec2"
     mode: "tagged"
