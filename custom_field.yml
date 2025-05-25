@@ -57,3 +57,24 @@ netbox_custom_fields_BER1:
     choice_set: openflow
     description: "Protocols to use for OpenVSwitch / OpenFlow"
 
+  - name: "Directory"
+    object_types:
+      - ipam.service
+    type: "text"
+    description: "Working directory of the Service"
+    ui_visibility: hidden-ifunset
+
+  - name: "User"
+    object_types:
+      - ipam.service
+    type: "text"
+    description: "Username the Service is running as"
+    ui_visibility: hidden-ifunset
+
+  - name: "Options"
+    object_types:
+      - ipam.service
+    type: "text"
+    description: "Options of the Service"
+    ui_visibility: hidden-ifunset
+

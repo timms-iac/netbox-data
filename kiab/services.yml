@@ -21,3 +21,16 @@ netbox_services_kiab:
     ipaddresses:
       - 172.25.6.250
 
+  - name: TFTP
+    protocol: udp
+    ports:
+      - 69
+    device:
+      name: kiab
+    ipaddresses:
+      - 172.25.1.250
+    custom_fields:
+      Directory: /srv/tftp
+      User: tftp
+      Options: "--secure --create"
+    description: "TFTP Server for Switch Management"
