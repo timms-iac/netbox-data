@@ -6,6 +6,7 @@ netbox_devices_kiab:
     platform: "ubuntu"
     site: "BER1"
     location: "Desk"
+    cluster: "deployment"
     custom_fields:
       SupplierWebpage: "{{ kiab_SupplierWebpage }}" 
       SupplierOrder: "{{ kiab_SupplierOrder }}"

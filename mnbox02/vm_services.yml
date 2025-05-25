@@ -1,29 +1,29 @@
 ---
-netbox_vm_services_mnbox01:
+netbox_vm_services_mnbox02:
   - name: NTP
     protocol: udp
-    ports: 
+    ports:
       - 123
-    virtual_machine: 
-      name: prod-fw01
+    virtual_machine:
+      name: prod-fw02
     ipaddresses:
-      - 172.25.6.1
+      - 172.25.6.2
 
   - name: NTP
     protocol: tcp
-    ports: 
+    ports:
       - 123
     virtual_machine:
-      name: prod-fw01
+      name: prod-fw02
     ipaddresses:
-      - 172.25.6.1
+      - 172.25.6.2
 
   - name: DNS
     protocol: udp
     ports:
       - 53
     virtual_machine:
-      name: prod-fw01
+      name: prod-fw02
     ipaddresses:
-      - 172.25.6.1
+      - 172.25.6.2
 

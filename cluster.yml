@@ -1,6 +1,10 @@
 ---
 netbox_clusters_BER1:
 
+  - name: "deployment"
+    cluster_type: "kvm"
+    description: "Virtualization Cluster on Deployment Nodes"
+
   - name: "hypervisor"
     cluster_type: "kvm"
     description: "Virtualization Cluster on Hypervisor Nodes"

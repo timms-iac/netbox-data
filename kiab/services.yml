@@ -11,3 +11,13 @@ netbox_services_kiab:
       - 172.25.5.250/32
       - 229
       - 172.25.6.250/32
+
+  - name: DNS
+    protocol: udp
+    ports:
+      - 53
+    device:
+      name: kiab
+    ipaddresses:
+      - 172.25.6.250
+

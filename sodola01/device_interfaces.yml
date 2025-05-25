@@ -6,6 +6,9 @@ netbox_device_interfaces_sodola01:
     description: "Uplink sodola02"
     type: "Link Aggregation Group (LAG)"
     duplex: "auto"
+    custom_fields:
+      EEE: true
+      LLDP: true
     mode: "tagged"
     untagged_vlan:
       name: "mgmt"
@@ -30,6 +33,9 @@ netbox_device_interfaces_sodola01:
     device: "sodola01"
     type: "2.5GBASE-T (2.5GE)"
     duplex: "auto"
+    custom_fields:
+      EEE: true
+      LLDP: true
     mode: "tagged"
     tagged_vlans: "{{ netbox_vlan_set_ceph_BER1 }}"
   - name: "MGI3"
@@ -37,6 +43,9 @@ netbox_device_interfaces_sodola01:
     description: "try02 VMs"
     type: "2.5GBASE-T (2.5GE)"
     duplex: "auto"
+    custom_fields:
+      EEE: true
+      LLDP: true
     mode: "tagged"
     untagged_vlan:
       name: "provision"
@@ -47,6 +56,9 @@ netbox_device_interfaces_sodola01:
     type: "2.5GBASE-T (2.5GE)"
     description: "try02 Ceph"
     duplex: "auto"
+    custom_fields:
+      EEE: true
+      LLDP: true
     mode: "tagged"
     tagged_vlans: "{{ netbox_vlan_set_ceph_BER1 }}"
   - name: "MGI5"
@@ -54,6 +66,9 @@ netbox_device_interfaces_sodola01:
     description: "try03 VMs"
     type: "2.5GBASE-T (2.5GE)"
     duplex: "auto"
+    custom_fields:
+      EEE: true
+      LLDP: true
     mode: "tagged"
     untagged_vlan:
       name: "provision"
@@ -64,6 +79,9 @@ netbox_device_interfaces_sodola01:
     description: "try03 Ceph"
     type: "2.5GBASE-T (2.5GE)"
     duplex: "auto"
+    custom_fields:
+      EEE: true
+      LLDP: true
     mode: "tagged"
     tagged_vlans: "{{ netbox_vlan_set_ceph_BER1 }}"
   - name: "MGI7"
@@ -71,6 +89,9 @@ netbox_device_interfaces_sodola01:
     description: "aoo01 VMs"
     type: "2.5GBASE-T (2.5GE)"
     duplex: "auto"
+    custom_fields:
+      EEE: true
+      LLDP: true
     mode: "tagged"
     untagged_vlan:
       name: "provision"
@@ -81,6 +102,9 @@ netbox_device_interfaces_sodola01:
     description: "aoo01 Ceph"
     type: "2.5GBASE-T (2.5GE)"
     duplex: "auto"
+    custom_fields:
+      EEE: true
+      LLDP: true
     mode: "tagged"
     tagged_vlans: "{{ netbox_vlan_set_ceph_BER1 }}"
   - name: "MGI9"
@@ -88,6 +112,9 @@ netbox_device_interfaces_sodola01:
     description: "aoo02 VMs"
     type: "2.5GBASE-T (2.5GE)"
     duplex: "auto"
+    custom_fields:
+      EEE: true
+      LLDP: true
     mode: "tagged"
     untagged_vlan:
       name: "provision"
@@ -99,12 +126,18 @@ netbox_device_interfaces_sodola01:
     type: "2.5GBASE-T (2.5GE)"
     duplex: "auto"
     mode: "tagged"
+    custom_fields:
+      EEE: true
+      LLDP: true
     tagged_vlans: "{{ netbox_vlan_set_ceph_BER1 }}"
   - name: "MGI11"
     device: "sodola01"
     description: "mnbox01 VMs"
     type: "2.5GBASE-T (2.5GE)"
     duplex: "auto"
+    custom_fields:
+      EEE: true
+      LLDP: true
     mode: "tagged"
     untagged_vlan:
       name: "provision"
@@ -115,6 +148,9 @@ netbox_device_interfaces_sodola01:
     description: "mnbox01 Ceph"
     type: "2.5GBASE-T (2.5GE)"
     duplex: "auto"
+    custom_fields:
+      EEE: true
+      LLDP: true
     mode: "tagged"
     tagged_vlans: "{{ netbox_vlan_set_ceph_BER1 }}"
   - name: "MGI13"
@@ -122,6 +158,9 @@ netbox_device_interfaces_sodola01:
     description: "mnbox02 VMs"
     type: "2.5GBASE-T (2.5GE)"
     duplex: "auto"
+    custom_fields:
+      EEE: true
+      LLDP: true
     mode: "tagged"
     untagged_vlan:
       name: "provision"
@@ -132,46 +171,76 @@ netbox_device_interfaces_sodola01:
     description: "mnbox02 Ceph"
     type: "2.5GBASE-T (2.5GE)"
     duplex: "auto"
+    custom_fields:
+      EEE: true
+      LLDP: true
     mode: "tagged"
     tagged_vlans: "{{ netbox_vlan_set_ceph_BER1 }}"
   - name: "MGI15"
     device: "sodola01"
     type: "2.5GBASE-T (2.5GE)"
     duplex: "auto"
+    custom_fields:
+      EEE: true
+      LLDP: true
   - name: "MGI16"
     device: "sodola01"
     type: "2.5GBASE-T (2.5GE)"
     duplex: "auto"
+    custom_fields:
+      EEE: true
+      LLDP: true
 
   - name: "MGI17"
     device: "sodola01"
     type: "2.5GBASE-T (2.5GE)"
     duplex: "auto"
+    custom_fields:
+      EEE: true
+      LLDP: true
   - name: "MGI18"
     device: "sodola01"
     type: "2.5GBASE-T (2.5GE)"
     duplex: "auto"
+    custom_fields:
+      EEE: true
+      LLDP: true
   - name: "MGI19"
     device: "sodola01"
     type: "2.5GBASE-T (2.5GE)"
     duplex: "auto"
+    custom_fields:
+      EEE: true
+      LLDP: true
   - name: "MGI20"
     device: "sodola01"
     type: "2.5GBASE-T (2.5GE)"
     duplex: "auto"
+    custom_fields:
+      EEE: true
+      LLDP: true
   - name: "MGI21"
     device: "sodola01"
     type: "2.5GBASE-T (2.5GE)"
     duplex: "auto"
+    custom_fields:
+      EEE: true
+      LLDP: true
   - name: "MGI22"
     device: "sodola01"
     type: "2.5GBASE-T (2.5GE)"
     duplex: "auto"
+    custom_fields:
+      EEE: true
+      LLDP: true
   - name: "MGI23"
     device: "sodola01"
     description: "Switch Management"
     type: "2.5GBASE-T (2.5GE)"
     duplex: "auto"
+    custom_fields:
+      EEE: true
+      LLDP: true
     mode: "access"
       #    untagged_vlan:
       #      - name: "mgmt"
@@ -180,6 +249,9 @@ netbox_device_interfaces_sodola01:
     device: "sodola01"
     type: "2.5GBASE-T (2.5GE)"
     duplex: "auto"
+    custom_fields:
+      EEE: true
+      LLDP: true
 
   - name: "TE1"
     device: "sodola01"
@@ -188,6 +260,9 @@ netbox_device_interfaces_sodola01:
     duplex: "auto"
     lag:
       name: "LAG1"
+    custom_fields:
+      EEE: true
+      LLDP: true
     mode: "tagged"
     untagged_vlan:
       name: "mgmt"
@@ -201,6 +276,9 @@ netbox_device_interfaces_sodola01:
     duplex: "auto"
     lag:
       name: "LAG1"
+    custom_fields:
+      EEE: true
+      LLDP: true
     mode: "tagged"
     untagged_vlan:
       name: "mgmt"

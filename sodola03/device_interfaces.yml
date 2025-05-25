@@ -115,7 +115,7 @@ netbox_device_interfaces_sodola03:
     device: "sodola03"
     type: "2.5GBASE-T (2.5GE)"
     duplex: "auto"
-    description: "Legacy Networks Trunk OpenwrtGF01"
+    description: "Uplink OpenwrtGF01"
     custom_fields:
       EEE: true
       LLDP: true
@@ -125,7 +125,7 @@ netbox_device_interfaces_sodola03:
     device: "sodola03"
     type: "2.5GBASE-T (2.5GE)"
     duplex: "auto"
-    description: "Legacy Networks Trunk OpenwrtGF02"
+    description: "Uplink OpenwrtGF02"
     custom_fields:
       EEE: true
       LLDP: true
@@ -135,7 +135,7 @@ netbox_device_interfaces_sodola03:
     device: "sodola03"
     type: "2.5GBASE-T (2.5GE)"
     duplex: "auto"
-    description: "Legacy Networks Trunk OpenwrtGF03"
+    description: "Uplink OpenwrtGF03"
     custom_fields:
       EEE: true
       LLDP: true
@@ -145,7 +145,7 @@ netbox_device_interfaces_sodola03:
     device: "sodola03"
     type: "2.5GBASE-T (2.5GE)"
     duplex: "auto"
-    description: "Legacy Networks Trunk OpenwrtRF01"
+    description: "Uplink OpenwrtRF01"
     custom_fields:
       EEE: true
       LLDP: true
@@ -155,7 +155,7 @@ netbox_device_interfaces_sodola03:
     device: "sodola03"
     type: "2.5GBASE-T (2.5GE)"
     duplex: "auto"
-    description: "Legacy Networks Trunk OpenwrtB101"
+    description: "Uplink OpenwrtB101"
     custom_fields:
       EEE: true
       LLDP: true
@@ -165,7 +165,7 @@ netbox_device_interfaces_sodola03:
     device: "sodola03"
     type: "2.5GBASE-T (2.5GE)"
     duplex: "auto"
-    description: "Legacy Networks Trunk OpenwrtB102"
+    description: "Uplink OpenwrtB102"
     custom_fields:
       EEE: true
       LLDP: true

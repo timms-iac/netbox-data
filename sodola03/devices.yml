@@ -15,3 +15,4 @@ netbox_devices_sodola03:
     serial: "{{ sodola03_serial }}"
     description: "16x2.5 GbE + 2x10GbE Switch"
     airflow: "passive"
+    tenant: "{{ default_user_comment | lower | split(' ') | join }}"
