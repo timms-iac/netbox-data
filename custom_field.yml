@@ -62,19 +62,25 @@ netbox_custom_fields_BER1:
       - ipam.service
     type: "text"
     description: "Working directory of the Service"
-    ui_visibility: hidden-ifunset
+      #    ui_visibility: hidden-ifunset
 
   - name: "User"
     object_types:
       - ipam.service
     type: "text"
     description: "Username the Service is running as"
-    ui_visibility: hidden-ifunset
+      #    ui_visibility: hidden-ifunset
 
   - name: "Options"
     object_types:
       - ipam.service
     type: "text"
     description: "Options of the Service"
-    ui_visibility: hidden-ifunset
+      #    ui_visibility: hidden-ifunset
 
+  - name: "ManagementHostIP"
+    object_types:
+      - dcim.device
+    type: "object"
+    related_object_type: ipam.ipaddress
+    description: "IP of host from which management operations are permitted"

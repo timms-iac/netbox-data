@@ -25,6 +25,7 @@ netbox_device_interfaces_kiab:
   - name: "hypervisor0"
     device: "kiab"
     type: "Virtual"
+    parent_interface: "eth1"
     bridge:
       name: "deploy"
       device: "kiab"
@@ -37,6 +38,7 @@ netbox_device_interfaces_kiab:
   - name: "switch0"
     device: "kiab"
     type: "Virtual"
+    parent_interface: "eth1"
     bridge:
       name: "deploy"
       device: "kiab"
@@ -51,6 +53,7 @@ netbox_device_interfaces_kiab:
   - name: "provision0"
     device: "kiab"
     type: "Virtual"
+    parent_interface: "eth1"
     bridge:
       name: "deploy"
       device: "kiab"
@@ -63,6 +66,7 @@ netbox_device_interfaces_kiab:
   - name: "firewall0"
     device: "kiab"
     type: "Virtual"
+    parent_interface: "eth1"
     bridge:
       name: "deploy"
       device: "kiab"
@@ -75,6 +79,7 @@ netbox_device_interfaces_kiab:
   - name: "devk8smgmt0"
     device: "kiab"
     type: "Virtual"
+    parent_interface: "eth1"
     bridge:
       name: "deploy"
       device: "kiab"
@@ -87,6 +92,7 @@ netbox_device_interfaces_kiab:
   - name: "devosmgmt0"
     device: "kiab"
     type: "Virtual"
+    parent_interface: "eth1"
     bridge:
       name: "deploy"
       device: "kiab"
@@ -99,6 +105,7 @@ netbox_device_interfaces_kiab:
   - name: "devdmzmgmt0"
     device: "kiab"
     type: "Virtual"
+    parent_interface: "eth1"
     bridge:
       name: "deploy"
       device: "kiab"
@@ -111,6 +118,7 @@ netbox_device_interfaces_kiab:
   - name: "prodk8smgmt0"
     device: "kiab"
     type: "Virtual"
+    parent_interface: "eth1"
     bridge:
       name: "deploy"
       device: "kiab"
@@ -123,6 +131,7 @@ netbox_device_interfaces_kiab:
   - name: "prodosmgmt0"
     device: "kiab"
     type: "Virtual"
+    parent_interface: "eth1"
     bridge:
       name: "deploy"
       device: "kiab"
@@ -135,6 +144,7 @@ netbox_device_interfaces_kiab:
   - name: "proddmzmgmt0"
     device: "kiab"
     type: "Virtual"
+    parent_interface: "eth1"
     bridge:
       name: "deploy"
       device: "kiab"
