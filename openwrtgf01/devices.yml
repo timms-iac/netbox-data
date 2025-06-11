@@ -2,7 +2,7 @@
 netbox_devices_openwrtgf01:
   - name: "openwrtgf01"
     device_type: "tlarcherc6"
-    device_role: "Router"
+    device_role: "Accesspoint"
     platform: "openwrt"
     site: "BER1"
     location: "Desk"

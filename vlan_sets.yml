@@ -33,6 +33,12 @@ netbox_vlan_set_firewall_BER1:
       - name: "firewall"
         site: "BER1"
 
+netbox_vlan_set_transfer_BER1:
+      - name: "devtransfer"
+        site: "BER1"
+      - name: "prodtransfer"
+        site: "BER1"
+
 netbox_vlan_set_iot_BER1:
       - name: "iot"
         site: "BER1"
@@ -104,12 +110,12 @@ netbox_vlan_set_vm_BER1: "{{ netbox_vlan_set_devvm_BER1 + netbox_vlan_set_prodvm
 # netbox_vlan_set_vmsvc_BER1: "{{ netbox_vlan_set_devvmsvc_BER1 + netbox_vlan_set_prodvmsvc_BER1 }}"
 # netbox_vlan_set_vmprov_BER1: "{{ netbox_vlan_set_devvmprov_BER1 + netbox_vlan_set_prodvmprov_BER1 }}"
 
-netbox_vlan_set_hypervisor_vm_BER1: "{{ netbox_vlan_set_hypervisor_BER1 + netbox_vlan_set_vm_BER1 }}"
+netbox_vlan_set_hypervisor_vm_BER1: "{{ netbox_vlan_set_hypervisor_BER1 + netbox_vlan_set_firewall_BER1 + netbox_vlan_set_vm_BER1 }}"
 
 netbox_vlan_set_uplink_sodola_BER1: "{{ netbox_vlan_set_mgmt_BER1 + netbox_vlan_set_dmz_BER1 + netbox_vlan_set_provision_BER1 +  netbox_vlan_set_hypervisor_BER1 + netbox_vlan_set_firewall_BER1 + netbox_vlan_set_vm_BER1 + netbox_vlan_set_ceph_BER1 }}"
 
-netbox_vlan_set_prodvm_devceph_BER1: "{{ netbox_vlan_set_prodvm_BER1 + netbox_vlan_set_devceph_BER1 }}"
-netbox_vlan_set_devvm_prodceph_BER1: "{{ netbox_vlan_set_devvm_BER1 + netbox_vlan_set_prodceph_BER1 }}"
+netbox_vlan_set_prodvm_devceph_BER1: "{{ netbox_vlan_set_dmz_BER1 + netbox_vlan_set_hypervisor_BER1 + netbox_vlan_set_firewall_BER1 + netbox_vlan_set_iot_BER1 + netbox_vlan_set_prodvm_BER1 + netbox_vlan_set_devceph_BER1 }}"
+netbox_vlan_set_devvm_prodceph_BER1: "{{ netbox_vlan_set_dmz_BER1 + netbox_vlan_set_hypervisor_BER1 + netbox_vlan_set_firewall_BER1 + netbox_vlan_set_iot_BER1 + netbox_vlan_set_devvm_BER1 + netbox_vlan_set_prodceph_BER1 }}"
 
 netbox_vlan_set_uplink_edge_BER1:
       - name: "mgmt"
@@ -151,3 +157,4 @@ netbox_vlan_set_uplink_tplink03_BER1: "{{ netbox_vlan_set_uplink_edge_BER1 + net
 
 netbox_vlan_set_uplink_kiab_BER1: "{{ netbox_vlan_set_mgmt_BER1 + netbox_vlan_set_hypervisor_BER1 + netbox_vlan_set_provision_BER1 + netbox_vlan_set_firewall_BER1 + netbox_vlan_set_prodvmmgmt_BER1 + netbox_vlan_set_devvmmgmt_BER1 }}"
 
+netbox_vlan_set_mnbox_kube_BER1: "{{ netbox_vlan_set_firewall_BER1 + netbox_vlan_set_devvm_BER1 + netbox_vlan_set_prodvm_BER1 }}"

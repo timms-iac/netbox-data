@@ -2,7 +2,7 @@
 netbox_devices_openwrtb101:
   - name: "openwrtb101"
     device_type: "tlarcherc6"
-    device_role: "Router"
+    device_role: "Accesspoint"
     platform: "openwrt"
     site: "BER1"
     location: "B1"

@@ -7,16 +7,248 @@ netbox_ip_addresses_mnbox01:
     dns_name: "mnbox01.home.{{ domain_name }}"
     vrf: "hypervisor"
 
+  - address: "192.168.25.251/32"
+    assigned_object:
+      virtual_machine: "prod-fw01"
+      name: "dmz"
+    vrf: "dmz"
   - address: "172.25.6.1/32"
     assigned_object:
       virtual_machine: "prod-fw01"
       name: "firewall"
     vrf: "firewall"
-    dns_name: "prod-fw01.home.{{ domain_name }}"
+    dns_name: "prod-fw01.infra.{{ domain_name }}"
+  - address: "172.25.40.251/32"
+    assigned_object:
+      virtual_machine: "prod-fw01"
+      name: "dmzmgmt"
+    vrf: "proddmzmgmt"
+  - address: "172.25.41.251/32"
+    assigned_object:
+      virtual_machine: "prod-fw01"
+      name: "dmzsvc"
+    vrf: "proddmzsvc"
+  - address: "172.25.255.1/32"
+    assigned_object:
+      virtual_machine: "prod-fw01"
+      name: "transfer"
+    vrf: "prodtransfer"
+
+  - address: "192.168.20.251/32"
+    assigned_object:
+      virtual_machine: "dev-fw01"
+      name: "dmz"
+    vrf: "dmz"
   - address: "172.25.6.3/32"
     assigned_object:
       virtual_machine: "dev-fw01"
       name: "firewall"
     vrf: "firewall"
-    dns_name: "dev-fw01.dev.{{ domain_name }}"
+    dns_name: "dev-fw01.infra.{{ domain_name }}"
+  - address: "172.20.40.251/32"
+    assigned_object:
+      virtual_machine: "dev-fw01"
+      name: "dmzmgmt"
+    vrf: "devdmzmgmt"
+  - address: "172.20.41.251/32"
+    assigned_object:
+      virtual_machine: "dev-fw01"
+      name: "dmzsvc"
+    vrf: "devdmzsvc"
+  - address: "172.20.255.3/32"
+    assigned_object:
+      virtual_machine: "dev-fw01"
+      name: "transfer"
+    vrf: "devtransfer"
+
+
+  - address: "172.25.1.251/32"
+    assigned_object:
+      virtual_machine: "prod-router01"
+      name: "mgmt"
+    vrf: "mgmt"
+  - address: "172.25.5.251/32"
+    assigned_object:
+      virtual_machine: "prod-router01"
+      name: "hypervisor"
+    vrf: "hypervisor"
+  - address: "172.25.6.11/32"
+    assigned_object:
+      virtual_machine: "prod-router01"
+      name: "firewall"
+    vrf: "firewall"
+    dns_name: "prod-router01.infra.{{ domain_name }}"
+  - address: "172.19.255.251/32"
+    assigned_object:
+      virtual_machine: "prod-router01"
+      name: "iot"
+    vrf: "iot"
+  - address: "172.25.20.251/32"
+    assigned_object:
+      virtual_machine: "prod-router01"
+      name: "k8smgmt"
+    vrf: "prodk8smgmt"
+  - address: "172.25.21.251/32"
+    assigned_object:
+      virtual_machine: "prod-router01"
+      name: "k8ssvc"
+    vrf: "prodk8ssvc"
+  - address: "172.25.30.251/32"
+    assigned_object:
+      virtual_machine: "prod-router01"
+      name: "osmgmt"
+    vrf: "prodosmgmt"
+  - address: "172.25.31.251/32"
+    assigned_object:
+      virtual_machine: "prod-router01"
+      name: "ossvc"
+    vrf: "prodossvc"
+  - address: "172.25.32.251/32"
+    assigned_object:
+      virtual_machine: "prod-router01"
+      name: "osprov"
+    vrf: "prodosprov"
+  - address: "172.25.255.11/32"
+    assigned_object:
+      virtual_machine: "prod-router01"
+      name: "transfer"
+    vrf: "prodtransfer"
+
+
+  - address: "172.25.6.13/32"
+    assigned_object:
+      virtual_machine: "dev-router01"
+      name: "firewall"
+    vrf: "firewall"
+    dns_name: "dev-router01.infra.{{ domain_name }}"
+  - address: "172.20.20.251/32"
+    assigned_object:
+      virtual_machine: "dev-router01"
+      name: "k8smgmt"
+    vrf: "devk8smgmt"
+  - address: "172.20.21.251/32"
+    assigned_object:
+      virtual_machine: "dev-router01"
+      name: "k8ssvc"
+    vrf: "devk8ssvc"
+  - address: "172.20.30.251/32"
+    assigned_object:
+      virtual_machine: "dev-router01"
+      name: "osmgmt"
+    vrf: "devosmgmt"
+  - address: "172.20.31.251/32"
+    assigned_object:
+      virtual_machine: "dev-router01"
+      name: "ossvc"
+    vrf: "devossvc"
+  - address: "172.20.32.251/32"
+    assigned_object:
+      virtual_machine: "dev-router01"
+      name: "osprov"
+    vrf: "devosprov"
+  - address: "172.20.255.13/32"
+    assigned_object:
+      virtual_machine: "dev-router01"
+      name: "transfer"
+    vrf: "devtransfer"
+
+  - address: "172.25.20.6/32"
+    assigned_object:
+      virtual_machine: "prodk8s-mnbox01"
+      name: "mgmt"
+    vrf: "prodk8smgmt"
+  - address: "172.25.21.6/32"
+    assigned_object:
+      virtual_machine: "prodk8s-mnbox01"
+      name: "svc"
+    vrf: "prodk8ssvc"
+  - address: "172.25.28.6/32"
+    assigned_object:
+      virtual_machine: "prodk8s-mnbox01"
+      name: "ceph"
+
+  - address: "172.25.30.6/32"
+    assigned_object:
+      virtual_machine: "prodos-mnbox01"
+      name: "mgmt"
+    vrf: "prodosmgmt"
+  - address: "172.25.31.6/32"
+    assigned_object:
+      virtual_machine: "prodos-mnbox01"
+      name: "svc"
+    vrf: "prodossvc"
+  - address: "172.25.32.6/32"
+    assigned_object:
+      virtual_machine: "prodos-mnbox01"
+      name: "prov"
+    vrf: "prodosprov"
+  - address: "172.25.38.6/32"
+    assigned_object:
+      virtual_machine: "prodos-mnbox01"
+      name: "ceph"
+
+  - address: "172.25.40.6/32"
+    assigned_object:
+      virtual_machine: "proddmz-mnbox01"
+      name: "mgmt"
+    vrf: "proddmzmgmt"
+  - address: "172.25.41.6/32"
+    assigned_object:
+      virtual_machine: "proddmz-mnbox01"
+      name: "svc"
+    vrf: "proddmzsvc"
+  - address: "172.25.48.6/32"
+    assigned_object:
+      virtual_machine: "proddmz-mnbox01"
+      name: "ceph"
+
+  - address: "172.20.20.6/32"
+    assigned_object:
+      virtual_machine: "devk8s-mnbox01"
+      name: "mgmt"
+    vrf: "devk8smgmt"
+  - address: "172.20.21.6/32"
+    assigned_object:
+      virtual_machine: "devk8s-mnbox01"
+      name: "svc"
+    vrf: "devk8ssvc"
+  - address: "172.20.28.6/32"
+    assigned_object:
+      virtual_machine: "devk8s-mnbox01"
+      name: "ceph"
+
+  - address: "172.20.30.6/32"
+    assigned_object:
+      virtual_machine: "devos-mnbox01"
+      name: "mgmt"
+    vrf: "devosmgmt"
+  - address: "172.20.31.6/32"
+    assigned_object:
+      virtual_machine: "devos-mnbox01"
+      name: "svc"
+    vrf: "devossvc"
+  - address: "172.20.32.6/32"
+    assigned_object:
+      virtual_machine: "devos-mnbox01"
+      name: "prov"
+    vrf: "devosprov"
+  - address: "172.20.38.6/32"
+    assigned_object:
+      virtual_machine: "devos-mnbox01"
+      name: "ceph"
+
+  - address: "172.20.40.6/32"
+    assigned_object:
+      virtual_machine: "devdmz-mnbox01"
+      name: "mgmt"
+    vrf: "devdmzmgmt"
+  - address: "172.20.41.6/32"
+    assigned_object:
+      virtual_machine: "devdmz-mnbox01"
+      name: "svc"
+    vrf: "devdmzsvc"
+  - address: "172.20.48.6/32"
+    assigned_object:
+      virtual_machine: "devdmz-mnbox01"
+      name: "ceph"
 

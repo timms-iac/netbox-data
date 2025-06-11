@@ -5,7 +5,194 @@ netbox_mac_addresses_mnbox02:
       device: "mnbox02"
     mac_address: "{{ mac_mnbox02_kube0 | upper }}"
   - assigned_object:
-      name: "ceph0"
+      name: "trans0"
       device: "mnbox02"
-    mac_address: "{{ mac_mnbox02_ceph0 | upper }}"
+    mac_address: "{{ mac_mnbox02_trans0 | upper }}"
+
+  - assigned_object:
+      name: "te1"
+      device: "mnbox02"
+    mac_address: "{{ mac_mnbox02_te1 | upper }}"
+  - assigned_object:
+      name: "te2"
+      device: "mnbox02"
+    mac_address: "{{ mac_mnbox02_te2 | upper }}"
+
+  - mac_address: "52:54:AC:19:06:02"
+    assigned_object:
+      virtual_machine: "prod-fw02"
+      name: "firewall"
+  - mac_address: "52:54:AC:19:28:FC"
+    assigned_object:
+      virtual_machine: "prod-fw02"
+      name: "dmzmgmt"
+  - mac_address: "52:54:AC:19:29:FC"
+    assigned_object:
+      virtual_machine: "prod-fw02"
+      name: "dmzsvc"
+  - mac_address: "52:54:AC:19:FF:02"
+    assigned_object:
+      virtual_machine: "prod-fw02"
+      name: "transfer"
+
+  - mac_address: "52:54:AC:19:06:04"
+    assigned_object:
+      virtual_machine: "dev-fw02"
+      name: "firewall"
+  - mac_address: "52:54:AC:14:28:FC"
+    assigned_object:
+      virtual_machine: "dev-fw02"
+      name: "dmzmgmt"
+  - mac_address: "52:54:AC:14:29:FC"
+    assigned_object:
+      virtual_machine: "dev-fw02"
+      name: "dmzsvc"
+  - mac_address: "52:54:AC:14:FF:04"
+    assigned_object:
+      virtual_machine: "dev-fw02"
+      name: "transfer"
+
+  - mac_address: "52:54:AC:19:06:0C"
+    assigned_object:
+      virtual_machine: "prod-router02"
+      name: "firewall"
+  - mac_address: "52:54:AC:19:14:FC"
+    assigned_object:
+      virtual_machine: "prod-router02"
+      name: "k8smgmt"
+  - mac_address: "52:54:AC:19:15:FC"
+    assigned_object:
+      virtual_machine: "prod-router02"
+      name: "k8ssvc"
+  - mac_address: "52:54:AC:19:1E:FC"
+    assigned_object:
+      virtual_machine: "prod-router02"
+      name: "osmgmt"
+  - mac_address: "52:54:AC:19:1F:FC"
+    assigned_object:
+      virtual_machine: "prod-router02"
+      name: "ossvc"
+  - mac_address: "52:54:AC:19:20:FC"
+    assigned_object:
+      virtual_machine: "prod-router02"
+      name: "osprov"
+  - mac_address: "52:54:AC:19:FF:0C"
+    assigned_object:
+      virtual_machine: "prod-router02"
+      name: "transfer"
+
+  - mac_address: "52:54:AC:19:06:0E"
+    assigned_object:
+      virtual_machine: "dev-router02"
+      name: "firewall"
+  - mac_address: "52:54:AC:14:14:FC"
+    assigned_object:
+      virtual_machine: "dev-router02"
+      name: "k8smgmt"
+  - mac_address: "52:54:AC:14:15:FC"
+    assigned_object:
+      virtual_machine: "dev-router02"
+      name: "k8ssvc"
+  - mac_address: "52:54:AC:14:1E:FC"
+    assigned_object:
+      virtual_machine: "dev-router02"
+      name: "osmgmt"
+  - mac_address: "52:54:AC:14:1F:FC"
+    assigned_object:
+      virtual_machine: "dev-router02"
+      name: "ossvc"
+  - mac_address: "52:54:AC:14:20:FC"
+    assigned_object:
+      virtual_machine: "dev-router02"
+      name: "osprov"
+  - mac_address: "52:54:AC:14:FF:0E"
+    assigned_object:
+      virtual_machine: "dev-router02"
+      name: "transfer"
+
+  - mac_address: "52:54:AC:19:14:07"
+    assigned_object:
+      virtual_machine: "prodk8s-mnbox02"
+      name: "mgmt"
+  - mac_address: "52:54:AC:19:15:07"
+    assigned_object:
+      virtual_machine: "prodk8s-mnbox02"
+      name: "svc"
+  - mac_address: "52:54:AC:19:1C:07"
+    assigned_object:
+      virtual_machine: "prodk8s-mnbox02"
+      name: "ceph"
+
+  - mac_address: "52:54:AC:19:1E:07"
+    assigned_object:
+      virtual_machine: "prodos-mnbox02"
+      name: "mgmt"
+  - mac_address: "52:54:AC:19:1F:07"
+    assigned_object:
+      virtual_machine: "prodos-mnbox02"
+      name: "svc"
+  - mac_address: "52:54:AC:19:20:07"
+    assigned_object:
+      virtual_machine: "prodos-mnbox02"
+      name: "prov"
+  - mac_address: "52:54:AC:19:26:07"
+    assigned_object:
+      virtual_machine: "prodos-mnbox02"
+      name: "ceph"
+
+  - mac_address: "52:54:AC:19:28:07"
+    assigned_object:
+      virtual_machine: "proddmz-mnbox02"
+      name: "mgmt"
+  - mac_address: "52:54:AC:19:29:07"
+    assigned_object:
+      virtual_machine: "proddmz-mnbox02"
+      name: "svc"
+  - mac_address: "52:54:AC:19:30:07"
+    assigned_object:
+      virtual_machine: "proddmz-mnbox02"
+      name: "ceph"
+
+  - mac_address: "52:54:AC:14:14:07"
+    assigned_object:
+      virtual_machine: "devk8s-mnbox02"
+      name: "mgmt"
+  - mac_address: "52:54:AC:14:15:07"
+    assigned_object:
+      virtual_machine: "devk8s-mnbox02"
+      name: "svc"
+  - mac_address: "52:54:AC:14:1C:07"
+    assigned_object:
+      virtual_machine: "devk8s-mnbox02"
+      name: "ceph"
+
+  - mac_address: "52:54:AC:14:1E:07"
+    assigned_object:
+      virtual_machine: "devos-mnbox02"
+      name: "mgmt"
+  - mac_address: "52:54:AC:14:1F:07"
+    assigned_object:
+      virtual_machine: "devos-mnbox02"
+      name: "svc"
+  - mac_address: "52:54:AC:14:20:07"
+    assigned_object:
+      virtual_machine: "devos-mnbox02"
+      name: "prov"
+  - mac_address: "52:54:AC:14:26:07"
+    assigned_object:
+      virtual_machine: "devos-mnbox02"
+      name: "ceph"
+
+  - mac_address: "52:54:AC:14:28:07"
+    assigned_object:
+      virtual_machine: "devdmz-mnbox02"
+      name: "mgmt"
+  - mac_address: "52:54:AC:14:29:07"
+    assigned_object:
+      virtual_machine: "devdmz-mnbox02"
+      name: "svc"
+  - mac_address: "52:54:AC:14:30:07"
+    assigned_object:
+      virtual_machine: "devdmz-mnbox02"
+      name: "ceph"
 

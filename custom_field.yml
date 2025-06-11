@@ -6,7 +6,7 @@ netbox_custom_fields_BER1:
     default: false
     type: "boolean"
       #    ui_visibility: read-write
-    description: "Enable Energy Efficient Ethernet (EEE) on switch interfaces"
+    description: "Enable Energy Efficient Ethernet (EEE) on interfaces"
 
   - name: "LLDP"
     object_types:
@@ -14,7 +14,16 @@ netbox_custom_fields_BER1:
     default: false
     type: "boolean"
       #    ui_visibility: read-write
-    description: "Enable Link Layer Discovery Protocol (LLDP) on switch interfaces"
+    description: "Enable Link Layer Discovery Protocol (LLDP) on interfaces"
+
+  - name: "VFs"
+    object_types:
+      - dcim.interface
+    default: 0
+    type: "integer"
+      #    ui_visibility: read-write
+    description: "Enable VFs on SR-IOV capable interfaces"
+
 
   - name: "webmanagement"
     object_types:
@@ -84,3 +93,17 @@ netbox_custom_fields_BER1:
     type: "object"
     related_object_type: ipam.ipaddress
     description: "IP of host from which management operations are permitted"
+
+  - name: "VolumeGroup"
+    object_types:
+      - virtualization.virtualdisk
+    type: "text"
+    description: "Logical Volume Group the disk volume is created on"
+
+  - name: "HostInterface"
+    object_types:
+      - virtualization.vminterface
+    type: "object"
+    related_object_type: dcim.interface
+    description: "Bridge/PF of the virtualization host"
+

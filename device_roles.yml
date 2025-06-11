@@ -3,7 +3,7 @@ netbox_device_roles_BER1:
   - name: "Desktop"
   - name: "Laptop"
   - name: "Switch"
-  - name: "Router"
+  - name: "Accesspoint"
   - name: "Kubernetes Controlplane"
     slug: "controlplane"
     vm_role: true
@@ -11,6 +11,8 @@ netbox_device_roles_BER1:
     slug: "worker"
     vm_role: true
   - name: "Firewall"
+    vm_role: true
+  - name: "Router"
     vm_role: true
   - name: "Repeater"
   - name: "KVM Switch"

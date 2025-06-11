@@ -76,4 +76,8 @@ netbox_vrfs_BER1:
   - name: "proddmzsvc"
     description: "Production DMZ k8s Services"
 
+  - name: "devtransfer"
+    description: "Development Transfer Network"
+  - name: "prodtransfer"
+    description: "Production Transfer Network"
 

@@ -172,3 +172,14 @@ netbox_prefixes_BER1:
     vlan:
       name: "proddmzceph"
 
+  - prefix: "172.20.255.0/24"
+    description: "Development Transfer Network"
+    vlan:
+      name: "devtransfer"
+    vrf: "devtransfer"
+  - prefix: "172.25.255.0/24"
+    description: "Production Transfer Network"
+    vlan:
+      name: "prodtransfer"
+    vrf: "prodtransfer"
+

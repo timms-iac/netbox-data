@@ -7,49 +7,301 @@ netbox_vm_interfaces_mnbox01:
     untagged_vlan: 
       name: "dmz"
       site: "BER1"
+    vrf: "dmz"
+    custom_fields:
+      HostInterface:
+        name: "te1"
+        device: "mnbox01"
+    primary_mac_address: "52:54:C0:A8:19:FB" 
   - name: "firewall"
     virtual_machine: "prod-fw01"
     mode: "access"
     untagged_vlan:
       name: "firewall"
       site: "BER1"
-  - name: "hypervisor"
+    vrf: "firewall"
+    custom_fields:
+      HostInterface:
+        name: "te1"
+        device: "mnbox01"
+    primary_mac_address: "52:54:AC:19:06:01" 
+  - name: "transfer"
     virtual_machine: "prod-fw01"
+    mode: "access"
+    untagged_vlan:
+      name: "prodtransfer"
+      site: "BER1"
+    vrf: "prodtransfer"
+    custom_fields:
+      HostInterface:
+        name: "trans"
+        device: "mnbox01"
+    primary_mac_address: "52:54:AC:19:FF:01" 
+  - name: "dmzmgmt"
+    virtual_machine: "prod-fw01"
+    mode: "access"
+    untagged_vlan:
+      name: "proddmzmgmt"
+      site: "BER1"
+    vrf: "proddmzmgmt"
+    custom_fields:
+      HostInterface:
+        name: "te1"
+        device: "mnbox01"
+    primary_mac_address: "52:54:AC:19:28:FB" 
+  - name: "dmzsvc"
+    virtual_machine: "prod-fw01"
+    mode: "access"
+    untagged_vlan:
+      name: "proddmzsvc"
+      site: "BER1"
+    vrf: "proddmzsvc"
+    custom_fields:
+      HostInterface:
+        name: "te1"
+        device: "mnbox01"
+    primary_mac_address: "52:54:AC:19:29:FB" 
+
+  - name: "firewall"
+    virtual_machine: "prod-router01"
+    mode: "access"
+    untagged_vlan:
+      name: "firewall"
+      site: "BER1"
+    vrf: "firewall"
+    custom_fields:
+      HostInterface:
+        name: "te1"
+        device: "mnbox01"
+    primary_mac_address: "52:54:AC:19:06:0B" 
+  - name: "hypervisor"
+    virtual_machine: "prod-router01"
     mode: "access"
     untagged_vlan:
       name: "hypervisor"
       site: "BER1"
+    vrf: "hypervisor"
+    custom_fields:
+      HostInterface:
+        name: "te1"
+        device: "mnbox01"
+    primary_mac_address: "52:54:AC:19:05:FB"
+  - name: "mgmt"
+    virtual_machine: "prod-router01"
+    mode: "access"
+    untagged_vlan:
+      name: "mgmt"
+      site: "BER1"
+    vrf: "mgmt"
+    custom_fields:
+      HostInterface:
+        name: "te1"
+        device: "mnbox01"
+    primary_mac_address: "52:54:AC:19:01:FB"
+  - name: "iot"
+    virtual_machine: "prod-router01"
+    mode: "access"
+    untagged_vlan:
+      name: "iot"
+      site: "BER1"
+    vrf: "iot"
+    custom_fields:
+      HostInterface:
+        name: "te1"
+        device: "mnbox01"
+    primary_mac_address: "52:54:AC:13:FF:FB"
+  - name: "k8smgmt"
+    virtual_machine: "prod-router01"
+    mode: "access"
+    untagged_vlan:
+      name: "prodk8smgmt"
+      site: "BER1"
+    vrf: "prodk8smgmt"
+    custom_fields:
+      HostInterface:
+        name: "te1"
+        device: "mnbox01"
+    primary_mac_address: "52:54:AC:19:14:FB" 
+  - name: "k8ssvc"
+    virtual_machine: "prod-router01"
+    mode: "access"
+    untagged_vlan:
+      name: "prodk8ssvc"
+      site: "BER1"
+    vrf: "prodk8ssvc"
+    custom_fields:
+      HostInterface:
+        name: "te1"
+        device: "mnbox01"
+    primary_mac_address: "52:54:AC:19:15:FB" 
+  - name: "osmgmt"
+    virtual_machine: "prod-router01"
+    mode: "access"
+    untagged_vlan:
+      name: "prodosmgmt"
+      site: "BER1"
+    vrf: "prodosmgmt"
+    custom_fields:
+      HostInterface:
+        name: "te1"
+        device: "mnbox01"
+    primary_mac_address: "52:54:AC:19:1E:FB" 
+  - name: "ossvc"
+    virtual_machine: "prod-router01"
+    mode: "access"
+    untagged_vlan:
+      name: "prodossvc"
+      site: "BER1"
+    vrf: "prodossvc"
+    custom_fields:
+      HostInterface:
+        name: "te1"
+        device: "mnbox01"
+    primary_mac_address: "52:54:AC:19:1F:FB" 
+  - name: "osprov"
+    virtual_machine: "prod-router01"
+    mode: "access"
+    untagged_vlan:
+      name: "prodosprov"
+      site: "BER1"
+    vrf: "prodosprov"
+    custom_fields:
+      HostInterface:
+        name: "te1"
+        device: "mnbox01"
+    primary_mac_address: "52:54:AC:19:20:FB" 
+  - name: "transfer"
+    virtual_machine: "prod-router01"
+    mode: "access"
+    untagged_vlan:
+      name: "prodtransfer"
+      site: "BER1"
+    vrf: "prodtransfer"
+    custom_fields:
+      HostInterface:
+        name: "trans"
+        device: "mnbox01"
+    primary_mac_address: "52:54:AC:19:FF:0B" 
 
-  - name: "prodk8smgmt"
-    virtual_machine: "prod-fw01"
+  - name: "mgmt"
+    virtual_machine: "prodk8s-mnbox01"
     mode: "access"
-    untagged_vlan: "prodk8smgmt"
-  - name: "prodk8ssvc"
-    virtual_machine: "prod-fw01"
+    untagged_vlan: 
+      name: "prodk8smgmt"
+      site: "BER1"
+    vrf: "prodk8smgmt"
+    custom_fields:
+      HostInterface:
+        name: "kube"
+        device: "mnbox01"
+    primary_mac_address: "52:54:AC:19:14:06" 
+  - name: "svc"
+    virtual_machine: "prodk8s-mnbox01"
     mode: "access"
-    untagged_vlan: "prodk8ssvc"
+    untagged_vlan: 
+      name: "prodk8ssvc"
+      site: "BER1"
+    vrf: "prodk8ssvc"
+    custom_fields:
+      HostInterface:
+        name: "kube"
+        device: "mnbox01"
+    primary_mac_address: "52:54:AC:19:15:06" 
+  - name: "ceph"
+    virtual_machine: "prodk8s-mnbox01"
+    mode: "access"
+    untagged_vlan:
+      name: "prodk8sceph"
+      site: "BER1"
+    custom_fields:
+      HostInterface:
+        name: "te2"
+        device: "mnbox01"
+    primary_mac_address: "52:54:AC:19:1C:06" 
 
-  - name: "prodosmgmt"
-    virtual_machine: "prod-fw01"
+  - name: "mgmt"
+    virtual_machine: "prodos-mnbox01"
     mode: "access"
-    untagged_vlan: "prodosmgmt"
-  - name: "prodossvc"
-    virtual_machine: "prod-fw01"
+    untagged_vlan: 
+      name: "prodosmgmt"
+      site: "BER1"
+    vrf: "prodosmgmt"
+    custom_fields:
+      HostInterface:
+        name: "kube"
+        device: "mnbox01"
+    primary_mac_address: "52:54:AC:19:1E:06" 
+  - name: "svc"
+    virtual_machine: "prodos-mnbox01"
     mode: "access"
-    untagged_vlan: "prodossvc"
-  - name: "prodosprov"
-    virtual_machine: "prod-fw01"
+    untagged_vlan: 
+      name: "prodossvc"
+      site: "BER1"
+    vrf: "prodossvc"
+    custom_fields:
+      HostInterface:
+        name: "kube"
+        device: "mnbox01"
+    primary_mac_address: "52:54:AC:19:1F:06"
+  - name: "prov"
+    virtual_machine: "prodos-mnbox01"
     mode: "access"
-    untagged_vlan: "prodosprov"
+    untagged_vlan: 
+      name: "prodosprov"
+      site: "BER1"
+    vrf: "prodosprov"
+    custom_fields:
+      HostInterface:
+        name: "kube"
+        device: "mnbox01"
+    primary_mac_address: "52:54:AC:19:20:06"
+  - name: "ceph"
+    virtual_machine: "prodos-mnbox01"
+    mode: "access"
+    untagged_vlan:
+      name: "prodosceph"
+      site: "BER1"
+    custom_fields:
+      HostInterface:
+        name: "te2"
+        device: "mnbox01"
+    primary_mac_address: "52:54:AC:19:26:06"
 
-  - name: "proddmzmgmt"
-    virtual_machine: "prod-fw01"
+  - name: "mgmt"
+    virtual_machine: "proddmz-mnbox01"
     mode: "access"
-    untagged_vlan: "proddmzmgmt"
-  - name: "proddmzsvc"
-    virtual_machine: "prod-fw01"
+    untagged_vlan: 
+      name: "proddmzmgmt"
+      site: "BER1"
+    vrf: "proddmzmgmt"
+    custom_fields:
+      HostInterface:
+        name: "kube"
+        device: "mnbox01"
+    primary_mac_address: "52:54:AC:19:28:06" 
+  - name: "svc"
+    virtual_machine: "proddmz-mnbox01"
     mode: "access"
-    untagged_vlan: "proddmzsvc"
+    untagged_vlan: 
+      name: "proddmzsvc"
+      site: "BER1"
+    vrf: "proddmzsvc"
+    custom_fields:
+      HostInterface:
+        name: "kube"
+        device: "mnbox01"
+    primary_mac_address: "52:54:AC:19:29:06"
+  - name: "ceph"
+    virtual_machine: "proddmz-mnbox01"
+    mode: "access"
+    untagged_vlan: 
+      name: "proddmzceph"
+      site: "BER1"
+    custom_fields:
+      HostInterface:
+        name: "te2"
+        device: "mnbox01"
+    primary_mac_address: "52:54:AC:19:30:06"
 
   - name: "dmz"
     virtual_machine: "dev-fw01"
@@ -57,62 +309,263 @@ netbox_vm_interfaces_mnbox01:
     untagged_vlan:
       name: "dmz"
       site: "BER1"
+    vrf: "dmz"
+    custom_fields:
+      HostInterface:
+        name: "te2"
+        device: "mnbox01"
+    primary_mac_address: "52:54:C0:A8:14:FB" 
   - name: "firewall"
     virtual_machine: "dev-fw01"
     mode: "access"
     untagged_vlan:
       name: "firewall"
       site: "BER1"
-  - name: "hypervisor"
+    vrf: "firewall"
+    custom_fields:
+      HostInterface:
+        name: "te2"
+        device: "mnbox01"
+    primary_mac_address: "52:54:AC:19:06:03" 
+  - name: "transfer"
     virtual_machine: "dev-fw01"
     mode: "access"
     untagged_vlan:
-      name: "hypervisor"
+      name: "devtransfer"
       site: "BER1"
+    vrf: "devtransfer"
+    custom_fields:
+      HostInterface:
+        name: "trans"
+        device: "mnbox01"
+    primary_mac_address: "52:54:AC:14:FF:03"
+  - name: "dmzmgmt"
+    virtual_machine: "dev-fw01"
+    mode: "access"
+    untagged_vlan:
+      name: "devdmzmgmt"
+      site: "BER1"
+    vrf: "devdmzmgmt"
+    custom_fields:
+      HostInterface:
+        name: "te2"
+        device: "mnbox01"
+    primary_mac_address: "52:54:AC:14:28:FB"
+  - name: "dmzsvc"
+    virtual_machine: "dev-fw01"
+    mode: "access"
+    untagged_vlan:      
+      name: "devdmzsvc"
+      site: "BER1"
+    vrf: "devdmzsvc"
+    custom_fields:
+      HostInterface:
+        name: "te2"
+        device: "mnbox01"
+    primary_mac_address: "52:54:AC:14:29:FB"
 
-
-  - name: "devk8smgmt"
-    virtual_machine: "dev-fw01"
+  - name: "firewall"
+    virtual_machine: "dev-router01"
     mode: "access"
-    untagged_vlan: "devk8smgmt"
-  - name: "devk8ssvc"
-    virtual_machine: "dev-fw01"
+    untagged_vlan:
+      name: "firewall"
+      site: "BER1"
+    vrf: "firewall"
+    custom_fields:
+      HostInterface:
+        name: "te2"
+        device: "mnbox01"
+    primary_mac_address: "52:54:AC:19:06:0D"
+  - name: "k8smgmt"
+    virtual_machine: "dev-router01"
     mode: "access"
-    untagged_vlan: "devk8ssvc"
-
-  - name: "devosmgmt"
-    virtual_machine: "dev-fw01"
+    untagged_vlan:
+      name: "devk8smgmt"
+      site: "BER1"
+    vrf: "devk8smgmt"
+    custom_fields:
+      HostInterface:
+        name: "te2"
+        device: "mnbox01"
+    primary_mac_address: "52:54:AC:14:14:FB"
+  - name: "k8ssvc"
+    virtual_machine: "dev-router01"
     mode: "access"
-    untagged_vlan: "devosmgmt"
-  - name: "devossvc"
-    virtual_machine: "dev-fw01"
+    untagged_vlan:
+      name: "devk8ssvc"
+      site: "BER1"
+    vrf: "devk8ssvc"
+    custom_fields:
+      HostInterface:
+        name: "te2"
+        device: "mnbox01"
+    primary_mac_address: "52:54:AC:14:15:FB"
+  - name: "osmgmt"
+    virtual_machine: "dev-router01"
     mode: "access"
-    untagged_vlan: "devossvc"
-  - name: "devosprov"
-    virtual_machine: "dev-fw01"
+    untagged_vlan:
+      name: "devosmgmt"
+      site: "BER1"
+    vrf: "devosmgmt"
+    custom_fields:
+      HostInterface:
+        name: "te2"
+        device: "mnbox01"
+    primary_mac_address: "52:54:AC:14:1E:FB"
+  - name: "ossvc"
+    virtual_machine: "dev-router01"
     mode: "access"
-    untagged_vlan: "devosprov"
-
-  - name: "devdmzmgmt"
-    virtual_machine: "dev-fw01"
+    untagged_vlan:
+      name: "devossvc"
+      site: "BER1"
+    vrf: "devossvc"
+    custom_fields:
+      HostInterface:
+        name: "te2"
+        device: "mnbox01"
+    primary_mac_address: "52:54:AC:14:1F:FB"
+  - name: "osprov"
+    virtual_machine: "dev-router01"
     mode: "access"
-    untagged_vlan: "devdmzmgmt"
-  - name: "devdmzsvc"
-    virtual_machine: "dev-fw01"
+    untagged_vlan:
+      name: "devosprov"
+      site: "BER1"
+    vrf: "devosprov"
+    custom_fields:
+      HostInterface:
+        name: "te2"
+        device: "mnbox01"
+    primary_mac_address: "52:54:AC:14:20:FB"
+  - name: "transfer"
+    virtual_machine: "dev-router01"
     mode: "access"
-    untagged_vlan: "devdmzsvc"
+    untagged_vlan:
+      name: "devtransfer"
+      site: "BER1"
+    vrf: "devtransfer"
+    custom_fields:
+      HostInterface:
+        name: "trans"
+        device: "mnbox01"
+    primary_mac_address: "52:54:AC:14:FF:0D"
 
   - name: "mgmt"
-    virtual_machine: "prodk8s-mnbox01"
+    virtual_machine: "devk8s-mnbox01"
     mode: "access"
-    untagged_vlan: "prodk8smgmt"
+    untagged_vlan: 
+      name: "devk8smgmt"
+      site: "BER1"
+    vrf: "devk8smgmt"
+    custom_fields:
+      HostInterface:
+        name: "kube"
+        device: "mnbox01"
+    primary_mac_address: "52:54:AC:14:14:06"
   - name: "svc"
-    virtual_machine: "prodk8s-mnbox01"
+    virtual_machine: "devk8s-mnbox01"
     mode: "access"
-    untagged_vlan: "prodk8ssvc"
+    untagged_vlan: 
+      name: "devk8ssvc"
+      site: "BER1"
+    vrf: "devk8ssvc"
+    custom_fields:
+      HostInterface:
+        name: "kube"
+        device: "mnbox01"
+    primary_mac_address: "52:54:AC:14:15:06"
   - name: "ceph"
-    virtual_machine: "prodk8s-mnbox01"
+    virtual_machine: "devk8s-mnbox01"
     mode: "access"
-    untagged_vlan: "prodk8sceph"
+    untagged_vlan:
+      name: "devk8sceph"
+      site: "BER1"
+    custom_fields:
+      HostInterface:
+        name: "te1"
+        device: "mnbox01"
+    primary_mac_address: "52:54:AC:14:1C:06"
 
+  - name: "mgmt"
+    virtual_machine: "devos-mnbox01"
+    mode: "access"
+    untagged_vlan: 
+      name: "devosmgmt"
+      site: "BER1"
+    vrf: "devosmgmt"
+    custom_fields:
+      HostInterface:
+        name: "kube"
+        device: "mnbox01"
+    primary_mac_address: "52:54:AC:14:1E:06" 
+  - name: "svc"
+    virtual_machine: "devos-mnbox01"
+    mode: "access"
+    untagged_vlan: 
+      name: "devossvc"
+      site: "BER1"
+    vrf: "devossvc"
+    custom_fields:
+      HostInterface:
+        name: "kube"
+        device: "mnbox01"
+    primary_mac_address: "52:54:AC:14:1F:06"
+  - name: "prov"
+    virtual_machine: "devos-mnbox01"
+    mode: "access"
+    untagged_vlan: 
+      name: "devosprov"
+      site: "BER1"
+    vrf: "devosprov"
+    custom_fields:
+      HostInterface:
+        name: "kube"
+        device: "mnbox01"
+    primary_mac_address: "52:54:AC:14:20:06"
+  - name: "ceph"
+    virtual_machine: "devos-mnbox01"
+    mode: "access"
+    untagged_vlan:
+      name: "devosceph"
+      site: "BER1"
+    custom_fields:
+      HostInterface:
+        name: "te1"
+        device: "mnbox01"
+    primary_mac_address: "52:54:AC:14:26:06"
+
+  - name: "mgmt"
+    virtual_machine: "devdmz-mnbox01"
+    mode: "access"
+    untagged_vlan: 
+      name: "devdmzmgmt"
+      site: "BER1"
+    vrf: "devdmzmgmt"
+    custom_fields:
+      HostInterface:
+        name: "kube"
+        device: "mnbox01"
+    primary_mac_address: "52:54:AC:14:28:06" 
+  - name: "svc"
+    virtual_machine: "devdmz-mnbox01"
+    mode: "access"
+    untagged_vlan: 
+      name: "devdmzsvc"
+      site: "BER1"
+    vrf: "devdmzsvc"
+    custom_fields:
+      HostInterface:
+        name: "kube"
+        device: "mnbox01"
+    primary_mac_address: "52:54:AC:14:29:06"
+  - name: "ceph"
+    virtual_machine: "devdmz-mnbox01"
+    mode: "access"
+    untagged_vlan:
+      name: "devdmzceph"
+      site: "BER1"
+    custom_fields:
+      HostInterface:
+        name: "te1"
+        device: "mnbox01"
+    primary_mac_address: "52:54:AC:14:30:06"
 

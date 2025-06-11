@@ -4,53 +4,279 @@ netbox_vm_interfaces_mnbox02:
   - name: "dmz"
     virtual_machine: "prod-fw02"
     mode: "access"
-    untagged_vlan:
+    untagged_vlan: 
       name: "dmz"
       site: "BER1"
+    vrf: "dmz"
+    custom_fields:
+      HostInterface:
+        name: "te1"
+        device: "mnbox02"
   - name: "firewall"
     virtual_machine: "prod-fw02"
     mode: "access"
     untagged_vlan:
       name: "firewall"
       site: "BER1"
-  - name: "hypervisor"
+    vrf: "firewall"
+    custom_fields:
+      HostInterface:
+        name: "te1"
+        device: "mnbox02"
+  - name: "transfer"
     virtual_machine: "prod-fw02"
+    mode: "access"
+    untagged_vlan:
+      name: "prodtransfer"
+      site: "BER1"
+    vrf: "prodtransfer"
+    custom_fields:
+      HostInterface:
+        name: "trans"
+        device: "mnbox02"
+  - name: "dmzmgmt"
+    virtual_machine: "prod-fw02"
+    mode: "access"
+    untagged_vlan:
+      name: "proddmzmgmt"
+      site: "BER1"
+    vrf: "proddmzmgmt"
+    custom_fields:
+      HostInterface:
+        name: "te1"
+        device: "mnbox02"
+  - name: "dmzsvc"
+    virtual_machine: "prod-fw02"
+    mode: "access"
+    untagged_vlan:
+      name: "proddmzsvc"
+      site: "BER1"
+    vrf: "proddmzsvc"
+    custom_fields:
+      HostInterface:
+        name: "te1"
+        device: "mnbox02"
+
+  - name: "firewall"
+    virtual_machine: "prod-router02"
+    mode: "access"
+    untagged_vlan:
+      name: "firewall"
+      site: "BER1"
+    vrf: "firewall"
+    custom_fields:
+      HostInterface:
+        name: "te1"
+        device: "mnbox02"
+  - name: "hypervisor"
+    virtual_machine: "prod-router02"
     mode: "access"
     untagged_vlan:
       name: "hypervisor"
       site: "BER1"
+    vrf: "hypervisor"
+    custom_fields:
+      HostInterface:
+        name: "te1"
+        device: "mnbox02"
+  - name: "mgmt"
+    virtual_machine: "prod-router02"
+    mode: "access"
+    untagged_vlan:
+      name: "mgmt"
+      site: "BER1"
+    vrf: "mgmt"
+    custom_fields:
+      HostInterface:
+        name: "te1"
+        device: "mnbox02"
+  - name: "iot"
+    virtual_machine: "prod-router02"
+    mode: "access"
+    untagged_vlan:
+      name: "iot"
+      site: "BER1"
+    vrf: "iot"
+    custom_fields:
+      HostInterface:
+        name: "te1"
+        device: "mnbox02"
+  - name: "k8smgmt"
+    virtual_machine: "prod-router02"
+    mode: "access"
+    untagged_vlan:
+      name: "prodk8smgmt"
+      site: "BER1"
+    vrf: "prodk8smgmt"
+    custom_fields:
+      HostInterface:
+        name: "te1"
+        device: "mnbox02"
+  - name: "k8ssvc"
+    virtual_machine: "prod-router02"
+    mode: "access"
+    untagged_vlan:
+      name: "prodk8ssvc"
+      site: "BER1"
+    vrf: "prodk8ssvc"
+    custom_fields:
+      HostInterface:
+        name: "te1"
+        device: "mnbox02"
+  - name: "osmgmt"
+    virtual_machine: "prod-router02"
+    mode: "access"
+    untagged_vlan:
+      name: "prodosmgmt"
+      site: "BER1"
+    vrf: "prodosmgmt"
+    custom_fields:
+      HostInterface:
+        name: "te1"
+        device: "mnbox02"
+  - name: "ossvc"
+    virtual_machine: "prod-router02"
+    mode: "access"
+    untagged_vlan:
+      name: "prodossvc"
+      site: "BER1"
+    vrf: "prodossvc"
+    custom_fields:
+      HostInterface:
+        name: "te1"
+        device: "mnbox02"
+  - name: "osprov"
+    virtual_machine: "prod-router02"
+    mode: "access"
+    untagged_vlan:
+      name: "prodosprov"
+      site: "BER1"
+    vrf: "prodosprov"
+    custom_fields:
+      HostInterface:
+        name: "te1"
+        device: "mnbox02"
+  - name: "transfer"
+    virtual_machine: "prod-router02"
+    mode: "access"
+    untagged_vlan:
+      name: "prodtransfer"
+      site: "BER1"
+    vrf: "prodtransfer"
+    custom_fields:
+      HostInterface:
+        name: "trans"
+        device: "mnbox02"
 
+  - name: "mgmt"
+    virtual_machine: "prodk8s-mnbox02"
+    mode: "access"
+    untagged_vlan: 
+      name: "prodk8smgmt"
+      site: "BER1"
+    vrf: "prodk8smgmt"
+    custom_fields:
+      HostInterface:
+        name: "kube"
+        device: "mnbox02"
+  - name: "svc"
+    virtual_machine: "prodk8s-mnbox02"
+    mode: "access"
+    untagged_vlan: 
+      name: "prodk8ssvc"
+      site: "BER1"
+    vrf: "prodk8ssvc"
+    custom_fields:
+      HostInterface:
+        name: "kube"
+        device: "mnbox02"
+  - name: "ceph"
+    virtual_machine: "prodk8s-mnbox02"
+    mode: "access"
+    untagged_vlan:
+      name: "prodk8sceph"
+      site: "BER1"
+    custom_fields:
+      HostInterface:
+        name: "te2"
+        device: "mnbox02"
 
-  - name: "prodk8smgmt"
-    virtual_machine: "prod-fw02"
+  - name: "mgmt"
+    virtual_machine: "prodos-mnbox02"
     mode: "access"
-    untagged_vlan: "prodk8smgmt"
-  - name: "prodk8ssvc"
-    virtual_machine: "prod-fw02"
+    untagged_vlan: 
+      name: "prodosmgmt"
+      site: "BER1"
+    vrf: "prodosmgmt"
+    custom_fields:
+      HostInterface:
+        name: "kube"
+        device: "mnbox02"
+  - name: "svc"
+    virtual_machine: "prodos-mnbox02"
     mode: "access"
-    untagged_vlan: "prodk8ssvc"
+    untagged_vlan: 
+      name: "prodossvc"
+      site: "BER1"
+    vrf: "prodossvc"
+    custom_fields:
+      HostInterface:
+        name: "kube"
+        device: "mnbox02"
+  - name: "prov"
+    virtual_machine: "prodos-mnbox02"
+    mode: "access"
+    untagged_vlan: 
+      name: "prodosprov"
+      site: "BER1"
+    vrf: "prodosprov"
+    custom_fields:
+      HostInterface:
+        name: "kube"
+        device: "mnbox02"
+  - name: "ceph"
+    virtual_machine: "prodos-mnbox02"
+    mode: "access"
+    untagged_vlan:
+      name: "prodosceph"
+      site: "BER1"
+    custom_fields:
+      HostInterface:
+        name: "te2"
+        device: "mnbox02"
 
-  - name: "prodosmgmt"
-    virtual_machine: "prod-fw02"
+  - name: "mgmt"
+    virtual_machine: "proddmz-mnbox02"
     mode: "access"
-    untagged_vlan: "prodosmgmt"
-  - name: "prodossvc"
-    virtual_machine: "prod-fw02"
+    untagged_vlan: 
+      name: "proddmzmgmt"
+      site: "BER1"
+    vrf: "proddmzmgmt"
+    custom_fields:
+      HostInterface:
+        name: "kube"
+        device: "mnbox02"
+  - name: "svc"
+    virtual_machine: "proddmz-mnbox02"
     mode: "access"
-    untagged_vlan: "prodossvc"
-  - name: "prodosprov"
-    virtual_machine: "prod-fw02"
+    untagged_vlan: 
+      name: "proddmzsvc"
+      site: "BER1"
+    vrf: "proddmzsvc"
+    custom_fields:
+      HostInterface:
+        name: "kube"
+        device: "mnbox02"
+  - name: "ceph"
+    virtual_machine: "proddmz-mnbox02"
     mode: "access"
-    untagged_vlan: "prodosprov"
-
-  - name: "proddmzmgmt"
-    virtual_machine: "prod-fw02"
-    mode: "access"
-    untagged_vlan: "proddmzmgmt"
-  - name: "proddmzsvc"
-    virtual_machine: "prod-fw02"
-    mode: "access"
-    untagged_vlan: "proddmzsvc"
+    untagged_vlan: 
+      name: "proddmzceph"
+      site: "BER1"
+    custom_fields:
+      HostInterface:
+        name: "te2"
+        device: "mnbox02"
 
   - name: "dmz"
     virtual_machine: "dev-fw02"
@@ -58,62 +284,242 @@ netbox_vm_interfaces_mnbox02:
     untagged_vlan:
       name: "dmz"
       site: "BER1"
+    vrf: "dmz"
+    custom_fields:
+      HostInterface:
+        name: "te2"
+        device: "mnbox02"
   - name: "firewall"
     virtual_machine: "dev-fw02"
     mode: "access"
     untagged_vlan:
       name: "firewall"
       site: "BER1"
-  - name: "hypervisor"
+    vrf: "firewall"
+    custom_fields:
+      HostInterface:
+        name: "te2"
+        device: "mnbox02"
+  - name: "transfer"
     virtual_machine: "dev-fw02"
     mode: "access"
     untagged_vlan:
-      name: "hypervisor"
+      name: "devtransfer"
       site: "BER1"
+    vrf: "devtransfer"
+    custom_fields:
+      HostInterface:
+        name: "trans"
+        device: "mnbox02"
+  - name: "dmzmgmt"
+    virtual_machine: "dev-fw02"
+    mode: "access"
+    untagged_vlan:
+      name: "devdmzmgmt"
+      site: "BER1"
+    vrf: "devdmzmgmt"
+    custom_fields:
+      HostInterface:
+        name: "te2"
+        device: "mnbox02"
+  - name: "dmzsvc"
+    virtual_machine: "dev-fw02"
+    mode: "access"
+    untagged_vlan:      
+      name: "devdmzsvc"
+      site: "BER1"
+    vrf: "devdmzsvc"
+    custom_fields:
+      HostInterface:
+        name: "te2"
+        device: "mnbox02"
 
 
-  - name: "devk8smgmt"
-    virtual_machine: "dev-fw02"
+  - name: "firewall"
+    virtual_machine: "dev-router02"
     mode: "access"
-    untagged_vlan: "devk8smgmt"
-  - name: "devk8ssvc"
-    virtual_machine: "dev-fw02"
+    untagged_vlan:
+      name: "firewall"
+      site: "BER1"
+    vrf: "firewall"
+    custom_fields:
+      HostInterface:
+        name: "te2"
+        device: "mnbox02"
+  - name: "k8smgmt"
+    virtual_machine: "dev-router02"
     mode: "access"
-    untagged_vlan: "devk8ssvc"
+    untagged_vlan:
+      name: "devk8smgmt"
+      site: "BER1"
+    vrf: "devk8smgmt"
+    custom_fields:
+      HostInterface:
+        name: "te2"
+        device: "mnbox02"
+  - name: "k8ssvc"
+    virtual_machine: "dev-router02"
+    mode: "access"
+    untagged_vlan:
+      name: "devk8ssvc"
+      site: "BER1"
+    vrf: "devk8ssvc"
+    custom_fields:
+      HostInterface:
+        name: "te2"
+        device: "mnbox02"
+  - name: "osmgmt"
+    virtual_machine: "dev-router02"
+    mode: "access"
+    untagged_vlan:
+      name: "devosmgmt"
+      site: "BER1"
+    vrf: "devosmgmt"
+    custom_fields:
+      HostInterface:
+        name: "te2"
+        device: "mnbox02"
+  - name: "ossvc"
+    virtual_machine: "dev-router02"
+    mode: "access"
+    untagged_vlan:
+      name: "devossvc"
+      site: "BER1"
+    vrf: "devossvc"
+    custom_fields:
+      HostInterface:
+        name: "te2"
+        device: "mnbox02"
+  - name: "osprov"
+    virtual_machine: "dev-router02"
+    mode: "access"
+    untagged_vlan:
+      name: "devosprov"
+      site: "BER1"
+    vrf: "devosprov"
+    custom_fields:
+      HostInterface:
+        name: "te2"
+        device: "mnbox02"
+  - name: "transfer"
+    virtual_machine: "dev-router02"
+    mode: "access"
+    untagged_vlan:
+      name: "devtransfer"
+      site: "BER1"
+    vrf: "devtransfer"
+    custom_fields:
+      HostInterface:
+        name: "trans"
+        device: "mnbox02"
 
-  - name: "devosmgmt"
-    virtual_machine: "dev-fw02"
-    mode: "access"
-    untagged_vlan: "devosmgmt"
-  - name: "devossvc"
-    virtual_machine: "dev-fw02"
-    mode: "access"
-    untagged_vlan: "devossvc"
-  - name: "devosprov"
-    virtual_machine: "dev-fw02"
-    mode: "access"
-    untagged_vlan: "devosprov"
-
-  - name: "devdmzmgmt"
-    virtual_machine: "dev-fw02"
-    mode: "access"
-    untagged_vlan: "devdmzmgmt"
-  - name: "devdmzsvc"
-    virtual_machine: "dev-fw02"
-    mode: "access"
-    untagged_vlan: "devdmzsvc"
 
   - name: "mgmt"
-    virtual_machine: "prodk8s-mnbox02"
+    virtual_machine: "devk8s-mnbox02"
     mode: "access"
-    untagged_vlan: "prodk8smgmt"
+    untagged_vlan: 
+      name: "devk8smgmt"
+      site: "BER1"
+    vrf: "devk8smgmt"
+    custom_fields:
+      HostInterface:
+        name: "kube"
+        device: "mnbox02"
   - name: "svc"
-    virtual_machine: "prodk8s-mnbox02"
+    virtual_machine: "devk8s-mnbox02"
     mode: "access"
-    untagged_vlan: "prodk8ssvc"
+    untagged_vlan: 
+      name: "devk8ssvc"
+      site: "BER1"
+    vrf: "devk8ssvc"
+    custom_fields:
+      HostInterface:
+        name: "kube"
+        device: "mnbox02"
   - name: "ceph"
-    virtual_machine: "prodk8s-mnbox02"
+    virtual_machine: "devk8s-mnbox02"
     mode: "access"
-    untagged_vlan: "prodk8sceph"
+    untagged_vlan:
+      name: "devk8sceph"
+      site: "BER1"
+    custom_fields:
+      HostInterface:
+        name: "te1"
+        device: "mnbox02"
 
+  - name: "mgmt"
+    virtual_machine: "devos-mnbox02"
+    mode: "access"
+    untagged_vlan: 
+      name: "devosmgmt"
+      site: "BER1"
+    vrf: "devosmgmt"
+    custom_fields:
+      HostInterface:
+        name: "kube"
+        device: "mnbox02"
+  - name: "svc"
+    virtual_machine: "devos-mnbox02"
+    mode: "access"
+    untagged_vlan: 
+      name: "devossvc"
+      site: "BER1"
+    vrf: "devossvc"
+    custom_fields:
+      HostInterface:
+        name: "kube"
+        device: "mnbox02"
+  - name: "prov"
+    virtual_machine: "devos-mnbox02"
+    mode: "access"
+    untagged_vlan: 
+      name: "devosprov"
+      site: "BER1"
+    vrf: "devosprov"
+    custom_fields:
+      HostInterface:
+        name: "kube"
+        device: "mnbox02"
+  - name: "ceph"
+    virtual_machine: "devos-mnbox02"
+    mode: "access"
+    untagged_vlan:
+      name: "devosceph"
+      site: "BER1"
+    custom_fields:
+      HostInterface:
+        name: "te1"
+        device: "mnbox02"
 
+  - name: "mgmt"
+    virtual_machine: "devdmz-mnbox02"
+    mode: "access"
+    untagged_vlan: 
+      name: "devdmzmgmt"
+      site: "BER1"
+    vrf: "devdmzmgmt"
+    custom_fields:
+      HostInterface:
+        name: "kube"
+        device: "mnbox02"
+  - name: "svc"
+    virtual_machine: "devdmz-mnbox02"
+    mode: "access"
+    untagged_vlan: 
+      name: "devdmzsvc"
+      site: "BER1"
+    vrf: "devdmzsvc"
+    custom_fields:
+      HostInterface:
+        name: "kube"
+        device: "mnbox02"
+  - name: "ceph"
+    virtual_machine: "devdmz-mnbox02"
+    mode: "access"
+    untagged_vlan:
+      name: "devdmzceph"
+      site: "BER1"
+    custom_fields:
+      HostInterface:
+        name: "te1"
+        device: "mnbox02"

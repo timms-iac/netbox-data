@@ -100,7 +100,7 @@ netbox_static_routes_BER1:
           - name: try02
           - name: try03
         prefix: "172.25.5.0/24"
-        next_hop: "172.25.5.253"
+        next_hop: "172.25.5.250" # firewall may not be set up
         vrf:
           name: hypervisor
 
@@ -109,7 +109,7 @@ netbox_static_routes_BER1:
           - name: mnbox01
           - name: mnbox02
         prefix: "172.25.6.0/24"
-        next_hop: "172.25.6.253"
+        next_hop: "172.25.6.250" 
         vrf:
           name: firewall
 

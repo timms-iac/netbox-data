@@ -81,3 +81,18 @@ netbox_vlan_groups_BER1:
       [2548,2549]
     ]
 
+  - name: "devtransfer"
+    scope: "BER1"
+    scope_type: "dcim.site"
+    description: "Development Transfer Networks"
+    vid_ranges: [
+      [3755,3755]
+    ]
+  - name: "prodtransfer"
+    scope: "BER1"
+    scope_type: "dcim.site"
+    description: "Production Transfer Networks"
+    vid_ranges: [
+      [3255,3255]
+    ]
+

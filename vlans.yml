@@ -193,3 +193,14 @@ netbox_vlans_BER1:
     description: "Ceph Cluster for Production DMZ k8s Cluster"
     vlan_group: "prodceph"
 
+
+  - name: "devtransfer"
+    vid: 3755
+    site: "BER1"
+    description: "Development Transfer Network"
+    vlan_group: "devtransfer"
+  - name: "prodtransfer"
+    vid: 3255
+    site: "BER1"
+    description: "Production Transfer Network"
+    vlan_group: "prodtransfer"

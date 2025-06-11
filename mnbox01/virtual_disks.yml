@@ -1,0 +1,150 @@
+---
+netbox_virtual_disks_mnbox01:
+  - name: "vda-prod-router01-mnbox01"
+    virtual_machine: "prod-router01"
+    size: 10000
+    description: "System Disk"
+
+  - name: "vda-prod-fw01-mnbox01"
+    virtual_machine: "prod-fw01"
+    size: 10000
+    description: "System Disk"
+
+  - name: "vdb-prod-fw01-mnbox01"
+    virtual_machine: "prod-fw01"
+    size: 50000
+    description: "Data Disk"
+    custom_fields:
+      VolumeGroup: ceph0
+
+  - name: "vda-prodk8s-mnbox01"
+    virtual_machine: "prodk8s-mnbox01"
+    size: 10000
+    description: "System Disk"
+
+  - name: "vdb-prodk8s-mnbox01"
+    virtual_machine: "prodk8s-mnbox01"
+    size: 250000
+    description: "Ceph0 Disk"
+    custom_fields:
+      VolumeGroup: ceph0
+
+  - name: "vdc-prodk8s-mnbox01"
+    virtual_machine: "prodk8s-mnbox01"
+    size: 250000
+    description: "Ceph1 Disk"
+    custom_fields:
+      VolumeGroup: ceph1
+
+  - name: "vda-prodos-mnbox01"
+    virtual_machine: "prodos-mnbox01"
+    size: 10000
+    description: "System Disk"
+
+  - name: "vdb-prodos-mnbox01"
+    virtual_machine: "prodos-mnbox01"
+    size: 250000
+    description: "Ceph0 Disk"
+    custom_fields:
+      VolumeGroup: ceph0
+
+  - name: "vdc-prodos-mnbox01"
+    virtual_machine: "prodos-mnbox01"
+    size: 250000
+    description: "Ceph1 Disk"
+    custom_fields:
+      VolumeGroup: ceph1
+
+  - name: "vda-proddmz-mnbox01"
+    virtual_machine: "proddmz-mnbox01"
+    size: 10000
+    description: "System Disk"
+
+  - name: "vdb-proddmz-mnbox01"
+    virtual_machine: "proddmz-mnbox01"
+    size: 100000
+    description: "Ceph0 Disk"
+    custom_fields:
+      VolumeGroup: ceph0
+
+  - name: "vdc-proddmz-mnbox01"
+    virtual_machine: "proddmz-mnbox01"
+    size: 100000
+    description: "Ceph1 Disk"
+    custom_fields:
+      VolumeGroup: ceph1
+
+  - name: "vda-dev-router01-mnbox01"
+    virtual_machine: "dev-router01"
+    size: 10000
+    description: "System Disk"
+
+  - name: "vda-dev-fw01-mnbox01"
+    virtual_machine: "dev-fw01"
+    size: 10000
+    description: "System Disk"
+
+  - name: "vdb-dev-fw01-mnbox01"
+    virtual_machine: "dev-fw01"
+    size: 50000
+    description: "Data Disk"
+    custom_fields:
+      VolumeGroup: ceph1
+
+  - name: "vda-devk8s-mnbox01"
+    virtual_machine: "devk8s-mnbox01"
+    size: 10000
+    description: "System Disk"
+
+  - name: "vdb-devk8s-mnbox01"
+    virtual_machine: "devk8s-mnbox01"
+    size: 100000
+    description: "Ceph0 Disk"
+    custom_fields:
+      VolumeGroup: ceph0
+
+  - name: "vdc-devk8s-mnbox01"
+    virtual_machine: "devk8s-mnbox01"
+    size: 100000
+    description: "Ceph1 Disk"
+    custom_fields:
+      VolumeGroup: ceph1
+
+  - name: "vda-devos-mnbox01"
+    virtual_machine: "devos-mnbox01"
+    size: 10000
+    description: "System Disk"
+
+  - name: "vdb-devos-mnbox01"
+    virtual_machine: "devos-mnbox01"
+    size: 100000
+    description: "Ceph0 Disk"
+    custom_fields:
+      VolumeGroup: ceph0
+
+  - name: "vdc-devos-mnbox01"
+    virtual_machine: "devos-mnbox01"
+    size: 100000
+    description: "Ceph1 Disk"
+    custom_fields:
+      VolumeGroup: ceph1
+
+  - name: "vda-devdmz-mnbox01"
+    virtual_machine: "devdmz-mnbox01"
+    size: 10000
+    description: "System Disk"
+
+  - name: "vdb-devdmz-mnbox01"
+    virtual_machine: "devdmz-mnbox01"
+    size: 50000
+    description: "Ceph0 Disk"
+    custom_fields:
+      VolumeGroup: ceph0
+
+  - name: "vdc-devdmz-mnbox01"
+    virtual_machine: "devdmz-mnbox01"
+    size: 50000
+    description: "Ceph1 Disk"
+    custom_fields:
+      VolumeGroup: ceph1
+
