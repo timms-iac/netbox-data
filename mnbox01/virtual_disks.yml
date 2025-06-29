@@ -7,13 +7,8 @@ netbox_virtual_disks_mnbox01:
 
   - name: "vda-prod-fw01-mnbox01"
     virtual_machine: "prod-fw01"
-    size: 10000
-    description: "System Disk"
-
-  - name: "vdb-prod-fw01-mnbox01"
-    virtual_machine: "prod-fw01"
     size: 50000
-    description: "Data Disk"
+    description: "System Disk"
     custom_fields:
       VolumeGroup: ceph0
 
@@ -81,13 +76,8 @@ netbox_virtual_disks_mnbox01:
 
   - name: "vda-dev-fw01-mnbox01"
     virtual_machine: "dev-fw01"
-    size: 10000
-    description: "System Disk"
-
-  - name: "vdb-dev-fw01-mnbox01"
-    virtual_machine: "dev-fw01"
     size: 50000
-    description: "Data Disk"
+    description: "System Disk"
     custom_fields:
       VolumeGroup: ceph1
 

@@ -1,7 +1,8 @@
 ---
 netbox_vm_interfaces_mnbox01:
 
-  - name: "dmz"
+  - name: "wan"
+    description: "dmz"
     virtual_machine: "prod-fw01"
     mode: "access"
     untagged_vlan: 
@@ -13,7 +14,8 @@ netbox_vm_interfaces_mnbox01:
         name: "te1"
         device: "mnbox01"
     primary_mac_address: "52:54:C0:A8:19:FB" 
-  - name: "firewall"
+  - name: "lan"
+    description: "firewall"
     virtual_machine: "prod-fw01"
     mode: "access"
     untagged_vlan:
@@ -25,7 +27,8 @@ netbox_vm_interfaces_mnbox01:
         name: "te1"
         device: "mnbox01"
     primary_mac_address: "52:54:AC:19:06:01" 
-  - name: "transfer"
+  - name: "opt3"
+    description: "transfer"
     virtual_machine: "prod-fw01"
     mode: "access"
     untagged_vlan:
@@ -37,7 +40,8 @@ netbox_vm_interfaces_mnbox01:
         name: "trans"
         device: "mnbox01"
     primary_mac_address: "52:54:AC:19:FF:01" 
-  - name: "dmzmgmt"
+  - name: "opt1"
+    description: "dmzmgmt"
     virtual_machine: "prod-fw01"
     mode: "access"
     untagged_vlan:
@@ -49,7 +53,8 @@ netbox_vm_interfaces_mnbox01:
         name: "te1"
         device: "mnbox01"
     primary_mac_address: "52:54:AC:19:28:FB" 
-  - name: "dmzsvc"
+  - name: "opt2"
+    description: "dmzsvc"
     virtual_machine: "prod-fw01"
     mode: "access"
     untagged_vlan:
@@ -303,7 +308,8 @@ netbox_vm_interfaces_mnbox01:
         device: "mnbox01"
     primary_mac_address: "52:54:AC:19:30:06"
 
-  - name: "dmz"
+  - name: "wan"
+    description: "dmz"
     virtual_machine: "dev-fw01"
     mode: "access"
     untagged_vlan:
@@ -315,7 +321,8 @@ netbox_vm_interfaces_mnbox01:
         name: "te2"
         device: "mnbox01"
     primary_mac_address: "52:54:C0:A8:14:FB" 
-  - name: "firewall"
+  - name: "lan"
+    description: "firewall"
     virtual_machine: "dev-fw01"
     mode: "access"
     untagged_vlan:
@@ -327,7 +334,8 @@ netbox_vm_interfaces_mnbox01:
         name: "te2"
         device: "mnbox01"
     primary_mac_address: "52:54:AC:19:06:03" 
-  - name: "transfer"
+  - name: "opt3"
+    description: "transfer"
     virtual_machine: "dev-fw01"
     mode: "access"
     untagged_vlan:
@@ -339,7 +347,8 @@ netbox_vm_interfaces_mnbox01:
         name: "trans"
         device: "mnbox01"
     primary_mac_address: "52:54:AC:14:FF:03"
-  - name: "dmzmgmt"
+  - name: "opt1"
+    description: "dmzmgmt"
     virtual_machine: "dev-fw01"
     mode: "access"
     untagged_vlan:
@@ -351,7 +360,8 @@ netbox_vm_interfaces_mnbox01:
         name: "te2"
         device: "mnbox01"
     primary_mac_address: "52:54:AC:14:28:FB"
-  - name: "dmzsvc"
+  - name: "opt2"
+    description: "dmzsvc"
     virtual_machine: "dev-fw01"
     mode: "access"
     untagged_vlan:      

@@ -18,44 +18,64 @@ netbox_mac_addresses_mnbox02:
       device: "mnbox02"
     mac_address: "{{ mac_mnbox02_te2 | upper }}"
 
+  - mac_address: "52:54:C0:A8:19:FC"
+    assigned_object:
+      virtual_machine: "prod-fw02"
+      name: "wan"
   - mac_address: "52:54:AC:19:06:02"
     assigned_object:
       virtual_machine: "prod-fw02"
-      name: "firewall"
+      name: "lan"
   - mac_address: "52:54:AC:19:28:FC"
     assigned_object:
       virtual_machine: "prod-fw02"
-      name: "dmzmgmt"
+      name: "opt1"
   - mac_address: "52:54:AC:19:29:FC"
     assigned_object:
       virtual_machine: "prod-fw02"
-      name: "dmzsvc"
+      name: "opt2"
   - mac_address: "52:54:AC:19:FF:02"
     assigned_object:
       virtual_machine: "prod-fw02"
-      name: "transfer"
+      name: "opt3"
 
+  - mac_address: "52:54:C0:A8:14:FC"
+    assigned_object:
+      virtual_machine: "dev-fw02"
+      name: "wan"
   - mac_address: "52:54:AC:19:06:04"
     assigned_object:
       virtual_machine: "dev-fw02"
-      name: "firewall"
+      name: "lan"
   - mac_address: "52:54:AC:14:28:FC"
     assigned_object:
       virtual_machine: "dev-fw02"
-      name: "dmzmgmt"
+      name: "opt1"
   - mac_address: "52:54:AC:14:29:FC"
     assigned_object:
       virtual_machine: "dev-fw02"
-      name: "dmzsvc"
+      name: "opt2"
   - mac_address: "52:54:AC:14:FF:04"
     assigned_object:
       virtual_machine: "dev-fw02"
-      name: "transfer"
+      name: "opt3"
 
+  - mac_address: "52:54:AC:19:01:FC"
+    assigned_object:
+      virtual_machine: "prod-router02"
+      name: "mgmt"
+  - mac_address: "52:54:AC:19:05:FC"
+    assigned_object:
+      virtual_machine: "prod-router02"
+      name: "hypervisor"
   - mac_address: "52:54:AC:19:06:0C"
     assigned_object:
       virtual_machine: "prod-router02"
       name: "firewall"
+  - mac_address: "52:54:AC:13:FF:FC"
+    assigned_object:
+      virtual_machine: "prod-router02"
+      name: "iot"
   - mac_address: "52:54:AC:19:14:FC"
     assigned_object:
       virtual_machine: "prod-router02"

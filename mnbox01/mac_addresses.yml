@@ -21,44 +21,44 @@ netbox_mac_addresses_mnbox01:
   - mac_address: "52:54:C0:A8:19:FB"
     assigned_object:
       virtual_machine: "prod-fw01"
-      name: "dmz"
+      name: "wan"
   - mac_address: "52:54:AC:19:06:01"
     assigned_object:
       virtual_machine: "prod-fw01"
-      name: "firewall"
+      name: "lan"
   - mac_address: "52:54:AC:19:28:FB"
     assigned_object:
       virtual_machine: "prod-fw01"
-      name: "dmzmgmt"
+      name: "opt1"
   - mac_address: "52:54:AC:19:29:FB"
     assigned_object:
       virtual_machine: "prod-fw01"
-      name: "dmzsvc"
+      name: "opt2"
   - mac_address: "52:54:AC:19:FF:01"
     assigned_object:
       virtual_machine: "prod-fw01"
-      name: "transfer"
+      name: "opt3"
 
   - mac_address: "52:54:C0:A8:14:FB"
     assigned_object:
       virtual_machine: "dev-fw01"
-      name: "dmz"
+      name: "wan"
   - mac_address: "52:54:AC:19:06:03"
     assigned_object:
       virtual_machine: "dev-fw01"
-      name: "firewall"
+      name: "lan"
   - mac_address: "52:54:AC:14:28:FB"
     assigned_object:
       virtual_machine: "dev-fw01"
-      name: "dmzmgmt"
+      name: "opt1"
   - mac_address: "52:54:AC:14:29:FB"
     assigned_object:
       virtual_machine: "dev-fw01"
-      name: "dmzsvc"
+      name: "opt2"
   - mac_address: "52:54:AC:14:FF:03"
     assigned_object:
       virtual_machine: "dev-fw01"
-      name: "transfer"
+      name: "opt3"
 
   - mac_address: "52:54:AC:19:01:FB"
     assigned_object:

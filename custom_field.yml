@@ -25,19 +25,19 @@ netbox_custom_fields_BER1:
     description: "Enable VFs on SR-IOV capable interfaces"
 
 
-  - name: "webmanagement"
+  - name: "Webmanagement"
     object_types:
       - dcim.device
     type: "url"
     description: "Open Web Management"
 
-  - name: "SupplierWebpage"
+  - name: "Supplier_Webpage"
     object_types:
       - dcim.device
     type: "url"
     description: "Device Description by Supplier"
 
-  - name: "SupplierOrder"
+  - name: "Supplier_Order"
     object_types:
       - dcim.device
     type: "url"
@@ -49,7 +49,7 @@ netbox_custom_fields_BER1:
     type: "url"
     description: "Firmware Download Page"
 
-  - name: "NetworkVersion"
+  - name: "Network_Version"
     object_types:
       - virtualization.virtualmachine
       - dcim.device
@@ -57,7 +57,7 @@ netbox_custom_fields_BER1:
     default: 2
     description: "Netplan Network Version"
 
-  - name: "OpenVSwitchProtocols"
+  - name: "OpenVSwitch_Protocols"
     object_types:
       - virtualization.virtualmachine
       - dcim.device
@@ -87,23 +87,40 @@ netbox_custom_fields_BER1:
     description: "Options of the Service"
       #    ui_visibility: hidden-ifunset
 
-  - name: "ManagementHostIP"
+  - name: "Management_Host_IP"
     object_types:
       - dcim.device
     type: "object"
     related_object_type: ipam.ipaddress
     description: "IP of host from which management operations are permitted"
 
-  - name: "VolumeGroup"
+  - name: "Volume_Group"
     object_types:
       - virtualization.virtualdisk
     type: "text"
     description: "Logical Volume Group the disk volume is created on"
 
-  - name: "HostInterface"
+  - name: "Host_Interface"
     object_types:
       - virtualization.vminterface
     type: "object"
     related_object_type: dcim.interface
     description: "Bridge/PF of the virtualization host"
+
+  - name: "Passthrough_Devices"
+    object_types:
+      - virtualization.virtualmachine
+    type: "multiobject"
+    related_object_type: dcim.modulebay
+    description: "PCI passthrough for VMs"
+
+  - name: "Passthrough_VM_Interface"
+    object_types:
+      - dcim.interface
+      - dcim.modulebay
+      - dcim.module
+    type: "object"
+    related_object_type: virtualization.vminterface
+    description: "VM interface which manages the PCI passthrough interface"
+
 

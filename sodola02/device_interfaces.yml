@@ -37,9 +37,6 @@ netbox_device_interfaces_sodola02:
       EEE: true
       LLDP: true
     mode: "tagged"
-    untagged_vlan:
-      name: "mgmt"
-      site: "BER1"
     tagged_vlans: "{{ netbox_vlan_set_prodvm_devceph_BER1 }}"
 
   - name: "TE2"
@@ -51,9 +48,6 @@ netbox_device_interfaces_sodola02:
       EEE: true
       LLDP: true
     mode: "tagged"
-    untagged_vlan:
-      name: "mgmt"
-      site: "BER1"
     tagged_vlans: "{{ netbox_vlan_set_devvm_prodceph_BER1 }}"
 
   - name: "TE3"
@@ -65,9 +59,6 @@ netbox_device_interfaces_sodola02:
       EEE: true
       LLDP: true
     mode: "tagged"
-    untagged_vlan:
-      name: "mgmt"
-      site: "BER1"
     tagged_vlans: "{{ netbox_vlan_set_prodvm_devceph_BER1 }}"
 
   - name: "TE4"
@@ -79,9 +70,6 @@ netbox_device_interfaces_sodola02:
       EEE: true
       LLDP: true
     mode: "tagged"
-    untagged_vlan:
-      name: "mgmt"
-      site: "BER1"
     tagged_vlans: "{{ netbox_vlan_set_devvm_prodceph_BER1 }}"
 
   - name: "TE5"

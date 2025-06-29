@@ -50,65 +50,78 @@ netbox_fhrp_groups_BER1:
     description: "shelly2"
 
   - protocol: "vrrp2"
+    group_id: 1900
+    description: "iot for prod-router"
+  - protocol: "vrrp2"
+    group_id: 2501
+    description: "mgmt for prod-router"
+  - protocol: "carp"
     group_id: 2002
     description: "dmz for dev-fw"
-  - protocol: "vrrp2"
+  - protocol: "carp"
     group_id: 2502
     description: "dmz for prod-fw"
   - protocol: "vrrp2"
-    group_id: 2005
-    description: "hypervisor for dev-fw"
-  - protocol: "vrrp2"
     group_id: 2505
-    description: "hypervisor for prod-fw"
+    description: "hypervisor for prod-router"
   - protocol: "vrrp2"
     group_id: 2006
-    description: "firewall for dev-fw"
+    description: "firewall for dev-router"
   - protocol: "vrrp2"
     group_id: 2506
-    description: "firewall for prod-fw"
-  - protocol: "vrrp2"
+    description: "firewall for prod-router"
+  - protocol: "carp"
     group_id: 2040
     description: "devdmzmgmt for dev-fw"
-  - protocol: "vrrp2"
+  - protocol: "carp"
     group_id: 2540
     description: "proddmzmgmt for prod-fw"
-  - protocol: "vrrp2"
+  - protocol: "carp"
     group_id: 2041
     description: "devdmzsvc for dev-fw"
-  - protocol: "vrrp2"
+  - protocol: "carp"
     group_id: 2541
     description: "proddmzsvc for prod-fw"
   - protocol: "vrrp2"
     group_id: 2020
-    description: "devk8smgmt for dev-fw"
+    description: "devk8smgmt for dev-router"
   - protocol: "vrrp2"
     group_id: 2520
-    description: "prodk8smgmt for prod-fw"
+    description: "prodk8smgmt for prod-router"
   - protocol: "vrrp2"
     group_id: 2021
-    description: "devk8ssvc for dev-fw"
+    description: "devk8ssvc for dev-router"
   - protocol: "vrrp2"
     group_id: 2521
-    description: "prodk8ssvc for prod-fw"
+    description: "prodk8ssvc for prod-router"
   - protocol: "vrrp2"
     group_id: 2030
-    description: "devosmgmt for dev-fw"
+    description: "devosmgmt for dev-router"
   - protocol: "vrrp2"
     group_id: 2530
-    description: "prodosmgmt for prod-fw"
+    description: "prodosmgmt for prod-router"
   - protocol: "vrrp2"
     group_id: 2031
-    description: "devossvc for dev-fw"
+    description: "devossvc for dev-router"
   - protocol: "vrrp2"
     group_id: 2531
-    description: "prodossvc for prod-fw"
+    description: "prodossvc for prod-router"
   - protocol: "vrrp2"
     group_id: 2032
-    description: "devosprov for dev-fw"
+    description: "devosprov for dev-router"
   - protocol: "vrrp2"
     group_id: 2532
-    description: "prodosprov for prod-fw"
+    description: "prodosprov for prod-router"
 
-
-
+  - protocol: "carp"
+    group_id: 3755
+    description: "transfer for dev-fw"
+  - protocol: "carp"
+    group_id: 3255
+    description: "transfer for prod-fw"
+  - protocol: "vrrp2"
+    group_id: 3855
+    description: "transfer for dev-router"
+  - protocol: "vrrp2"
+    group_id: 3355
+    description: "transfer for prod-router"

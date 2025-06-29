@@ -24,3 +24,4 @@ netbox_manufacturers_BER1:
   - name: AVM
   - name: MLEEDA
   - name: Shelly
+  - name: Intel

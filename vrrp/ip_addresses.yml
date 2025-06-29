@@ -103,6 +103,13 @@ netbox_ip_addresses_vrrp:
       group_id: 179
     assigned_object_type: "ipam.fhrpgroup"
 
+###############  IOT  ##################
+  - address: "172.19.255.253/32"
+    role: "VRRP"
+    vrf: "iot"
+    assigned_object:
+      group_id: 1900
+    assigned_object_type: "ipam.fhrpgroup"
 
 ############### INFRA ##################
   - address: "172.20.5.253/32"
@@ -170,6 +177,13 @@ netbox_ip_addresses_vrrp:
     assigned_object_type: "ipam.fhrpgroup"
 
 ############### INFRA ##################
+  - address: "172.25.1.253/32"
+    role: "VRRP"
+    vrf: "mgmt"
+    assigned_object:
+      group_id: 2501
+    assigned_object_type: "ipam.fhrpgroup"
+
   - address: "172.25.5.253/32"
     role: "VRRP"
     vrf: "hypervisor"
@@ -250,3 +264,34 @@ netbox_ip_addresses_vrrp:
     assigned_object:
       group_id: 2502
     assigned_object_type: "ipam.fhrpgroup"
+
+############## TRANSFER ################
+
+  - address: "172.25.255.253/32"
+    role: "VRRP"
+    vrf: "prodtransfer"
+    assigned_object:
+      group_id: 3255
+    assigned_object_type: "ipam.fhrpgroup"
+
+  - address: "172.25.255.254/32"
+    role: "VRRP"
+    vrf: "prodtransfer"
+    assigned_object:
+      group_id: 3355
+    assigned_object_type: "ipam.fhrpgroup"
+
+  - address: "172.20.255.253/32"
+    role: "VRRP"
+    vrf: "devtransfer"
+    assigned_object:
+      group_id: 3755
+    assigned_object_type: "ipam.fhrpgroup"
+
+  - address: "172.20.255.254/32"
+    role: "VRRP"
+    vrf: "devtransfer"
+    assigned_object:
+      group_id: 3855
+    assigned_object_type: "ipam.fhrpgroup"
+

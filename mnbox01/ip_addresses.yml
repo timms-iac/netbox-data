@@ -10,55 +10,55 @@ netbox_ip_addresses_mnbox01:
   - address: "192.168.25.251/32"
     assigned_object:
       virtual_machine: "prod-fw01"
-      name: "dmz"
+      name: "wan"
     vrf: "dmz"
   - address: "172.25.6.1/32"
     assigned_object:
       virtual_machine: "prod-fw01"
-      name: "firewall"
+      name: "lan"
     vrf: "firewall"
     dns_name: "prod-fw01.infra.{{ domain_name }}"
   - address: "172.25.40.251/32"
     assigned_object:
       virtual_machine: "prod-fw01"
-      name: "dmzmgmt"
+      name: "opt1"
     vrf: "proddmzmgmt"
   - address: "172.25.41.251/32"
     assigned_object:
       virtual_machine: "prod-fw01"
-      name: "dmzsvc"
+      name: "opt2"
     vrf: "proddmzsvc"
   - address: "172.25.255.1/32"
     assigned_object:
       virtual_machine: "prod-fw01"
-      name: "transfer"
+      name: "opt3"
     vrf: "prodtransfer"
 
   - address: "192.168.20.251/32"
     assigned_object:
       virtual_machine: "dev-fw01"
-      name: "dmz"
+      name: "wan"
     vrf: "dmz"
   - address: "172.25.6.3/32"
     assigned_object:
       virtual_machine: "dev-fw01"
-      name: "firewall"
+      name: "lan"
     vrf: "firewall"
     dns_name: "dev-fw01.infra.{{ domain_name }}"
   - address: "172.20.40.251/32"
     assigned_object:
       virtual_machine: "dev-fw01"
-      name: "dmzmgmt"
+      name: "opt1"
     vrf: "devdmzmgmt"
   - address: "172.20.41.251/32"
     assigned_object:
       virtual_machine: "dev-fw01"
-      name: "dmzsvc"
+      name: "opt2"
     vrf: "devdmzsvc"
   - address: "172.20.255.3/32"
     assigned_object:
       virtual_machine: "dev-fw01"
-      name: "transfer"
+      name: "opt3"
     vrf: "devtransfer"
 
 

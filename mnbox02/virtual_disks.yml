@@ -4,20 +4,11 @@ netbox_virtual_disks_mnbox02:
     virtual_machine: "prod-router02"
     size: 10000
     description: "System Disk"
-    custom_fields:
-      VolumeGroup: flash
 
   - name: "vda-prod-fw02-mnbox02"
     virtual_machine: "prod-fw02"
-    size: 10000
-    description: "System Disk"
-    custom_fields:
-      VolumeGroup: flash
-
-  - name: "vdb-prod-fw02-mnbox02"
-    virtual_machine: "prod-fw02"
     size: 50000
-    description: "Data Disk"
+    description: "System Disk"
     custom_fields:
       VolumeGroup: ceph0
 
@@ -25,8 +16,6 @@ netbox_virtual_disks_mnbox02:
     virtual_machine: "prodk8s-mnbox02"
     size: 10000
     description: "System Disk"
-    custom_fields:
-      VolumeGroup: flash
 
   - name: "vdb-prodk8s-mnbox02"
     virtual_machine: "prodk8s-mnbox02"
@@ -46,8 +35,6 @@ netbox_virtual_disks_mnbox02:
     virtual_machine: "prodos-mnbox02"
     size: 10000
     description: "System Disk"
-    custom_fields:
-      VolumeGroup: flash
 
   - name: "vdb-prodos-mnbox02"
     virtual_machine: "prodos-mnbox02"
@@ -67,8 +54,6 @@ netbox_virtual_disks_mnbox02:
     virtual_machine: "proddmz-mnbox02"
     size: 10000
     description: "System Disk"
-    custom_fields:
-      VolumeGroup: flash
 
   - name: "vdb-proddmz-mnbox02"
     virtual_machine: "proddmz-mnbox02"
@@ -88,20 +73,11 @@ netbox_virtual_disks_mnbox02:
     virtual_machine: "dev-router02"
     size: 10000
     description: "System Disk"
-    custom_fields:
-      VolumeGroup: flash
 
   - name: "vda-dev-fw02-mnbox02"
     virtual_machine: "dev-fw02"
-    size: 10000
-    description: "System Disk"
-    custom_fields:
-      VolumeGroup: flash
-
-  - name: "vdb-dev-fw02-mnbox02"
-    virtual_machine: "dev-fw02"
     size: 50000
-    description: "Data Disk"
+    description: "System Disk"
     custom_fields:
       VolumeGroup: ceph1
 
@@ -109,8 +85,6 @@ netbox_virtual_disks_mnbox02:
     virtual_machine: "devk8s-mnbox02"
     size: 10000
     description: "System Disk"
-    custom_fields:
-      VolumeGroup: flash
 
   - name: "vdb-devk8s-mnbox02"
     virtual_machine: "devk8s-mnbox02"
@@ -130,8 +104,6 @@ netbox_virtual_disks_mnbox02:
     virtual_machine: "devos-mnbox02"
     size: 10000
     description: "System Disk"
-    custom_fields:
-      VolumeGroup: flash
 
   - name: "vdb-devos-mnbox02"
     virtual_machine: "devos-mnbox02"
@@ -151,8 +123,6 @@ netbox_virtual_disks_mnbox02:
     virtual_machine: "devdmz-mnbox02"
     size: 10000
     description: "System Disk"
-    custom_fields:
-      VolumeGroup: flash
 
   - name: "vdb-devdmz-mnbox02"
     virtual_machine: "devdmz-mnbox02"
