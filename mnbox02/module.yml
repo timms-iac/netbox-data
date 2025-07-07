@@ -24,3 +24,35 @@ netbox_modules_mnbox02:
       device: "mnbox02"
     module_type: "extreme-go-256"
 
+  - device: "mnbox02"
+    module_bay:
+      name: "pci_0000_01_00_0"
+      device: "mnbox02"
+    module_type: "82599ES 10-Gigabit SFI/SFP+ Network Connection (rev 01)"
+    custom_fields:
+      Passthrough_VM_Interface:
+        name: "igc0"
+        virtual_machine: "prod-fw02"
+          
+  - device: "mnbox02"
+    module_bay:
+      name: "pci_0000_01_00_1"
+      device: "mnbox02"
+    module_type: "82599ES 10-Gigabit SFI/SFP+ Network Connection (rev 01)"
+      
+  - device: "mnbox02"
+    module_bay:
+      name: "pci_0000_02_00_0"
+      device: "mnbox02"
+    module_type: "Ethernet Controller I226-V (rev 04)"
+          
+  - device: "mnbox02"
+    module_bay:
+      name: "pci_0000_03_00_0"
+      device: "mnbox02"
+    module_type: "Ethernet Controller I226-V (rev 04)"
+    custom_fields:
+      Passthrough_VM_Interface:
+        name: "ix0"
+        virtual_machine: "dev-fw02"
+

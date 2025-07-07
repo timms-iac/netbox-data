@@ -1,8 +1,8 @@
 ---
 netbox_devices_shelly:
 - custom_fields:
-    SupplierWebpage: https://kb.shelly.cloud/knowledge-base/shelly-bulb-duo-rgbw
-    webmanagement: http://172.17.20.4/
+    Supplier_Webpage: https://kb.shelly.cloud/knowledge-base/shelly-bulb-duo-rgbw
+    Webmanagement: http://172.17.20.4/
   description: "{{ iot_light_gf0_4_description }}"
   device_role: iotdevice
   device_type: shbduo-1

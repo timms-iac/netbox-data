@@ -7,9 +7,9 @@ netbox_devices_sodola03:
     site: "BER1"
     location: "Desk"
     custom_fields:
-      webmanagement: http://sodola03/
-      SupplierWebpage: "{{ sodola03_SupplierWebpage }}" 
-      SupplierOrder: "{{ sodola03_SupplierOrder }}"
+      Webmanagement: http://sodola03/
+      Supplier_Webpage: "{{ sodola03_Supplier_Webpage }}" 
+      Supplier_Order: "{{ sodola03_Supplier_Order }}"
       Firmware: "{{ sodola03_Firmware }}"
     primary_ip4: "172.25.1.27/32"
     serial: "{{ sodola03_serial }}"

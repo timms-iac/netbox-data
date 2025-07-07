@@ -161,7 +161,7 @@ netbox_cables_sodola01:
   termination_b_type: dcim.interface
   termination_b:
     device: mnbox01
-    name: trans0
+    name: dev-fw01
   type: cat7
   status: connected
   color: "000000"
@@ -189,7 +189,7 @@ netbox_cables_sodola01:
   termination_b_type: dcim.interface
   termination_b:
     device: mnbox02
-    name: trans0
+    name: prod-fw02
   type: cat7
   status: connected
   color: "000000"

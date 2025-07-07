@@ -7,6 +7,6 @@ netbox_devices_rpi4sec1:
     site: "BER1"
     location: "Rack"
     custom_fields:
-      SupplierWebpage: "{{ rpi4sec1_SupplierWebpage }}"
-      SupplierOrder: "{{ rpi4sec1_SupplierOrder }}"
+      Supplier_Webpage: "{{ rpi4sec1_Supplier_Webpage }}"
+      Supplier_Order: "{{ rpi4sec1_Supplier_Order }}"
         #    primary_ip4: "192.168.178.251"

@@ -7,6 +7,6 @@ netbox_devices_rpi4k8s1:
     site: "BER1"
     location: "Rack"
     custom_fields:
-      SupplierWebpage: "{{ rpi4k8s1_SupplierWebpage }}"
-      SupplierOrder: "{{ rpi4k8s1_SupplierOrder }}"
+      Supplier_Webpage: "{{ rpi4k8s1_Supplier_Webpage }}"
+      Supplier_Order: "{{ rpi4k8s1_Supplier_Order }}"
 

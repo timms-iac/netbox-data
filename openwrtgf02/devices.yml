@@ -7,8 +7,8 @@ netbox_devices_openwrtgf02:
     site: "BER1"
     location: "LivingRoom"
     custom_fields:
-      webmanagement: https://172.25.1.122/
-      SupplierWebpage: "{{ openwrtgf02_SupplierWebpage }}"
-      SupplierOrder: "{{ openwrtgf02_SupplierOrder }}"
+      Webmanagement: https://172.25.1.122/
+      Supplier_Webpage: "{{ openwrtgf02_Supplier_Webpage }}"
+      Supplier_Order: "{{ openwrtgf02_Supplier_Order }}"
     primary_ip4: "172.25.1.122/32"
 

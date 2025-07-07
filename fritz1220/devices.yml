@@ -7,8 +7,8 @@ netbox_devices_fritz1220:
     site: "BER1"
     location: "B1"
     custom_fields:
-      webmanagement: https://192.168.0.3/
-      SupplierWebpage: "{{ fritz1220_SupplierWebpage }}"
-        #      SupplierOrder:
+      Webmanagement: https://192.168.0.3/
+      Supplier_Webpage: "{{ fritz1220_Supplier_Webpage }}"
+        #      Supplier_Order:
         #    primary_ip4: "192.168.0.3/32"
 

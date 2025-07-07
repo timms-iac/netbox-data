@@ -32,18 +32,28 @@ netbox_module_bays_mnbox02:
     description: "TF Card Slot"
     device: "mnbox02"
 
-  - name: "sfp0"
+
+  - name: "pci_0000_01_00_0"
+    description: "SFP+ 10GbE Intel 82599ES"
+    device: "mnbox02"
+    custom_fields:
+      Passthrough_VM_Interface:
+        name: "igc0"
+        virtual_machine: "prod-fw02"
+
+  - name: "pci_0000_01_00_1"
     description: "SFP+ 10GbE Intel 82599ES"
     device: "mnbox02"
 
-  - name: "sfp1"
-    description: "SFP+ 10GbE Intel 82599ES"
-    device: "mnbox02"
-
-  - name: "eth0"
+  - name: "pci_0000_02_00_0"
     description: "2.5GbE LAN Intel i226V"
     device: "mnbox02"
 
-  - name: "eth1"
+  - name: "pci_0000_03_00_0"
     description: "2.5GbE LAN Intel i226V"
     device: "mnbox02"
+    custom_fields:
+      Passthrough_VM_Interface:
+        name: "ix0"
+        virtual_machine: "dev-fw02"
+

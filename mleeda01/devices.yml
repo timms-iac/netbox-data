@@ -7,8 +7,8 @@ netbox_devices_mleeda01:
     site: "BER1"
     location: "Rack"
     custom_fields:
-      SupplierWebpage: "{{ mleeda01_SupplierWebpage }}" 
-      SupplierOrder: "{{ mleeda01_SupplierOrder }}"
+      Supplier_Webpage: "{{ mleeda01_Supplier_Webpage }}" 
+      Supplier_Order: "{{ mleeda01_Supplier_Order }}"
     description: "10 Port KVM Switch"
     airflow: "passive"
 

@@ -7,150 +7,112 @@ netbox_ip_addresses_mnbox01:
     dns_name: "mnbox01.home.{{ domain_name }}"
     vrf: "hypervisor"
 
+  - address: "172.25.1.251/32"
+    assigned_object:
+      virtual_machine: "prod-fw01"
+      name: "ix0_vlan1"
+    vrf: "mgmt"
   - address: "192.168.25.251/32"
     assigned_object:
       virtual_machine: "prod-fw01"
-      name: "wan"
+      name: "ix0_vlan2"
     vrf: "dmz"
   - address: "172.25.6.1/32"
     assigned_object:
       virtual_machine: "prod-fw01"
-      name: "lan"
+      name: "firewall"
     vrf: "firewall"
     dns_name: "prod-fw01.infra.{{ domain_name }}"
+
   - address: "172.25.40.251/32"
     assigned_object:
       virtual_machine: "prod-fw01"
-      name: "opt1"
+      name: "ix0_vlan2540"
     vrf: "proddmzmgmt"
   - address: "172.25.41.251/32"
     assigned_object:
       virtual_machine: "prod-fw01"
-      name: "opt2"
+      name: "ix0_vlan2541"
     vrf: "proddmzsvc"
-  - address: "172.25.255.1/32"
-    assigned_object:
-      virtual_machine: "prod-fw01"
-      name: "opt3"
-    vrf: "prodtransfer"
 
   - address: "192.168.20.251/32"
     assigned_object:
       virtual_machine: "dev-fw01"
-      name: "wan"
+      name: "igc0_vlan2"
     vrf: "dmz"
   - address: "172.25.6.3/32"
     assigned_object:
       virtual_machine: "dev-fw01"
-      name: "lan"
+      name: "firewall"
     vrf: "firewall"
     dns_name: "dev-fw01.infra.{{ domain_name }}"
   - address: "172.20.40.251/32"
     assigned_object:
       virtual_machine: "dev-fw01"
-      name: "opt1"
+      name: "igc0_vlan2040"
     vrf: "devdmzmgmt"
   - address: "172.20.41.251/32"
     assigned_object:
       virtual_machine: "dev-fw01"
-      name: "opt2"
+      name: "igc0_vlan2041"
     vrf: "devdmzsvc"
-  - address: "172.20.255.3/32"
-    assigned_object:
-      virtual_machine: "dev-fw01"
-      name: "opt3"
-    vrf: "devtransfer"
 
-
-  - address: "172.25.1.251/32"
-    assigned_object:
-      virtual_machine: "prod-router01"
-      name: "mgmt"
-    vrf: "mgmt"
-  - address: "172.25.5.251/32"
-    assigned_object:
-      virtual_machine: "prod-router01"
-      name: "hypervisor"
-    vrf: "hypervisor"
-  - address: "172.25.6.11/32"
-    assigned_object:
-      virtual_machine: "prod-router01"
-      name: "firewall"
-    vrf: "firewall"
-    dns_name: "prod-router01.infra.{{ domain_name }}"
   - address: "172.19.255.251/32"
     assigned_object:
-      virtual_machine: "prod-router01"
-      name: "iot"
+      virtual_machine: "prod-fw01"
+      name: "ix0_vlan1900"
     vrf: "iot"
   - address: "172.25.20.251/32"
     assigned_object:
-      virtual_machine: "prod-router01"
-      name: "k8smgmt"
+      virtual_machine: "prod-fw01"
+      name: "ix0_vlan2520"
     vrf: "prodk8smgmt"
   - address: "172.25.21.251/32"
     assigned_object:
-      virtual_machine: "prod-router01"
-      name: "k8ssvc"
+      virtual_machine: "prod-fw01"
+      name: "ix0_vlan2521"
     vrf: "prodk8ssvc"
   - address: "172.25.30.251/32"
     assigned_object:
-      virtual_machine: "prod-router01"
-      name: "osmgmt"
+      virtual_machine: "prod-fw01"
+      name: "ix0_vlan2530"
     vrf: "prodosmgmt"
   - address: "172.25.31.251/32"
     assigned_object:
-      virtual_machine: "prod-router01"
-      name: "ossvc"
+      virtual_machine: "prod-fw01"
+      name: "ix0_vlan2531"
     vrf: "prodossvc"
   - address: "172.25.32.251/32"
     assigned_object:
-      virtual_machine: "prod-router01"
-      name: "osprov"
+      virtual_machine: "prod-fw01"
+      name: "ix0_vlan2532"
     vrf: "prodosprov"
-  - address: "172.25.255.11/32"
-    assigned_object:
-      virtual_machine: "prod-router01"
-      name: "transfer"
-    vrf: "prodtransfer"
 
-
-  - address: "172.25.6.13/32"
-    assigned_object:
-      virtual_machine: "dev-router01"
-      name: "firewall"
-    vrf: "firewall"
-    dns_name: "dev-router01.infra.{{ domain_name }}"
   - address: "172.20.20.251/32"
     assigned_object:
-      virtual_machine: "dev-router01"
-      name: "k8smgmt"
+      virtual_machine: "dev-fw01"
+      name: "igc0_vlan2020"
     vrf: "devk8smgmt"
   - address: "172.20.21.251/32"
     assigned_object:
-      virtual_machine: "dev-router01"
-      name: "k8ssvc"
+      virtual_machine: "dev-fw01"
+      name: "igc0_vlan2021"
     vrf: "devk8ssvc"
   - address: "172.20.30.251/32"
     assigned_object:
-      virtual_machine: "dev-router01"
-      name: "osmgmt"
+      virtual_machine: "dev-fw01"
+      name: "igc0_vlan2030"
     vrf: "devosmgmt"
   - address: "172.20.31.251/32"
     assigned_object:
-      virtual_machine: "dev-router01"
-      name: "ossvc"
+      virtual_machine: "dev-fw01"
+      name: "igc0_vlan2031"
     vrf: "devossvc"
   - address: "172.20.32.251/32"
     assigned_object:
-      virtual_machine: "dev-router01"
-      name: "osprov"
+      virtual_machine: "dev-fw01"
+      name: "igc0_vlan2032"
     vrf: "devosprov"
-  - address: "172.20.255.13/32"
-    assigned_object:
-      virtual_machine: "dev-router01"
-      name: "transfer"
-    vrf: "devtransfer"
 
   - address: "172.25.20.6/32"
     assigned_object:

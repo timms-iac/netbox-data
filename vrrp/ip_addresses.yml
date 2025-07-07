@@ -105,72 +105,57 @@ netbox_ip_addresses_vrrp:
 
 ###############  IOT  ##################
   - address: "172.19.255.253/32"
-    role: "VRRP"
+    role: "CARP"
     vrf: "iot"
     assigned_object:
       group_id: 1900
     assigned_object_type: "ipam.fhrpgroup"
 
-############### INFRA ##################
-  - address: "172.20.5.253/32"
-    role: "VRRP"
-    vrf: "hypervisor"
-    assigned_object:
-      group_id: 2005
-    assigned_object_type: "ipam.fhrpgroup"
-
-  - address: "172.20.6.253/32"
-    role: "VRRP"
-    vrf: "firewall"
-    assigned_object:
-      group_id: 2006
-    assigned_object_type: "ipam.fhrpgroup"
-
 ############### DEV ####################
   - address: "172.20.20.253/32"
-    role: "VRRP"
+    role: "CARP"
     vrf: "devk8smgmt"
     assigned_object: 
       group_id: 2020
     assigned_object_type: "ipam.fhrpgroup"
 
   - address: "172.20.21.253/32"
-    role: "VRRP"
+    role: "CARP"
     vrf: "devk8ssvc"
     assigned_object: 
       group_id: 2021
     assigned_object_type: "ipam.fhrpgroup"
 
   - address: "172.20.30.253/32"
-    role: "VRRP"
+    role: "CARP"
     vrf: "devosmgmt"
     assigned_object: 
       group_id: 2030
     assigned_object_type: "ipam.fhrpgroup"
 
   - address: "172.20.31.253/32"
-    role: "VRRP"
+    role: "CARP"
     vrf: "devossvc"
     assigned_object:
       group_id: 2031
     assigned_object_type: "ipam.fhrpgroup"
 
   - address: "172.20.32.253/32"
-    role: "VRRP"
+    role: "CARP"
     vrf: "devosprov"
     assigned_object: 
       group_id: 2032
     assigned_object_type: "ipam.fhrpgroup"
 
   - address: "172.20.40.253/32"
-    role: "VRRP"
+    role: "CARP"
     vrf: "devdmzmgmt"
     assigned_object: 
       group_id: 2040
     assigned_object_type: "ipam.fhrpgroup"
 
   - address: "172.20.41.253/32"
-    role: "VRRP"
+    role: "CARP"
     vrf: "devdmzsvc"
     assigned_object: 
       group_id: 2041
@@ -178,72 +163,58 @@ netbox_ip_addresses_vrrp:
 
 ############### INFRA ##################
   - address: "172.25.1.253/32"
-    role: "VRRP"
+    role: "CARP"
     vrf: "mgmt"
     assigned_object:
       group_id: 2501
     assigned_object_type: "ipam.fhrpgroup"
 
-  - address: "172.25.5.253/32"
-    role: "VRRP"
-    vrf: "hypervisor"
-    assigned_object:
-      group_id: 2505
-    assigned_object_type: "ipam.fhrpgroup"
-
-  - address: "172.25.6.253/32"
-    role: "VRRP"
-    vrf: "firewall"
-    assigned_object:
-      group_id: 2506
-    assigned_object_type: "ipam.fhrpgroup"
-
 ############### PROD ###################
 
   - address: "172.25.20.253/32"
-    role: "VRRP"
+    role: "CARP"
     vrf: "prodk8smgmt"
     assigned_object:
       group_id: 2520
     assigned_object_type: "ipam.fhrpgroup"
 
   - address: "172.25.21.253/32"
-    role: "VRRP"
+    role: "CARP"
     vrf: "prodk8ssvc"
     assigned_object:
       group_id: 2521
     assigned_object_type: "ipam.fhrpgroup"
 
   - address: "172.25.30.253/32"
-    role: "VRRP"
+    role: "CARP"
     vrf: "prodosmgmt"
     assigned_object:
       group_id: 2530
     assigned_object_type: "ipam.fhrpgroup"
 
   - address: "172.25.31.253/32"
-    role: "VRRP"
+    role: "CARP"
     vrf: "prodossvc"
     assigned_object:
       group_id: 2531
     assigned_object_type: "ipam.fhrpgroup"
 
   - address: "172.25.32.253/32"
-    role: "VRRP"
+    role: "CARP"
     vrf: "prodosprov"
     assigned_object:
       group_id: 2532
     assigned_object_type: "ipam.fhrpgroup"
 
   - address: "172.25.40.253/32"
-    role: "VRRP"
+    role: "CARP"
     vrf: "proddmzmgmt"
     assigned_object:
       group_id: 2540
     assigned_object_type: "ipam.fhrpgroup"
 
   - address: "172.25.41.253/32"
-    role: "VRRP"
+    role: "CARP"
     vrf: "proddmzsvc"
     assigned_object:
       group_id: 2541
@@ -252,46 +223,16 @@ netbox_ip_addresses_vrrp:
 ################ LEGACY ################
 
   - address: "192.168.20.253/32"
-    role: "VRRP"
+    role: "CARP"
     vrf: "dmz"
     assigned_object:
       group_id: 2002
     assigned_object_type: "ipam.fhrpgroup"
 
   - address: "192.168.25.253/32"
-    role: "VRRP"
+    role: "CARP"
     vrf: "dmz"
     assigned_object:
       group_id: 2502
-    assigned_object_type: "ipam.fhrpgroup"
-
-############## TRANSFER ################
-
-  - address: "172.25.255.253/32"
-    role: "VRRP"
-    vrf: "prodtransfer"
-    assigned_object:
-      group_id: 3255
-    assigned_object_type: "ipam.fhrpgroup"
-
-  - address: "172.25.255.254/32"
-    role: "VRRP"
-    vrf: "prodtransfer"
-    assigned_object:
-      group_id: 3355
-    assigned_object_type: "ipam.fhrpgroup"
-
-  - address: "172.20.255.253/32"
-    role: "VRRP"
-    vrf: "devtransfer"
-    assigned_object:
-      group_id: 3755
-    assigned_object_type: "ipam.fhrpgroup"
-
-  - address: "172.20.255.254/32"
-    role: "VRRP"
-    vrf: "devtransfer"
-    assigned_object:
-      group_id: 3855
     assigned_object_type: "ipam.fhrpgroup"
 

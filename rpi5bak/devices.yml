@@ -7,6 +7,6 @@ netbox_devices_rpi5bak:
     site: "BER1"
     location: "Rack"
     custom_fields:
-      SupplierWebpage: "{{ rpi5bak_SupplierWebpage }}"
+      Supplier_Webpage: "{{ rpi5bak_Supplier_Webpage }}"
         #    primary_ip4: "172.16.150.141"
  

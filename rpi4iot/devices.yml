@@ -7,6 +7,6 @@ netbox_devices_rpi4iot:
     site: "BER1"
     location: "LivingRoom"
     custom_fields:
-      SupplierWebpage: "{{ rpi4iot_SupplierWebpage }}"
-      SupplierOrder: "{{ rpi4iot_SupplierOrder }}"
+      Supplier_Webpage: "{{ rpi4iot_Supplier_Webpage }}"
+      Supplier_Order: "{{ rpi4iot_Supplier_Order }}"
         #    primary_ip4: "172.17.1.2/32"

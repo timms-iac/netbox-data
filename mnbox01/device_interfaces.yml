@@ -6,12 +6,11 @@ netbox_device_interfaces_mnbox01:
     type: "Bridge"
     mode: "tagged"
     tagged_vlans: "{{ netbox_vlan_set_mnbox_kube_BER1 }}"
-
-  - name: "trans"
+  - name: "ceph"
     device: "mnbox01"
     type: "Bridge"
     mode: "tagged"
-    tagged_vlans: "{{ netbox_vlan_set_transfer_BER1 }}"
+    tagged_vlans: "{{ netbox_vlan_set_ceph_BER1 }}"
 
   - name: "mgmt0"
     device: "mnbox01"
@@ -35,30 +34,34 @@ netbox_device_interfaces_mnbox01:
     primary_mac_address: "{{ mac_mnbox01_kube0 | upper }}"
     mtu: 1500
 
-  - name: "trans0"
+  - name: "dev-fw01"
     device: "mnbox01"
     type: "2.5GBASE-T (2.5GE)"
-    bridge:
-      name: "trans"
-      device: "mnbox01"
+    custom_fields:
+      Passthrough_VM_Interface:
+        name: "igc0"
+        virtual_machine: "dev-fw01"
     duplex: "auto"
-    primary_mac_address: "{{ mac_mnbox01_trans0 | upper }}"
+    primary_mac_address: "{{ mac_mnbox01_dev_fw01 | upper }}"
     mtu: 1500
 
-  - name: "te1"
+  - name: "prod-fw01"
     device: "mnbox01"
     type: "SFP+ (10GE)"
     duplex: "auto"
-    primary_mac_address: "{{ mac_mnbox01_te1 | upper }}"
+    primary_mac_address: "{{ mac_mnbox01_prod_fw01 | upper }}"
     mtu: 1500
     custom_fields:
-      VFs: 15 # max 63
+      VFs: 0 # max 63
+      Passthrough_VM_Interface:
+        name: "ix0"
+        virtual_machine: "prod-fw01"
 
-  - name: "te2"
+  - name: "ceph0"
     device: "mnbox01"
     type: "SFP+ (10GE)"
     duplex: "auto"
-    primary_mac_address: "{{ mac_mnbox01_te2 | upper }}"
+    primary_mac_address: "{{ mac_mnbox01_ceph0 | upper }}"
     mtu: 1500
     custom_fields:
       VFs: 15 # max 63

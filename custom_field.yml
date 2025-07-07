@@ -116,11 +116,17 @@ netbox_custom_fields_BER1:
 
   - name: "Passthrough_VM_Interface"
     object_types:
-      - dcim.interface
-      - dcim.modulebay
       - dcim.module
+      - dcim.modulebay
+      - dcim.interface
     type: "object"
     related_object_type: virtualization.vminterface
     description: "VM interface which manages the PCI passthrough interface"
+
+  - name: "Interface_Label"
+    object_types:
+      - virtualization.vminterface
+    type: "text"
+    description: "Some label for the interface"
 
 

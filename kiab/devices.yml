@@ -8,9 +8,9 @@ netbox_devices_kiab:
     location: "Desk"
     cluster: "deployment"
     custom_fields:
-      SupplierWebpage: "{{ kiab_SupplierWebpage }}" 
-      SupplierOrder: "{{ kiab_SupplierOrder }}"
-      OpenVSwitchProtocols:
+      Supplier_Webpage: "{{ kiab_Supplier_Webpage }}" 
+      Supplier_Order: "{{ kiab_Supplier_Order }}"
+      OpenVSwitch_Protocols:
         - OpenFlow13
         - OpenFlow14
         - OpenFlow15

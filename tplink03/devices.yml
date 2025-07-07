@@ -7,9 +7,9 @@ netbox_devices_tplink03:
     site: "BER1"
     location: "Rack"
     custom_fields:
-      webmanagement: http://tplink03/
-      SupplierWebpage: "{{ tplink03_SupplierWebpage }}" 
-      SupplierOrder: "{{ tplink03_SupplierOrder }}"
-      ManagementHostIP: "172.25.1.250/32"
+      Webmanagement: http://tplink03/
+      Supplier_Webpage: "{{ tplink03_Supplier_Webpage }}" 
+      Supplier_Order: "{{ tplink03_Supplier_Order }}"
+      Management_Host_IP: "172.25.1.250/32"
     primary_ip4: "172.25.1.20/32"
 

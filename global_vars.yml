@@ -5,8 +5,8 @@ netbox_devices:
   - aoo02
   - fritz1220
   - fritz1260
-    #  - fritz1750e-01
-    #  - fritz1750e-02
+   #  - fritz1750e-01
+   #  - fritz1750e-02
   - fritz7490
   - fritz7690
   - kiab
@@ -20,7 +20,7 @@ netbox_devices:
   - openwrtgf02
   - openwrtgf03
   - openwrtrf01
-    #  - rpi4iot
+   #  - rpi4iot
   - rpi4k8s1
   - rpi4k8s2
   - rpi4k8s3
@@ -28,7 +28,7 @@ netbox_devices:
   - rpi4sec1
   - rpi4sec2
   - rpi5bak
-    #  - shelly
+   #  - shelly
   - sodola01
   - sodola02
   - sodola03

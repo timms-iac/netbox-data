@@ -3,164 +3,131 @@ netbox_fhrp_group_assignments_mnbox02:
   - fhrp_group: 1900
     interface_type: "virtualization.vminterface"
     interface:
-      name: iot
-      virtual_machine: prod-router02
+      name: igc0_vlan1900
+      virtual_machine: prod-fw02
     priority: 15
 
   - fhrp_group: 2501
     interface_type: "virtualization.vminterface"
     interface:
-      name: mgmt
-      virtual_machine: prod-router02
+      name: igc0_vlan1
+      virtual_machine: prod-fw02
     priority: 15
 
   - fhrp_group: 2002
     interface_type: "virtualization.vminterface"
     interface: 
-      name: wan
+      name: ix0_vlan2
       virtual_machine: dev-fw02
     priority: 17
   - fhrp_group: 2502
     interface_type: "virtualization.vminterface"
     interface: 
-      name: wan
+      name: igc0_vlan2
       virtual_machine: prod-fw02
-    priority: 15
-
-  - fhrp_group: 2505
-    interface_type: "virtualization.vminterface"
-    interface:
-      name: hypervisor
-      virtual_machine: prod-router02
     priority: 15
 
   - fhrp_group: 2006
     interface_type: "virtualization.vminterface"
     interface: 
       name: firewall
-      virtual_machine: dev-router02
+      virtual_machine: dev-fw02
     priority: 17
   - fhrp_group: 2506
     interface_type: "virtualization.vminterface"
     interface:
       name: firewall
-      virtual_machine: prod-router02
+      virtual_machine: prod-fw02
     priority: 15
 
   - fhrp_group: 2040
     interface_type: "virtualization.vminterface"
     interface:
-      name: opt1
+      name: ix0_vlan2040
       virtual_machine: dev-fw02
     priority: 17
   - fhrp_group: 2540
     interface_type: "virtualization.vminterface"
     interface:
-      name: opt1
+      name: igc0_vlan2540
       virtual_machine: prod-fw02
     priority: 15
 
   - fhrp_group: 2041
     interface_type: "virtualization.vminterface"
     interface:
-      name: opt2
+      name: ix0_vlan2041
       virtual_machine: dev-fw02
     priority: 17
   - fhrp_group: 2541
     interface_type: "virtualization.vminterface"
     interface:
-      name: opt2
+      name: igc0_vlan2541
       virtual_machine: prod-fw02
     priority: 15
 
   - fhrp_group: 2020
     interface_type: "virtualization.vminterface"
     interface:
-      name: k8smgmt
-      virtual_machine: dev-router02
+      name: ix0_vlan2020
+      virtual_machine: dev-fw02
     priority: 17
   - fhrp_group: 2520
     interface_type: "virtualization.vminterface"
     interface:
-      name: k8smgmt
-      virtual_machine: prod-router02
+      name: igc0_vlan2520
+      virtual_machine: prod-fw02
     priority: 15
 
   - fhrp_group: 2021
     interface_type: "virtualization.vminterface"
     interface:
-      name: k8ssvc
-      virtual_machine: dev-router02
+      name: ix0_vlan2021
+      virtual_machine: dev-fw02
     priority: 17
   - fhrp_group: 2521
     interface_type: "virtualization.vminterface"
     interface:
-      name: k8ssvc
-      virtual_machine: prod-router02
+      name: igc0_vlan2521
+      virtual_machine: prod-fw02
     priority: 15
 
   - fhrp_group: 2030
     interface_type: "virtualization.vminterface"
     interface:
-      name: osmgmt
-      virtual_machine: dev-router02
+      name: ix0_vlan2030
+      virtual_machine: dev-fw02
     priority: 17
   - fhrp_group: 2530
     interface_type: "virtualization.vminterface"
     interface:
-      name: osmgmt
-      virtual_machine: prod-router02
+      name: igc0_vlan2530
+      virtual_machine: prod-fw02
     priority: 15
 
   - fhrp_group: 2031
     interface_type: "virtualization.vminterface"
     interface:
-      name: ossvc
-      virtual_machine: dev-router02
+      name: ix0_vlan2031
+      virtual_machine: dev-fw02
     priority: 17
   - fhrp_group: 2531
     interface_type: "virtualization.vminterface"
     interface:
-      name: ossvc
-      virtual_machine: prod-router02
+      name: igc0_vlan2531
+      virtual_machine: prod-fw02
     priority: 15
 
   - fhrp_group: 2032
     interface_type: "virtualization.vminterface"
     interface:
-      name: osprov
-      virtual_machine: dev-router02
+      name: ix0_vlan2032
+      virtual_machine: dev-fw02
     priority: 17
   - fhrp_group: 2532
     interface_type: "virtualization.vminterface"
     interface:
-      name: osprov
-      virtual_machine: prod-router02
-    priority: 15
-
-  - fhrp_group: 3755
-    interface_type: "virtualization.vminterface"
-    interface:
-      name: opt3
-      virtual_machine: dev-fw02
-    priority: 17
-  - fhrp_group: 3255
-    interface_type: "virtualization.vminterface"
-    interface:
-      name: opt3
+      name: igc0_vlan2532
       virtual_machine: prod-fw02
-    priority: 15
-
-  - fhrp_group: 3855
-    interface_type: "virtualization.vminterface"
-    interface:
-      name: transfer
-      virtual_machine: dev-router02
-    priority: 17
-  - fhrp_group: 3355
-    interface_type: "virtualization.vminterface"
-    interface:
-      name: transfer
-      virtual_machine: prod-router02
     priority: 15
 

@@ -5,130 +5,28 @@ netbox_mac_addresses_mnbox01:
       device: "mnbox01"
     mac_address: "{{ mac_mnbox01_kube0 | upper }}"
   - assigned_object:
-      name: "trans0"
+      name: "dev-fw01"
       device: "mnbox01"
-    mac_address: "{{ mac_mnbox01_trans0 | upper }}"
+    mac_address: "{{ mac_mnbox01_dev_fw01 | upper }}"
 
   - assigned_object:
-      name: "te1"
+      name: "prod-fw01"
       device: "mnbox01"
-    mac_address: "{{ mac_mnbox01_te1 | upper }}"
+    mac_address: "{{ mac_mnbox01_prod_fw01 | upper }}"
   - assigned_object:
-      name: "te2"
+      name: "ceph0"
       device: "mnbox01"
-    mac_address: "{{ mac_mnbox01_te2 | upper }}"
+    mac_address: "{{ mac_mnbox01_ceph0 | upper }}"
 
-  - mac_address: "52:54:C0:A8:19:FB"
-    assigned_object:
-      virtual_machine: "prod-fw01"
-      name: "wan"
   - mac_address: "52:54:AC:19:06:01"
     assigned_object:
       virtual_machine: "prod-fw01"
-      name: "lan"
-  - mac_address: "52:54:AC:19:28:FB"
-    assigned_object:
-      virtual_machine: "prod-fw01"
-      name: "opt1"
-  - mac_address: "52:54:AC:19:29:FB"
-    assigned_object:
-      virtual_machine: "prod-fw01"
-      name: "opt2"
-  - mac_address: "52:54:AC:19:FF:01"
-    assigned_object:
-      virtual_machine: "prod-fw01"
-      name: "opt3"
+      name: "firewall"
 
-  - mac_address: "52:54:C0:A8:14:FB"
-    assigned_object:
-      virtual_machine: "dev-fw01"
-      name: "wan"
   - mac_address: "52:54:AC:19:06:03"
     assigned_object:
       virtual_machine: "dev-fw01"
-      name: "lan"
-  - mac_address: "52:54:AC:14:28:FB"
-    assigned_object:
-      virtual_machine: "dev-fw01"
-      name: "opt1"
-  - mac_address: "52:54:AC:14:29:FB"
-    assigned_object:
-      virtual_machine: "dev-fw01"
-      name: "opt2"
-  - mac_address: "52:54:AC:14:FF:03"
-    assigned_object:
-      virtual_machine: "dev-fw01"
-      name: "opt3"
-
-  - mac_address: "52:54:AC:19:01:FB"
-    assigned_object:
-      virtual_machine: "prod-router01"
-      name: "mgmt"
-  - mac_address: "52:54:AC:19:05:FB"
-    assigned_object:
-      virtual_machine: "prod-router01"
-      name: "hypervisor"
-  - mac_address: "52:54:AC:19:06:0B"
-    assigned_object:
-      virtual_machine: "prod-router01"
       name: "firewall"
-  - mac_address: "52:54:AC:13:FF:FB"
-    assigned_object:
-      virtual_machine: "prod-router01"
-      name: "iot"
-  - mac_address: "52:54:AC:19:14:FB"
-    assigned_object:
-      virtual_machine: "prod-router01"
-      name: "k8smgmt"
-  - mac_address: "52:54:AC:19:15:FB"
-    assigned_object:
-      virtual_machine: "prod-router01"
-      name: "k8ssvc"
-  - mac_address: "52:54:AC:19:1E:FB"
-    assigned_object:
-      virtual_machine: "prod-router01"
-      name: "osmgmt"
-  - mac_address: "52:54:AC:19:1F:FB"
-    assigned_object:
-      virtual_machine: "prod-router01"
-      name: "ossvc"
-  - mac_address: "52:54:AC:19:20:FB"
-    assigned_object:
-      virtual_machine: "prod-router01"
-      name: "osprov"
-  - mac_address: "52:54:AC:19:FF:0B"
-    assigned_object:
-      virtual_machine: "prod-router01"
-      name: "transfer"
-
-  - mac_address: "52:54:AC:19:06:0D"
-    assigned_object:
-      virtual_machine: "dev-router01"
-      name: "firewall"
-  - mac_address: "52:54:AC:14:14:FB"
-    assigned_object:
-      virtual_machine: "dev-router01"
-      name: "k8smgmt"
-  - mac_address: "52:54:AC:14:15:FB"
-    assigned_object:
-      virtual_machine: "dev-router01"
-      name: "k8ssvc"
-  - mac_address: "52:54:AC:14:1E:FB"
-    assigned_object:
-      virtual_machine: "dev-router01"
-      name: "osmgmt"
-  - mac_address: "52:54:AC:14:1F:FB"
-    assigned_object:
-      virtual_machine: "dev-router01"
-      name: "ossvc"
-  - mac_address: "52:54:AC:14:20:FB"
-    assigned_object:
-      virtual_machine: "dev-router01"
-      name: "osprov"
-  - mac_address: "52:54:AC:14:FF:0D"
-    assigned_object:
-      virtual_machine: "dev-router01"
-      name: "transfer"
 
   - mac_address: "52:54:AC:19:14:06"
     assigned_object:

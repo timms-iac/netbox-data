@@ -7,7 +7,7 @@ netbox_devices_air6:
     site: "BER1"
     location: "Desk"
     custom_fields:
-      SupplierWebpage: "{{ air6_SupplierWebpage }}" 
-      SupplierOrder: "{{ air6_SupplierOrder }}"
-      OpenVSwitchProtocols:
+      Supplier_Webpage: "{{ air6_Supplier_Webpage }}" 
+      Supplier_Order: "{{ air6_Supplier_Order }}"
+      OpenVSwitch_Protocols:
         - none

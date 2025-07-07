@@ -8,9 +8,9 @@ netbox_devices_try02:
     location: "Rack"
     cluster: "hypervisor"
     custom_fields:
-      SupplierWebpage: "{{ try02_SupplierWebpage }}"
-      SupplierOrder: "{{ try02_SupplierOrder }}"
-      OpenVSwitchProtocols:
+      Supplier_Webpage: "{{ try02_Supplier_Webpage }}"
+      Supplier_Order: "{{ try02_Supplier_Order }}"
+      OpenVSwitch_Protocols:
         - OpenFlow13
         - OpenFlow14
         - OpenFlow15

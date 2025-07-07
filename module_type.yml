@@ -49,4 +49,10 @@ netbox_module_types_BER1:
     manufacturer: "CableCreation"
     comments: "CableCreation USB C Ethernet Adapter, USB-C auf RJ45 Netzwerkadapter, Typ-C Gigabit Ethernet Adapter"
 
+  - model: "82599ES 10-Gigabit SFI/SFP+ Network Connection (rev 01)"
+    manufacturer: "Intel"
+
+  - model: "Ethernet Controller I226-V (rev 04)"
+    manufacturer: "Intel"
+    comments: "2.5Gb Ethernet (RJ45)"
 

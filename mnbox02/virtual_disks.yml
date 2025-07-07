@@ -1,16 +1,11 @@
 ---
 netbox_virtual_disks_mnbox02:
-  - name: "vda-prod-router02-mnbox02"
-    virtual_machine: "prod-router02"
-    size: 10000
-    description: "System Disk"
-
   - name: "vda-prod-fw02-mnbox02"
     virtual_machine: "prod-fw02"
     size: 50000
     description: "System Disk"
     custom_fields:
-      VolumeGroup: ceph0
+      Volume_Group: ceph0
 
   - name: "vda-prodk8s-mnbox02"
     virtual_machine: "prodk8s-mnbox02"
@@ -22,14 +17,14 @@ netbox_virtual_disks_mnbox02:
     size: 250000
     description: "Ceph0 Disk"
     custom_fields:
-      VolumeGroup: ceph0
+      Volume_Group: ceph0
 
   - name: "vdc-prodk8s-mnbox02"
     virtual_machine: "prodk8s-mnbox02"
     size: 250000
     description: "Ceph1 Disk"
     custom_fields:
-      VolumeGroup: ceph1
+      Volume_Group: ceph1
 
   - name: "vda-prodos-mnbox02"
     virtual_machine: "prodos-mnbox02"
@@ -41,14 +36,14 @@ netbox_virtual_disks_mnbox02:
     size: 250000
     description: "Ceph0 Disk"
     custom_fields:
-      VolumeGroup: ceph0
+      Volume_Group: ceph0
 
   - name: "vdc-prodos-mnbox02"
     virtual_machine: "prodos-mnbox02"
     size: 250000
     description: "Ceph1 Disk"
     custom_fields:
-      VolumeGroup: ceph1
+      Volume_Group: ceph1
 
   - name: "vda-proddmz-mnbox02"
     virtual_machine: "proddmz-mnbox02"
@@ -60,26 +55,21 @@ netbox_virtual_disks_mnbox02:
     size: 100000
     description: "Ceph0 Disk"
     custom_fields:
-      VolumeGroup: ceph0
+      Volume_Group: ceph0
 
   - name: "vdc-proddmz-mnbox02"
     virtual_machine: "proddmz-mnbox02"
     size: 100000
     description: "Ceph1 Disk"
     custom_fields:
-      VolumeGroup: ceph1
-
-  - name: "vda-dev-router02-mnbox02"
-    virtual_machine: "dev-router02"
-    size: 10000
-    description: "System Disk"
+      Volume_Group: ceph1
 
   - name: "vda-dev-fw02-mnbox02"
     virtual_machine: "dev-fw02"
     size: 50000
     description: "System Disk"
     custom_fields:
-      VolumeGroup: ceph1
+      Volume_Group: ceph1
 
   - name: "vda-devk8s-mnbox02"
     virtual_machine: "devk8s-mnbox02"
@@ -91,14 +81,14 @@ netbox_virtual_disks_mnbox02:
     size: 100000
     description: "Ceph0 Disk"
     custom_fields:
-      VolumeGroup: ceph0
+      Volume_Group: ceph0
 
   - name: "vdc-devk8s-mnbox02"
     virtual_machine: "devk8s-mnbox02"
     size: 100000
     description: "Ceph1 Disk"
     custom_fields:
-      VolumeGroup: ceph1
+      Volume_Group: ceph1
 
   - name: "vda-devos-mnbox02"
     virtual_machine: "devos-mnbox02"
@@ -110,14 +100,14 @@ netbox_virtual_disks_mnbox02:
     size: 100000
     description: "Ceph0 Disk"
     custom_fields:
-      VolumeGroup: ceph0
+      Volume_Group: ceph0
 
   - name: "vdc-devos-mnbox02"
     virtual_machine: "devos-mnbox02"
     size: 100000
     description: "Ceph1 Disk"
     custom_fields:
-      VolumeGroup: ceph1
+      Volume_Group: ceph1
 
   - name: "vda-devdmz-mnbox02"
     virtual_machine: "devdmz-mnbox02"
@@ -129,12 +119,12 @@ netbox_virtual_disks_mnbox02:
     size: 50000
     description: "Ceph0 Disk"
     custom_fields:
-      VolumeGroup: ceph0
+      Volume_Group: ceph0
 
   - name: "vdc-devdmz-mnbox02"
     virtual_machine: "devdmz-mnbox02"
     size: 50000
     description: "Ceph1 Disk"
     custom_fields:
-      VolumeGroup: ceph1
+      Volume_Group: ceph1
 

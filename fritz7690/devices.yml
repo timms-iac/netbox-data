@@ -7,8 +7,8 @@ netbox_devices_fritz7690:
     site: "BER1"
     location: "Desk"
     custom_fields:
-      webmanagement: https://fritz.box/
-      SupplierWebpage: "{{ fritz7690_SupplierWebpage }}"
-        #      SupplierOrder: 
+      Webmanagement: https://fritz.box/
+      Supplier_Webpage: "{{ fritz7690_Supplier_Webpage }}"
+        #      Supplier_Order: 
         #    primary_ip4: "192.168.178.1"
 

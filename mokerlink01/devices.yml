@@ -7,8 +7,8 @@ netbox_devices_mokerlink01:
     site: "BER1"
     location: "Desk"
     custom_fields:
-      webmanagement: http://mokerlink01/
-      SupplierWebpage: "{{ mokerlink01_SupplierWebpage }}" 
-      SupplierOrder: "{{ mokerlink01_SupplierOrder }}"
+      Webmanagement: http://mokerlink01/
+      Supplier_Webpage: "{{ mokerlink01_Supplier_Webpage }}" 
+      Supplier_Order: "{{ mokerlink01_Supplier_Order }}"
     primary_ip4: "172.25.1.24/32"
 
